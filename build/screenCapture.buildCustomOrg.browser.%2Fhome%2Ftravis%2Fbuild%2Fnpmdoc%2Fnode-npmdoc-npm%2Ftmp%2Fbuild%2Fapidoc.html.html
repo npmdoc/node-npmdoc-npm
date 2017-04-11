@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://docs.npmjs.com/"
-
-    >npm (v4.4.4)</a>
+    <a href="https://docs.npmjs.com/">npm (v4.4.4)</a>
 </h1>
 <h4>a package manager for JavaScript</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.npm">module npm</a><ol>
 
@@ -177,10 +170,10 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">deref = function (c) {
-  if (!c) return &#x27;&#x27;
+  if (!c) return ''
   if (c.match(/[A-Z]/)) {
     c = c.replace(/([A-Z])/g, function (m) {
-      return &#x27;-&#x27; + m.toLowerCase()
+      return '-' + m.toLowerCase()
     })
   }
   if (plumbing.indexOf(c) !== -1) return c
@@ -201,7 +194,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">load = function (cli, cb_) {
-  if (!cb_ &#x26;&#x26; typeof cli === &#x27;function&#x27;) {
+  if (!cb_ &amp;&amp; typeof cli === 'function') {
     cb_ = cli
     cli = {}
   }
@@ -217,19 +210,19 @@
     if (loadErr) return
     loadErr = er
     if (er) return cb_(er)
-    if (npm.config.get(&#x27;force&#x27;)) {
-      log.warn(&#x27;using --force&#x27;, &#x27;I sure hope you know what you are doing.&#x27;)
+    if (npm.config.get('force')) {
+      log.warn('using --force', 'I sure hope you know what you are doing.')
     }
     npm.config.loaded = true
     loaded = true
     loadCb(loadErr = er)
-    onload = onload &#x26;&#x26; npm.config.get(&#x27;onload-script&#x27;)
+    onload = onload &amp;&amp; npm.config.get('onload-script')
     if (onload) {
       try {
         require(onload)
       } catch (err) {
-        log.warn(&#x27;onload-script&#x27;, &#x27;failed to require onload script&#x27;, onload)
-        log.warn(&#x27;onload-script&#x27;, err)
+        log.warn('onload-script', 'failed to require onload script', onload)
+        log.warn('onload-script', err)
       }
       onload = false
     }
@@ -277,7 +270,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">get = function () {
-  throw new Error(&#x27;npm.load() required&#x27;)
+  throw new Error('npm.load() required')
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -292,7 +285,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">set = function () {
-  throw new Error(&#x27;npm.load() required&#x27;)
+  throw new Error('npm.load() required')
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -306,3 +299,4 @@
     ]
 </div>
 </div>
+</body></html>
