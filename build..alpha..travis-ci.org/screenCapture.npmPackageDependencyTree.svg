@@ -4,7 +4,7 @@
 <tspan x="10" y="26">25 megabytes installed</tspan>
 <tspan x="10" y="42"></tspan>
 <tspan x="10" y="58">node_modules</tspan>
-<tspan x="10" y="74">└─┬ npm@4.4.4 </tspan>
+<tspan x="10" y="74">└─┬ npm@4.5.0 </tspan>
 <tspan x="10" y="90">  ├── abbrev@1.1.0 </tspan>
 <tspan x="10" y="106">  ├── ansi-regex@2.1.1 </tspan>
 <tspan x="10" y="122">  ├── ansicolors@0.3.2 </tspan>
@@ -39,7 +39,7 @@
 <tspan x="10" y="586">  │ ├── graceful-fs@4.1.11  deduped</tspan>
 <tspan x="10" y="602">  │ ├── iferr@0.1.5  deduped</tspan>
 <tspan x="10" y="618">  │ ├── imurmurhash@0.1.4  deduped</tspan>
-<tspan x="10" y="634">  │ └── readable-stream@2.2.3  deduped</tspan>
+<tspan x="10" y="634">  │ └── readable-stream@2.2.6  deduped</tspan>
 <tspan x="10" y="650">  ├─┬ fstream@1.0.11 </tspan>
 <tspan x="10" y="666">  │ ├── graceful-fs@4.1.11  deduped</tspan>
 <tspan x="10" y="682">  │ ├── inherits@2.0.3  deduped</tspan>
@@ -66,7 +66,7 @@
 <tspan x="10" y="1018">  │ └── path-is-absolute@1.0.1 </tspan>
 <tspan x="10" y="1034">  ├── graceful-fs@4.1.11 </tspan>
 <tspan x="10" y="1050">  ├── has-unicode@2.0.1 </tspan>
-<tspan x="10" y="1066">  ├── hosted-git-info@2.2.0 </tspan>
+<tspan x="10" y="1066">  ├── hosted-git-info@2.4.1 </tspan>
 <tspan x="10" y="1082">  ├── iferr@0.1.5 </tspan>
 <tspan x="10" y="1098">  ├── imurmurhash@0.1.4 </tspan>
 <tspan x="10" y="1114">  ├─┬ inflight@1.0.6 </tspan>
@@ -106,28 +106,28 @@
 <tspan x="10" y="1658">  ├─┬ mississippi@1.3.0 </tspan>
 <tspan x="10" y="1674">  │ ├─┬ concat-stream@1.6.0 </tspan>
 <tspan x="10" y="1690">  │ │ ├── inherits@2.0.3  deduped</tspan>
-<tspan x="10" y="1706">  │ │ ├── readable-stream@2.2.3  deduped</tspan>
+<tspan x="10" y="1706">  │ │ ├── readable-stream@2.2.6  deduped</tspan>
 <tspan x="10" y="1722">  │ │ └── typedarray@0.0.6 </tspan>
 <tspan x="10" y="1738">  │ ├─┬ duplexify@3.5.0 </tspan>
 <tspan x="10" y="1754">  │ │ ├─┬ end-of-stream@1.0.0 </tspan>
 <tspan x="10" y="1770">  │ │ │ └─┬ once@1.3.3 </tspan>
 <tspan x="10" y="1786">  │ │ │   └── wrappy@1.0.2  deduped</tspan>
 <tspan x="10" y="1802">  │ │ ├── inherits@2.0.3  deduped</tspan>
-<tspan x="10" y="1818">  │ │ ├── readable-stream@2.2.3  deduped</tspan>
+<tspan x="10" y="1818">  │ │ ├── readable-stream@2.2.6  deduped</tspan>
 <tspan x="10" y="1834">  │ │ └── stream-shift@1.0.0 </tspan>
 <tspan x="10" y="1850">  │ ├─┬ end-of-stream@1.1.0 </tspan>
 <tspan x="10" y="1866">  │ │ └─┬ once@1.3.3 </tspan>
 <tspan x="10" y="1882">  │ │   └── wrappy@1.0.2  deduped</tspan>
 <tspan x="10" y="1898">  │ ├─┬ flush-write-stream@1.0.2 </tspan>
 <tspan x="10" y="1914">  │ │ ├── inherits@2.0.3  deduped</tspan>
-<tspan x="10" y="1930">  │ │ └── readable-stream@2.2.3  deduped</tspan>
+<tspan x="10" y="1930">  │ │ └── readable-stream@2.2.6  deduped</tspan>
 <tspan x="10" y="1946">  │ ├─┬ from2@2.3.0 </tspan>
 <tspan x="10" y="1962">  │ │ ├── inherits@2.0.3  deduped</tspan>
-<tspan x="10" y="1978">  │ │ └── readable-stream@2.2.3  deduped</tspan>
+<tspan x="10" y="1978">  │ │ └── readable-stream@2.2.6  deduped</tspan>
 <tspan x="10" y="1994">  │ ├─┬ parallel-transform@1.1.0 </tspan>
 <tspan x="10" y="2010">  │ │ ├── cyclist@0.2.2 </tspan>
 <tspan x="10" y="2026">  │ │ ├── inherits@2.0.3  deduped</tspan>
-<tspan x="10" y="2042">  │ │ └── readable-stream@2.2.3  deduped</tspan>
+<tspan x="10" y="2042">  │ │ └── readable-stream@2.2.6  deduped</tspan>
 <tspan x="10" y="2058">  │ ├─┬ pump@1.0.2 </tspan>
 <tspan x="10" y="2074">  │ │ ├── end-of-stream@1.1.0  deduped</tspan>
 <tspan x="10" y="2090">  │ │ └── once@1.4.0  deduped</tspan>
@@ -139,7 +139,7 @@
 <tspan x="10" y="2186">  │ │ ├── end-of-stream@1.1.0  deduped</tspan>
 <tspan x="10" y="2202">  │ │ └── stream-shift@1.0.0 </tspan>
 <tspan x="10" y="2218">  │ └─┬ through2@2.0.3 </tspan>
-<tspan x="10" y="2234">  │   ├── readable-stream@2.2.3  deduped</tspan>
+<tspan x="10" y="2234">  │   ├── readable-stream@2.2.6  deduped</tspan>
 <tspan x="10" y="2250">  │   └── xtend@4.0.1 </tspan>
 <tspan x="10" y="2266">  ├─┬ mkdirp@0.5.1 </tspan>
 <tspan x="10" y="2282">  │ └── minimist@0.0.8 </tspan>
@@ -157,7 +157,7 @@
 <tspan x="10" y="2474">  │ ├── rimraf@2.6.1  deduped</tspan>
 <tspan x="10" y="2490">  │ └─┬ run-queue@1.0.3 </tspan>
 <tspan x="10" y="2506">  │   └── aproba@1.1.1  deduped</tspan>
-<tspan x="10" y="2522">  ├─┬ node-gyp@3.5.0 </tspan>
+<tspan x="10" y="2522">  ├─┬ node-gyp@3.6.0 </tspan>
 <tspan x="10" y="2538">  │ ├── fstream@1.0.11  deduped</tspan>
 <tspan x="10" y="2554">  │ ├── glob@7.1.1  deduped</tspan>
 <tspan x="10" y="2570">  │ ├── graceful-fs@4.1.11  deduped</tspan>
@@ -174,7 +174,7 @@
 <tspan x="10" y="2746">  │ ├── rimraf@2.6.1  deduped</tspan>
 <tspan x="10" y="2762">  │ ├── semver@5.3.0  deduped</tspan>
 <tspan x="10" y="2778">  │ ├── tar@2.2.1  deduped</tspan>
-<tspan x="10" y="2794">  │ └── which@1.2.12  deduped</tspan>
+<tspan x="10" y="2794">  │ └── which@1.2.14  deduped</tspan>
 <tspan x="10" y="2810">  ├─┬ nopt@4.0.1 </tspan>
 <tspan x="10" y="2826">  │ ├── abbrev@1.1.0  deduped</tspan>
 <tspan x="10" y="2842">  │ └─┬ osenv@0.1.4 </tspan>
@@ -182,7 +182,7 @@
 <tspan x="10" y="2874">  │   └── os-tmpdir@1.0.2 </tspan>
 <tspan x="10" y="2890">  ├── normalize-git-url@3.0.2 </tspan>
 <tspan x="10" y="2906">  ├─┬ normalize-package-data@2.3.6 </tspan>
-<tspan x="10" y="2922">  │ ├── hosted-git-info@2.2.0  deduped</tspan>
+<tspan x="10" y="2922">  │ ├── hosted-git-info@2.4.1  deduped</tspan>
 <tspan x="10" y="2938">  │ ├─┬ is-builtin-module@1.0.0 </tspan>
 <tspan x="10" y="2954">  │ │ └── builtin-modules@1.1.1 </tspan>
 <tspan x="10" y="2970">  │ ├── semver@5.3.0  deduped</tspan>
@@ -191,12 +191,12 @@
 <tspan x="10" y="3018">  ├─┬ npm-install-checks@3.0.0 </tspan>
 <tspan x="10" y="3034">  │ └── semver@5.3.0  deduped</tspan>
 <tspan x="10" y="3050">  ├─┬ npm-package-arg@4.2.1 </tspan>
-<tspan x="10" y="3066">  │ ├── hosted-git-info@2.2.0  deduped</tspan>
+<tspan x="10" y="3066">  │ ├── hosted-git-info@2.4.1  deduped</tspan>
 <tspan x="10" y="3082">  │ └── semver@5.3.0  deduped</tspan>
-<tspan x="10" y="3098">  ├─┬ npm-registry-client@7.4.6 </tspan>
+<tspan x="10" y="3098">  ├─┬ npm-registry-client@8.1.0 </tspan>
 <tspan x="10" y="3114">  │ ├─┬ concat-stream@1.6.0 </tspan>
 <tspan x="10" y="3130">  │ │ ├── inherits@2.0.3  deduped</tspan>
-<tspan x="10" y="3146">  │ │ ├── readable-stream@2.2.3  deduped</tspan>
+<tspan x="10" y="3146">  │ │ ├── readable-stream@2.2.6  deduped</tspan>
 <tspan x="10" y="3162">  │ │ └── typedarray@0.0.6 </tspan>
 <tspan x="10" y="3178">  │ ├── graceful-fs@4.1.11  deduped</tspan>
 <tspan x="10" y="3194">  │ ├── normalize-package-data@2.3.6  deduped</tspan>
@@ -211,7 +211,7 @@
 <tspan x="10" y="3338">  ├─┬ npmlog@4.0.2 </tspan>
 <tspan x="10" y="3354">  │ ├─┬ are-we-there-yet@1.1.2 </tspan>
 <tspan x="10" y="3370">  │ │ ├── delegates@1.0.0 </tspan>
-<tspan x="10" y="3386">  │ │ └── readable-stream@2.2.3  deduped</tspan>
+<tspan x="10" y="3386">  │ │ └── readable-stream@2.2.6  deduped</tspan>
 <tspan x="10" y="3402">  │ ├── console-control-strings@1.1.0 </tspan>
 <tspan x="10" y="3418">  │ ├─┬ gauge@2.7.2 </tspan>
 <tspan x="10" y="3434">  │ │ ├── aproba@1.1.1  deduped</tspan>
@@ -260,7 +260,7 @@
 <tspan x="10" y="4122">  │ ├── once@1.4.0  deduped</tspan>
 <tspan x="10" y="4138">  │ ├── read-package-json@2.0.5  deduped</tspan>
 <tspan x="10" y="4154">  │ └── readdir-scoped-modules@1.0.2  deduped</tspan>
-<tspan x="10" y="4170">  ├─┬ readable-stream@2.2.3 </tspan>
+<tspan x="10" y="4170">  ├─┬ readable-stream@2.2.6 </tspan>
 <tspan x="10" y="4186">  │ ├── buffer-shims@1.0.0 </tspan>
 <tspan x="10" y="4202">  │ ├── core-util-is@1.0.2 </tspan>
 <tspan x="10" y="4218">  │ ├── inherits@2.0.3  deduped</tspan>
@@ -345,7 +345,7 @@
 <tspan x="10" y="5482">  ├── semver@5.3.0 </tspan>
 <tspan x="10" y="5498">  ├─┬ sha@2.0.1 </tspan>
 <tspan x="10" y="5514">  │ ├── graceful-fs@4.1.11  deduped</tspan>
-<tspan x="10" y="5530">  │ └── readable-stream@2.2.3  deduped</tspan>
+<tspan x="10" y="5530">  │ └── readable-stream@2.2.6  deduped</tspan>
 <tspan x="10" y="5546">  ├── slide@1.1.6 </tspan>
 <tspan x="10" y="5562">  ├── sorted-object@2.0.1 </tspan>
 <tspan x="10" y="5578">  ├─┬ sorted-union-stream@2.1.3 </tspan>
@@ -391,7 +391,7 @@
 <tspan x="10" y="6218">  │ │ │   │ ├─┬ lru-cache@4.0.2 </tspan>
 <tspan x="10" y="6234">  │ │ │   │ │ ├── pseudomap@1.0.2 </tspan>
 <tspan x="10" y="6250">  │ │ │   │ │ └── yallist@2.0.0 </tspan>
-<tspan x="10" y="6266">  │ │ │   │ └── which@1.2.12  deduped</tspan>
+<tspan x="10" y="6266">  │ │ │   │ └── which@1.2.14  deduped</tspan>
 <tspan x="10" y="6282">  │ │ │   ├── is-stream@1.1.0 </tspan>
 <tspan x="10" y="6298">  │ │ │   ├─┬ npm-run-path@1.0.0 </tspan>
 <tspan x="10" y="6314">  │ │ │   │ └── path-key@1.0.0  deduped</tspan>
@@ -463,8 +463,8 @@
 <tspan x="10" y="7370">  │   └── spdx-license-ids@1.2.0 </tspan>
 <tspan x="10" y="7386">  ├─┬ validate-npm-package-name@3.0.0 </tspan>
 <tspan x="10" y="7402">  │ └── builtins@1.0.3 </tspan>
-<tspan x="10" y="7418">  ├─┬ which@1.2.12 </tspan>
-<tspan x="10" y="7434">  │ └── isexe@1.1.2 </tspan>
+<tspan x="10" y="7418">  ├─┬ which@1.2.14 </tspan>
+<tspan x="10" y="7434">  │ └── isexe@2.0.0 </tspan>
 <tspan x="10" y="7450">  ├── wrappy@1.0.2 </tspan>
 <tspan x="10" y="7466">  └─┬ write-file-atomic@1.3.1 </tspan>
 <tspan x="10" y="7482">    ├── graceful-fs@4.1.11  deduped</tspan>
