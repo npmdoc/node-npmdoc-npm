@@ -1,0 +1,4012 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://docs.npmjs.com/">npm (v4.4.4)</a>
+</h1>
+<h4>a package manager for JavaScript</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm">module npm</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.access">
+            function <span class="apidocSignatureSpan">npm.</span>access
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.completion">
+            function <span class="apidocSignatureSpan">npm.</span>completion
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.deprecate">
+            function <span class="apidocSignatureSpan">npm.</span>deprecate
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.deref">
+            function <span class="apidocSignatureSpan">npm.</span>deref
+            <span class="apidocSignatureSpan">(c)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.edit">
+            function <span class="apidocSignatureSpan">npm.</span>edit
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.explore">
+            function <span class="apidocSignatureSpan">npm.</span>explore
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.help">
+            function <span class="apidocSignatureSpan">npm.</span>help
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.link">
+            function <span class="apidocSignatureSpan">npm.</span>link
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.load">
+            function <span class="apidocSignatureSpan">npm.</span>load
+            <span class="apidocSignatureSpan">(cli, cb_)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.owner">
+            function <span class="apidocSignatureSpan">npm.</span>owner
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.publish">
+            function <span class="apidocSignatureSpan">npm.</span>publish
+            <span class="apidocSignatureSpan">(args, isRetry, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.rebuild">
+            function <span class="apidocSignatureSpan">npm.</span>rebuild
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.restart">
+            function <span class="apidocSignatureSpan">npm.</span>restart
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.run_script">
+            function <span class="apidocSignatureSpan">npm.</span>run_script
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.search">
+            function <span class="apidocSignatureSpan">npm.</span>search
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.star">
+            function <span class="apidocSignatureSpan">npm.</span>star
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.start">
+            function <span class="apidocSignatureSpan">npm.</span>start
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.stop">
+            function <span class="apidocSignatureSpan">npm.</span>stop
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.team">
+            function <span class="apidocSignatureSpan">npm.</span>team
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.unbuild">
+            function <span class="apidocSignatureSpan">npm.</span>unbuild
+            <span class="apidocSignatureSpan">(args, silent, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.unpublish">
+            function <span class="apidocSignatureSpan">npm.</span>unpublish
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.view">
+            function <span class="apidocSignatureSpan">npm.</span>view
+            <span class="apidocSignatureSpan">(args, silent, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">npm.</span>_eventsCount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>_events</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>commands</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>config</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>domain</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>fullList</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>limit</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>rollbacks</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.access">module npm.access</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.access.access">
+            function <span class="apidocSignatureSpan">npm.</span>access
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.access.completion">
+            function <span class="apidocSignatureSpan">npm.access.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.access.</span>subcommands</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.access.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.completion">module npm.completion</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.completion.completion">
+            function <span class="apidocSignatureSpan">npm.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.completion.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.config">module npm.config</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">npm.config.</span>loaded</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.config.get">
+            function <span class="apidocSignatureSpan">npm.config.</span>get
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.config.set">
+            function <span class="apidocSignatureSpan">npm.config.</span>set
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.deprecate">module npm.deprecate</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.deprecate.deprecate">
+            function <span class="apidocSignatureSpan">npm.</span>deprecate
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.deprecate.completion">
+            function <span class="apidocSignatureSpan">npm.deprecate.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.deprecate.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.edit">module npm.edit</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.edit.edit">
+            function <span class="apidocSignatureSpan">npm.</span>edit
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.edit.completion">
+            function <span class="apidocSignatureSpan">npm.edit.</span>completion
+            <span class="apidocSignatureSpan">(opts, filter, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.edit.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.explore">module npm.explore</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.explore.explore">
+            function <span class="apidocSignatureSpan">npm.</span>explore
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.explore.completion">
+            function <span class="apidocSignatureSpan">npm.explore.</span>completion
+            <span class="apidocSignatureSpan">(opts, filter, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.explore.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.help">module npm.help</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.help.help">
+            function <span class="apidocSignatureSpan">npm.</span>help
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.help.completion">
+            function <span class="apidocSignatureSpan">npm.help.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.link">module npm.link</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.link.link">
+            function <span class="apidocSignatureSpan">npm.</span>link
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.link.completion">
+            function <span class="apidocSignatureSpan">npm.link.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.link.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.owner">module npm.owner</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.owner.owner">
+            function <span class="apidocSignatureSpan">npm.</span>owner
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.owner.completion">
+            function <span class="apidocSignatureSpan">npm.owner.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.owner.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.publish">module npm.publish</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.publish.publish">
+            function <span class="apidocSignatureSpan">npm.</span>publish
+            <span class="apidocSignatureSpan">(args, isRetry, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.publish.completion">
+            function <span class="apidocSignatureSpan">npm.publish.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.publish.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.rebuild">module npm.rebuild</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.rebuild.rebuild">
+            function <span class="apidocSignatureSpan">npm.</span>rebuild
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.rebuild.completion">
+            function <span class="apidocSignatureSpan">npm.rebuild.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.rebuild.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.restart">module npm.restart</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.restart.restart">
+            function <span class="apidocSignatureSpan">npm.</span>restart
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.restart.completion">
+            function <span class="apidocSignatureSpan">npm.restart.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.restart.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.run_script">module npm.run_script</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.run_script.run_script">
+            function <span class="apidocSignatureSpan">npm.</span>run_script
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.run_script.completion">
+            function <span class="apidocSignatureSpan">npm.run_script.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.run_script.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.search">module npm.search</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.search.search">
+            function <span class="apidocSignatureSpan">npm.</span>search
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.search.completion">
+            function <span class="apidocSignatureSpan">npm.search.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.search.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.star">module npm.star</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.star.star">
+            function <span class="apidocSignatureSpan">npm.</span>star
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.star.completion">
+            function <span class="apidocSignatureSpan">npm.star.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.star.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.start">module npm.start</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.start.start">
+            function <span class="apidocSignatureSpan">npm.</span>start
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.start.completion">
+            function <span class="apidocSignatureSpan">npm.start.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.start.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.stop">module npm.stop</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.stop.stop">
+            function <span class="apidocSignatureSpan">npm.</span>stop
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.stop.completion">
+            function <span class="apidocSignatureSpan">npm.stop.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.stop.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.team">module npm.team</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.team.team">
+            function <span class="apidocSignatureSpan">npm.</span>team
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.team.completion">
+            function <span class="apidocSignatureSpan">npm.team.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.team.</span>subcommands</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.team.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.unbuild">module npm.unbuild</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.unbuild.unbuild">
+            function <span class="apidocSignatureSpan">npm.</span>unbuild
+            <span class="apidocSignatureSpan">(args, silent, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.unbuild.rmStuff">
+            function <span class="apidocSignatureSpan">npm.unbuild.</span>rmStuff
+            <span class="apidocSignatureSpan">(pkg, folder, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.unbuild.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.unpublish">module npm.unpublish</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.unpublish.unpublish">
+            function <span class="apidocSignatureSpan">npm.</span>unpublish
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.unpublish.completion">
+            function <span class="apidocSignatureSpan">npm.unpublish.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.unpublish.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.view">module npm.view</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.view.view">
+            function <span class="apidocSignatureSpan">npm.</span>view
+            <span class="apidocSignatureSpan">(args, silent, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.view.completion">
+            function <span class="apidocSignatureSpan">npm.view.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.view.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm" id="apidoc.module.npm">module npm</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.access" id="apidoc.element.npm.access">
+        function <span class="apidocSignatureSpan">npm.</span>access
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function access(args, cb) {
+  var cmd = args.shift()
+  var params
+  return parseParams(cmd, args, function (err, p) {
+    if (err) { return cb(err) }
+    params = p
+    return mapToRegistry(params.package, npm.config, invokeCmd)
+  })
+
+  function invokeCmd (err, uri, auth, base) {
+    if (err) { return cb(err) }
+    params.auth = auth
+    try {
+      return npm.registry.access(cmd, uri, params, function (err, data) {
+        if (!err &amp;&amp; data) {
+          output(JSON.stringify(data, undefined, 2))
+        }
+        cb(err, data)
+      })
+    } catch (e) {
+      cb(e.message + '\n\nUsage:\n' + access.usage)
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  return mapToRegistry(params.package, npm.config, invokeCmd)
+})
+
+function invokeCmd (err, uri, auth, base) {
+  if (err) { return cb(err) }
+  params.auth = auth
+  try {
+    return npm.registry.<span class="apidocCodeKeywordSpan">access</span>(cmd, uri, params, function (err, data) {
+      if (!err &amp;&amp; data) {
+        output(JSON.stringify(data, undefined, 2))
+      }
+      cb(err, data)
+    })
+  } catch (e) {
+    cb(e.message + '\n\nUsage:\n' + access.usage)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.completion" id="apidoc.element.npm.completion">
+        function <span class="apidocSignatureSpan">npm.</span>completion
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function completion(args, cb) {
+  if (isWindowsShell) {
+    var e = new Error('npm completion supported only in MINGW / Git bash on Windows')
+    e.code = 'ENOTSUP'
+    e.errno = require('constants').ENOTSUP
+    return cb(e)
+  }
+
+  // if the COMP_* isn't in the env, then just dump the script.
+  if (process.env.COMP_CWORD === undefined ||
+      process.env.COMP_LINE === undefined ||
+      process.env.COMP_POINT === undefined) {
+    return dumpScript(cb)
+  }
+
+  console.error(process.env.COMP_CWORD)
+  console.error(process.env.COMP_LINE)
+  console.error(process.env.COMP_POINT)
+
+  // get the partial line and partial word,
+  // if the point isn't at the end.
+  // ie, tabbing at: npm foo b|ar
+  var w = +process.env.COMP_CWORD
+  var words = args.map(unescape)
+  var word = words[w]
+  var line = process.env.COMP_LINE
+  var point = +process.env.COMP_POINT
+  var partialLine = line.substr(0, point)
+  var partialWords = words.slice(0, w)
+
+  // figure out where in that last word the point is.
+  var partialWord = args[w]
+  var i = partialWord.length
+  while (partialWord.substr(0, i) !== partialLine.substr(-1 * i) &amp;&amp; i &gt; 0) {
+    i--
+  }
+  partialWord = unescape(partialWord.substr(0, i))
+  partialWords.push(partialWord)
+
+  var opts = {
+    words: words,
+    w: w,
+    word: word,
+    line: line,
+    lineLength: line.length,
+    point: point,
+    partialLine: partialLine,
+    partialWords: partialWords,
+    partialWord: partialWord,
+    raw: args
+  }
+
+  cb = wrapCb(cb, opts)
+
+  console.error(opts)
+
+  if (partialWords.slice(0, -1).indexOf('--') === -1) {
+    if (word.charAt(0) === '-') return configCompl(opts, cb)
+    if (words[w - 1] &amp;&amp;
+        words[w - 1].charAt(0) === '-' &amp;&amp;
+        !isFlag(words[w - 1])) {
+      // awaiting a value for a non-bool config.
+      // don't even try to do this for now
+      console.error('configValueCompl')
+      return configValueCompl(opts, cb)
+    }
+  }
+
+  // try to find the npm command.
+  // it's the first thing after all the configs.
+  // take a little shortcut and use npm's arg parsing logic.
+  // don't have to worry about the last arg being implicitly
+  // boolean'ed, since the last block will catch that.
+  var parsed = opts.conf =
+    nopt(configTypes, shorthands, partialWords.slice(0, -1), 0)
+  // check if there's a command already.
+  console.error(parsed)
+  var cmd = parsed.argv.remain[1]
+  if (!cmd) return cmdCompl(opts, cb)
+
+  Object.keys(parsed).forEach(function (k) {
+    npm.config.set(k, parsed[k])
+  })
+
+  // at this point, if words[1] is some kind of npm command,
+  // then complete on it.
+  // otherwise, do nothing
+  cmd = npm.commands[cmd]
+  if (cmd &amp;&amp; cmd.completion) return cmd.completion(opts, cb)
+
+  // nothing to do.
+  cb()
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.deprecate" id="apidoc.element.npm.deprecate">
+        function <span class="apidocSignatureSpan">npm.</span>deprecate
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function deprecate(args, cb) {
+  var pkg = args[0]
+  var msg = args[1]
+  if (msg === undefined) return cb('Usage: ' + deprecate.usage)
+
+  // fetch the data and make sure it exists.
+  var p = npa(pkg)
+
+  // npa makes the default spec "latest", but for deprecation
+  // "*" is the appropriate default.
+  if (p.rawSpec === '') p.spec = '*'
+
+  mapToRegistry(p.name, npm.config, function (er, uri, auth) {
+    if (er) return cb(er)
+
+    var params = {
+      version: p.spec,
+      message: msg,
+      auth: auth
+    }
+    npm.registry.deprecate(uri, params, cb)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if (er) return cb(er)
+
+    var params = {
+      version: p.spec,
+      message: msg,
+      auth: auth
+    }
+    npm.registry.<span class="apidocCodeKeywordSpan">deprecate</span>(uri, params, cb)
+  })
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.deref" id="apidoc.element.npm.deref">
+        function <span class="apidocSignatureSpan">npm.</span>deref
+        <span class="apidocSignatureSpan">(c)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">deref = function (c) {
+  if (!c) return ''
+  if (c.match(/[A-Z]/)) {
+    c = c.replace(/([A-Z])/g, function (m) {
+      return '-' + m.toLowerCase()
+    })
+  }
+  if (plumbing.indexOf(c) !== -1) return c
+  var a = abbrevs[c]
+  if (aliases[a]) a = aliases[a]
+  return a
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+// npm help foo bar baz: search topics
+if (args.length &gt; 1 &amp;&amp; args[0]) {
+  return npm.commands['help-search'](args, argnum, cb)
+}
+
+var section = npm.<span class="apidocCodeKeywordSpan">deref</span>(args[0]) || args[0]
+
+// npm help &lt;noargs&gt;:  show basic usage
+if (!section) {
+  var valid = argv[0] === 'help' ? 0 : 1
+  return npmUsage(valid, cb)
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.edit" id="apidoc.element.npm.edit">
+        function <span class="apidocSignatureSpan">npm.</span>edit
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function edit(args, cb) {
+  var p = args[0]
+  if (args.length !== 1 || !p) return cb(edit.usage)
+  var e = npm.config.get('editor')
+  if (!e) {
+    return cb(new Error(
+      "No editor set.  Set the 'editor' config, or $EDITOR environ."
+    ))
+  }
+  p = p.split('/')
+       .join('/node_modules/')
+       .replace(/(\/node_modules)+/, '/node_modules')
+  var f = path.resolve(npm.dir, p)
+  fs.lstat(f, function (er) {
+    if (er) return cb(er)
+    editor(f, { editor: e }, noProgressTillDone(function (er) {
+      if (er) return cb(er)
+      npm.commands.rebuild(args, cb)
+    }))
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.explore" id="apidoc.element.npm.explore">
+        function <span class="apidocSignatureSpan">npm.</span>explore
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function explore(args, cb) {
+  if (args.length &lt; 1 || !args[0]) return cb(explore.usage)
+  var p = args.shift()
+
+  var cwd = path.resolve(npm.dir, p)
+  var opts = {cwd: cwd, stdio: 'inherit'}
+
+  var shellArgs = []
+  if (args) {
+    if (isWindowsShell) {
+      var execCmd = escapeExecPath(args.shift())
+      var execArgs = [execCmd].concat(args.map(escapeArg))
+      opts.windowsVerbatimArguments = true
+      shellArgs = ['/d', '/s', '/c'].concat(execArgs)
+    } else {
+      shellArgs.unshift('-c')
+      shellArgs = ['-c', args.map(escapeArg).join(' ').trim()]
+    }
+  }
+
+  var sh = npm.config.get('shell')
+  fs.stat(cwd, function (er, s) {
+    if (er || !s.isDirectory()) {
+      return cb(new Error(
+        "It doesn't look like " + p + ' is installed.'
+      ))
+    }
+
+    if (!shellArgs.length) {
+      output(
+        '\nExploring ' + cwd + '\n' +
+          "Type 'exit' or ^D when finished\n"
+      )
+    }
+
+    var shell = spawn(sh, shellArgs, opts)
+    shell.on('close', function (er) {
+      // only fail if non-interactive.
+      if (!shellArgs.length) return cb()
+      cb(er)
+    })
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.help" id="apidoc.element.npm.help">
+        function <span class="apidocSignatureSpan">npm.</span>help
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function help(args, cb) {
+  var argv = npm.config.get('argv').cooked
+
+  var argnum = 0
+  if (args.length === 2 &amp;&amp; ~~args[0]) {
+    argnum = ~~args.shift()
+  }
+
+  // npm help foo bar baz: search topics
+  if (args.length &gt; 1 &amp;&amp; args[0]) {
+    return npm.commands['help-search'](args, argnum, cb)
+  }
+
+  var section = npm.deref(args[0]) || args[0]
+
+  // npm help &lt;noargs&gt;:  show basic usage
+  if (!section) {
+    var valid = argv[0] === 'help' ? 0 : 1
+    return npmUsage(valid, cb)
+  }
+
+  // npm &lt;cmd&gt; -h: show command usage
+  if (npm.config.get('usage') &amp;&amp;
+      npm.commands[section] &amp;&amp;
+      npm.commands[section].usage) {
+    npm.config.set('loglevel', 'silent')
+    log.level = 'silent'
+    output(npm.commands[section].usage)
+    return cb()
+  }
+
+  // npm apihelp &lt;section&gt;: Prefer section 3 over section 1
+  var apihelp = argv.length &amp;&amp; argv[0].indexOf('api') !== -1
+  var pref = apihelp ? [3, 1, 5, 7] : [1, 3, 5, 7]
+  if (argnum) {
+    pref = [ argnum ].concat(pref.filter(function (n) {
+      return n !== argnum
+    }))
+  }
+
+  // npm help &lt;section&gt;: Try to find the path
+  var manroot = path.resolve(__dirname, '..', 'man')
+
+  // legacy
+  if (section === 'global') section = 'folders'
+  else if (section === 'json') section = 'package.json'
+
+  // find either /section.n or /npm-section.n
+  // The glob is used in the glob.  The regexp is used much
+  // further down.  Globs and regexps are different
+  var compextglob = '.+(gz|bz2|lzma|[FYzZ]|xz)'
+  var compextre = '\\.(gz|bz2|lzma|[FYzZ]|xz)$'
+  var f = '+(npm-' + section + '|' + section + ').[0-9]?(' + compextglob + ')'
+  return glob(manroot + '/*/' + f, function (er, mans) {
+    if (er) return cb(er)
+
+    if (!mans.length) return npm.commands['help-search'](args, cb)
+
+    mans = mans.map(function (man) {
+      var ext = path.extname(man)
+      if (man.match(new RegExp(compextre))) man = path.basename(man, ext)
+
+      return man
+    })
+
+    viewMan(pickMan(mans, pref), cb)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    hits: found,
+    totalHits: totalHits
+  })
+})
+
+// if only one result, then just show that help section.
+if (results.length === 1) {
+  return npm.commands.<span class="apidocCodeKeywordSpan">help</span>([results[0].file.replace(/\.md$/, '')], cb)
+}
+
+if (results.length === 0) {
+  output('No results for ' + args.map(JSON.stringify).join(' '))
+  return cb()
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.link" id="apidoc.element.npm.link">
+        function <span class="apidocSignatureSpan">npm.</span>link
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function link(args, cb) {
+  if (process.platform === 'win32') {
+    var semver = require('semver')
+    if (!semver.gte(process.version, '0.7.9')) {
+      var msg = 'npm link not supported on windows prior to node 0.7.9'
+      var e = new Error(msg)
+      e.code = 'ENOTSUP'
+      e.errno = require('constants').ENOTSUP
+      return cb(e)
+    }
+  }
+
+  if (npm.config.get('global')) {
+    return cb(new Error(
+      'link should never be --global.\n' +
+      'Please re-run this command with --local'
+    ))
+  }
+
+  if (args.length === 1 &amp;&amp; args[0] === '.') args = []
+  if (args.length) return linkInstall(args, cb)
+  linkPkg(npm.prefix, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.load" id="apidoc.element.npm.load">
+        function <span class="apidocSignatureSpan">npm.</span>load
+        <span class="apidocSignatureSpan">(cli, cb_)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">load = function (cli, cb_) {
+  if (!cb_ &amp;&amp; typeof cli === 'function') {
+    cb_ = cli
+    cli = {}
+  }
+  if (!cb_) cb_ = function () {}
+  if (!cli) cli = {}
+  loadListeners.push(cb_)
+  if (loaded || loadErr) return cb(loadErr)
+  if (loading) return
+  loading = true
+  var onload = true
+
+  function cb (er) {
+    if (loadErr) return
+    loadErr = er
+    if (er) return cb_(er)
+    if (npm.config.get('force')) {
+      log.warn('using --force', 'I sure hope you know what you are doing.')
+    }
+    npm.config.loaded = true
+    loaded = true
+    loadCb(loadErr = er)
+    onload = onload &amp;&amp; npm.config.get('onload-script')
+    if (onload) {
+      try {
+        require(onload)
+      } catch (err) {
+        log.warn('onload-script', 'failed to require onload script', onload)
+        log.warn('onload-script', err)
+      }
+      onload = false
+    }
+  }
+
+  log.pause()
+
+  load(npm, cli, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.owner" id="apidoc.element.npm.owner">
+        function <span class="apidocSignatureSpan">npm.</span>owner
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function owner(args, cb) {
+  var action = args.shift()
+  switch (action) {
+    case 'ls': case 'list': return ls(args[0], cb)
+    case 'add': return add(args[0], args[1], cb)
+    case 'rm': case 'remove': return rm(args[0], args[1], cb)
+    default: return unknown(action, cb)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.publish" id="apidoc.element.npm.publish">
+        function <span class="apidocSignatureSpan">npm.</span>publish
+        <span class="apidocSignatureSpan">(args, isRetry, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function publish(args, isRetry, cb) {
+  if (typeof cb !== 'function') {
+    cb = isRetry
+    isRetry = false
+  }
+  if (args.length === 0) args = ['.']
+  if (args.length !== 1) return cb(publish.usage)
+
+  log.verbose('publish', args)
+
+  var t = npm.config.get('tag').trim()
+  if (semver.validRange(t)) {
+    var er = new Error('Tag name must not be a valid SemVer range: ' + t)
+    return cb(er)
+  }
+
+  var arg = args[0]
+  // if it's a local folder, then run the prepublish there, first.
+  readJson(path.resolve(arg, 'package.json'), function (er, data) {
+    if (er &amp;&amp; er.code !== 'ENOENT' &amp;&amp; er.code !== 'ENOTDIR') return cb(er)
+
+    if (data) {
+      if (!data.name) return cb(new Error('No name provided'))
+      if (!data.version) return cb(new Error('No version provided'))
+    }
+
+    // if readJson errors, the argument might be a tarball or package URL
+    if (er) {
+      npm.commands.cache.add(arg, null, null, false, function (er, data) {
+        if (er) return cb(er)
+        log.silly('publish', data)
+        var cached = path.resolve(cachedPackageRoot(data), 'package') + '.tgz'
+        // *publish* lifecycle scripts aren't run when publishing a built artifact
+        // go to the next step directly
+        publish_(arg, data, isRetry, cached, cb)
+      })
+    } else {
+      var dir = arg
+      npm.commands.cache.add(dir, null, null, false, function (er, data) {
+        if (er) return cb(er)
+        log.silly('publish', data)
+        var cached = path.resolve(cachedPackageRoot(data), 'package') + '.tgz'
+        // `prepublish` and `prepare` are run by cache.add
+        chain(
+          [
+            [lifecycle, data, 'prepublishOnly', dir],
+            [publish_, dir, data, isRetry, cached],
+            [lifecycle, data, 'publish', dir],
+            [lifecycle, data, 'postpublish', dir]
+          ],
+          cb
+        )
+      })
+    }
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    return cb(new Error("Can't restrict access to unscoped packages."))
+  }
+
+  params.access = config.get('access')
+}
+
+log.showProgress('publish:' + data._id)
+registry.<span class="apidocCodeKeywordSpan">publish</span>(registryBase, params, function (er) {
+  if (er &amp;&amp; er.code === 'EPUBLISHCONFLICT' &amp;&amp;
+      npm.config.get('force') &amp;&amp; !isRetry) {
+    log.warn('publish', 'Forced publish over ' + data._id)
+    return npm.commands.unpublish([data._id], function (er) {
+      // ignore errors.  Use the force.  Reach out with your feelings.
+      // but if it fails again, then report the first error.
+      publish([arg], er || true, cb)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.rebuild" id="apidoc.element.npm.rebuild">
+        function <span class="apidocSignatureSpan">npm.</span>rebuild
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function rebuild(args, cb) {
+  var opt = { depth: npm.config.get('depth'), dev: true }
+  readInstalled(npm.prefix, opt, function (er, data) {
+    log.info('readInstalled', typeof data)
+    if (er) return cb(er)
+    var set = filter(data, args)
+    var folders = Object.keys(set).filter(function (f) {
+      return f !== npm.prefix
+    })
+    if (!folders.length) return cb()
+    log.silly('rebuild set', folders)
+    cleanBuild(folders, set, cb)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+       .join('/node_modules/')
+       .replace(/(\/node_modules)+/, '/node_modules')
+  var f = path.resolve(npm.dir, p)
+  fs.lstat(f, function (er) {
+    if (er) return cb(er)
+    editor(f, { editor: e }, noProgressTillDone(function (er) {
+      if (er) return cb(er)
+      npm.commands.<span class="apidocCodeKeywordSpan">rebuild</span>(args, cb)
+    }))
+  })
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.restart" id="apidoc.element.npm.restart">
+        function <span class="apidocSignatureSpan">npm.</span>restart
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CMD(args, cb) {
+  npm.commands['run-script']([stage].concat(args), cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.run_script" id="apidoc.element.npm.run_script">
+        function <span class="apidocSignatureSpan">npm.</span>run_script
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runScript(args, cb) {
+  if (!args.length) return list(cb)
+
+  var pkgdir = npm.localPrefix
+  var cmd = args.shift()
+
+  readJson(path.resolve(pkgdir, 'package.json'), function (er, d) {
+    if (er) return cb(er)
+    run(d, pkgdir, cmd, args, cb)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.search" id="apidoc.element.npm.search">
+        function <span class="apidocSignatureSpan">npm.</span>search
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function search(args, cb) {
+  var searchOpts = {
+    description: npm.config.get('description'),
+    exclude: prepareExcludes(npm.config.get('searchexclude')),
+    include: prepareIncludes(args, npm.config.get('searchopts')),
+    limit: npm.config.get('searchlimit'),
+    log: log,
+    staleness: npm.config.get('searchstaleness'),
+    unicode: npm.config.get('unicode')
+  }
+
+  if (searchOpts.include.length === 0) {
+    return cb(new Error('search must be called with arguments'))
+  }
+
+  // Used later to figure out whether we had any packages go out
+  var anyOutput = false
+
+  var entriesStream = ms.through.obj()
+
+  var esearchWritten = false
+  esearch(searchOpts).on('data', function (pkg) {
+    entriesStream.write(pkg)
+    !esearchWritten &amp;&amp; (esearchWritten = true)
+  }).on('error', function (e) {
+    if (esearchWritten) {
+      // If esearch errored after already starting output, we can't fall back.
+      return entriesStream.emit('error', e)
+    }
+    log.warn('search', 'fast search endpoint errored. Using old search.')
+    allPackageSearch(searchOpts).on('data', function (pkg) {
+      entriesStream.write(pkg)
+    }).on('error', function (e) {
+      entriesStream.emit('error', e)
+    }).on('end', function () {
+      entriesStream.end()
+    })
+  }).on('end', function () {
+    entriesStream.end()
+  })
+
+  // Grab a configured output stream that will spit out packages in the
+  // desired format.
+  var outputStream = formatPackageStream({
+    args: args, // --searchinclude options are not highlighted
+    long: npm.config.get('long'),
+    description: npm.config.get('description'),
+    json: npm.config.get('json'),
+    parseable: npm.config.get('parseable'),
+    color: npm.color
+  })
+  outputStream.on('data', function (chunk) {
+    if (!anyOutput) { anyOutput = true }
+    output(chunk.toString('utf8'))
+  })
+
+  log.silly('search', 'searching packages')
+  ms.pipe(entriesStream, outputStream, function (er) {
+    if (er) return cb(er)
+    if (!anyOutput &amp;&amp; !npm.config.get('json') &amp;&amp; !npm.config.get('parseable')) {
+      output('No matches found for ' + (args.map(JSON.stringify).join(' ')))
+    }
+    log.silly('search', 'search completed')
+    log.clearProgress()
+    cb(null, {})
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.star" id="apidoc.element.npm.star">
+        function <span class="apidocSignatureSpan">npm.</span>star
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function star(args, cb) {
+  if (!args.length) return cb(star.usage)
+  var s = npm.config.get('unicode') ? '\u2605 ' : '(*)'
+  var u = npm.config.get('unicode') ? '\u2606 ' : '( )'
+  var using = !(npm.command.match(/^un/))
+  if (!using) s = u
+  asyncMap(args, function (pkg, cb) {
+    mapToRegistry(pkg, npm.config, function (er, uri, auth) {
+      if (er) return cb(er)
+
+      var params = {
+        starred: using,
+        auth: auth
+      }
+      npm.registry.star(uri, params, function (er, data, raw, req) {
+        if (!er) {
+          output(s + ' ' + pkg)
+          log.verbose('star', data)
+        }
+        cb(er, data, raw, req)
+      })
+    })
+  }, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+mapToRegistry(pkg, npm.config, function (er, uri, auth) {
+  if (er) return cb(er)
+
+  var params = {
+    starred: using,
+    auth: auth
+  }
+  npm.registry.<span class="apidocCodeKeywordSpan">star</span>(uri, params, function (er, data, raw, req) {
+    if (!er) {
+      output(s + ' ' + pkg)
+      log.verbose('star', data)
+    }
+    cb(er, data, raw, req)
+  })
+})
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.start" id="apidoc.element.npm.start">
+        function <span class="apidocSignatureSpan">npm.</span>start
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CMD(args, cb) {
+  npm.commands['run-script']([stage].concat(args), cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.stop" id="apidoc.element.npm.stop">
+        function <span class="apidocSignatureSpan">npm.</span>stop
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CMD(args, cb) {
+  npm.commands['run-script']([stage].concat(args), cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.team" id="apidoc.element.npm.team">
+        function <span class="apidocSignatureSpan">npm.</span>team
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function team(args, cb) {
+  // Entities are in the format &lt;scope&gt;:&lt;team&gt;
+  var cmd = args.shift()
+  var entity = (args.shift() || '').split(':')
+  return mapToRegistry('/', npm.config, function (err, uri, auth) {
+    if (err) { return cb(err) }
+    try {
+      return npm.registry.team(cmd, uri, {
+        auth: auth,
+        scope: entity[0],
+        team: entity[1],
+        user: args.shift()
+      }, function (err, data) {
+        !err &amp;&amp; data &amp;&amp; output(JSON.stringify(data, undefined, 2))
+        cb(err, data)
+      })
+    } catch (e) {
+      cb(e.message + '\n\nUsage:\n' + team.usage)
+    }
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function team (args, cb) {
+// Entities are in the format &lt;scope&gt;:&lt;team&gt;
+var cmd = args.shift()
+var entity = (args.shift() || '').split(':')
+return mapToRegistry('/', npm.config, function (err, uri, auth) {
+  if (err) { return cb(err) }
+  try {
+    return npm.registry.<span class="apidocCodeKeywordSpan">team</span>(cmd, uri, {
+      auth: auth,
+      scope: entity[0],
+      team: entity[1],
+      user: args.shift()
+    }, function (err, data) {
+      !err &amp;&amp; data &amp;&amp; output(JSON.stringify(data, undefined, 2))
+      cb(err, data)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.unbuild" id="apidoc.element.npm.unbuild">
+        function <span class="apidocSignatureSpan">npm.</span>unbuild
+        <span class="apidocSignatureSpan">(args, silent, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function unbuild(args, silent, cb) {
+  if (typeof silent === 'function') {
+    cb = silent
+    silent = false
+  }
+  asyncMap(args, unbuild_(silent), cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.unpublish" id="apidoc.element.npm.unpublish">
+        function <span class="apidocSignatureSpan">npm.</span>unpublish
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function unpublish(args, cb) {
+  if (args.length &gt; 1) return cb(unpublish.usage)
+
+  var thing = args.length ? npa(args[0]) : {}
+  var project = thing.name
+  var version = thing.rawSpec
+
+  log.silly('unpublish', 'args[0]', args[0])
+  log.silly('unpublish', 'thing', thing)
+  if (!version &amp;&amp; !npm.config.get('force')) {
+    return cb(
+      'Refusing to delete entire project.\n' +
+      'Run with --force to do this.\n' +
+      unpublish.usage
+    )
+  }
+
+  if (!project || path.resolve(project) === npm.localPrefix) {
+    // if there's a package.json in the current folder, then
+    // read the package name and version out of that.
+    var cwdJson = path.join(npm.localPrefix, 'package.json')
+    return readJson(cwdJson, function (er, data) {
+      if (er &amp;&amp; er.code !== 'ENOENT' &amp;&amp; er.code !== 'ENOTDIR') return cb(er)
+      if (er) return cb('Usage:\n' + unpublish.usage)
+      log.verbose('unpublish', data)
+      gotProject(data.name, data.version, data.publishConfig, cb)
+    })
+  }
+  return gotProject(project, version, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+log.showProgress('publish:' + data._id)
+registry.publish(registryBase, params, function (er) {
+  if (er &amp;&amp; er.code === 'EPUBLISHCONFLICT' &amp;&amp;
+      npm.config.get('force') &amp;&amp; !isRetry) {
+    log.warn('publish', 'Forced publish over ' + data._id)
+    return npm.commands.<span class="apidocCodeKeywordSpan">unpublish</span>([data._id], function (er) {
+      // ignore errors.  Use the force.  Reach out with your feelings.
+      // but if it fails again, then report the first error.
+      publish([arg], er || true, cb)
+    })
+  }
+  // report the unpublish error if this was a retry and unpublish failed
+  if (er &amp;&amp; isRetry &amp;&amp; isRetry !== true) return cb(isRetry)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.view" id="apidoc.element.npm.view">
+        function <span class="apidocSignatureSpan">npm.</span>view
+        <span class="apidocSignatureSpan">(args, silent, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function view(args, silent, cb) {
+  if (typeof cb !== 'function') {
+    cb = silent
+    silent = false
+  }
+
+  if (!args.length) args = ['.']
+
+  var pkg = args.shift()
+  var nv = npa(pkg)
+  var name = nv.name
+  var local = (name === '.' || !name)
+
+  if (npm.config.get('global') &amp;&amp; local) {
+    return cb(new Error('Cannot use view command in global mode.'))
+  }
+
+  if (local) {
+    var dir = npm.prefix
+    readJson(path.resolve(dir, 'package.json'), function (er, d) {
+      d = d || {}
+      if (er &amp;&amp; er.code !== 'ENOENT' &amp;&amp; er.code !== 'ENOTDIR') return cb(er)
+      if (!d.name) return cb(new Error('Invalid package.json'))
+
+      var p = d.name
+      nv = npa(p)
+      if (pkg &amp;&amp; ~pkg.indexOf('@')) {
+        nv.rawSpec = pkg.split('@')[pkg.indexOf('@')]
+      }
+
+      fetchAndRead(nv, args, silent, cb)
+    })
+  } else {
+    fetchAndRead(nv, args, silent, cb)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.access" id="apidoc.module.npm.access">module npm.access</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.access.access" id="apidoc.element.npm.access.access">
+        function <span class="apidocSignatureSpan">npm.</span>access
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function access(args, cb) {
+  var cmd = args.shift()
+  var params
+  return parseParams(cmd, args, function (err, p) {
+    if (err) { return cb(err) }
+    params = p
+    return mapToRegistry(params.package, npm.config, invokeCmd)
+  })
+
+  function invokeCmd (err, uri, auth, base) {
+    if (err) { return cb(err) }
+    params.auth = auth
+    try {
+      return npm.registry.access(cmd, uri, params, function (err, data) {
+        if (!err &amp;&amp; data) {
+          output(JSON.stringify(data, undefined, 2))
+        }
+        cb(err, data)
+      })
+    } catch (e) {
+      cb(e.message + '\n\nUsage:\n' + access.usage)
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  return mapToRegistry(params.package, npm.config, invokeCmd)
+})
+
+function invokeCmd (err, uri, auth, base) {
+  if (err) { return cb(err) }
+  params.auth = auth
+  try {
+    return npm.registry.<span class="apidocCodeKeywordSpan">access</span>(cmd, uri, params, function (err, data) {
+      if (!err &amp;&amp; data) {
+        output(JSON.stringify(data, undefined, 2))
+      }
+      cb(err, data)
+    })
+  } catch (e) {
+    cb(e.message + '\n\nUsage:\n' + access.usage)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.access.completion" id="apidoc.element.npm.access.completion">
+        function <span class="apidocSignatureSpan">npm.access.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  var argv = opts.conf.argv.remain
+  if (argv.length === 2) {
+    return cb(null, access.subcommands)
+  }
+
+  switch (argv[2]) {
+    case 'grant':
+      if (argv.length === 3) {
+        return cb(null, ['read-only', 'read-write'])
+      } else {
+        return cb(null, [])
+      }
+    case 'public':
+    case 'restricted':
+    case 'ls-packages':
+    case 'ls-collaborators':
+    case 'edit':
+      return cb(null, [])
+    case 'revoke':
+      return cb(null, [])
+    default:
+      return cb(new Error(argv[2] + ' not recognized'))
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.completion" id="apidoc.module.npm.completion">module npm.completion</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.completion.completion" id="apidoc.element.npm.completion.completion">
+        function <span class="apidocSignatureSpan">npm.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  if (opts.w &gt; 3) return cb()
+
+  var fs = require('graceful-fs')
+  var path = require('path')
+  var bashExists = null
+  var zshExists = null
+  fs.stat(path.resolve(process.env.HOME, '.bashrc'), function (er) {
+    bashExists = !er
+    next()
+  })
+  fs.stat(path.resolve(process.env.HOME, '.zshrc'), function (er) {
+    zshExists = !er
+    next()
+  })
+  function next () {
+    if (zshExists === null || bashExists === null) return
+    var out = []
+    if (zshExists) out.push('~/.zshrc')
+    if (bashExists) out.push('~/.bashrc')
+    if (opts.w === 2) {
+      out = out.map(function (m) {
+        return ['&gt;&gt;', m]
+      })
+    }
+    cb(null, out)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.config" id="apidoc.module.npm.config">module npm.config</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.config.get" id="apidoc.element.npm.config.get">
+        function <span class="apidocSignatureSpan">npm.config.</span>get
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function () {
+  throw new Error('npm.load() required')
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function adduser (args, cb) {
+if (!crypto) {
+  return cb(new Error(
+  'You must compile node with ssl support to use the adduser feature'
+  ))
+}
+
+var registry = npm.config.<span class="apidocCodeKeywordSpan">get</span>('registry')
+var scope = npm.config.get('scope')
+var creds = npm.config.getCredentialsByURI(npm.config.get('registry'))
+
+if (scope) {
+  var scopedRegistry = npm.config.get(scope + ':registry')
+  var cliRegistry = npm.config.get('registry', 'cli')
+  if (scopedRegistry &amp;&amp; !cliRegistry) registry = scopedRegistry
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.config.set" id="apidoc.element.npm.config.set">
+        function <span class="apidocSignatureSpan">npm.config.</span>set
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">set = function () {
+  throw new Error('npm.load() required')
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  } catch (e) {
+    return cb(new Error('no such auth module'))
+  }
+  auth.login(creds, registry, scope, function (err, newCreds) {
+    if (err) return cb(err)
+
+    npm.config.del('_token', 'user') // prevent legacy pollution
+    if (scope) npm.config.<span class="apidocCodeKeywordSpan">set</span>(scope + ':registry', registry, 'user'
+;)
+    npm.config.setCredentialsByURI(registry, newCreds)
+    npm.config.save('user', cb)
+  })
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.deprecate" id="apidoc.module.npm.deprecate">module npm.deprecate</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.deprecate.deprecate" id="apidoc.element.npm.deprecate.deprecate">
+        function <span class="apidocSignatureSpan">npm.</span>deprecate
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function deprecate(args, cb) {
+  var pkg = args[0]
+  var msg = args[1]
+  if (msg === undefined) return cb('Usage: ' + deprecate.usage)
+
+  // fetch the data and make sure it exists.
+  var p = npa(pkg)
+
+  // npa makes the default spec "latest", but for deprecation
+  // "*" is the appropriate default.
+  if (p.rawSpec === '') p.spec = '*'
+
+  mapToRegistry(p.name, npm.config, function (er, uri, auth) {
+    if (er) return cb(er)
+
+    var params = {
+      version: p.spec,
+      message: msg,
+      auth: auth
+    }
+    npm.registry.deprecate(uri, params, cb)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if (er) return cb(er)
+
+    var params = {
+      version: p.spec,
+      message: msg,
+      auth: auth
+    }
+    npm.registry.<span class="apidocCodeKeywordSpan">deprecate</span>(uri, params, cb)
+  })
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.deprecate.completion" id="apidoc.element.npm.deprecate.completion">
+        function <span class="apidocSignatureSpan">npm.deprecate.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  // first, get a list of remote packages this user owns.
+  // once we have a user account, then don't complete anything.
+  if (opts.conf.argv.remain.length &gt; 2) return cb()
+  // get the list of packages by user
+  var path = '/-/by-user/'
+  mapToRegistry(path, npm.config, function (er, uri, c) {
+    if (er) return cb(er)
+
+    if (!(c &amp;&amp; c.username)) return cb()
+
+    var params = {
+      timeout: 60000,
+      auth: c
+    }
+    npm.registry.get(uri + c.username, params, function (er, list) {
+      if (er) return cb()
+      console.error(list)
+      return cb(null, list[c.username])
+    })
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.edit" id="apidoc.module.npm.edit">module npm.edit</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.edit.edit" id="apidoc.element.npm.edit.edit">
+        function <span class="apidocSignatureSpan">npm.</span>edit
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function edit(args, cb) {
+  var p = args[0]
+  if (args.length !== 1 || !p) return cb(edit.usage)
+  var e = npm.config.get('editor')
+  if (!e) {
+    return cb(new Error(
+      "No editor set.  Set the 'editor' config, or $EDITOR environ."
+    ))
+  }
+  p = p.split('/')
+       .join('/node_modules/')
+       .replace(/(\/node_modules)+/, '/node_modules')
+  var f = path.resolve(npm.dir, p)
+  fs.lstat(f, function (er) {
+    if (er) return cb(er)
+    editor(f, { editor: e }, noProgressTillDone(function (er) {
+      if (er) return cb(er)
+      npm.commands.rebuild(args, cb)
+    }))
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.edit.completion" id="apidoc.element.npm.edit.completion">
+        function <span class="apidocSignatureSpan">npm.edit.</span>completion
+        <span class="apidocSignatureSpan">(opts, filter, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function installedShallow(opts, filter, cb) {
+  if (typeof cb !== 'function') {
+    cb = filter
+    filter = null
+  }
+  var conf = opts.conf
+  var args = conf.argv.remain
+  if (args.length &gt; 3) return cb()
+  var local
+  var global
+  var localDir = npm.dir
+  var globalDir = npm.globalDir
+  if (npm.config.get('global')) {
+    local = []
+    next()
+  } else {
+    fs.readdir(localDir, function (er, pkgs) {
+      local = (pkgs || []).filter(function (p) {
+        return p.charAt(0) !== '.'
+      })
+      next()
+    })
+  }
+
+  fs.readdir(globalDir, function (er, pkgs) {
+    global = (pkgs || []).filter(function (p) {
+      return p.charAt(0) !== '.'
+    })
+    next()
+  })
+  function next () {
+    if (!local || !global) return
+    filterInstalled(local, global, filter, cb)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.explore" id="apidoc.module.npm.explore">module npm.explore</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.explore.explore" id="apidoc.element.npm.explore.explore">
+        function <span class="apidocSignatureSpan">npm.</span>explore
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function explore(args, cb) {
+  if (args.length &lt; 1 || !args[0]) return cb(explore.usage)
+  var p = args.shift()
+
+  var cwd = path.resolve(npm.dir, p)
+  var opts = {cwd: cwd, stdio: 'inherit'}
+
+  var shellArgs = []
+  if (args) {
+    if (isWindowsShell) {
+      var execCmd = escapeExecPath(args.shift())
+      var execArgs = [execCmd].concat(args.map(escapeArg))
+      opts.windowsVerbatimArguments = true
+      shellArgs = ['/d', '/s', '/c'].concat(execArgs)
+    } else {
+      shellArgs.unshift('-c')
+      shellArgs = ['-c', args.map(escapeArg).join(' ').trim()]
+    }
+  }
+
+  var sh = npm.config.get('shell')
+  fs.stat(cwd, function (er, s) {
+    if (er || !s.isDirectory()) {
+      return cb(new Error(
+        "It doesn't look like " + p + ' is installed.'
+      ))
+    }
+
+    if (!shellArgs.length) {
+      output(
+        '\nExploring ' + cwd + '\n' +
+          "Type 'exit' or ^D when finished\n"
+      )
+    }
+
+    var shell = spawn(sh, shellArgs, opts)
+    shell.on('close', function (er) {
+      // only fail if non-interactive.
+      if (!shellArgs.length) return cb()
+      cb(er)
+    })
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.explore.completion" id="apidoc.element.npm.explore.completion">
+        function <span class="apidocSignatureSpan">npm.explore.</span>completion
+        <span class="apidocSignatureSpan">(opts, filter, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function installedShallow(opts, filter, cb) {
+  if (typeof cb !== 'function') {
+    cb = filter
+    filter = null
+  }
+  var conf = opts.conf
+  var args = conf.argv.remain
+  if (args.length &gt; 3) return cb()
+  var local
+  var global
+  var localDir = npm.dir
+  var globalDir = npm.globalDir
+  if (npm.config.get('global')) {
+    local = []
+    next()
+  } else {
+    fs.readdir(localDir, function (er, pkgs) {
+      local = (pkgs || []).filter(function (p) {
+        return p.charAt(0) !== '.'
+      })
+      next()
+    })
+  }
+
+  fs.readdir(globalDir, function (er, pkgs) {
+    global = (pkgs || []).filter(function (p) {
+      return p.charAt(0) !== '.'
+    })
+    next()
+  })
+  function next () {
+    if (!local || !global) return
+    filterInstalled(local, global, filter, cb)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.help" id="apidoc.module.npm.help">module npm.help</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.help.help" id="apidoc.element.npm.help.help">
+        function <span class="apidocSignatureSpan">npm.</span>help
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function help(args, cb) {
+  var argv = npm.config.get('argv').cooked
+
+  var argnum = 0
+  if (args.length === 2 &amp;&amp; ~~args[0]) {
+    argnum = ~~args.shift()
+  }
+
+  // npm help foo bar baz: search topics
+  if (args.length &gt; 1 &amp;&amp; args[0]) {
+    return npm.commands['help-search'](args, argnum, cb)
+  }
+
+  var section = npm.deref(args[0]) || args[0]
+
+  // npm help &lt;noargs&gt;:  show basic usage
+  if (!section) {
+    var valid = argv[0] === 'help' ? 0 : 1
+    return npmUsage(valid, cb)
+  }
+
+  // npm &lt;cmd&gt; -h: show command usage
+  if (npm.config.get('usage') &amp;&amp;
+      npm.commands[section] &amp;&amp;
+      npm.commands[section].usage) {
+    npm.config.set('loglevel', 'silent')
+    log.level = 'silent'
+    output(npm.commands[section].usage)
+    return cb()
+  }
+
+  // npm apihelp &lt;section&gt;: Prefer section 3 over section 1
+  var apihelp = argv.length &amp;&amp; argv[0].indexOf('api') !== -1
+  var pref = apihelp ? [3, 1, 5, 7] : [1, 3, 5, 7]
+  if (argnum) {
+    pref = [ argnum ].concat(pref.filter(function (n) {
+      return n !== argnum
+    }))
+  }
+
+  // npm help &lt;section&gt;: Try to find the path
+  var manroot = path.resolve(__dirname, '..', 'man')
+
+  // legacy
+  if (section === 'global') section = 'folders'
+  else if (section === 'json') section = 'package.json'
+
+  // find either /section.n or /npm-section.n
+  // The glob is used in the glob.  The regexp is used much
+  // further down.  Globs and regexps are different
+  var compextglob = '.+(gz|bz2|lzma|[FYzZ]|xz)'
+  var compextre = '\\.(gz|bz2|lzma|[FYzZ]|xz)$'
+  var f = '+(npm-' + section + '|' + section + ').[0-9]?(' + compextglob + ')'
+  return glob(manroot + '/*/' + f, function (er, mans) {
+    if (er) return cb(er)
+
+    if (!mans.length) return npm.commands['help-search'](args, cb)
+
+    mans = mans.map(function (man) {
+      var ext = path.extname(man)
+      if (man.match(new RegExp(compextre))) man = path.basename(man, ext)
+
+      return man
+    })
+
+    viewMan(pickMan(mans, pref), cb)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    hits: found,
+    totalHits: totalHits
+  })
+})
+
+// if only one result, then just show that help section.
+if (results.length === 1) {
+  return npm.commands.<span class="apidocCodeKeywordSpan">help</span>([results[0].file.replace(/\.md$/, '')], cb)
+}
+
+if (results.length === 0) {
+  output('No results for ' + args.map(JSON.stringify).join(' '))
+  return cb()
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.help.completion" id="apidoc.element.npm.help.completion">
+        function <span class="apidocSignatureSpan">npm.help.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  if (opts.conf.argv.remain.length &gt; 2) return cb(null, [])
+  getSections(cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.link" id="apidoc.module.npm.link">module npm.link</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.link.link" id="apidoc.element.npm.link.link">
+        function <span class="apidocSignatureSpan">npm.</span>link
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function link(args, cb) {
+  if (process.platform === 'win32') {
+    var semver = require('semver')
+    if (!semver.gte(process.version, '0.7.9')) {
+      var msg = 'npm link not supported on windows prior to node 0.7.9'
+      var e = new Error(msg)
+      e.code = 'ENOTSUP'
+      e.errno = require('constants').ENOTSUP
+      return cb(e)
+    }
+  }
+
+  if (npm.config.get('global')) {
+    return cb(new Error(
+      'link should never be --global.\n' +
+      'Please re-run this command with --local'
+    ))
+  }
+
+  if (args.length === 1 &amp;&amp; args[0] === '.') args = []
+  if (args.length) return linkInstall(args, cb)
+  linkPkg(npm.prefix, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.link.completion" id="apidoc.element.npm.link.completion">
+        function <span class="apidocSignatureSpan">npm.link.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  var dir = npm.globalDir
+  fs.readdir(dir, function (er, files) {
+    cb(er, files.filter(function (f) {
+      return !f.match(/^[\._-]/)
+    }))
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.owner" id="apidoc.module.npm.owner">module npm.owner</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.owner.owner" id="apidoc.element.npm.owner.owner">
+        function <span class="apidocSignatureSpan">npm.</span>owner
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function owner(args, cb) {
+  var action = args.shift()
+  switch (action) {
+    case 'ls': case 'list': return ls(args[0], cb)
+    case 'add': return add(args[0], args[1], cb)
+    case 'rm': case 'remove': return rm(args[0], args[1], cb)
+    default: return unknown(action, cb)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.owner.completion" id="apidoc.element.npm.owner.completion">
+        function <span class="apidocSignatureSpan">npm.owner.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  var argv = opts.conf.argv.remain
+  if (argv.length &gt; 4) return cb()
+  if (argv.length &lt;= 2) {
+    var subs = ['add', 'rm']
+    if (opts.partialWord === 'l') subs.push('ls')
+    else subs.push('ls', 'list')
+    return cb(null, subs)
+  }
+
+  npm.commands.whoami([], true, function (er, username) {
+    if (er) return cb()
+
+    var un = encodeURIComponent(username)
+    var byUser, theUser
+    switch (argv[2]) {
+      case 'ls':
+        // FIXME: there used to be registry completion here, but it stopped
+        // making sense somewhere around 50,000 packages on the registry
+        return cb()
+
+      case 'rm':
+        if (argv.length &gt; 3) {
+          theUser = encodeURIComponent(argv[3])
+          byUser = '-/by-user/' + theUser + '|' + un
+          return mapToRegistry(byUser, npm.config, function (er, uri, auth) {
+            if (er) return cb(er)
+
+            console.error(uri)
+            npm.registry.get(uri, { auth: auth }, function (er, d) {
+              if (er) return cb(er)
+              // return the intersection
+              return cb(null, d[theUser].filter(function (p) {
+                // kludge for server adminery.
+                return un === 'isaacs' || d[un].indexOf(p) === -1
+              }))
+            })
+          })
+        }
+        // else fallthrough
+<span class="apidocCodeCommentSpan">        /*eslint no-fallthrough:0*/
+</span>      case 'add':
+        if (argv.length &gt; 3) {
+          theUser = encodeURIComponent(argv[3])
+          byUser = '-/by-user/' + theUser + '|' + un
+          return mapToRegistry(byUser, npm.config, function (er, uri, auth) {
+            if (er) return cb(er)
+
+            console.error(uri)
+            npm.registry.get(uri, { auth: auth }, function (er, d) {
+              console.error(uri, er || d)
+              // return mine that they're not already on.
+              if (er) return cb(er)
+              var mine = d[un] || []
+              var theirs = d[theUser] || []
+              return cb(null, mine.filter(function (p) {
+                return theirs.indexOf(p) === -1
+              }))
+            })
+          })
+        }
+        // just list all users who aren't me.
+        return mapToRegistry('-/users', npm.config, function (er, uri, auth) {
+          if (er) return cb(er)
+
+          npm.registry.get(uri, { auth: auth }, function (er, list) {
+            if (er) return cb()
+            return cb(null, Object.keys(list).filter(function (n) {
+              return n !== un
+            }))
+          })
+        })
+
+      default:
+        return cb()
+    }
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.publish" id="apidoc.module.npm.publish">module npm.publish</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.publish.publish" id="apidoc.element.npm.publish.publish">
+        function <span class="apidocSignatureSpan">npm.</span>publish
+        <span class="apidocSignatureSpan">(args, isRetry, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function publish(args, isRetry, cb) {
+  if (typeof cb !== 'function') {
+    cb = isRetry
+    isRetry = false
+  }
+  if (args.length === 0) args = ['.']
+  if (args.length !== 1) return cb(publish.usage)
+
+  log.verbose('publish', args)
+
+  var t = npm.config.get('tag').trim()
+  if (semver.validRange(t)) {
+    var er = new Error('Tag name must not be a valid SemVer range: ' + t)
+    return cb(er)
+  }
+
+  var arg = args[0]
+  // if it's a local folder, then run the prepublish there, first.
+  readJson(path.resolve(arg, 'package.json'), function (er, data) {
+    if (er &amp;&amp; er.code !== 'ENOENT' &amp;&amp; er.code !== 'ENOTDIR') return cb(er)
+
+    if (data) {
+      if (!data.name) return cb(new Error('No name provided'))
+      if (!data.version) return cb(new Error('No version provided'))
+    }
+
+    // if readJson errors, the argument might be a tarball or package URL
+    if (er) {
+      npm.commands.cache.add(arg, null, null, false, function (er, data) {
+        if (er) return cb(er)
+        log.silly('publish', data)
+        var cached = path.resolve(cachedPackageRoot(data), 'package') + '.tgz'
+        // *publish* lifecycle scripts aren't run when publishing a built artifact
+        // go to the next step directly
+        publish_(arg, data, isRetry, cached, cb)
+      })
+    } else {
+      var dir = arg
+      npm.commands.cache.add(dir, null, null, false, function (er, data) {
+        if (er) return cb(er)
+        log.silly('publish', data)
+        var cached = path.resolve(cachedPackageRoot(data), 'package') + '.tgz'
+        // `prepublish` and `prepare` are run by cache.add
+        chain(
+          [
+            [lifecycle, data, 'prepublishOnly', dir],
+            [publish_, dir, data, isRetry, cached],
+            [lifecycle, data, 'publish', dir],
+            [lifecycle, data, 'postpublish', dir]
+          ],
+          cb
+        )
+      })
+    }
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    return cb(new Error("Can't restrict access to unscoped packages."))
+  }
+
+  params.access = config.get('access')
+}
+
+log.showProgress('publish:' + data._id)
+registry.<span class="apidocCodeKeywordSpan">publish</span>(registryBase, params, function (er) {
+  if (er &amp;&amp; er.code === 'EPUBLISHCONFLICT' &amp;&amp;
+      npm.config.get('force') &amp;&amp; !isRetry) {
+    log.warn('publish', 'Forced publish over ' + data._id)
+    return npm.commands.unpublish([data._id], function (er) {
+      // ignore errors.  Use the force.  Reach out with your feelings.
+      // but if it fails again, then report the first error.
+      publish([arg], er || true, cb)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.publish.completion" id="apidoc.element.npm.publish.completion">
+        function <span class="apidocSignatureSpan">npm.publish.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  // publish can complete to a folder with a package.json
+  // or a tarball, or a tarball url.
+  // for now, not yet implemented.
+  return cb()
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.rebuild" id="apidoc.module.npm.rebuild">module npm.rebuild</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.rebuild.rebuild" id="apidoc.element.npm.rebuild.rebuild">
+        function <span class="apidocSignatureSpan">npm.</span>rebuild
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function rebuild(args, cb) {
+  var opt = { depth: npm.config.get('depth'), dev: true }
+  readInstalled(npm.prefix, opt, function (er, data) {
+    log.info('readInstalled', typeof data)
+    if (er) return cb(er)
+    var set = filter(data, args)
+    var folders = Object.keys(set).filter(function (f) {
+      return f !== npm.prefix
+    })
+    if (!folders.length) return cb()
+    log.silly('rebuild set', folders)
+    cleanBuild(folders, set, cb)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+       .join('/node_modules/')
+       .replace(/(\/node_modules)+/, '/node_modules')
+  var f = path.resolve(npm.dir, p)
+  fs.lstat(f, function (er) {
+    if (er) return cb(er)
+    editor(f, { editor: e }, noProgressTillDone(function (er) {
+      if (er) return cb(er)
+      npm.commands.<span class="apidocCodeKeywordSpan">rebuild</span>(args, cb)
+    }))
+  })
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.rebuild.completion" id="apidoc.element.npm.rebuild.completion">
+        function <span class="apidocSignatureSpan">npm.rebuild.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function installedDeep(opts, cb) {
+  var local
+  var global
+  var depth = npm.config.get('depth')
+  var opt = { depth: depth, dev: true }
+
+  if (npm.config.get('global')) {
+    local = []
+    next()
+  } else {
+    readInstalled(npm.prefix, opt, function (er, data) {
+      local = getNames(data || {})
+      next()
+    })
+  }
+
+  readInstalled(npm.config.get('prefix'), opt, function (er, data) {
+    global = getNames(data || {})
+    next()
+  })
+
+  function getNames_ (d, n) {
+    if (d.realName &amp;&amp; n) {
+      if (n[d.realName]) return n
+      n[d.realName] = true
+    }
+    if (!n) n = {}
+    Object.keys(d.dependencies || {}).forEach(function (dep) {
+      getNames_(d.dependencies[dep], n)
+    })
+    return n
+  }
+  function getNames (d) {
+    return Object.keys(getNames_(d))
+  }
+
+  function next () {
+    if (!local || !global) return
+    if (!npm.config.get('global')) {
+      global = global.map(function (g) {
+        return [g, '-g']
+      })
+    }
+    var names = local.concat(global)
+    return cb(null, names)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.restart" id="apidoc.module.npm.restart">module npm.restart</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.restart.restart" id="apidoc.element.npm.restart.restart">
+        function <span class="apidocSignatureSpan">npm.</span>restart
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CMD(args, cb) {
+  npm.commands['run-script']([stage].concat(args), cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.restart.completion" id="apidoc.element.npm.restart.completion">
+        function <span class="apidocSignatureSpan">npm.restart.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  installedShallow(opts, function (d) {
+    return d.scripts &amp;&amp; d.scripts[stage]
+  }, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.run_script" id="apidoc.module.npm.run_script">module npm.run_script</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.run_script.run_script" id="apidoc.element.npm.run_script.run_script">
+        function <span class="apidocSignatureSpan">npm.</span>run_script
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runScript(args, cb) {
+  if (!args.length) return list(cb)
+
+  var pkgdir = npm.localPrefix
+  var cmd = args.shift()
+
+  readJson(path.resolve(pkgdir, 'package.json'), function (er, d) {
+    if (er) return cb(er)
+    run(d, pkgdir, cmd, args, cb)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.run_script.completion" id="apidoc.element.npm.run_script.completion">
+        function <span class="apidocSignatureSpan">npm.run_script.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  // see if there's already a package specified.
+  var argv = opts.conf.argv.remain
+
+  if (argv.length &gt;= 4) return cb()
+
+  if (argv.length === 3) {
+    // either specified a script locally, in which case, done,
+    // or a package, in which case, complete against its scripts
+    var json = path.join(npm.localPrefix, 'package.json')
+    return readJson(json, function (er, d) {
+      if (er &amp;&amp; er.code !== 'ENOENT' &amp;&amp; er.code !== 'ENOTDIR') return cb(er)
+      if (er) d = {}
+      var scripts = Object.keys(d.scripts || {})
+      console.error('local scripts', scripts)
+      if (scripts.indexOf(argv[2]) !== -1) return cb()
+      // ok, try to find out which package it was, then
+      var pref = npm.config.get('global') ? npm.config.get('prefix')
+               : npm.localPrefix
+      var pkgDir = path.resolve(pref, 'node_modules', argv[2], 'package.json')
+      readJson(pkgDir, function (er, d) {
+        if (er &amp;&amp; er.code !== 'ENOENT' &amp;&amp; er.code !== 'ENOTDIR') return cb(er)
+        if (er) d = {}
+        var scripts = Object.keys(d.scripts || {})
+        return cb(null, scripts)
+      })
+    })
+  }
+
+  readJson(path.join(npm.localPrefix, 'package.json'), function (er, d) {
+    if (er &amp;&amp; er.code !== 'ENOENT' &amp;&amp; er.code !== 'ENOTDIR') return cb(er)
+    d = d || {}
+    cb(null, Object.keys(d.scripts || {}))
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.search" id="apidoc.module.npm.search">module npm.search</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.search.search" id="apidoc.element.npm.search.search">
+        function <span class="apidocSignatureSpan">npm.</span>search
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function search(args, cb) {
+  var searchOpts = {
+    description: npm.config.get('description'),
+    exclude: prepareExcludes(npm.config.get('searchexclude')),
+    include: prepareIncludes(args, npm.config.get('searchopts')),
+    limit: npm.config.get('searchlimit'),
+    log: log,
+    staleness: npm.config.get('searchstaleness'),
+    unicode: npm.config.get('unicode')
+  }
+
+  if (searchOpts.include.length === 0) {
+    return cb(new Error('search must be called with arguments'))
+  }
+
+  // Used later to figure out whether we had any packages go out
+  var anyOutput = false
+
+  var entriesStream = ms.through.obj()
+
+  var esearchWritten = false
+  esearch(searchOpts).on('data', function (pkg) {
+    entriesStream.write(pkg)
+    !esearchWritten &amp;&amp; (esearchWritten = true)
+  }).on('error', function (e) {
+    if (esearchWritten) {
+      // If esearch errored after already starting output, we can't fall back.
+      return entriesStream.emit('error', e)
+    }
+    log.warn('search', 'fast search endpoint errored. Using old search.')
+    allPackageSearch(searchOpts).on('data', function (pkg) {
+      entriesStream.write(pkg)
+    }).on('error', function (e) {
+      entriesStream.emit('error', e)
+    }).on('end', function () {
+      entriesStream.end()
+    })
+  }).on('end', function () {
+    entriesStream.end()
+  })
+
+  // Grab a configured output stream that will spit out packages in the
+  // desired format.
+  var outputStream = formatPackageStream({
+    args: args, // --searchinclude options are not highlighted
+    long: npm.config.get('long'),
+    description: npm.config.get('description'),
+    json: npm.config.get('json'),
+    parseable: npm.config.get('parseable'),
+    color: npm.color
+  })
+  outputStream.on('data', function (chunk) {
+    if (!anyOutput) { anyOutput = true }
+    output(chunk.toString('utf8'))
+  })
+
+  log.silly('search', 'searching packages')
+  ms.pipe(entriesStream, outputStream, function (er) {
+    if (er) return cb(er)
+    if (!anyOutput &amp;&amp; !npm.config.get('json') &amp;&amp; !npm.config.get('parseable')) {
+      output('No matches found for ' + (args.map(JSON.stringify).join(' ')))
+    }
+    log.silly('search', 'search completed')
+    log.clearProgress()
+    cb(null, {})
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.search.completion" id="apidoc.element.npm.search.completion">
+        function <span class="apidocSignatureSpan">npm.search.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  cb(null, [])
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.star" id="apidoc.module.npm.star">module npm.star</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.star.star" id="apidoc.element.npm.star.star">
+        function <span class="apidocSignatureSpan">npm.</span>star
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function star(args, cb) {
+  if (!args.length) return cb(star.usage)
+  var s = npm.config.get('unicode') ? '\u2605 ' : '(*)'
+  var u = npm.config.get('unicode') ? '\u2606 ' : '( )'
+  var using = !(npm.command.match(/^un/))
+  if (!using) s = u
+  asyncMap(args, function (pkg, cb) {
+    mapToRegistry(pkg, npm.config, function (er, uri, auth) {
+      if (er) return cb(er)
+
+      var params = {
+        starred: using,
+        auth: auth
+      }
+      npm.registry.star(uri, params, function (er, data, raw, req) {
+        if (!er) {
+          output(s + ' ' + pkg)
+          log.verbose('star', data)
+        }
+        cb(er, data, raw, req)
+      })
+    })
+  }, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+mapToRegistry(pkg, npm.config, function (er, uri, auth) {
+  if (er) return cb(er)
+
+  var params = {
+    starred: using,
+    auth: auth
+  }
+  npm.registry.<span class="apidocCodeKeywordSpan">star</span>(uri, params, function (er, data, raw, req) {
+    if (!er) {
+      output(s + ' ' + pkg)
+      log.verbose('star', data)
+    }
+    cb(er, data, raw, req)
+  })
+})
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.star.completion" id="apidoc.element.npm.star.completion">
+        function <span class="apidocSignatureSpan">npm.star.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  // FIXME: there used to be registry completion here, but it stopped making
+  // sense somewhere around 50,000 packages on the registry
+  cb()
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.start" id="apidoc.module.npm.start">module npm.start</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.start.start" id="apidoc.element.npm.start.start">
+        function <span class="apidocSignatureSpan">npm.</span>start
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CMD(args, cb) {
+  npm.commands['run-script']([stage].concat(args), cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.start.completion" id="apidoc.element.npm.start.completion">
+        function <span class="apidocSignatureSpan">npm.start.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  installedShallow(opts, function (d) {
+    return d.scripts &amp;&amp; d.scripts[stage]
+  }, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.stop" id="apidoc.module.npm.stop">module npm.stop</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.stop.stop" id="apidoc.element.npm.stop.stop">
+        function <span class="apidocSignatureSpan">npm.</span>stop
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CMD(args, cb) {
+  npm.commands['run-script']([stage].concat(args), cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.stop.completion" id="apidoc.element.npm.stop.completion">
+        function <span class="apidocSignatureSpan">npm.stop.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  installedShallow(opts, function (d) {
+    return d.scripts &amp;&amp; d.scripts[stage]
+  }, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.team" id="apidoc.module.npm.team">module npm.team</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.team.team" id="apidoc.element.npm.team.team">
+        function <span class="apidocSignatureSpan">npm.</span>team
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function team(args, cb) {
+  // Entities are in the format &lt;scope&gt;:&lt;team&gt;
+  var cmd = args.shift()
+  var entity = (args.shift() || '').split(':')
+  return mapToRegistry('/', npm.config, function (err, uri, auth) {
+    if (err) { return cb(err) }
+    try {
+      return npm.registry.team(cmd, uri, {
+        auth: auth,
+        scope: entity[0],
+        team: entity[1],
+        user: args.shift()
+      }, function (err, data) {
+        !err &amp;&amp; data &amp;&amp; output(JSON.stringify(data, undefined, 2))
+        cb(err, data)
+      })
+    } catch (e) {
+      cb(e.message + '\n\nUsage:\n' + team.usage)
+    }
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function team (args, cb) {
+// Entities are in the format &lt;scope&gt;:&lt;team&gt;
+var cmd = args.shift()
+var entity = (args.shift() || '').split(':')
+return mapToRegistry('/', npm.config, function (err, uri, auth) {
+  if (err) { return cb(err) }
+  try {
+    return npm.registry.<span class="apidocCodeKeywordSpan">team</span>(cmd, uri, {
+      auth: auth,
+      scope: entity[0],
+      team: entity[1],
+      user: args.shift()
+    }, function (err, data) {
+      !err &amp;&amp; data &amp;&amp; output(JSON.stringify(data, undefined, 2))
+      cb(err, data)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.team.completion" id="apidoc.element.npm.team.completion">
+        function <span class="apidocSignatureSpan">npm.team.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  var argv = opts.conf.argv.remain
+  if (argv.length === 2) {
+    return cb(null, team.subcommands)
+  }
+  switch (argv[2]) {
+    case 'ls':
+    case 'create':
+    case 'destroy':
+    case 'add':
+    case 'rm':
+    case 'edit':
+      return cb(null, [])
+    default:
+      return cb(new Error(argv[2] + ' not recognized'))
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.unbuild" id="apidoc.module.npm.unbuild">module npm.unbuild</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.unbuild.unbuild" id="apidoc.element.npm.unbuild.unbuild">
+        function <span class="apidocSignatureSpan">npm.</span>unbuild
+        <span class="apidocSignatureSpan">(args, silent, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function unbuild(args, silent, cb) {
+  if (typeof silent === 'function') {
+    cb = silent
+    silent = false
+  }
+  asyncMap(args, unbuild_(silent), cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.unbuild.rmStuff" id="apidoc.element.npm.unbuild.rmStuff">
+        function <span class="apidocSignatureSpan">npm.unbuild.</span>rmStuff
+        <span class="apidocSignatureSpan">(pkg, folder, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function rmStuff(pkg, folder, cb) {
+  // if it's global, and folder is in {prefix}/node_modules,
+  // then bins are in {prefix}/bin
+  // otherwise, then bins are in folder/../.bin
+  var parent = pkg.name[0] === '@' ? path.dirname(path.dirname(folder)) : path.dirname(folder)
+  var gnm = npm.dir
+  var top = gnm === parent
+
+  log.verbose('unbuild rmStuff', pkg._id, 'from', gnm)
+  if (!top) log.verbose('unbuild rmStuff', 'in', parent)
+  asyncMap([rmBins, rmMans], function (fn, cb) {
+    fn(pkg, folder, parent, top, cb)
+  }, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.unpublish" id="apidoc.module.npm.unpublish">module npm.unpublish</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.unpublish.unpublish" id="apidoc.element.npm.unpublish.unpublish">
+        function <span class="apidocSignatureSpan">npm.</span>unpublish
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function unpublish(args, cb) {
+  if (args.length &gt; 1) return cb(unpublish.usage)
+
+  var thing = args.length ? npa(args[0]) : {}
+  var project = thing.name
+  var version = thing.rawSpec
+
+  log.silly('unpublish', 'args[0]', args[0])
+  log.silly('unpublish', 'thing', thing)
+  if (!version &amp;&amp; !npm.config.get('force')) {
+    return cb(
+      'Refusing to delete entire project.\n' +
+      'Run with --force to do this.\n' +
+      unpublish.usage
+    )
+  }
+
+  if (!project || path.resolve(project) === npm.localPrefix) {
+    // if there's a package.json in the current folder, then
+    // read the package name and version out of that.
+    var cwdJson = path.join(npm.localPrefix, 'package.json')
+    return readJson(cwdJson, function (er, data) {
+      if (er &amp;&amp; er.code !== 'ENOENT' &amp;&amp; er.code !== 'ENOTDIR') return cb(er)
+      if (er) return cb('Usage:\n' + unpublish.usage)
+      log.verbose('unpublish', data)
+      gotProject(data.name, data.version, data.publishConfig, cb)
+    })
+  }
+  return gotProject(project, version, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+log.showProgress('publish:' + data._id)
+registry.publish(registryBase, params, function (er) {
+  if (er &amp;&amp; er.code === 'EPUBLISHCONFLICT' &amp;&amp;
+      npm.config.get('force') &amp;&amp; !isRetry) {
+    log.warn('publish', 'Forced publish over ' + data._id)
+    return npm.commands.<span class="apidocCodeKeywordSpan">unpublish</span>([data._id], function (er) {
+      // ignore errors.  Use the force.  Reach out with your feelings.
+      // but if it fails again, then report the first error.
+      publish([arg], er || true, cb)
+    })
+  }
+  // report the unpublish error if this was a retry and unpublish failed
+  if (er &amp;&amp; isRetry &amp;&amp; isRetry !== true) return cb(isRetry)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.unpublish.completion" id="apidoc.element.npm.unpublish.completion">
+        function <span class="apidocSignatureSpan">npm.unpublish.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  if (opts.conf.argv.remain.length &gt;= 3) return cb()
+  npm.commands.whoami([], true, function (er, username) {
+    if (er) return cb()
+
+    var un = encodeURIComponent(username)
+    if (!un) return cb()
+    var byUser = '-/by-user/' + un
+    mapToRegistry(byUser, npm.config, function (er, uri, auth) {
+      if (er) return cb(er)
+
+      npm.registry.get(uri, { auth: auth }, function (er, pkgs) {
+        // do a bit of filtering at this point, so that we don't need
+        // to fetch versions for more than one thing, but also don't
+        // accidentally a whole project.
+        pkgs = pkgs[un]
+        if (!pkgs || !pkgs.length) return cb()
+        var pp = npa(opts.partialWord).name
+        pkgs = pkgs.filter(function (p) {
+          return p.indexOf(pp) === 0
+        })
+        if (pkgs.length &gt; 1) return cb(null, pkgs)
+        mapToRegistry(pkgs[0], npm.config, function (er, uri, auth) {
+          if (er) return cb(er)
+
+          npm.registry.get(uri, { auth: auth }, function (er, d) {
+            if (er) return cb(er)
+            var vers = Object.keys(d.versions)
+            if (!vers.length) return cb(null, pkgs)
+            return cb(null, vers.map(function (v) {
+              return pkgs[0] + '@' + v
+            }))
+          })
+        })
+      })
+    })
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.view" id="apidoc.module.npm.view">module npm.view</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.view.view" id="apidoc.element.npm.view.view">
+        function <span class="apidocSignatureSpan">npm.</span>view
+        <span class="apidocSignatureSpan">(args, silent, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function view(args, silent, cb) {
+  if (typeof cb !== 'function') {
+    cb = silent
+    silent = false
+  }
+
+  if (!args.length) args = ['.']
+
+  var pkg = args.shift()
+  var nv = npa(pkg)
+  var name = nv.name
+  var local = (name === '.' || !name)
+
+  if (npm.config.get('global') &amp;&amp; local) {
+    return cb(new Error('Cannot use view command in global mode.'))
+  }
+
+  if (local) {
+    var dir = npm.prefix
+    readJson(path.resolve(dir, 'package.json'), function (er, d) {
+      d = d || {}
+      if (er &amp;&amp; er.code !== 'ENOENT' &amp;&amp; er.code !== 'ENOTDIR') return cb(er)
+      if (!d.name) return cb(new Error('Invalid package.json'))
+
+      var p = d.name
+      nv = npa(p)
+      if (pkg &amp;&amp; ~pkg.indexOf('@')) {
+        nv.rawSpec = pkg.split('@')[pkg.indexOf('@')]
+      }
+
+      fetchAndRead(nv, args, silent, cb)
+    })
+  } else {
+    fetchAndRead(nv, args, silent, cb)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.view.completion" id="apidoc.element.npm.view.completion">
+        function <span class="apidocSignatureSpan">npm.view.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  if (opts.conf.argv.remain.length &lt;= 2) {
+    // FIXME: there used to be registry completion here, but it stopped making
+    // sense somewhere around 50,000 packages on the registry
+    return cb()
+  }
+  // have the package, get the fields.
+  var tag = npm.config.get('tag')
+  mapToRegistry(opts.conf.argv.remain[2], npm.config, function (er, uri, auth) {
+    if (er) return cb(er)
+
+    npm.registry.get(uri, { auth: auth }, function (er, d) {
+      if (er) return cb(er)
+      var dv = d.versions[d['dist-tags'][tag]]
+      var fields = []
+      d.versions = Object.keys(d.versions).sort(semver.compareLoose)
+      fields = getFields(d).concat(getFields(dv))
+      cb(null, fields)
+    })
+  })
+
+  function getFields (d, f, pref) {
+    f = f || []
+    if (!d) return f
+    pref = pref || []
+    Object.keys(d).forEach(function (k) {
+      if (k.charAt(0) === '_' || k.indexOf('.') !== -1) return
+      var p = pref.concat(k).join('.')
+      f.push(p)
+      if (Array.isArray(d[k])) {
+        d[k].forEach(function (val, i) {
+          var pi = p + '[' + i + ']'
+          if (val &amp;&amp; typeof val === 'object') getFields(val, f, [p])
+          else f.push(pi)
+        })
+        return
+      }
+      if (typeof d[k] === 'object') getFields(d[k], f, [p])
+    })
+    return f
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require('graceful-fs')
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
