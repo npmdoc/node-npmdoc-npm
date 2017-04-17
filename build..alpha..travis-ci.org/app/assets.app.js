@@ -691,7 +691,7 @@ local.templateApidocHtml = '\
                             file.indexOf(options.packageJson.main) >= 0 ||
                             new RegExp('(?:\\b|_)(?:archive|artifact|asset|' +
                                 'bin|bower_components|build|' +
-                                'cli|coverage' +
+                                'cli|coverage|' +
                                 'doc|dist|' +
                                 'example|external|' +
                                 'fixture|' +
@@ -715,10 +715,12 @@ local.templateApidocHtml = '\
                     module[tmp.name] = tmp.module;
                     // update exampleList
                     options.exampleList.push(readExample(file));
+                    console.error('apidocCreate - ' + options.exampleList.length +
+                        '. added libFile ' + tmp.name);
                 } catch (errorCaught) {
                     console.error(errorCaught);
                 }
-                return options.exampleList.length < 256;
+                return options.exampleList.length >= 256;
             });
             local.apidocModuleDictAdd(options, options.moduleExtraDict);
             Object.keys(options.moduleDict).forEach(function (key) {
@@ -807,12 +809,13 @@ local.templateApidocHtml = '\
                                 tmp.module,
                                 tmp.module.prototype
                             ].some(function (dict) {
-                                return Object.keys(dict || {}).some(function (key) {
-                                    try {
-                                        return typeof dict[key] === 'function';
-                                    } catch (ignore) {
-                                    }
-                                });
+                                return typeof dict === 'function' ||
+                                    Object.keys(dict || {}).some(function (key) {
+                                        try {
+                                            return typeof dict[key] === 'function';
+                                        } catch (ignore) {
+                                        }
+                                    });
                             });
                             if (!isModule) {
                                 return;
@@ -1557,10 +1560,12 @@ local.templateApidocHtml = '\
                     });
                 }
             });
-            // skip and limit
-            result = result.slice(skip || 0, (skip || 0) + (limit || Infinity));
+            // skip
+            result = result.slice(skip || 0);
             // shuffle
             ((shuffle && local.listShuffle) || local.nop)(result);
+            // limit
+            result = result.slice(0, limit || Infinity);
             return result;
         };
 
@@ -12404,7 +12409,7 @@ return Utf8ArrayToStr(bff);
                 sortDefault: [{
                     fieldName: '_id'
                 }, {
-                    fieldName: 'buildFinishedAt'
+                    fieldName: 'buildStartedAt'
                 }, {
                     fieldName: 'buildState'
                 }, {
@@ -12454,9 +12459,6 @@ return Utf8ArrayToStr(bff);
                             offset: Math.floor(Math.random() * count) - 100,
                             sort_by: 'asc'
                         }, {
-                            offset: Math.floor(Math.random() * count) - 100,
-                            sort_by: 'asc'
-                        }, {
                             offset: count - 200,
                             sort_by: 'desc'
                         }, {
@@ -12500,7 +12502,9 @@ return Utf8ArrayToStr(bff);
                             return {
                                 _id: dbRow.name.replace('node-' + options.githubOrg + '-', ''),
                                 active: dbRow.active,
+                                buildDuration: data.duration,
                                 buildFinishedAt: data.finished_at,
+                                buildStartedAt: data.started_at,
                                 buildState: data.state
                             };
                         }));
@@ -19881,7 +19885,7 @@ local.templateUiResponseAjax = '\
         global.utility2_rollup;
     local.local = local;
 /* jslint-ignore-begin */
-local._stateInit({"utility2":{"assetsDict":{"/assets.index.template.html":"<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<title>{{env.npm_package_name}} (v{{env.npm_package_version}})</title>\n<style>\n/*csslint\n    box-sizing: false,\n    universal-selector: false\n*/\n* {\n    box-sizing: border-box;\n}\nbody {\n    background: #dde;\n    font-family: Arial, Helvetica, sans-serif;\n    margin: 2rem;\n}\nbody > * {\n    margin-bottom: 1rem;\n}\n.utility2FooterDiv {\n    margin-top: 20px;\n    text-align: center;\n}\n</style>\n<style>\n/*csslint\n*/\ntextarea {\n    font-family: monospace;\n    height: 10rem;\n    width: 100%;\n}\ntextarea[readonly] {\n    background: #ddd;\n}\n</style>\n</head>\n<body>\n<!-- utility2-comment\n<div id=\"ajaxProgressDiv1\" style=\"background: #d00; height: 2px; left: 0; margin: 0; padding: 0; position: fixed; top: 0; transition: background 0.5s, width 1.5s; width: 25%;\"></div>\nutility2-comment -->\n<h1>\n<!-- utility2-comment\n    <a\n        {{#if env.npm_package_homepage}}\n        href=\"{{env.npm_package_homepage}}\"\n        {{/if env.npm_package_homepage}}\n        target=\"_blank\"\n    >\nutility2-comment -->\n        {{env.npm_package_name}} (v{{env.npm_package_version}})\n<!-- utility2-comment\n    </a>\nutility2-comment -->\n</h1>\n<h3>{{env.npm_package_description}}</h3>\n<!-- utility2-comment\n<h4><a download href=\"assets.app.js\">download standalone app</a></h4>\n<button class=\"onclick onreset\" id=\"testRunButton1\">run internal test</button><br>\n<div id=\"testReportDiv1\" style=\"display: none;\"></div>\nutility2-comment -->\n\n\n\n<label>stderr and stdout</label>\n<textarea class=\"resettable\" id=\"outputTextareaStdout1\" readonly></textarea>\n<!-- utility2-comment\n{{#if isRollup}}\n<script src=\"assets.app.js\"></script>\n{{#unless isRollup}}\nutility2-comment -->\n<script src=\"assets.utility2.rollup.js\"></script>\n<script src=\"jsonp.utility2._stateInit?callback=window.utility2._stateInit\"></script>\n<script src=\"assets.npmdoc_npm.rollup.js\"></script>\n<script src=\"assets.example.js\"></script>\n<script src=\"assets.test.js\"></script>\n<!-- utility2-comment\n{{/if isRollup}}\nutility2-comment -->\n<div class=\"utility2FooterDiv\">\n    [ this app was created with\n    <a href=\"https://github.com/kaizhu256/node-utility2\" target=\"_blank\">utility2</a>\n    ]\n</div>\n</body>\n</html>\n"},"env":{"NODE_ENV":"test","npm_package_description":"api documentation for [npm (v4.5.0)](https://docs.npmjs.com/) [![npm package](https://img.shields.io/npm/v/npmdoc-npm.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-npm) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-npm.svg)](https://travis-ci.org/npmdoc/node-npmdoc-npm)","npm_package_homepage":"https://github.com/npmdoc/node-npmdoc-npm","npm_package_name":"npmdoc-npm","npm_package_nameAlias":"npmdoc_npm","npm_package_version":"0.0.13"}}});
+local._stateInit({"utility2":{"assetsDict":{"/assets.index.template.html":"<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<title>{{env.npm_package_name}} (v{{env.npm_package_version}})</title>\n<style>\n/*csslint\n    box-sizing: false,\n    universal-selector: false\n*/\n* {\n    box-sizing: border-box;\n}\nbody {\n    background: #dde;\n    font-family: Arial, Helvetica, sans-serif;\n    margin: 2rem;\n}\nbody > * {\n    margin-bottom: 1rem;\n}\n.utility2FooterDiv {\n    margin-top: 20px;\n    text-align: center;\n}\n</style>\n<style>\n/*csslint\n*/\ntextarea {\n    font-family: monospace;\n    height: 10rem;\n    width: 100%;\n}\ntextarea[readonly] {\n    background: #ddd;\n}\n</style>\n</head>\n<body>\n<!-- utility2-comment\n<div id=\"ajaxProgressDiv1\" style=\"background: #d00; height: 2px; left: 0; margin: 0; padding: 0; position: fixed; top: 0; transition: background 0.5s, width 1.5s; width: 25%;\"></div>\nutility2-comment -->\n<h1>\n<!-- utility2-comment\n    <a\n        {{#if env.npm_package_homepage}}\n        href=\"{{env.npm_package_homepage}}\"\n        {{/if env.npm_package_homepage}}\n        target=\"_blank\"\n    >\nutility2-comment -->\n        {{env.npm_package_name}} (v{{env.npm_package_version}})\n<!-- utility2-comment\n    </a>\nutility2-comment -->\n</h1>\n<h3>{{env.npm_package_description}}</h3>\n<!-- utility2-comment\n<h4><a download href=\"assets.app.js\">download standalone app</a></h4>\n<button class=\"onclick onreset\" id=\"testRunButton1\">run internal test</button><br>\n<div id=\"testReportDiv1\" style=\"display: none;\"></div>\nutility2-comment -->\n\n\n\n<label>stderr and stdout</label>\n<textarea class=\"resettable\" id=\"outputTextareaStdout1\" readonly></textarea>\n<!-- utility2-comment\n{{#if isRollup}}\n<script src=\"assets.app.js\"></script>\n{{#unless isRollup}}\nutility2-comment -->\n<script src=\"assets.utility2.rollup.js\"></script>\n<script src=\"jsonp.utility2._stateInit?callback=window.utility2._stateInit\"></script>\n<script src=\"assets.npmdoc_npm.rollup.js\"></script>\n<script src=\"assets.example.js\"></script>\n<script src=\"assets.test.js\"></script>\n<!-- utility2-comment\n{{/if isRollup}}\nutility2-comment -->\n<div class=\"utility2FooterDiv\">\n    [ this app was created with\n    <a href=\"https://github.com/kaizhu256/node-utility2\" target=\"_blank\">utility2</a>\n    ]\n</div>\n</body>\n</html>\n"},"env":{"NODE_ENV":"test","npm_package_description":"api documentation for [npm (v4.5.0)](https://docs.npmjs.com/) [![npm package](https://img.shields.io/npm/v/npmdoc-npm.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-npm) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-npm.svg)](https://travis-ci.org/npmdoc/node-npmdoc-npm)","npm_package_homepage":"https://github.com/npmdoc/node-npmdoc-npm","npm_package_name":"npmdoc-npm","npm_package_nameAlias":"npmdoc_npm","npm_package_version":"0.0.9"}}});
 /* jslint-ignore-end */
 }());
 /* script-end local._stateInit */
