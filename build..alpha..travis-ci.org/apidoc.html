@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.npm.access">
+            function <span class="apidocSignatureSpan">npm.</span>access
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.npm.deref">
             function <span class="apidocSignatureSpan">npm.</span>deref
             <span class="apidocSignatureSpan">(c)</span>
@@ -135,6 +144,40 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.access">module npm.access</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.access.access">
+            function <span class="apidocSignatureSpan">npm.</span>access
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.access.completion">
+            function <span class="apidocSignatureSpan">npm.access.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.access.</span>subcommands</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.access.</span>usage</span>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.npm.config">module npm.config</a><ol>
 
         <li>
@@ -167,6 +210,58 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.npm" id="apidoc.module.npm">module npm</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.access" id="apidoc.element.npm.access">
+        function <span class="apidocSignatureSpan">npm.</span>access
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function access(args, cb) {
+  var cmd = args.shift()
+  var params
+  return parseParams(cmd, args, function (err, p) {
+    if (err) { return cb(err) }
+    params = p
+    return mapToRegistry(params.package, npm.config, invokeCmd)
+  })
+
+  function invokeCmd (err, uri, auth, base) {
+    if (err) { return cb(err) }
+    params.auth = auth
+    try {
+      return npm.registry.access(cmd, uri, params, function (err, data) {
+        if (!err &#x26;&#x26; data) {
+          output(JSON.stringify(data, undefined, 2))
+        }
+        cb(err, data)
+      })
+    } catch (e) {
+      cb(e.message + &#x27;\n\nUsage:\n&#x27; + access.usage)
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  return mapToRegistry(params.package, npm.config, invokeCmd)
+})
+
+function invokeCmd (err, uri, auth, base) {
+  if (err) { return cb(err) }
+  params.auth = auth
+  try {
+    return npm.registry.<span class="apidocCodeKeywordSpan">access</span>(cmd, uri, params, function (err, data) {
+      if (!err &#x26;&#x26; data) {
+        output(JSON.stringify(data, undefined, 2))
+      }
+      cb(err, data)
+    })
+  } catch (e) {
+    cb(e.message + &#x27;\n\nUsage:\n&#x27; + access.usage)
+...</pre></li>
+    </ul>
+
 
 
     <h2>
@@ -255,6 +350,104 @@
 
 
 
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.access" id="apidoc.module.npm.access">module npm.access</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.access.access" id="apidoc.element.npm.access.access">
+        function <span class="apidocSignatureSpan">npm.</span>access
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function access(args, cb) {
+  var cmd = args.shift()
+  var params
+  return parseParams(cmd, args, function (err, p) {
+    if (err) { return cb(err) }
+    params = p
+    return mapToRegistry(params.package, npm.config, invokeCmd)
+  })
+
+  function invokeCmd (err, uri, auth, base) {
+    if (err) { return cb(err) }
+    params.auth = auth
+    try {
+      return npm.registry.access(cmd, uri, params, function (err, data) {
+        if (!err &#x26;&#x26; data) {
+          output(JSON.stringify(data, undefined, 2))
+        }
+        cb(err, data)
+      })
+    } catch (e) {
+      cb(e.message + &#x27;\n\nUsage:\n&#x27; + access.usage)
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  return mapToRegistry(params.package, npm.config, invokeCmd)
+})
+
+function invokeCmd (err, uri, auth, base) {
+  if (err) { return cb(err) }
+  params.auth = auth
+  try {
+    return npm.registry.<span class="apidocCodeKeywordSpan">access</span>(cmd, uri, params, function (err, data) {
+      if (!err &#x26;&#x26; data) {
+        output(JSON.stringify(data, undefined, 2))
+      }
+      cb(err, data)
+    })
+  } catch (e) {
+    cb(e.message + &#x27;\n\nUsage:\n&#x27; + access.usage)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.access.completion" id="apidoc.element.npm.access.completion">
+        function <span class="apidocSignatureSpan">npm.access.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  var argv = opts.conf.argv.remain
+  if (argv.length === 2) {
+    return cb(null, access.subcommands)
+  }
+
+  switch (argv[2]) {
+    case &#x27;grant&#x27;:
+      if (argv.length === 3) {
+        return cb(null, [&#x27;read-only&#x27;, &#x27;read-write&#x27;])
+      } else {
+        return cb(null, [])
+      }
+    case &#x27;public&#x27;:
+    case &#x27;restricted&#x27;:
+    case &#x27;ls-packages&#x27;:
+    case &#x27;ls-collaborators&#x27;:
+    case &#x27;edit&#x27;:
+      return cb(null, [])
+    case &#x27;revoke&#x27;:
+      return cb(null, [])
+    default:
+      return cb(new Error(argv[2] + &#x27; not recognized&#x27;))
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
 
 
 
