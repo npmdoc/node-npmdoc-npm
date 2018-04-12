@@ -1030,11 +1030,11 @@ vendor\\)s\\{0,1\\}\\(\\b\\|_\\)\
          */
             var isModule, tmp;
             ['child', 'prototype', 'grandchild', 'prototype'].forEach(function (element) {
-                local.objectKeysGetterRemoved(moduleDict).forEach(function (prefix) {
+                local.objectKeysValid(moduleDict).forEach(function (prefix) {
                     if (!(/^\w[\w\-.]*?$/).test(prefix)) {
                         return;
                     }
-                    local.objectKeysGetterRemoved(moduleDict[prefix]).forEach(function (key) {
+                    local.objectKeysValid(moduleDict[prefix]).forEach(function (key) {
                         // bug-workaround - buggy electron getter / setter
                         local.tryCatchOnError(function () {
                             if (!(/^\w[\w\-.]*?$/).test(key) || !moduleDict[prefix][key]) {
@@ -1061,7 +1061,7 @@ vendor\\)s\\{0,1\\}\\(\\b\\|_\\)\
                                 tmp.module,
                                 tmp.module.prototype
                             ].some(function (dict) {
-                                return local.objectKeysGetterRemoved(dict || {}).some(function (
+                                return local.objectKeysValid(dict || {}).some(function (
                                     key
                                 ) {
                                     // bug-workaround - buggy electron getter / setter
@@ -1081,9 +1081,9 @@ vendor\\)s\\{0,1\\}\\(\\b\\|_\\)\
             });
         };
 
-        local.objectKeysGetterRemoved = function (arg) {
+        local.objectKeysValid = function (arg) {
         /*
-         * this function will try to return a list of the arg's keys, with getters removed
+         * this function will return a list of the arg's keys, with valid getters
          */
             return Object.keys(arg).sort().filter(function (key) {
                 return local.tryCatchOnError(function () {
