@@ -369,15 +369,6 @@ instruction
             return;
         };
 
-        local.objectKeysNoGetter = function (arg) {
-        /*
-         * this function will return a list of the arg's keys, that have no getter
-         */
-            return Object.keys(arg).filter(function (key) {
-                return !Object.getOwnPropertyDescriptor(arg, key, 'get');
-            });
-        };
-
         local.objectSetDefault = function (arg, defaults, depth) {
         /*
          * this function will recursively set defaults for undefined-items in the arg
@@ -1094,11 +1085,11 @@ vendor\\)s\\{0,1\\}\\(\\b\\|_\\)\
          */
             var isModule, tmp;
             ['child', 'prototype', 'grandchild', 'prototype'].forEach(function (element) {
-                local.objectKeysNoGetter(moduleDict).sort().forEach(function (prefix) {
+                local.objectKeysGetterRemoved(moduleDict).forEach(function (prefix) {
                     if (!(/^\w[\w\-.]*?$/).test(prefix)) {
                         return;
                     }
-                    local.objectKeysNoGetter(moduleDict[prefix]).forEach(function (key) {
+                    local.objectKeysGetterRemoved(moduleDict[prefix]).forEach(function (key) {
                         // bug-workaround - buggy electron getter / setter
                         local.tryCatchOnError(function () {
                             if (!(/^\w[\w\-.]*?$/).test(key) || !moduleDict[prefix][key]) {
@@ -1125,7 +1116,9 @@ vendor\\)s\\{0,1\\}\\(\\b\\|_\\)\
                                 tmp.module,
                                 tmp.module.prototype
                             ].some(function (dict) {
-                                return local.objectKeysNoGetter(dict || {}).some(function (key) {
+                                return local.objectKeysGetterRemoved(dict || {}).some(function (
+                                    key
+                                ) {
                                     // bug-workaround - buggy electron getter / setter
                                     return local.tryCatchOnError(function () {
                                         return typeof dict[key] === 'function';
@@ -1142,6 +1135,18 @@ vendor\\)s\\{0,1\\}\\(\\b\\|_\\)\
                 });
             });
         };
+
+        local.objectKeysGetterRemoved = function (arg) {
+        /*
+         * this function will try to return a list of the arg's keys, with getters removed
+         */
+            return Object.keys(arg).sort().filter(function (key) {
+                return local.tryCatchOnError(function () {
+                    return arg[key] || true;
+                }, local.nop);
+            });
+        };
+
     }());
     switch (local.modeJs) {
 
@@ -18662,11 +18667,9 @@ return Utf8ArrayToStr(bff);
             options.packageJson = JSON.parse(local.fs.readFileSync('package.json', 'utf8'));
             switch (local.env.GITHUB_ORG) {
             case 'npmdoc':
-                local.objectSetOverride(options, {
-                    packageJson: {
-                        keywords: ['documentation', local.env.npm_package_buildCustomOrg]
-                    }
-                }, 2);
+                local.objectSetOverride(options, { packageJson: {
+                    keywords: ['documentation', local.env.npm_package_buildCustomOrg]
+                } }, 2);
                 // build apidoc.html
                 onParallel.counter += 1;
                 local.buildApidoc({
@@ -20339,15 +20342,6 @@ return Utf8ArrayToStr(bff);
             item.key = Object.keys(arg)[0];
             item.value = arg[item.key];
             return item;
-        };
-
-        local.objectKeysNoGetter = function (arg) {
-        /*
-         * this function will return a list of the arg's keys, that have no getter
-         */
-            return Object.keys(arg).filter(function (key) {
-                return !Object.getOwnPropertyDescriptor(arg, key, 'get');
-            });
         };
 
         local.objectKeysTypeof = function (arg) {
