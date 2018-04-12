@@ -5,1611 +5,1611 @@
 
 <tspan x="10" y="42"></tspan>
 
-<tspan x="10" y="58">  0.  2018-04-12 09:34:07 +0000  3546024 bytes  .</tspan>
+<tspan x="10" y="58">  0.  2018-04-12 11:29:22 +0000  3546024 bytes  .</tspan>
 
-<tspan x="10" y="74">  1.  2018-04-12 09:34:07 +0000    21298 bytes  AUTHORS</tspan>
+<tspan x="10" y="74">  1.  2018-04-12 11:29:22 +0000    21298 bytes  AUTHORS</tspan>
 
-<tspan x="10" y="90">  2.  2018-04-12 09:34:07 +0000   110117 bytes  CHANGELOG.md</tspan>
+<tspan x="10" y="90">  2.  2018-04-12 11:29:22 +0000   110117 bytes  CHANGELOG.md</tspan>
 
-<tspan x="10" y="106">  3.  2018-04-12 09:34:07 +0000     4474 bytes  CONTRIBUTING.md</tspan>
+<tspan x="10" y="106">  3.  2018-04-12 11:29:22 +0000     4474 bytes  CONTRIBUTING.md</tspan>
 
-<tspan x="10" y="122">  4.  2018-04-12 09:34:07 +0000     9742 bytes  LICENSE</tspan>
+<tspan x="10" y="122">  4.  2018-04-12 11:29:22 +0000     9742 bytes  LICENSE</tspan>
 
-<tspan x="10" y="138">  5.  2018-04-12 09:34:07 +0000     5604 bytes  Makefile</tspan>
+<tspan x="10" y="138">  5.  2018-04-12 11:29:22 +0000     5604 bytes  Makefile</tspan>
 
-<tspan x="10" y="154">  6.  2018-04-12 09:34:07 +0000     4720 bytes  README.md</tspan>
+<tspan x="10" y="154">  6.  2018-04-12 11:29:22 +0000     4720 bytes  README.md</tspan>
 
-<tspan x="10" y="170">  7.  2018-04-12 09:34:07 +0000     7997 bytes  TROUBLESHOOTING.md</tspan>
+<tspan x="10" y="170">  7.  2018-04-12 11:29:22 +0000     7997 bytes  TROUBLESHOOTING.md</tspan>
 
-<tspan x="10" y="186">  8.  2018-04-12 09:34:07 +0000      959 bytes  appveyor.yml</tspan>
+<tspan x="10" y="186">  8.  2018-04-12 11:29:22 +0000      959 bytes  appveyor.yml</tspan>
 
-<tspan x="10" y="202">  9.  2018-04-12 09:34:07 +0000      172 bytes  bin/node-gyp-bin/node-gyp</tspan>
+<tspan x="10" y="202">  9.  2018-04-12 11:29:22 +0000      172 bytes  bin/node-gyp-bin/node-gyp</tspan>
 
-<tspan x="10" y="218"> 10.  2018-04-12 09:34:07 +0000      148 bytes  bin/node-gyp-bin/node-gyp.cmd</tspan>
+<tspan x="10" y="218"> 10.  2018-04-12 11:29:22 +0000      148 bytes  bin/node-gyp-bin/node-gyp.cmd</tspan>
 
-<tspan x="10" y="234"> 11.  2018-04-12 09:34:07 +0000      833 bytes  bin/npm</tspan>
+<tspan x="10" y="234"> 11.  2018-04-12 11:29:22 +0000      833 bytes  bin/npm</tspan>
 
-<tspan x="10" y="250"> 12.  2018-04-12 09:34:07 +0000     2749 bytes  bin/npm-cli.js</tspan>
+<tspan x="10" y="250"> 12.  2018-04-12 11:29:22 +0000     2749 bytes  bin/npm-cli.js</tspan>
 
-<tspan x="10" y="266"> 13.  2018-04-12 09:34:07 +0000      483 bytes  bin/npm.cmd</tspan>
+<tspan x="10" y="266"> 13.  2018-04-12 11:29:22 +0000      483 bytes  bin/npm.cmd</tspan>
 
-<tspan x="10" y="282"> 14.  2018-04-12 09:34:07 +0000      887 bytes  bin/npx</tspan>
+<tspan x="10" y="282"> 14.  2018-04-12 11:29:22 +0000      887 bytes  bin/npx</tspan>
 
-<tspan x="10" y="298"> 15.  2018-04-12 09:34:07 +0000      177 bytes  bin/npx-cli.js</tspan>
+<tspan x="10" y="298"> 15.  2018-04-12 11:29:22 +0000      177 bytes  bin/npx-cli.js</tspan>
 
-<tspan x="10" y="314"> 16.  2018-04-12 09:34:07 +0000      539 bytes  bin/npx.cmd</tspan>
+<tspan x="10" y="314"> 16.  2018-04-12 11:29:22 +0000      539 bytes  bin/npx.cmd</tspan>
 
-<tspan x="10" y="330"> 17.  2018-04-12 09:34:07 +0000    38254 bytes  changelogs/CHANGELOG-1.md</tspan>
+<tspan x="10" y="330"> 17.  2018-04-12 11:29:22 +0000    38254 bytes  changelogs/CHANGELOG-1.md</tspan>
 
-<tspan x="10" y="346"> 18.  2018-04-12 09:34:07 +0000   298653 bytes  changelogs/CHANGELOG-2.md</tspan>
+<tspan x="10" y="346"> 18.  2018-04-12 11:29:22 +0000   298653 bytes  changelogs/CHANGELOG-2.md</tspan>
 
-<tspan x="10" y="362"> 19.  2018-04-12 09:34:07 +0000   253000 bytes  changelogs/CHANGELOG-3.md</tspan>
+<tspan x="10" y="362"> 19.  2018-04-12 11:29:22 +0000   253000 bytes  changelogs/CHANGELOG-3.md</tspan>
 
-<tspan x="10" y="378"> 20.  2018-04-12 09:34:07 +0000    81173 bytes  changelogs/CHANGELOG-4.md</tspan>
+<tspan x="10" y="378"> 20.  2018-04-12 11:29:22 +0000    81173 bytes  changelogs/CHANGELOG-4.md</tspan>
 
-<tspan x="10" y="394"> 21.  2018-04-12 09:34:07 +0000      521 bytes  configure</tspan>
+<tspan x="10" y="394"> 21.  2018-04-12 11:29:22 +0000      521 bytes  configure</tspan>
 
-<tspan x="10" y="410"> 22.  2018-04-12 09:34:07 +0000     2525 bytes  doc/cli/npm-access.md</tspan>
+<tspan x="10" y="410"> 22.  2018-04-12 11:29:22 +0000     2525 bytes  doc/cli/npm-access.md</tspan>
 
-<tspan x="10" y="426"> 23.  2018-04-12 09:34:07 +0000     2743 bytes  doc/cli/npm-adduser.md</tspan>
+<tspan x="10" y="426"> 23.  2018-04-12 11:29:22 +0000     2743 bytes  doc/cli/npm-adduser.md</tspan>
 
-<tspan x="10" y="442"> 24.  2018-04-12 09:34:07 +0000      288 bytes  doc/cli/npm-bin.md</tspan>
+<tspan x="10" y="442"> 24.  2018-04-12 11:29:22 +0000      288 bytes  doc/cli/npm-bin.md</tspan>
 
-<tspan x="10" y="458"> 25.  2018-04-12 09:34:07 +0000      890 bytes  doc/cli/npm-bugs.md</tspan>
+<tspan x="10" y="458"> 25.  2018-04-12 11:29:22 +0000      890 bytes  doc/cli/npm-bugs.md</tspan>
 
-<tspan x="10" y="474"> 26.  2018-04-12 09:34:07 +0000      476 bytes  doc/cli/npm-build.md</tspan>
+<tspan x="10" y="474"> 26.  2018-04-12 11:29:22 +0000      476 bytes  doc/cli/npm-build.md</tspan>
 
-<tspan x="10" y="490"> 27.  2018-04-12 09:34:07 +0000      339 bytes  doc/cli/npm-bundle.md</tspan>
+<tspan x="10" y="490"> 27.  2018-04-12 11:29:22 +0000      339 bytes  doc/cli/npm-bundle.md</tspan>
 
-<tspan x="10" y="506"> 28.  2018-04-12 09:34:07 +0000     2624 bytes  doc/cli/npm-cache.md</tspan>
+<tspan x="10" y="506"> 28.  2018-04-12 11:29:22 +0000     2624 bytes  doc/cli/npm-cache.md</tspan>
 
-<tspan x="10" y="522"> 29.  2018-04-12 09:34:07 +0000     1698 bytes  doc/cli/npm-ci.md</tspan>
+<tspan x="10" y="522"> 29.  2018-04-12 11:29:22 +0000     1698 bytes  doc/cli/npm-ci.md</tspan>
 
-<tspan x="10" y="538"> 30.  2018-04-12 09:34:07 +0000      797 bytes  doc/cli/npm-completion.md</tspan>
+<tspan x="10" y="538"> 30.  2018-04-12 11:29:22 +0000      797 bytes  doc/cli/npm-completion.md</tspan>
 
-<tspan x="10" y="554"> 31.  2018-04-12 09:34:07 +0000     1428 bytes  doc/cli/npm-config.md</tspan>
+<tspan x="10" y="554"> 31.  2018-04-12 11:29:22 +0000     1428 bytes  doc/cli/npm-config.md</tspan>
 
-<tspan x="10" y="570"> 32.  2018-04-12 09:34:07 +0000     1363 bytes  doc/cli/npm-dedupe.md</tspan>
+<tspan x="10" y="570"> 32.  2018-04-12 11:29:22 +0000     1363 bytes  doc/cli/npm-dedupe.md</tspan>
 
-<tspan x="10" y="586"> 33.  2018-04-12 09:34:07 +0000      719 bytes  doc/cli/npm-deprecate.md</tspan>
+<tspan x="10" y="586"> 33.  2018-04-12 11:29:22 +0000      719 bytes  doc/cli/npm-deprecate.md</tspan>
 
-<tspan x="10" y="602"> 34.  2018-04-12 09:34:07 +0000     2772 bytes  doc/cli/npm-dist-tag.md</tspan>
+<tspan x="10" y="602"> 34.  2018-04-12 11:29:22 +0000     2772 bytes  doc/cli/npm-dist-tag.md</tspan>
 
-<tspan x="10" y="618"> 35.  2018-04-12 09:34:07 +0000      989 bytes  doc/cli/npm-docs.md</tspan>
+<tspan x="10" y="618"> 35.  2018-04-12 11:29:22 +0000      989 bytes  doc/cli/npm-docs.md</tspan>
 
-<tspan x="10" y="634"> 36.  2018-04-12 09:34:07 +0000     4645 bytes  doc/cli/npm-doctor.md</tspan>
+<tspan x="10" y="634"> 36.  2018-04-12 11:29:22 +0000     4645 bytes  doc/cli/npm-doctor.md</tspan>
 
-<tspan x="10" y="650"> 37.  2018-04-12 09:34:07 +0000      850 bytes  doc/cli/npm-edit.md</tspan>
+<tspan x="10" y="650"> 37.  2018-04-12 11:29:22 +0000      850 bytes  doc/cli/npm-edit.md</tspan>
 
-<tspan x="10" y="666"> 38.  2018-04-12 09:34:07 +0000      869 bytes  doc/cli/npm-explore.md</tspan>
+<tspan x="10" y="666"> 38.  2018-04-12 11:29:22 +0000      869 bytes  doc/cli/npm-explore.md</tspan>
 
-<tspan x="10" y="682"> 39.  2018-04-12 09:34:07 +0000      807 bytes  doc/cli/npm-help-search.md</tspan>
+<tspan x="10" y="682"> 39.  2018-04-12 11:29:22 +0000      807 bytes  doc/cli/npm-help-search.md</tspan>
 
-<tspan x="10" y="698"> 40.  2018-04-12 09:34:07 +0000      816 bytes  doc/cli/npm-help.md</tspan>
+<tspan x="10" y="698"> 40.  2018-04-12 11:29:22 +0000      816 bytes  doc/cli/npm-help.md</tspan>
 
-<tspan x="10" y="714"> 41.  2018-04-12 09:34:07 +0000      978 bytes  doc/cli/npm-init.md</tspan>
+<tspan x="10" y="714"> 41.  2018-04-12 11:29:22 +0000      978 bytes  doc/cli/npm-init.md</tspan>
 
-<tspan x="10" y="730"> 42.  2018-04-12 09:34:07 +0000      705 bytes  doc/cli/npm-install-test.md</tspan>
+<tspan x="10" y="730"> 42.  2018-04-12 11:29:22 +0000      705 bytes  doc/cli/npm-install-test.md</tspan>
 
-<tspan x="10" y="746"> 43.  2018-04-12 09:34:07 +0000    17066 bytes  doc/cli/npm-install.md</tspan>
+<tspan x="10" y="746"> 43.  2018-04-12 11:29:22 +0000    17066 bytes  doc/cli/npm-install.md</tspan>
 
-<tspan x="10" y="762"> 44.  2018-04-12 09:34:07 +0000     2419 bytes  doc/cli/npm-link.md</tspan>
+<tspan x="10" y="762"> 44.  2018-04-12 11:29:22 +0000     2419 bytes  doc/cli/npm-link.md</tspan>
 
-<tspan x="10" y="778"> 45.  2018-04-12 09:34:07 +0000     1155 bytes  doc/cli/npm-logout.md</tspan>
+<tspan x="10" y="778"> 45.  2018-04-12 11:29:22 +0000     1155 bytes  doc/cli/npm-logout.md</tspan>
 
-<tspan x="10" y="794"> 46.  2018-04-12 09:34:07 +0000     2206 bytes  doc/cli/npm-ls.md</tspan>
+<tspan x="10" y="794"> 46.  2018-04-12 11:29:22 +0000     2206 bytes  doc/cli/npm-ls.md</tspan>
 
-<tspan x="10" y="810"> 47.  2018-04-12 09:34:07 +0000     3423 bytes  doc/cli/npm-outdated.md</tspan>
+<tspan x="10" y="810"> 47.  2018-04-12 11:29:22 +0000     3423 bytes  doc/cli/npm-outdated.md</tspan>
 
-<tspan x="10" y="826"> 48.  2018-04-12 09:34:07 +0000     1107 bytes  doc/cli/npm-owner.md</tspan>
+<tspan x="10" y="826"> 48.  2018-04-12 11:29:22 +0000     1107 bytes  doc/cli/npm-owner.md</tspan>
 
-<tspan x="10" y="842"> 49.  2018-04-12 09:34:07 +0000      724 bytes  doc/cli/npm-pack.md</tspan>
+<tspan x="10" y="842"> 49.  2018-04-12 11:29:22 +0000      724 bytes  doc/cli/npm-pack.md</tspan>
 
-<tspan x="10" y="858"> 50.  2018-04-12 09:34:07 +0000      418 bytes  doc/cli/npm-ping.md</tspan>
+<tspan x="10" y="858"> 50.  2018-04-12 11:29:22 +0000      418 bytes  doc/cli/npm-ping.md</tspan>
 
-<tspan x="10" y="874"> 51.  2018-04-12 09:34:07 +0000      460 bytes  doc/cli/npm-prefix.md</tspan>
+<tspan x="10" y="874"> 51.  2018-04-12 11:29:22 +0000      460 bytes  doc/cli/npm-prefix.md</tspan>
 
-<tspan x="10" y="890"> 52.  2018-04-12 09:34:07 +0000     2887 bytes  doc/cli/npm-profile.md</tspan>
+<tspan x="10" y="890"> 52.  2018-04-12 11:29:22 +0000     2887 bytes  doc/cli/npm-profile.md</tspan>
 
-<tspan x="10" y="906"> 53.  2018-04-12 09:34:07 +0000     1284 bytes  doc/cli/npm-prune.md</tspan>
+<tspan x="10" y="906"> 53.  2018-04-12 11:29:22 +0000     1284 bytes  doc/cli/npm-prune.md</tspan>
 
-<tspan x="10" y="922"> 54.  2018-04-12 09:34:07 +0000     2722 bytes  doc/cli/npm-publish.md</tspan>
+<tspan x="10" y="922"> 54.  2018-04-12 11:29:22 +0000     2722 bytes  doc/cli/npm-publish.md</tspan>
 
-<tspan x="10" y="938"> 55.  2018-04-12 09:34:07 +0000      389 bytes  doc/cli/npm-rebuild.md</tspan>
+<tspan x="10" y="938"> 55.  2018-04-12 11:29:22 +0000      389 bytes  doc/cli/npm-rebuild.md</tspan>
 
-<tspan x="10" y="954"> 56.  2018-04-12 09:34:07 +0000      662 bytes  doc/cli/npm-repo.md</tspan>
+<tspan x="10" y="954"> 56.  2018-04-12 11:29:22 +0000      662 bytes  doc/cli/npm-repo.md</tspan>
 
-<tspan x="10" y="970"> 57.  2018-04-12 09:34:07 +0000      757 bytes  doc/cli/npm-restart.md</tspan>
+<tspan x="10" y="970"> 57.  2018-04-12 11:29:22 +0000      757 bytes  doc/cli/npm-restart.md</tspan>
 
-<tspan x="10" y="986"> 58.  2018-04-12 09:34:07 +0000      275 bytes  doc/cli/npm-root.md</tspan>
+<tspan x="10" y="986"> 58.  2018-04-12 11:29:22 +0000      275 bytes  doc/cli/npm-root.md</tspan>
 
-<tspan x="10" y="1002"> 59.  2018-04-12 09:34:07 +0000     3151 bytes  doc/cli/npm-run-script.md</tspan>
+<tspan x="10" y="1002"> 59.  2018-04-12 11:29:22 +0000     3151 bytes  doc/cli/npm-run-script.md</tspan>
 
-<tspan x="10" y="1018"> 60.  2018-04-12 09:34:07 +0000     2778 bytes  doc/cli/npm-search.md</tspan>
+<tspan x="10" y="1018"> 60.  2018-04-12 11:29:22 +0000     2778 bytes  doc/cli/npm-search.md</tspan>
 
-<tspan x="10" y="1034"> 61.  2018-04-12 09:34:07 +0000      690 bytes  doc/cli/npm-shrinkwrap.md</tspan>
+<tspan x="10" y="1034"> 61.  2018-04-12 11:29:22 +0000      690 bytes  doc/cli/npm-shrinkwrap.md</tspan>
 
-<tspan x="10" y="1050"> 62.  2018-04-12 09:34:07 +0000      461 bytes  doc/cli/npm-star.md</tspan>
+<tspan x="10" y="1050"> 62.  2018-04-12 11:29:22 +0000      461 bytes  doc/cli/npm-star.md</tspan>
 
-<tspan x="10" y="1066"> 63.  2018-04-12 09:34:07 +0000      458 bytes  doc/cli/npm-stars.md</tspan>
+<tspan x="10" y="1066"> 63.  2018-04-12 11:29:22 +0000      458 bytes  doc/cli/npm-stars.md</tspan>
 
-<tspan x="10" y="1082"> 64.  2018-04-12 09:34:07 +0000      586 bytes  doc/cli/npm-start.md</tspan>
+<tspan x="10" y="1082"> 64.  2018-04-12 11:29:22 +0000      586 bytes  doc/cli/npm-start.md</tspan>
 
-<tspan x="10" y="1098"> 65.  2018-04-12 09:34:07 +0000      271 bytes  doc/cli/npm-stop.md</tspan>
+<tspan x="10" y="1098"> 65.  2018-04-12 11:29:22 +0000      271 bytes  doc/cli/npm-stop.md</tspan>
 
-<tspan x="10" y="1114"> 66.  2018-04-12 09:34:07 +0000     1827 bytes  doc/cli/npm-team.md</tspan>
+<tspan x="10" y="1114"> 66.  2018-04-12 11:29:22 +0000     1827 bytes  doc/cli/npm-team.md</tspan>
 
-<tspan x="10" y="1130"> 67.  2018-04-12 09:34:07 +0000      296 bytes  doc/cli/npm-test.md</tspan>
+<tspan x="10" y="1130"> 67.  2018-04-12 11:29:22 +0000      296 bytes  doc/cli/npm-test.md</tspan>
 
-<tspan x="10" y="1146"> 68.  2018-04-12 09:34:07 +0000     2801 bytes  doc/cli/npm-token.md</tspan>
+<tspan x="10" y="1146"> 68.  2018-04-12 11:29:22 +0000     2801 bytes  doc/cli/npm-token.md</tspan>
 
-<tspan x="10" y="1162"> 69.  2018-04-12 09:34:07 +0000     1380 bytes  doc/cli/npm-uninstall.md</tspan>
+<tspan x="10" y="1162"> 69.  2018-04-12 11:29:22 +0000     1380 bytes  doc/cli/npm-uninstall.md</tspan>
 
-<tspan x="10" y="1178"> 70.  2018-04-12 09:34:07 +0000     1245 bytes  doc/cli/npm-unpublish.md</tspan>
+<tspan x="10" y="1178"> 70.  2018-04-12 11:29:22 +0000     1245 bytes  doc/cli/npm-unpublish.md</tspan>
 
-<tspan x="10" y="1194"> 71.  2018-04-12 09:34:07 +0000     3049 bytes  doc/cli/npm-update.md</tspan>
+<tspan x="10" y="1194"> 71.  2018-04-12 11:29:22 +0000     3049 bytes  doc/cli/npm-update.md</tspan>
 
-<tspan x="10" y="1210"> 72.  2018-04-12 09:34:07 +0000     4332 bytes  doc/cli/npm-version.md</tspan>
+<tspan x="10" y="1210"> 72.  2018-04-12 11:29:22 +0000     4332 bytes  doc/cli/npm-version.md</tspan>
 
-<tspan x="10" y="1226"> 73.  2018-04-12 09:34:07 +0000     2998 bytes  doc/cli/npm-view.md</tspan>
+<tspan x="10" y="1226"> 73.  2018-04-12 11:29:22 +0000     2998 bytes  doc/cli/npm-view.md</tspan>
 
-<tspan x="10" y="1242"> 74.  2018-04-12 09:34:07 +0000      268 bytes  doc/cli/npm-whoami.md</tspan>
+<tspan x="10" y="1242"> 74.  2018-04-12 11:29:22 +0000      268 bytes  doc/cli/npm-whoami.md</tspan>
 
-<tspan x="10" y="1258"> 75.  2018-04-12 09:34:07 +0000     5335 bytes  doc/cli/npm.md</tspan>
+<tspan x="10" y="1258"> 75.  2018-04-12 11:29:22 +0000     5335 bytes  doc/cli/npm.md</tspan>
 
-<tspan x="10" y="1274"> 76.  2018-04-12 09:34:07 +0000     7743 bytes  doc/files/npm-folders.md</tspan>
+<tspan x="10" y="1274"> 76.  2018-04-12 11:29:22 +0000     7743 bytes  doc/files/npm-folders.md</tspan>
 
-<tspan x="10" y="1290"> 77.  2018-04-12 09:34:07 +0000     6491 bytes  doc/files/npm-package-locks.md</tspan>
+<tspan x="10" y="1290"> 77.  2018-04-12 11:29:22 +0000     6491 bytes  doc/files/npm-package-locks.md</tspan>
 
-<tspan x="10" y="1306"> 78.  2018-04-12 09:34:07 +0000     1094 bytes  doc/files/npm-shrinkwrap.json.md</tspan>
+<tspan x="10" y="1306"> 78.  2018-04-12 11:29:22 +0000     1094 bytes  doc/files/npm-shrinkwrap.json.md</tspan>
 
-<tspan x="10" y="1322"> 79.  2018-04-12 09:34:07 +0000     2739 bytes  doc/files/npmrc.md</tspan>
+<tspan x="10" y="1322"> 79.  2018-04-12 11:29:22 +0000     2739 bytes  doc/files/npmrc.md</tspan>
 
-<tspan x="10" y="1338"> 80.  2018-04-12 09:34:07 +0000     5642 bytes  doc/files/package-lock.json.md</tspan>
+<tspan x="10" y="1338"> 80.  2018-04-12 11:29:22 +0000     5642 bytes  doc/files/package-lock.json.md</tspan>
 
-<tspan x="10" y="1354"> 81.  2018-04-12 09:34:07 +0000    25860 bytes  doc/files/package.json.md</tspan>
+<tspan x="10" y="1354"> 81.  2018-04-12 11:29:22 +0000    25860 bytes  doc/files/package.json.md</tspan>
 
-<tspan x="10" y="1370"> 82.  2018-04-12 09:34:07 +0000     5406 bytes  doc/misc/npm-coding-style.md</tspan>
+<tspan x="10" y="1370"> 82.  2018-04-12 11:29:22 +0000     5406 bytes  doc/misc/npm-coding-style.md</tspan>
 
-<tspan x="10" y="1386"> 83.  2018-04-12 09:34:07 +0000    30357 bytes  doc/misc/npm-config.md</tspan>
+<tspan x="10" y="1386"> 83.  2018-04-12 11:29:22 +0000    30357 bytes  doc/misc/npm-config.md</tspan>
 
-<tspan x="10" y="1402"> 84.  2018-04-12 09:34:07 +0000     7451 bytes  doc/misc/npm-developers.md</tspan>
+<tspan x="10" y="1402"> 84.  2018-04-12 11:29:22 +0000     7451 bytes  doc/misc/npm-developers.md</tspan>
 
-<tspan x="10" y="1418"> 85.  2018-04-12 09:34:07 +0000     6143 bytes  doc/misc/npm-disputes.md</tspan>
+<tspan x="10" y="1418"> 85.  2018-04-12 11:29:22 +0000     6143 bytes  doc/misc/npm-disputes.md</tspan>
 
-<tspan x="10" y="1434"> 86.  2018-04-12 09:34:07 +0000     3716 bytes  doc/misc/npm-index.md</tspan>
+<tspan x="10" y="1434"> 86.  2018-04-12 11:29:22 +0000     3716 bytes  doc/misc/npm-index.md</tspan>
 
-<tspan x="10" y="1450"> 87.  2018-04-12 09:34:07 +0000     2120 bytes  doc/misc/npm-orgs.md</tspan>
+<tspan x="10" y="1450"> 87.  2018-04-12 11:29:22 +0000     2120 bytes  doc/misc/npm-orgs.md</tspan>
 
-<tspan x="10" y="1466"> 88.  2018-04-12 09:34:07 +0000     3568 bytes  doc/misc/npm-registry.md</tspan>
+<tspan x="10" y="1466"> 88.  2018-04-12 11:29:22 +0000     3568 bytes  doc/misc/npm-registry.md</tspan>
 
-<tspan x="10" y="1482"> 89.  2018-04-12 09:34:07 +0000     4230 bytes  doc/misc/npm-scope.md</tspan>
+<tspan x="10" y="1482"> 89.  2018-04-12 11:29:22 +0000     4230 bytes  doc/misc/npm-scope.md</tspan>
 
-<tspan x="10" y="1498"> 90.  2018-04-12 09:34:07 +0000     9755 bytes  doc/misc/npm-scripts.md</tspan>
+<tspan x="10" y="1498"> 90.  2018-04-12 11:29:22 +0000     9755 bytes  doc/misc/npm-scripts.md</tspan>
 
-<tspan x="10" y="1514"> 91.  2018-04-12 09:34:07 +0000     1633 bytes  doc/misc/removing-npm.md</tspan>
+<tspan x="10" y="1514"> 91.  2018-04-12 11:29:22 +0000     1633 bytes  doc/misc/removing-npm.md</tspan>
 
-<tspan x="10" y="1530"> 92.  2018-04-12 09:34:07 +0000    14655 bytes  doc/misc/semver.md</tspan>
+<tspan x="10" y="1530"> 92.  2018-04-12 11:29:22 +0000    14655 bytes  doc/misc/semver.md</tspan>
 
-<tspan x="10" y="1546"> 93.  2018-04-12 09:34:07 +0000     5725 bytes  doc/spec/file-specifiers.md</tspan>
+<tspan x="10" y="1546"> 93.  2018-04-12 11:29:22 +0000     5725 bytes  doc/spec/file-specifiers.md</tspan>
 
-<tspan x="10" y="1562"> 94.  2018-04-12 09:34:07 +0000     9724 bytes  doc/spec/package-lock.md</tspan>
+<tspan x="10" y="1562"> 94.  2018-04-12 11:29:22 +0000     9724 bytes  doc/spec/package-lock.md</tspan>
 
-<tspan x="10" y="1578"> 95.  2018-04-12 09:34:07 +0000     8770 bytes  html/doc/README.html</tspan>
+<tspan x="10" y="1578"> 95.  2018-04-12 11:29:22 +0000     8770 bytes  html/doc/README.html</tspan>
 
-<tspan x="10" y="1594"> 96.  2018-04-12 09:34:07 +0000     5628 bytes  html/doc/cli/npm-access.html</tspan>
+<tspan x="10" y="1594"> 96.  2018-04-12 11:29:22 +0000     5628 bytes  html/doc/cli/npm-access.html</tspan>
 
-<tspan x="10" y="1610"> 97.  2018-04-12 09:34:07 +0000     6382 bytes  html/doc/cli/npm-adduser.html</tspan>
+<tspan x="10" y="1610"> 97.  2018-04-12 11:29:22 +0000     6382 bytes  html/doc/cli/npm-adduser.html</tspan>
 
-<tspan x="10" y="1626"> 98.  2018-04-12 09:34:07 +0000     3121 bytes  html/doc/cli/npm-bin.html</tspan>
+<tspan x="10" y="1626"> 98.  2018-04-12 11:29:22 +0000     3121 bytes  html/doc/cli/npm-bin.html</tspan>
 
-<tspan x="10" y="1642"> 99.  2018-04-12 09:34:07 +0000     4071 bytes  html/doc/cli/npm-bugs.html</tspan>
+<tspan x="10" y="1642"> 99.  2018-04-12 11:29:22 +0000     4071 bytes  html/doc/cli/npm-bugs.html</tspan>
 
-<tspan x="10" y="1658">100.  2018-04-12 09:34:07 +0000     3336 bytes  html/doc/cli/npm-build.html</tspan>
+<tspan x="10" y="1658">100.  2018-04-12 11:29:22 +0000     3336 bytes  html/doc/cli/npm-build.html</tspan>
 
-<tspan x="10" y="1674">101.  2018-04-12 09:34:07 +0000     2979 bytes  html/doc/cli/npm-bundle.html</tspan>
+<tspan x="10" y="1674">101.  2018-04-12 11:29:22 +0000     2979 bytes  html/doc/cli/npm-bundle.html</tspan>
 
-<tspan x="10" y="1690">102.  2018-04-12 09:34:07 +0000     5917 bytes  html/doc/cli/npm-cache.html</tspan>
+<tspan x="10" y="1690">102.  2018-04-12 11:29:22 +0000     5917 bytes  html/doc/cli/npm-cache.html</tspan>
 
-<tspan x="10" y="1706">103.  2018-04-12 09:34:07 +0000     4714 bytes  html/doc/cli/npm-ci.html</tspan>
+<tspan x="10" y="1706">103.  2018-04-12 11:29:22 +0000     4714 bytes  html/doc/cli/npm-ci.html</tspan>
 
-<tspan x="10" y="1722">104.  2018-04-12 09:34:07 +0000     3587 bytes  html/doc/cli/npm-completion.html</tspan>
+<tspan x="10" y="1722">104.  2018-04-12 11:29:22 +0000     3587 bytes  html/doc/cli/npm-completion.html</tspan>
 
-<tspan x="10" y="1738">105.  2018-04-12 09:34:07 +0000     4634 bytes  html/doc/cli/npm-config.html</tspan>
+<tspan x="10" y="1738">105.  2018-04-12 11:29:22 +0000     4634 bytes  html/doc/cli/npm-config.html</tspan>
 
-<tspan x="10" y="1754">106.  2018-04-12 09:34:07 +0000     4183 bytes  html/doc/cli/npm-dedupe.html</tspan>
+<tspan x="10" y="1754">106.  2018-04-12 11:29:22 +0000     4183 bytes  html/doc/cli/npm-dedupe.html</tspan>
 
-<tspan x="10" y="1770">107.  2018-04-12 09:34:07 +0000     3521 bytes  html/doc/cli/npm-deprecate.html</tspan>
+<tspan x="10" y="1770">107.  2018-04-12 11:29:22 +0000     3521 bytes  html/doc/cli/npm-deprecate.html</tspan>
 
-<tspan x="10" y="1786">108.  2018-04-12 09:34:07 +0000     6341 bytes  html/doc/cli/npm-dist-tag.html</tspan>
+<tspan x="10" y="1786">108.  2018-04-12 11:29:22 +0000     6341 bytes  html/doc/cli/npm-dist-tag.html</tspan>
 
-<tspan x="10" y="1802">109.  2018-04-12 09:34:07 +0000     4138 bytes  html/doc/cli/npm-docs.html</tspan>
+<tspan x="10" y="1802">109.  2018-04-12 11:29:22 +0000     4138 bytes  html/doc/cli/npm-docs.html</tspan>
 
-<tspan x="10" y="1818">110.  2018-04-12 09:34:07 +0000     8028 bytes  html/doc/cli/npm-doctor.html</tspan>
+<tspan x="10" y="1818">110.  2018-04-12 11:29:22 +0000     8028 bytes  html/doc/cli/npm-doctor.html</tspan>
 
-<tspan x="10" y="1834">111.  2018-04-12 09:34:07 +0000     3940 bytes  html/doc/cli/npm-edit.html</tspan>
+<tspan x="10" y="1834">111.  2018-04-12 11:29:22 +0000     3940 bytes  html/doc/cli/npm-edit.html</tspan>
 
-<tspan x="10" y="1850">112.  2018-04-12 09:34:07 +0000     3850 bytes  html/doc/cli/npm-explore.html</tspan>
+<tspan x="10" y="1850">112.  2018-04-12 11:29:22 +0000     3850 bytes  html/doc/cli/npm-explore.html</tspan>
 
-<tspan x="10" y="1866">113.  2018-04-12 09:34:07 +0000     3597 bytes  html/doc/cli/npm-help-search.html</tspan>
+<tspan x="10" y="1866">113.  2018-04-12 11:29:22 +0000     3597 bytes  html/doc/cli/npm-help-search.html</tspan>
 
-<tspan x="10" y="1882">114.  2018-04-12 09:34:07 +0000     3962 bytes  html/doc/cli/npm-help.html</tspan>
+<tspan x="10" y="1882">114.  2018-04-12 11:29:22 +0000     3962 bytes  html/doc/cli/npm-help.html</tspan>
 
-<tspan x="10" y="1898">115.  2018-04-12 09:34:07 +0000     3878 bytes  html/doc/cli/npm-init.html</tspan>
+<tspan x="10" y="1898">115.  2018-04-12 11:29:22 +0000     3878 bytes  html/doc/cli/npm-init.html</tspan>
 
-<tspan x="10" y="1914">116.  2018-04-12 09:34:07 +0000     3510 bytes  html/doc/cli/npm-install-test.html</tspan>
+<tspan x="10" y="1914">116.  2018-04-12 11:29:22 +0000     3510 bytes  html/doc/cli/npm-install-test.html</tspan>
 
-<tspan x="10" y="1930">117.  2018-04-12 09:34:07 +0000    24148 bytes  html/doc/cli/npm-install.html</tspan>
+<tspan x="10" y="1930">117.  2018-04-12 11:29:22 +0000    24148 bytes  html/doc/cli/npm-install.html</tspan>
 
-<tspan x="10" y="1946">118.  2018-04-12 09:34:07 +0000     5744 bytes  html/doc/cli/npm-link.html</tspan>
+<tspan x="10" y="1946">118.  2018-04-12 11:29:22 +0000     5744 bytes  html/doc/cli/npm-link.html</tspan>
 
-<tspan x="10" y="1962">119.  2018-04-12 09:34:07 +0000     4250 bytes  html/doc/cli/npm-logout.html</tspan>
+<tspan x="10" y="1962">119.  2018-04-12 11:29:22 +0000     4250 bytes  html/doc/cli/npm-logout.html</tspan>
 
-<tspan x="10" y="1978">120.  2018-04-12 09:34:07 +0000     5793 bytes  html/doc/cli/npm-ls.html</tspan>
+<tspan x="10" y="1978">120.  2018-04-12 11:29:22 +0000     5793 bytes  html/doc/cli/npm-ls.html</tspan>
 
-<tspan x="10" y="1994">121.  2018-04-12 09:34:07 +0000     7141 bytes  html/doc/cli/npm-outdated.html</tspan>
+<tspan x="10" y="1994">121.  2018-04-12 11:29:22 +0000     7141 bytes  html/doc/cli/npm-outdated.html</tspan>
 
-<tspan x="10" y="2010">122.  2018-04-12 09:34:07 +0000     3965 bytes  html/doc/cli/npm-owner.html</tspan>
+<tspan x="10" y="2010">122.  2018-04-12 11:29:22 +0000     3965 bytes  html/doc/cli/npm-owner.html</tspan>
 
-<tspan x="10" y="2026">123.  2018-04-12 09:34:07 +0000     3557 bytes  html/doc/cli/npm-pack.html</tspan>
+<tspan x="10" y="2026">123.  2018-04-12 11:29:22 +0000     3557 bytes  html/doc/cli/npm-pack.html</tspan>
 
-<tspan x="10" y="2042">124.  2018-04-12 09:34:07 +0000     3171 bytes  html/doc/cli/npm-ping.html</tspan>
+<tspan x="10" y="2042">124.  2018-04-12 11:29:22 +0000     3171 bytes  html/doc/cli/npm-ping.html</tspan>
 
-<tspan x="10" y="2058">125.  2018-04-12 09:34:07 +0000     3384 bytes  html/doc/cli/npm-prefix.html</tspan>
+<tspan x="10" y="2058">125.  2018-04-12 11:29:22 +0000     3384 bytes  html/doc/cli/npm-prefix.html</tspan>
 
-<tspan x="10" y="2074">126.  2018-04-12 09:34:07 +0000     5805 bytes  html/doc/cli/npm-profile.html</tspan>
+<tspan x="10" y="2074">126.  2018-04-12 11:29:22 +0000     5805 bytes  html/doc/cli/npm-profile.html</tspan>
 
-<tspan x="10" y="2090">127.  2018-04-12 09:34:07 +0000     4207 bytes  html/doc/cli/npm-prune.html</tspan>
+<tspan x="10" y="2090">127.  2018-04-12 11:29:22 +0000     4207 bytes  html/doc/cli/npm-prune.html</tspan>
 
-<tspan x="10" y="2106">128.  2018-04-12 09:34:07 +0000     6330 bytes  html/doc/cli/npm-publish.html</tspan>
+<tspan x="10" y="2106">128.  2018-04-12 11:29:22 +0000     6330 bytes  html/doc/cli/npm-publish.html</tspan>
 
-<tspan x="10" y="2122">129.  2018-04-12 09:34:07 +0000     3083 bytes  html/doc/cli/npm-rebuild.html</tspan>
+<tspan x="10" y="2122">129.  2018-04-12 11:29:22 +0000     3083 bytes  html/doc/cli/npm-rebuild.html</tspan>
 
-<tspan x="10" y="2138">130.  2018-04-12 09:34:07 +0000     3490 bytes  html/doc/cli/npm-repo.html</tspan>
+<tspan x="10" y="2138">130.  2018-04-12 11:29:22 +0000     3490 bytes  html/doc/cli/npm-repo.html</tspan>
 
-<tspan x="10" y="2154">131.  2018-04-12 09:34:07 +0000     3802 bytes  html/doc/cli/npm-restart.html</tspan>
+<tspan x="10" y="2154">131.  2018-04-12 11:29:22 +0000     3802 bytes  html/doc/cli/npm-restart.html</tspan>
 
-<tspan x="10" y="2170">132.  2018-04-12 09:34:07 +0000     3127 bytes  html/doc/cli/npm-root.html</tspan>
+<tspan x="10" y="2170">132.  2018-04-12 11:29:22 +0000     3127 bytes  html/doc/cli/npm-root.html</tspan>
 
-<tspan x="10" y="2186">133.  2018-04-12 09:34:07 +0000     6699 bytes  html/doc/cli/npm-run-script.html</tspan>
+<tspan x="10" y="2186">133.  2018-04-12 11:29:22 +0000     6699 bytes  html/doc/cli/npm-run-script.html</tspan>
 
-<tspan x="10" y="2202">134.  2018-04-12 09:34:07 +0000     6212 bytes  html/doc/cli/npm-search.html</tspan>
+<tspan x="10" y="2202">134.  2018-04-12 11:29:22 +0000     6212 bytes  html/doc/cli/npm-search.html</tspan>
 
-<tspan x="10" y="2218">135.  2018-04-12 09:34:07 +0000     3738 bytes  html/doc/cli/npm-shrinkwrap.html</tspan>
+<tspan x="10" y="2218">135.  2018-04-12 11:29:22 +0000     3738 bytes  html/doc/cli/npm-shrinkwrap.html</tspan>
 
-<tspan x="10" y="2234">136.  2018-04-12 09:34:07 +0000     3208 bytes  html/doc/cli/npm-star.html</tspan>
+<tspan x="10" y="2234">136.  2018-04-12 11:29:22 +0000     3208 bytes  html/doc/cli/npm-star.html</tspan>
 
-<tspan x="10" y="2250">137.  2018-04-12 09:34:07 +0000     3212 bytes  html/doc/cli/npm-stars.html</tspan>
+<tspan x="10" y="2250">137.  2018-04-12 11:29:22 +0000     3212 bytes  html/doc/cli/npm-stars.html</tspan>
 
-<tspan x="10" y="2266">138.  2018-04-12 09:34:07 +0000     3566 bytes  html/doc/cli/npm-start.html</tspan>
+<tspan x="10" y="2266">138.  2018-04-12 11:29:22 +0000     3566 bytes  html/doc/cli/npm-start.html</tspan>
 
-<tspan x="10" y="2282">139.  2018-04-12 09:34:07 +0000     3096 bytes  html/doc/cli/npm-stop.html</tspan>
+<tspan x="10" y="2282">139.  2018-04-12 11:29:22 +0000     3096 bytes  html/doc/cli/npm-stop.html</tspan>
 
-<tspan x="10" y="2298">140.  2018-04-12 09:34:07 +0000     4701 bytes  html/doc/cli/npm-team.html</tspan>
+<tspan x="10" y="2298">140.  2018-04-12 11:29:22 +0000     4701 bytes  html/doc/cli/npm-team.html</tspan>
 
-<tspan x="10" y="2314">141.  2018-04-12 09:34:07 +0000     3117 bytes  html/doc/cli/npm-test.html</tspan>
+<tspan x="10" y="2314">141.  2018-04-12 11:29:22 +0000     3117 bytes  html/doc/cli/npm-test.html</tspan>
 
-<tspan x="10" y="2330">142.  2018-04-12 09:34:07 +0000     5535 bytes  html/doc/cli/npm-token.html</tspan>
+<tspan x="10" y="2330">142.  2018-04-12 11:29:22 +0000     5535 bytes  html/doc/cli/npm-token.html</tspan>
 
-<tspan x="10" y="2346">143.  2018-04-12 09:34:07 +0000     4565 bytes  html/doc/cli/npm-uninstall.html</tspan>
+<tspan x="10" y="2346">143.  2018-04-12 11:29:22 +0000     4565 bytes  html/doc/cli/npm-uninstall.html</tspan>
 
-<tspan x="10" y="2362">144.  2018-04-12 09:34:07 +0000     4248 bytes  html/doc/cli/npm-unpublish.html</tspan>
+<tspan x="10" y="2362">144.  2018-04-12 11:29:22 +0000     4248 bytes  html/doc/cli/npm-unpublish.html</tspan>
 
-<tspan x="10" y="2378">145.  2018-04-12 09:34:07 +0000     7214 bytes  html/doc/cli/npm-update.html</tspan>
+<tspan x="10" y="2378">145.  2018-04-12 11:29:22 +0000     7214 bytes  html/doc/cli/npm-update.html</tspan>
 
-<tspan x="10" y="2394">146.  2018-04-12 09:34:07 +0000     8150 bytes  html/doc/cli/npm-version.html</tspan>
+<tspan x="10" y="2394">146.  2018-04-12 11:29:22 +0000     8150 bytes  html/doc/cli/npm-version.html</tspan>
 
-<tspan x="10" y="2410">147.  2018-04-12 09:34:07 +0000     6298 bytes  html/doc/cli/npm-view.html</tspan>
+<tspan x="10" y="2410">147.  2018-04-12 11:29:22 +0000     6298 bytes  html/doc/cli/npm-view.html</tspan>
 
-<tspan x="10" y="2426">148.  2018-04-12 09:34:07 +0000     3041 bytes  html/doc/cli/npm-whoami.html</tspan>
+<tspan x="10" y="2426">148.  2018-04-12 11:29:22 +0000     3041 bytes  html/doc/cli/npm-whoami.html</tspan>
 
-<tspan x="10" y="2442">149.  2018-04-12 09:34:07 +0000     9616 bytes  html/doc/cli/npm.html</tspan>
+<tspan x="10" y="2442">149.  2018-04-12 11:29:22 +0000     9616 bytes  html/doc/cli/npm.html</tspan>
 
-<tspan x="10" y="2458">150.  2018-04-12 09:34:07 +0000    12297 bytes  html/doc/files/npm-folders.html</tspan>
+<tspan x="10" y="2458">150.  2018-04-12 11:29:22 +0000    12297 bytes  html/doc/files/npm-folders.html</tspan>
 
-<tspan x="10" y="2474">151.  2018-04-12 09:34:07 +0000    12297 bytes  html/doc/files/npm-global.html</tspan>
+<tspan x="10" y="2474">151.  2018-04-12 11:29:22 +0000    12297 bytes  html/doc/files/npm-global.html</tspan>
 
-<tspan x="10" y="2490">152.  2018-04-12 09:34:07 +0000    36616 bytes  html/doc/files/npm-json.html</tspan>
+<tspan x="10" y="2490">152.  2018-04-12 11:29:22 +0000    36616 bytes  html/doc/files/npm-json.html</tspan>
 
-<tspan x="10" y="2506">153.  2018-04-12 09:34:07 +0000    10845 bytes  html/doc/files/npm-package-locks.html</tspan>
+<tspan x="10" y="2506">153.  2018-04-12 11:29:22 +0000    10845 bytes  html/doc/files/npm-package-locks.html</tspan>
 
-<tspan x="10" y="2522">154.  2018-04-12 09:34:07 +0000     4074 bytes  html/doc/files/npm-shrinkwrap.json.html</tspan>
+<tspan x="10" y="2522">154.  2018-04-12 11:29:22 +0000     4074 bytes  html/doc/files/npm-shrinkwrap.json.html</tspan>
 
-<tspan x="10" y="2538">155.  2018-04-12 09:34:07 +0000     6125 bytes  html/doc/files/npmrc.html</tspan>
+<tspan x="10" y="2538">155.  2018-04-12 11:29:22 +0000     6125 bytes  html/doc/files/npmrc.html</tspan>
 
-<tspan x="10" y="2554">156.  2018-04-12 09:34:07 +0000     9392 bytes  html/doc/files/package-lock.json.html</tspan>
+<tspan x="10" y="2554">156.  2018-04-12 11:29:22 +0000     9392 bytes  html/doc/files/package-lock.json.html</tspan>
 
-<tspan x="10" y="2570">157.  2018-04-12 09:34:07 +0000    36616 bytes  html/doc/files/package.json.html</tspan>
+<tspan x="10" y="2570">157.  2018-04-12 11:29:22 +0000    36616 bytes  html/doc/files/package.json.html</tspan>
 
-<tspan x="10" y="2586">158.  2018-04-12 09:34:07 +0000    10916 bytes  html/doc/index.html</tspan>
+<tspan x="10" y="2586">158.  2018-04-12 11:29:22 +0000    10916 bytes  html/doc/index.html</tspan>
 
-<tspan x="10" y="2602">159.  2018-04-12 09:34:07 +0000     9169 bytes  html/doc/misc/npm-coding-style.html</tspan>
+<tspan x="10" y="2602">159.  2018-04-12 11:29:22 +0000     9169 bytes  html/doc/misc/npm-coding-style.html</tspan>
 
-<tspan x="10" y="2618">160.  2018-04-12 09:34:07 +0000    44910 bytes  html/doc/misc/npm-config.html</tspan>
+<tspan x="10" y="2618">160.  2018-04-12 11:29:22 +0000    44910 bytes  html/doc/misc/npm-config.html</tspan>
 
-<tspan x="10" y="2634">161.  2018-04-12 09:34:07 +0000    12533 bytes  html/doc/misc/npm-developers.html</tspan>
+<tspan x="10" y="2634">161.  2018-04-12 11:29:22 +0000    12533 bytes  html/doc/misc/npm-developers.html</tspan>
 
-<tspan x="10" y="2650">162.  2018-04-12 09:34:07 +0000    10360 bytes  html/doc/misc/npm-disputes.html</tspan>
+<tspan x="10" y="2650">162.  2018-04-12 11:29:22 +0000    10360 bytes  html/doc/misc/npm-disputes.html</tspan>
 
-<tspan x="10" y="2666">163.  2018-04-12 09:34:07 +0000    11147 bytes  html/doc/misc/npm-index.html</tspan>
+<tspan x="10" y="2666">163.  2018-04-12 11:29:22 +0000    11147 bytes  html/doc/misc/npm-index.html</tspan>
 
-<tspan x="10" y="2682">164.  2018-04-12 09:34:07 +0000     5529 bytes  html/doc/misc/npm-orgs.html</tspan>
+<tspan x="10" y="2682">164.  2018-04-12 11:29:22 +0000     5529 bytes  html/doc/misc/npm-orgs.html</tspan>
 
-<tspan x="10" y="2698">165.  2018-04-12 09:34:07 +0000     7479 bytes  html/doc/misc/npm-registry.html</tspan>
+<tspan x="10" y="2698">165.  2018-04-12 11:29:22 +0000     7479 bytes  html/doc/misc/npm-registry.html</tspan>
 
-<tspan x="10" y="2714">166.  2018-04-12 09:34:07 +0000     7832 bytes  html/doc/misc/npm-scope.html</tspan>
+<tspan x="10" y="2714">166.  2018-04-12 11:29:22 +0000     7832 bytes  html/doc/misc/npm-scope.html</tspan>
 
-<tspan x="10" y="2730">167.  2018-04-12 09:34:07 +0000    14838 bytes  html/doc/misc/npm-scripts.html</tspan>
+<tspan x="10" y="2730">167.  2018-04-12 11:29:22 +0000    14838 bytes  html/doc/misc/npm-scripts.html</tspan>
 
-<tspan x="10" y="2746">168.  2018-04-12 09:34:07 +0000     4591 bytes  html/doc/misc/removing-npm.html</tspan>
+<tspan x="10" y="2746">168.  2018-04-12 11:29:22 +0000     4591 bytes  html/doc/misc/removing-npm.html</tspan>
 
-<tspan x="10" y="2762">169.  2018-04-12 09:34:07 +0000    22169 bytes  html/doc/misc/semver.html</tspan>
+<tspan x="10" y="2762">169.  2018-04-12 11:29:22 +0000    22169 bytes  html/doc/misc/semver.html</tspan>
 
-<tspan x="10" y="2778">170.  2018-04-12 09:34:07 +0000     2159 bytes  html/docfoot.html</tspan>
+<tspan x="10" y="2778">170.  2018-04-12 11:29:22 +0000     2159 bytes  html/docfoot.html</tspan>
 
-<tspan x="10" y="2794">171.  2018-04-12 09:34:07 +0000      295 bytes  html/dochead.html</tspan>
+<tspan x="10" y="2794">171.  2018-04-12 11:29:22 +0000      295 bytes  html/dochead.html</tspan>
 
-<tspan x="10" y="2810">172.  2018-04-12 09:34:07 +0000     7094 bytes  html/favicon.ico</tspan>
+<tspan x="10" y="2810">172.  2018-04-12 11:29:22 +0000     7094 bytes  html/favicon.ico</tspan>
 
-<tspan x="10" y="2826">173.  2018-04-12 09:34:07 +0000     2486 bytes  html/index.html</tspan>
+<tspan x="10" y="2826">173.  2018-04-12 11:29:22 +0000     2486 bytes  html/index.html</tspan>
 
-<tspan x="10" y="2842">174.  2018-04-12 09:34:07 +0000     5635 bytes  html/static/style.css</tspan>
+<tspan x="10" y="2842">174.  2018-04-12 11:29:22 +0000     5635 bytes  html/static/style.css</tspan>
 
-<tspan x="10" y="2858">175.  2018-04-12 09:34:07 +0000      727 bytes  html/static/toc.js</tspan>
+<tspan x="10" y="2858">175.  2018-04-12 11:29:22 +0000      727 bytes  html/static/toc.js</tspan>
 
-<tspan x="10" y="2874">176.  2018-04-12 09:34:07 +0000     3312 bytes  lib/access.js</tspan>
+<tspan x="10" y="2874">176.  2018-04-12 11:29:22 +0000     3312 bytes  lib/access.js</tspan>
 
-<tspan x="10" y="2890">177.  2018-04-12 09:34:07 +0000     1314 bytes  lib/adduser.js</tspan>
+<tspan x="10" y="2890">177.  2018-04-12 11:29:22 +0000     1314 bytes  lib/adduser.js</tspan>
 
-<tspan x="10" y="2906">178.  2018-04-12 09:34:07 +0000     2509 bytes  lib/auth/legacy.js</tspan>
+<tspan x="10" y="2906">178.  2018-04-12 11:29:22 +0000     2509 bytes  lib/auth/legacy.js</tspan>
 
-<tspan x="10" y="2922">179.  2018-04-12 09:34:07 +0000      182 bytes  lib/auth/oauth.js</tspan>
+<tspan x="10" y="2922">179.  2018-04-12 11:29:22 +0000      182 bytes  lib/auth/oauth.js</tspan>
 
-<tspan x="10" y="2938">180.  2018-04-12 09:34:07 +0000      181 bytes  lib/auth/saml.js</tspan>
+<tspan x="10" y="2938">180.  2018-04-12 11:29:22 +0000      181 bytes  lib/auth/saml.js</tspan>
 
-<tspan x="10" y="2954">181.  2018-04-12 09:34:07 +0000     1877 bytes  lib/auth/sso.js</tspan>
+<tspan x="10" y="2954">181.  2018-04-12 11:29:22 +0000     1877 bytes  lib/auth/sso.js</tspan>
 
-<tspan x="10" y="2970">182.  2018-04-12 09:34:07 +0000      515 bytes  lib/bin.js</tspan>
+<tspan x="10" y="2970">182.  2018-04-12 11:29:22 +0000      515 bytes  lib/bin.js</tspan>
 
-<tspan x="10" y="2986">183.  2018-04-12 09:34:07 +0000      879 bytes  lib/bugs.js</tspan>
+<tspan x="10" y="2986">183.  2018-04-12 11:29:22 +0000      879 bytes  lib/bugs.js</tspan>
 
-<tspan x="10" y="3002">184.  2018-04-12 09:34:07 +0000     4555 bytes  lib/build.js</tspan>
+<tspan x="10" y="3002">184.  2018-04-12 11:29:22 +0000     4555 bytes  lib/build.js</tspan>
 
-<tspan x="10" y="3018">185.  2018-04-12 09:34:07 +0000     4539 bytes  lib/cache.js</tspan>
+<tspan x="10" y="3018">185.  2018-04-12 11:29:22 +0000     4539 bytes  lib/cache.js</tspan>
 
-<tspan x="10" y="3034">186.  2018-04-12 09:34:07 +0000      771 bytes  lib/ci.js</tspan>
+<tspan x="10" y="3034">186.  2018-04-12 11:29:22 +0000      771 bytes  lib/ci.js</tspan>
 
-<tspan x="10" y="3050">187.  2018-04-12 09:34:07 +0000     7234 bytes  lib/completion.js</tspan>
+<tspan x="10" y="3050">187.  2018-04-12 11:29:22 +0000     7234 bytes  lib/completion.js</tspan>
 
-<tspan x="10" y="3066">188.  2018-04-12 09:34:07 +0000     7396 bytes  lib/config.js</tspan>
+<tspan x="10" y="3066">188.  2018-04-12 11:29:22 +0000     7396 bytes  lib/config.js</tspan>
 
-<tspan x="10" y="3082">189.  2018-04-12 09:34:07 +0000      716 bytes  lib/config/bin-links.js</tspan>
+<tspan x="10" y="3082">189.  2018-04-12 11:29:22 +0000      716 bytes  lib/config/bin-links.js</tspan>
 
-<tspan x="10" y="3098">190.  2018-04-12 09:34:07 +0000      423 bytes  lib/config/clear-credentials-by-uri.js</tspan>
+<tspan x="10" y="3098">190.  2018-04-12 11:29:22 +0000      423 bytes  lib/config/clear-credentials-by-uri.js</tspan>
 
-<tspan x="10" y="3114">191.  2018-04-12 09:34:07 +0000     1931 bytes  lib/config/cmd-list.js</tspan>
+<tspan x="10" y="3114">191.  2018-04-12 11:29:22 +0000     1931 bytes  lib/config/cmd-list.js</tspan>
 
-<tspan x="10" y="3130">192.  2018-04-12 09:34:07 +0000    11337 bytes  lib/config/core.js</tspan>
+<tspan x="10" y="3130">192.  2018-04-12 11:29:22 +0000    11337 bytes  lib/config/core.js</tspan>
 
-<tspan x="10" y="3146">193.  2018-04-12 09:34:07 +0000    11470 bytes  lib/config/defaults.js</tspan>
+<tspan x="10" y="3146">193.  2018-04-12 11:29:22 +0000    11470 bytes  lib/config/defaults.js</tspan>
 
-<tspan x="10" y="3162">194.  2018-04-12 09:34:07 +0000     1974 bytes  lib/config/fetch-opts.js</tspan>
+<tspan x="10" y="3162">194.  2018-04-12 11:29:22 +0000     1974 bytes  lib/config/fetch-opts.js</tspan>
 
-<tspan x="10" y="3178">195.  2018-04-12 09:34:07 +0000      687 bytes  lib/config/gentle-fs.js</tspan>
+<tspan x="10" y="3178">195.  2018-04-12 11:29:22 +0000      687 bytes  lib/config/gentle-fs.js</tspan>
 
-<tspan x="10" y="3194">196.  2018-04-12 09:34:07 +0000     2044 bytes  lib/config/get-credentials-by-uri.js</tspan>
+<tspan x="10" y="3194">196.  2018-04-12 11:29:22 +0000     2044 bytes  lib/config/get-credentials-by-uri.js</tspan>
 
-<tspan x="10" y="3210">197.  2018-04-12 09:34:07 +0000      851 bytes  lib/config/lifecycle.js</tspan>
+<tspan x="10" y="3210">197.  2018-04-12 11:29:22 +0000      851 bytes  lib/config/lifecycle.js</tspan>
 
-<tspan x="10" y="3226">198.  2018-04-12 09:34:07 +0000      682 bytes  lib/config/load-cafile.js</tspan>
+<tspan x="10" y="3226">198.  2018-04-12 11:29:22 +0000      682 bytes  lib/config/load-cafile.js</tspan>
 
-<tspan x="10" y="3242">199.  2018-04-12 09:34:07 +0000     1329 bytes  lib/config/load-prefix.js</tspan>
+<tspan x="10" y="3242">199.  2018-04-12 11:29:22 +0000     1329 bytes  lib/config/load-prefix.js</tspan>
 
-<tspan x="10" y="3258">200.  2018-04-12 09:34:07 +0000      386 bytes  lib/config/load-uid.js</tspan>
+<tspan x="10" y="3258">200.  2018-04-12 11:29:22 +0000      386 bytes  lib/config/load-uid.js</tspan>
 
-<tspan x="10" y="3274">201.  2018-04-12 09:34:07 +0000      471 bytes  lib/config/nerf-dart.js</tspan>
+<tspan x="10" y="3274">201.  2018-04-12 11:29:22 +0000      471 bytes  lib/config/nerf-dart.js</tspan>
 
-<tspan x="10" y="3290">202.  2018-04-12 09:34:07 +0000     4131 bytes  lib/config/pacote.js</tspan>
+<tspan x="10" y="3290">202.  2018-04-12 11:29:22 +0000     4131 bytes  lib/config/pacote.js</tspan>
 
-<tspan x="10" y="3306">203.  2018-04-12 09:34:07 +0000      788 bytes  lib/config/reg-client.js</tspan>
+<tspan x="10" y="3306">203.  2018-04-12 11:29:22 +0000      788 bytes  lib/config/reg-client.js</tspan>
 
-<tspan x="10" y="3322">204.  2018-04-12 09:34:07 +0000     1266 bytes  lib/config/set-credentials-by-uri.js</tspan>
+<tspan x="10" y="3322">204.  2018-04-12 11:29:22 +0000     1266 bytes  lib/config/set-credentials-by-uri.js</tspan>
 
-<tspan x="10" y="3338">205.  2018-04-12 09:34:07 +0000      749 bytes  lib/config/set-user.js</tspan>
+<tspan x="10" y="3338">205.  2018-04-12 11:29:22 +0000      749 bytes  lib/config/set-user.js</tspan>
 
-<tspan x="10" y="3354">206.  2018-04-12 09:34:07 +0000     4952 bytes  lib/dedupe.js</tspan>
+<tspan x="10" y="3354">206.  2018-04-12 11:29:22 +0000     4952 bytes  lib/dedupe.js</tspan>
 
-<tspan x="10" y="3370">207.  2018-04-12 09:34:07 +0000     1440 bytes  lib/deprecate.js</tspan>
+<tspan x="10" y="3370">207.  2018-04-12 11:29:22 +0000     1440 bytes  lib/deprecate.js</tspan>
 
-<tspan x="10" y="3386">208.  2018-04-12 09:34:07 +0000     3753 bytes  lib/dist-tag.js</tspan>
+<tspan x="10" y="3386">208.  2018-04-12 11:29:22 +0000     3753 bytes  lib/dist-tag.js</tspan>
 
-<tspan x="10" y="3402">209.  2018-04-12 09:34:07 +0000     1080 bytes  lib/docs.js</tspan>
+<tspan x="10" y="3402">209.  2018-04-12 11:29:22 +0000     1080 bytes  lib/docs.js</tspan>
 
-<tspan x="10" y="3418">210.  2018-04-12 09:34:07 +0000     4069 bytes  lib/doctor.js</tspan>
+<tspan x="10" y="3418">210.  2018-04-12 11:29:22 +0000     4069 bytes  lib/doctor.js</tspan>
 
-<tspan x="10" y="3434">211.  2018-04-12 09:34:07 +0000     1977 bytes  lib/doctor/check-files-permission.js</tspan>
+<tspan x="10" y="3434">211.  2018-04-12 11:29:22 +0000     1977 bytes  lib/doctor/check-files-permission.js</tspan>
 
-<tspan x="10" y="3450">212.  2018-04-12 09:34:07 +0000      311 bytes  lib/doctor/check-ping.js</tspan>
+<tspan x="10" y="3450">212.  2018-04-12 11:29:22 +0000      311 bytes  lib/doctor/check-ping.js</tspan>
 
-<tspan x="10" y="3466">213.  2018-04-12 09:34:07 +0000      300 bytes  lib/doctor/get-git-path.js</tspan>
+<tspan x="10" y="3466">213.  2018-04-12 11:29:22 +0000      300 bytes  lib/doctor/get-git-path.js</tspan>
 
-<tspan x="10" y="3482">214.  2018-04-12 09:34:07 +0000      800 bytes  lib/doctor/get-latest-nodejs-version.js</tspan>
+<tspan x="10" y="3482">214.  2018-04-12 11:29:22 +0000      800 bytes  lib/doctor/get-latest-nodejs-version.js</tspan>
 
-<tspan x="10" y="3498">215.  2018-04-12 09:34:07 +0000      444 bytes  lib/doctor/get-latest-npm-version.js</tspan>
+<tspan x="10" y="3498">215.  2018-04-12 11:29:22 +0000      444 bytes  lib/doctor/get-latest-npm-version.js</tspan>
 
-<tspan x="10" y="3514">216.  2018-04-12 09:34:07 +0000      929 bytes  lib/doctor/verify-cached-files.js</tspan>
+<tspan x="10" y="3514">216.  2018-04-12 11:29:22 +0000      929 bytes  lib/doctor/verify-cached-files.js</tspan>
 
-<tspan x="10" y="3530">217.  2018-04-12 09:34:07 +0000      985 bytes  lib/edit.js</tspan>
+<tspan x="10" y="3530">217.  2018-04-12 11:29:22 +0000      985 bytes  lib/edit.js</tspan>
 
-<tspan x="10" y="3546">218.  2018-04-12 09:34:07 +0000     1672 bytes  lib/explore.js</tspan>
+<tspan x="10" y="3546">218.  2018-04-12 11:29:22 +0000     1672 bytes  lib/explore.js</tspan>
 
-<tspan x="10" y="3562">219.  2018-04-12 09:34:07 +0000     3889 bytes  lib/fetch-package-metadata.js</tspan>
+<tspan x="10" y="3562">219.  2018-04-12 11:29:22 +0000     3889 bytes  lib/fetch-package-metadata.js</tspan>
 
-<tspan x="10" y="3578">220.  2018-04-12 09:34:07 +0000     1809 bytes  lib/fetch-package-metadata.md</tspan>
+<tspan x="10" y="3578">220.  2018-04-12 11:29:22 +0000     1809 bytes  lib/fetch-package-metadata.md</tspan>
 
-<tspan x="10" y="3594">221.  2018-04-12 09:34:07 +0000      235 bytes  lib/get.js</tspan>
+<tspan x="10" y="3594">221.  2018-04-12 11:29:22 +0000      235 bytes  lib/get.js</tspan>
 
-<tspan x="10" y="3610">222.  2018-04-12 09:34:07 +0000     5786 bytes  lib/help-search.js</tspan>
+<tspan x="10" y="3610">222.  2018-04-12 11:29:22 +0000     5786 bytes  lib/help-search.js</tspan>
 
-<tspan x="10" y="3626">223.  2018-04-12 09:34:07 +0000     6473 bytes  lib/help.js</tspan>
+<tspan x="10" y="3626">223.  2018-04-12 11:29:22 +0000     6473 bytes  lib/help.js</tspan>
 
-<tspan x="10" y="3642">224.  2018-04-12 09:34:07 +0000     1291 bytes  lib/init.js</tspan>
+<tspan x="10" y="3642">224.  2018-04-12 11:29:22 +0000     1291 bytes  lib/init.js</tspan>
 
-<tspan x="10" y="3658">225.  2018-04-12 09:34:07 +0000      507 bytes  lib/install-test.js</tspan>
+<tspan x="10" y="3658">225.  2018-04-12 11:29:22 +0000      507 bytes  lib/install-test.js</tspan>
 
-<tspan x="10" y="3674">226.  2018-04-12 09:34:07 +0000    34479 bytes  lib/install.js</tspan>
+<tspan x="10" y="3674">226.  2018-04-12 11:29:22 +0000    34479 bytes  lib/install.js</tspan>
 
-<tspan x="10" y="3690">227.  2018-04-12 09:34:07 +0000      202 bytes  lib/install/access-error.js</tspan>
+<tspan x="10" y="3690">227.  2018-04-12 11:29:22 +0000      202 bytes  lib/install/access-error.js</tspan>
 
-<tspan x="10" y="3706">228.  2018-04-12 09:34:07 +0000      412 bytes  lib/install/action/build.js</tspan>
+<tspan x="10" y="3706">228.  2018-04-12 11:29:22 +0000      412 bytes  lib/install/action/build.js</tspan>
 
-<tspan x="10" y="3722">229.  2018-04-12 09:34:07 +0000      458 bytes  lib/install/action/extract-worker.js</tspan>
+<tspan x="10" y="3722">229.  2018-04-12 11:29:22 +0000      458 bytes  lib/install/action/extract-worker.js</tspan>
 
-<tspan x="10" y="3738">230.  2018-04-12 09:34:07 +0000     3999 bytes  lib/install/action/extract.js</tspan>
+<tspan x="10" y="3738">230.  2018-04-12 11:29:22 +0000     3999 bytes  lib/install/action/extract.js</tspan>
 
-<tspan x="10" y="3754">231.  2018-04-12 09:34:07 +0000      515 bytes  lib/install/action/fetch.js</tspan>
+<tspan x="10" y="3754">231.  2018-04-12 11:29:22 +0000      515 bytes  lib/install/action/fetch.js</tspan>
 
-<tspan x="10" y="3770">232.  2018-04-12 09:34:07 +0000     3897 bytes  lib/install/action/finalize.js</tspan>
+<tspan x="10" y="3770">232.  2018-04-12 11:29:22 +0000     3897 bytes  lib/install/action/finalize.js</tspan>
 
-<tspan x="10" y="3786">233.  2018-04-12 09:34:07 +0000      604 bytes  lib/install/action/global-install.js</tspan>
+<tspan x="10" y="3786">233.  2018-04-12 11:29:22 +0000      604 bytes  lib/install/action/global-install.js</tspan>
 
-<tspan x="10" y="3802">234.  2018-04-12 09:34:07 +0000      235 bytes  lib/install/action/global-link.js</tspan>
+<tspan x="10" y="3802">234.  2018-04-12 11:29:22 +0000      235 bytes  lib/install/action/global-link.js</tspan>
 
-<tspan x="10" y="3818">235.  2018-04-12 09:34:07 +0000      266 bytes  lib/install/action/install.js</tspan>
+<tspan x="10" y="3818">235.  2018-04-12 11:29:22 +0000      266 bytes  lib/install/action/install.js</tspan>
 
-<tspan x="10" y="3834">236.  2018-04-12 09:34:07 +0000     3159 bytes  lib/install/action/move.js</tspan>
+<tspan x="10" y="3834">236.  2018-04-12 11:29:22 +0000     3159 bytes  lib/install/action/move.js</tspan>
 
-<tspan x="10" y="3850">237.  2018-04-12 09:34:07 +0000      274 bytes  lib/install/action/postinstall.js</tspan>
+<tspan x="10" y="3850">237.  2018-04-12 11:29:22 +0000      274 bytes  lib/install/action/postinstall.js</tspan>
 
-<tspan x="10" y="3866">238.  2018-04-12 09:34:07 +0000      272 bytes  lib/install/action/preinstall.js</tspan>
+<tspan x="10" y="3866">238.  2018-04-12 11:29:22 +0000      272 bytes  lib/install/action/preinstall.js</tspan>
 
-<tspan x="10" y="3882">239.  2018-04-12 09:34:07 +0000     1055 bytes  lib/install/action/prepare.js</tspan>
+<tspan x="10" y="3882">239.  2018-04-12 11:29:22 +0000     1055 bytes  lib/install/action/prepare.js</tspan>
 
-<tspan x="10" y="3898">240.  2018-04-12 09:34:07 +0000     1531 bytes  lib/install/action/refresh-package-json.js</tspan>
+<tspan x="10" y="3898">240.  2018-04-12 11:29:22 +0000     1531 bytes  lib/install/action/refresh-package-json.js</tspan>
 
-<tspan x="10" y="3914">241.  2018-04-12 09:34:07 +0000     2645 bytes  lib/install/action/remove.js</tspan>
+<tspan x="10" y="3914">241.  2018-04-12 11:29:22 +0000     2645 bytes  lib/install/action/remove.js</tspan>
 
-<tspan x="10" y="3930">242.  2018-04-12 09:34:07 +0000      659 bytes  lib/install/action/unbuild.js</tspan>
+<tspan x="10" y="3930">242.  2018-04-12 11:29:22 +0000      659 bytes  lib/install/action/unbuild.js</tspan>
 
-<tspan x="10" y="3946">243.  2018-04-12 09:34:07 +0000     5642 bytes  lib/install/actions.js</tspan>
+<tspan x="10" y="3946">243.  2018-04-12 11:29:22 +0000     5642 bytes  lib/install/actions.js</tspan>
 
-<tspan x="10" y="3962">244.  2018-04-12 09:34:07 +0000      324 bytes  lib/install/and-add-parent-to-errors.js</tspan>
+<tspan x="10" y="3962">244.  2018-04-12 11:29:22 +0000      324 bytes  lib/install/and-add-parent-to-errors.js</tspan>
 
-<tspan x="10" y="3978">245.  2018-04-12 09:34:07 +0000      360 bytes  lib/install/and-finish-tracker.js</tspan>
+<tspan x="10" y="3978">245.  2018-04-12 11:29:22 +0000      360 bytes  lib/install/and-finish-tracker.js</tspan>
 
-<tspan x="10" y="3994">246.  2018-04-12 09:34:07 +0000      204 bytes  lib/install/and-ignore-errors.js</tspan>
+<tspan x="10" y="3994">246.  2018-04-12 11:29:22 +0000      204 bytes  lib/install/and-ignore-errors.js</tspan>
 
-<tspan x="10" y="4010">247.  2018-04-12 09:34:07 +0000     1897 bytes  lib/install/check-permissions.js</tspan>
+<tspan x="10" y="4010">247.  2018-04-12 11:29:22 +0000     1897 bytes  lib/install/check-permissions.js</tspan>
 
-<tspan x="10" y="4026">248.  2018-04-12 09:34:07 +0000      770 bytes  lib/install/copy-tree.js</tspan>
+<tspan x="10" y="4026">248.  2018-04-12 11:29:22 +0000      770 bytes  lib/install/copy-tree.js</tspan>
 
-<tspan x="10" y="4042">249.  2018-04-12 09:34:07 +0000     1849 bytes  lib/install/decompose-actions.js</tspan>
+<tspan x="10" y="4042">249.  2018-04-12 11:29:22 +0000     1849 bytes  lib/install/decompose-actions.js</tspan>
 
-<tspan x="10" y="4058">250.  2018-04-12 09:34:07 +0000    28885 bytes  lib/install/deps.js</tspan>
+<tspan x="10" y="4058">250.  2018-04-12 11:29:22 +0000    28885 bytes  lib/install/deps.js</tspan>
 
-<tspan x="10" y="4074">251.  2018-04-12 09:34:07 +0000     8932 bytes  lib/install/diff-trees.js</tspan>
+<tspan x="10" y="4074">251.  2018-04-12 11:29:22 +0000     8932 bytes  lib/install/diff-trees.js</tspan>
 
-<tspan x="10" y="4090">252.  2018-04-12 09:34:07 +0000      775 bytes  lib/install/exists.js</tspan>
+<tspan x="10" y="4090">252.  2018-04-12 11:29:22 +0000      775 bytes  lib/install/exists.js</tspan>
 
-<tspan x="10" y="4106">253.  2018-04-12 09:34:07 +0000     1021 bytes  lib/install/flatten-tree.js</tspan>
+<tspan x="10" y="4106">253.  2018-04-12 11:29:22 +0000     1021 bytes  lib/install/flatten-tree.js</tspan>
 
-<tspan x="10" y="4122">254.  2018-04-12 09:34:07 +0000      427 bytes  lib/install/get-requested.js</tspan>
+<tspan x="10" y="4122">254.  2018-04-12 11:29:22 +0000      427 bytes  lib/install/get-requested.js</tspan>
 
-<tspan x="10" y="4138">255.  2018-04-12 09:34:07 +0000      563 bytes  lib/install/has-modern-meta.js</tspan>
+<tspan x="10" y="4138">255.  2018-04-12 11:29:22 +0000      563 bytes  lib/install/has-modern-meta.js</tspan>
 
-<tspan x="10" y="4154">256.  2018-04-12 09:34:07 +0000      628 bytes  lib/install/inflate-bundled.js</tspan>
+<tspan x="10" y="4154">256.  2018-04-12 11:29:22 +0000      628 bytes  lib/install/inflate-bundled.js</tspan>
 
-<tspan x="10" y="4170">257.  2018-04-12 09:34:07 +0000     6804 bytes  lib/install/inflate-shrinkwrap.js</tspan>
+<tspan x="10" y="4170">257.  2018-04-12 11:29:22 +0000     6804 bytes  lib/install/inflate-shrinkwrap.js</tspan>
 
-<tspan x="10" y="4186">258.  2018-04-12 09:34:07 +0000      175 bytes  lib/install/is-dev-dep.js</tspan>
+<tspan x="10" y="4186">258.  2018-04-12 11:29:22 +0000      175 bytes  lib/install/is-dev-dep.js</tspan>
 
-<tspan x="10" y="4202">259.  2018-04-12 09:34:07 +0000      618 bytes  lib/install/is-extraneous.js</tspan>
+<tspan x="10" y="4202">259.  2018-04-12 11:29:22 +0000      618 bytes  lib/install/is-extraneous.js</tspan>
 
-<tspan x="10" y="4218">260.  2018-04-12 09:34:07 +0000      763 bytes  lib/install/is-fs-access-available.js</tspan>
+<tspan x="10" y="4218">260.  2018-04-12 11:29:22 +0000      763 bytes  lib/install/is-fs-access-available.js</tspan>
 
-<tspan x="10" y="4234">261.  2018-04-12 09:34:07 +0000     1217 bytes  lib/install/is-only-dev.js</tspan>
+<tspan x="10" y="4234">261.  2018-04-12 11:29:22 +0000     1217 bytes  lib/install/is-only-dev.js</tspan>
 
-<tspan x="10" y="4250">262.  2018-04-12 09:34:07 +0000      462 bytes  lib/install/is-only-optional.js</tspan>
+<tspan x="10" y="4250">262.  2018-04-12 11:29:22 +0000      462 bytes  lib/install/is-only-optional.js</tspan>
 
-<tspan x="10" y="4266">263.  2018-04-12 09:34:07 +0000      185 bytes  lib/install/is-opt-dep.js</tspan>
+<tspan x="10" y="4266">263.  2018-04-12 11:29:22 +0000      185 bytes  lib/install/is-opt-dep.js</tspan>
 
-<tspan x="10" y="4282">264.  2018-04-12 09:34:07 +0000      172 bytes  lib/install/is-prod-dep.js</tspan>
+<tspan x="10" y="4282">264.  2018-04-12 11:29:22 +0000      172 bytes  lib/install/is-prod-dep.js</tspan>
 
-<tspan x="10" y="4298">265.  2018-04-12 09:34:07 +0000      259 bytes  lib/install/module-staging-path.js</tspan>
+<tspan x="10" y="4298">265.  2018-04-12 11:29:22 +0000      259 bytes  lib/install/module-staging-path.js</tspan>
 
-<tspan x="10" y="4314">266.  2018-04-12 09:34:07 +0000     4624 bytes  lib/install/mutate-into-logical-tree.js</tspan>
+<tspan x="10" y="4314">266.  2018-04-12 11:29:22 +0000     4624 bytes  lib/install/mutate-into-logical-tree.js</tspan>
 
-<tspan x="10" y="4330">267.  2018-04-12 09:34:07 +0000     1895 bytes  lib/install/node.js</tspan>
+<tspan x="10" y="4330">267.  2018-04-12 11:29:22 +0000     1895 bytes  lib/install/node.js</tspan>
 
-<tspan x="10" y="4346">268.  2018-04-12 09:34:07 +0000     3643 bytes  lib/install/read-shrinkwrap.js</tspan>
+<tspan x="10" y="4346">268.  2018-04-12 11:29:22 +0000     3643 bytes  lib/install/read-shrinkwrap.js</tspan>
 
-<tspan x="10" y="4362">269.  2018-04-12 09:34:07 +0000      621 bytes  lib/install/realize-shrinkwrap-specifier.js</tspan>
+<tspan x="10" y="4362">269.  2018-04-12 11:29:22 +0000      621 bytes  lib/install/realize-shrinkwrap-specifier.js</tspan>
 
-<tspan x="10" y="4378">270.  2018-04-12 09:34:07 +0000     1041 bytes  lib/install/report-optional-failure.js</tspan>
+<tspan x="10" y="4378">270.  2018-04-12 11:29:22 +0000     1041 bytes  lib/install/report-optional-failure.js</tspan>
 
-<tspan x="10" y="4394">271.  2018-04-12 09:34:07 +0000     5883 bytes  lib/install/save.js</tspan>
+<tspan x="10" y="4394">271.  2018-04-12 11:29:22 +0000     5883 bytes  lib/install/save.js</tspan>
 
-<tspan x="10" y="4410">272.  2018-04-12 09:34:07 +0000     1915 bytes  lib/install/update-package-json.js</tspan>
+<tspan x="10" y="4410">272.  2018-04-12 11:29:22 +0000     1915 bytes  lib/install/update-package-json.js</tspan>
 
-<tspan x="10" y="4426">273.  2018-04-12 09:34:07 +0000     2511 bytes  lib/install/validate-args.js</tspan>
+<tspan x="10" y="4426">273.  2018-04-12 11:29:22 +0000     2511 bytes  lib/install/validate-args.js</tspan>
 
-<tspan x="10" y="4442">274.  2018-04-12 09:34:07 +0000     3178 bytes  lib/install/validate-tree.js</tspan>
+<tspan x="10" y="4442">274.  2018-04-12 11:29:22 +0000     3178 bytes  lib/install/validate-tree.js</tspan>
 
-<tspan x="10" y="4458">275.  2018-04-12 09:34:07 +0000     1027 bytes  lib/install/writable.js</tspan>
+<tspan x="10" y="4458">275.  2018-04-12 11:29:22 +0000     1027 bytes  lib/install/writable.js</tspan>
 
-<tspan x="10" y="4474">276.  2018-04-12 09:34:07 +0000     5694 bytes  lib/link.js</tspan>
+<tspan x="10" y="4474">276.  2018-04-12 11:29:22 +0000     5694 bytes  lib/link.js</tspan>
 
-<tspan x="10" y="4490">277.  2018-04-12 09:34:07 +0000     1122 bytes  lib/logout.js</tspan>
+<tspan x="10" y="4490">277.  2018-04-12 11:29:22 +0000     1122 bytes  lib/logout.js</tspan>
 
-<tspan x="10" y="4506">278.  2018-04-12 09:34:07 +0000    16213 bytes  lib/ls.js</tspan>
+<tspan x="10" y="4506">278.  2018-04-12 11:29:22 +0000    16213 bytes  lib/ls.js</tspan>
 
-<tspan x="10" y="4522">279.  2018-04-12 09:34:07 +0000    13616 bytes  lib/npm.js</tspan>
+<tspan x="10" y="4522">279.  2018-04-12 11:29:22 +0000    13616 bytes  lib/npm.js</tspan>
 
-<tspan x="10" y="4538">280.  2018-04-12 09:34:07 +0000    12446 bytes  lib/outdated.js</tspan>
+<tspan x="10" y="4538">280.  2018-04-12 11:29:22 +0000    12446 bytes  lib/outdated.js</tspan>
 
-<tspan x="10" y="4554">281.  2018-04-12 09:34:07 +0000     7728 bytes  lib/owner.js</tspan>
+<tspan x="10" y="4554">281.  2018-04-12 11:29:22 +0000     7728 bytes  lib/owner.js</tspan>
 
-<tspan x="10" y="4570">282.  2018-04-12 09:34:07 +0000     7570 bytes  lib/pack.js</tspan>
+<tspan x="10" y="4570">282.  2018-04-12 11:29:22 +0000     7570 bytes  lib/pack.js</tspan>
 
-<tspan x="10" y="4586">283.  2018-04-12 09:34:07 +0000      688 bytes  lib/ping.js</tspan>
+<tspan x="10" y="4586">283.  2018-04-12 11:29:22 +0000      688 bytes  lib/ping.js</tspan>
 
-<tspan x="10" y="4602">284.  2018-04-12 09:34:07 +0000      330 bytes  lib/prefix.js</tspan>
+<tspan x="10" y="4602">284.  2018-04-12 11:29:22 +0000      330 bytes  lib/prefix.js</tspan>
 
-<tspan x="10" y="4618">285.  2018-04-12 09:34:07 +0000    11412 bytes  lib/profile.js</tspan>
+<tspan x="10" y="4618">285.  2018-04-12 11:29:22 +0000    11412 bytes  lib/profile.js</tspan>
 
-<tspan x="10" y="4634">286.  2018-04-12 09:34:07 +0000     2281 bytes  lib/prune.js</tspan>
+<tspan x="10" y="4634">286.  2018-04-12 11:29:22 +0000     2281 bytes  lib/prune.js</tspan>
 
-<tspan x="10" y="4650">287.  2018-04-12 09:34:07 +0000     6250 bytes  lib/publish.js</tspan>
+<tspan x="10" y="4650">287.  2018-04-12 11:29:22 +0000     6250 bytes  lib/publish.js</tspan>
 
-<tspan x="10" y="4666">288.  2018-04-12 09:34:07 +0000     2143 bytes  lib/rebuild.js</tspan>
+<tspan x="10" y="4666">288.  2018-04-12 11:29:22 +0000     2143 bytes  lib/rebuild.js</tspan>
 
-<tspan x="10" y="4682">289.  2018-04-12 09:34:07 +0000     1486 bytes  lib/repo.js</tspan>
+<tspan x="10" y="4682">289.  2018-04-12 11:29:22 +0000     1486 bytes  lib/repo.js</tspan>
 
-<tspan x="10" y="4698">290.  2018-04-12 09:34:07 +0000       64 bytes  lib/restart.js</tspan>
+<tspan x="10" y="4698">290.  2018-04-12 11:29:22 +0000       64 bytes  lib/restart.js</tspan>
 
-<tspan x="10" y="4714">291.  2018-04-12 09:34:07 +0000      316 bytes  lib/root.js</tspan>
+<tspan x="10" y="4714">291.  2018-04-12 11:29:22 +0000      316 bytes  lib/root.js</tspan>
 
-<tspan x="10" y="4730">292.  2018-04-12 09:34:07 +0000     5303 bytes  lib/run-script.js</tspan>
+<tspan x="10" y="4730">292.  2018-04-12 11:29:22 +0000     5303 bytes  lib/run-script.js</tspan>
 
-<tspan x="10" y="4746">293.  2018-04-12 09:34:07 +0000     3228 bytes  lib/search.js</tspan>
+<tspan x="10" y="4746">293.  2018-04-12 11:29:22 +0000     3228 bytes  lib/search.js</tspan>
 
-<tspan x="10" y="4762">294.  2018-04-12 09:34:07 +0000    11920 bytes  lib/search/all-package-metadata.js</tspan>
+<tspan x="10" y="4762">294.  2018-04-12 11:29:22 +0000    11920 bytes  lib/search/all-package-metadata.js</tspan>
 
-<tspan x="10" y="4778">295.  2018-04-12 09:34:07 +0000     1562 bytes  lib/search/all-package-search.js</tspan>
+<tspan x="10" y="4778">295.  2018-04-12 11:29:22 +0000     1562 bytes  lib/search/all-package-search.js</tspan>
 
-<tspan x="10" y="4794">296.  2018-04-12 09:34:07 +0000     1904 bytes  lib/search/esearch.js</tspan>
+<tspan x="10" y="4794">296.  2018-04-12 11:29:22 +0000     1904 bytes  lib/search/esearch.js</tspan>
 
-<tspan x="10" y="4810">297.  2018-04-12 09:34:07 +0000     4339 bytes  lib/search/format-package-stream.js</tspan>
+<tspan x="10" y="4810">297.  2018-04-12 11:29:22 +0000     4339 bytes  lib/search/format-package-stream.js</tspan>
 
-<tspan x="10" y="4826">298.  2018-04-12 09:34:07 +0000     1184 bytes  lib/search/package-filter.js</tspan>
+<tspan x="10" y="4826">298.  2018-04-12 11:29:22 +0000     1184 bytes  lib/search/package-filter.js</tspan>
 
-<tspan x="10" y="4842">299.  2018-04-12 09:34:07 +0000      276 bytes  lib/set.js</tspan>
+<tspan x="10" y="4842">299.  2018-04-12 11:29:22 +0000      276 bytes  lib/set.js</tspan>
 
-<tspan x="10" y="4858">300.  2018-04-12 09:34:07 +0000     8106 bytes  lib/shrinkwrap.js</tspan>
+<tspan x="10" y="4858">300.  2018-04-12 11:29:22 +0000     8106 bytes  lib/shrinkwrap.js</tspan>
 
-<tspan x="10" y="4874">301.  2018-04-12 09:34:07 +0000     1202 bytes  lib/star.js</tspan>
+<tspan x="10" y="4874">301.  2018-04-12 11:29:22 +0000     1202 bytes  lib/star.js</tspan>
 
-<tspan x="10" y="4890">302.  2018-04-12 09:34:07 +0000     1123 bytes  lib/stars.js</tspan>
+<tspan x="10" y="4890">302.  2018-04-12 11:29:22 +0000     1123 bytes  lib/stars.js</tspan>
 
-<tspan x="10" y="4906">303.  2018-04-12 09:34:07 +0000       62 bytes  lib/start.js</tspan>
+<tspan x="10" y="4906">303.  2018-04-12 11:29:22 +0000       62 bytes  lib/start.js</tspan>
 
-<tspan x="10" y="4922">304.  2018-04-12 09:34:07 +0000       61 bytes  lib/stop.js</tspan>
+<tspan x="10" y="4922">304.  2018-04-12 11:29:22 +0000       61 bytes  lib/stop.js</tspan>
 
-<tspan x="10" y="4938">305.  2018-04-12 09:34:07 +0000      509 bytes  lib/substack.js</tspan>
+<tspan x="10" y="4938">305.  2018-04-12 11:29:22 +0000      509 bytes  lib/substack.js</tspan>
 
-<tspan x="10" y="4954">306.  2018-04-12 09:34:07 +0000     1439 bytes  lib/team.js</tspan>
+<tspan x="10" y="4954">306.  2018-04-12 11:29:22 +0000     1439 bytes  lib/team.js</tspan>
 
-<tspan x="10" y="4970">307.  2018-04-12 09:34:07 +0000      324 bytes  lib/test.js</tspan>
+<tspan x="10" y="4970">307.  2018-04-12 11:29:22 +0000      324 bytes  lib/test.js</tspan>
 
-<tspan x="10" y="4986">308.  2018-04-12 09:34:07 +0000     7072 bytes  lib/token.js</tspan>
+<tspan x="10" y="4986">308.  2018-04-12 11:29:22 +0000     7072 bytes  lib/token.js</tspan>
 
-<tspan x="10" y="5002">309.  2018-04-12 09:34:07 +0000     4211 bytes  lib/unbuild.js</tspan>
+<tspan x="10" y="5002">309.  2018-04-12 11:29:22 +0000     4211 bytes  lib/unbuild.js</tspan>
 
-<tspan x="10" y="5018">310.  2018-04-12 09:34:07 +0000     2277 bytes  lib/uninstall.js</tspan>
+<tspan x="10" y="5018">310.  2018-04-12 11:29:22 +0000     2277 bytes  lib/uninstall.js</tspan>
 
-<tspan x="10" y="5034">311.  2018-04-12 09:34:07 +0000     3638 bytes  lib/unpublish.js</tspan>
+<tspan x="10" y="5034">311.  2018-04-12 11:29:22 +0000     3638 bytes  lib/unpublish.js</tspan>
 
-<tspan x="10" y="5050">312.  2018-04-12 09:34:07 +0000     2237 bytes  lib/update.js</tspan>
+<tspan x="10" y="5050">312.  2018-04-12 11:29:22 +0000     2237 bytes  lib/update.js</tspan>
 
-<tspan x="10" y="5066">313.  2018-04-12 09:34:07 +0000      211 bytes  lib/utils/ansi-trim.js</tspan>
+<tspan x="10" y="5066">313.  2018-04-12 11:29:22 +0000      211 bytes  lib/utils/ansi-trim.js</tspan>
 
-<tspan x="10" y="5082">314.  2018-04-12 09:34:07 +0000      290 bytes  lib/utils/child-path.js</tspan>
+<tspan x="10" y="5082">314.  2018-04-12 11:29:22 +0000      290 bytes  lib/utils/child-path.js</tspan>
 
-<tspan x="10" y="5098">315.  2018-04-12 09:34:07 +0000     1781 bytes  lib/utils/completion.sh</tspan>
+<tspan x="10" y="5098">315.  2018-04-12 11:29:22 +0000     1781 bytes  lib/utils/completion.sh</tspan>
 
-<tspan x="10" y="5114">316.  2018-04-12 09:34:07 +0000      661 bytes  lib/utils/completion/file-completion.js</tspan>
+<tspan x="10" y="5114">316.  2018-04-12 11:29:22 +0000      661 bytes  lib/utils/completion/file-completion.js</tspan>
 
-<tspan x="10" y="5130">317.  2018-04-12 09:34:07 +0000     1142 bytes  lib/utils/completion/installed-deep.js</tspan>
+<tspan x="10" y="5130">317.  2018-04-12 11:29:22 +0000     1142 bytes  lib/utils/completion/installed-deep.js</tspan>
 
-<tspan x="10" y="5146">318.  2018-04-12 09:34:07 +0000     1936 bytes  lib/utils/completion/installed-shallow.js</tspan>
+<tspan x="10" y="5146">318.  2018-04-12 11:29:22 +0000     1936 bytes  lib/utils/completion/installed-shallow.js</tspan>
 
-<tspan x="10" y="5162">319.  2018-04-12 09:34:07 +0000     3108 bytes  lib/utils/correct-mkdir.js</tspan>
+<tspan x="10" y="5162">319.  2018-04-12 11:29:22 +0000     3108 bytes  lib/utils/correct-mkdir.js</tspan>
 
-<tspan x="10" y="5178">320.  2018-04-12 09:34:07 +0000      363 bytes  lib/utils/deep-sort-object.js</tspan>
+<tspan x="10" y="5178">320.  2018-04-12 11:29:22 +0000      363 bytes  lib/utils/deep-sort-object.js</tspan>
 
-<tspan x="10" y="5194">321.  2018-04-12 09:34:07 +0000      451 bytes  lib/utils/depr-check.js</tspan>
+<tspan x="10" y="5194">321.  2018-04-12 11:29:22 +0000      451 bytes  lib/utils/depr-check.js</tspan>
 
-<tspan x="10" y="5210">322.  2018-04-12 09:34:07 +0000      495 bytes  lib/utils/did-you-mean.js</tspan>
+<tspan x="10" y="5210">322.  2018-04-12 11:29:22 +0000      495 bytes  lib/utils/did-you-mean.js</tspan>
 
-<tspan x="10" y="5226">323.  2018-04-12 09:34:07 +0000     6193 bytes  lib/utils/error-handler.js</tspan>
+<tspan x="10" y="5226">323.  2018-04-12 11:29:22 +0000     6193 bytes  lib/utils/error-handler.js</tspan>
 
-<tspan x="10" y="5242">324.  2018-04-12 09:34:07 +0000    11696 bytes  lib/utils/error-message.js</tspan>
+<tspan x="10" y="5242">324.  2018-04-12 11:29:22 +0000    11696 bytes  lib/utils/error-message.js</tspan>
 
-<tspan x="10" y="5258">325.  2018-04-12 09:34:07 +0000      673 bytes  lib/utils/escape-arg.js</tspan>
+<tspan x="10" y="5258">325.  2018-04-12 11:29:22 +0000      673 bytes  lib/utils/escape-arg.js</tspan>
 
-<tspan x="10" y="5274">326.  2018-04-12 09:34:07 +0000      777 bytes  lib/utils/escape-exec-path.js</tspan>
+<tspan x="10" y="5274">326.  2018-04-12 11:29:22 +0000      777 bytes  lib/utils/escape-exec-path.js</tspan>
 
-<tspan x="10" y="5290">327.  2018-04-12 09:34:07 +0000      484 bytes  lib/utils/gently-rm.js</tspan>
+<tspan x="10" y="5290">327.  2018-04-12 11:29:22 +0000      484 bytes  lib/utils/gently-rm.js</tspan>
 
-<tspan x="10" y="5306">328.  2018-04-12 09:34:07 +0000      919 bytes  lib/utils/get-publish-config.js</tspan>
+<tspan x="10" y="5306">328.  2018-04-12 11:29:22 +0000      919 bytes  lib/utils/get-publish-config.js</tspan>
 
-<tspan x="10" y="5322">329.  2018-04-12 09:34:07 +0000     1295 bytes  lib/utils/git.js</tspan>
+<tspan x="10" y="5322">329.  2018-04-12 11:29:22 +0000     1295 bytes  lib/utils/git.js</tspan>
 
-<tspan x="10" y="5338">330.  2018-04-12 09:34:07 +0000      552 bytes  lib/utils/gunzip-maybe.js</tspan>
+<tspan x="10" y="5338">330.  2018-04-12 11:29:22 +0000      552 bytes  lib/utils/gunzip-maybe.js</tspan>
 
-<tspan x="10" y="5354">331.  2018-04-12 09:34:07 +0000      295 bytes  lib/utils/is-registry.js</tspan>
+<tspan x="10" y="5354">331.  2018-04-12 11:29:22 +0000      295 bytes  lib/utils/is-registry.js</tspan>
 
-<tspan x="10" y="5370">332.  2018-04-12 09:34:07 +0000      129 bytes  lib/utils/is-windows-bash.js</tspan>
+<tspan x="10" y="5370">332.  2018-04-12 11:29:22 +0000      129 bytes  lib/utils/is-windows-bash.js</tspan>
 
-<tspan x="10" y="5386">333.  2018-04-12 09:34:07 +0000      153 bytes  lib/utils/is-windows-shell.js</tspan>
+<tspan x="10" y="5386">333.  2018-04-12 11:29:22 +0000      153 bytes  lib/utils/is-windows-shell.js</tspan>
 
-<tspan x="10" y="5402">334.  2018-04-12 09:34:07 +0000       59 bytes  lib/utils/is-windows.js</tspan>
+<tspan x="10" y="5402">334.  2018-04-12 11:29:22 +0000       59 bytes  lib/utils/is-windows.js</tspan>
 
-<tspan x="10" y="5418">335.  2018-04-12 09:34:07 +0000      496 bytes  lib/utils/lifecycle-cmd.js</tspan>
+<tspan x="10" y="5418">335.  2018-04-12 11:29:22 +0000      496 bytes  lib/utils/lifecycle-cmd.js</tspan>
 
-<tspan x="10" y="5434">336.  2018-04-12 09:34:07 +0000      364 bytes  lib/utils/lifecycle.js</tspan>
+<tspan x="10" y="5434">336.  2018-04-12 11:29:22 +0000      364 bytes  lib/utils/lifecycle.js</tspan>
 
-<tspan x="10" y="5450">337.  2018-04-12 09:34:07 +0000      234 bytes  lib/utils/link.js</tspan>
+<tspan x="10" y="5450">337.  2018-04-12 11:29:22 +0000      234 bytes  lib/utils/link.js</tspan>
 
-<tspan x="10" y="5466">338.  2018-04-12 09:34:07 +0000     1853 bytes  lib/utils/locker.js</tspan>
+<tspan x="10" y="5466">338.  2018-04-12 11:29:22 +0000     1853 bytes  lib/utils/locker.js</tspan>
 
-<tspan x="10" y="5482">339.  2018-04-12 09:34:07 +0000     2853 bytes  lib/utils/map-to-registry.js</tspan>
+<tspan x="10" y="5482">339.  2018-04-12 11:29:22 +0000     2853 bytes  lib/utils/map-to-registry.js</tspan>
 
-<tspan x="10" y="5498">340.  2018-04-12 09:34:07 +0000     1077 bytes  lib/utils/metrics-launch.js</tspan>
+<tspan x="10" y="5498">340.  2018-04-12 11:29:22 +0000     1077 bytes  lib/utils/metrics-launch.js</tspan>
 
-<tspan x="10" y="5514">341.  2018-04-12 09:34:07 +0000     2081 bytes  lib/utils/metrics.js</tspan>
+<tspan x="10" y="5514">341.  2018-04-12 11:29:22 +0000     2081 bytes  lib/utils/metrics.js</tspan>
 
-<tspan x="10" y="5530">342.  2018-04-12 09:34:07 +0000      935 bytes  lib/utils/module-name.js</tspan>
+<tspan x="10" y="5530">342.  2018-04-12 11:29:22 +0000      935 bytes  lib/utils/module-name.js</tspan>
 
-<tspan x="10" y="5546">343.  2018-04-12 09:34:07 +0000      290 bytes  lib/utils/move.js</tspan>
+<tspan x="10" y="5546">343.  2018-04-12 11:29:22 +0000      290 bytes  lib/utils/move.js</tspan>
 
-<tspan x="10" y="5562">344.  2018-04-12 09:34:07 +0000      541 bytes  lib/utils/no-progress-while-running.js</tspan>
+<tspan x="10" y="5562">344.  2018-04-12 11:29:22 +0000      541 bytes  lib/utils/no-progress-while-running.js</tspan>
 
-<tspan x="10" y="5578">345.  2018-04-12 09:34:07 +0000      210 bytes  lib/utils/output.js</tspan>
+<tspan x="10" y="5578">345.  2018-04-12 11:29:22 +0000      210 bytes  lib/utils/output.js</tspan>
 
-<tspan x="10" y="5594">346.  2018-04-12 09:34:07 +0000      399 bytes  lib/utils/package-id.js</tspan>
+<tspan x="10" y="5594">346.  2018-04-12 11:29:22 +0000      399 bytes  lib/utils/package-id.js</tspan>
 
-<tspan x="10" y="5610">347.  2018-04-12 09:34:07 +0000      663 bytes  lib/utils/parse-json.js</tspan>
+<tspan x="10" y="5610">347.  2018-04-12 11:29:22 +0000      663 bytes  lib/utils/parse-json.js</tspan>
 
-<tspan x="10" y="5626">348.  2018-04-12 09:34:07 +0000      562 bytes  lib/utils/perf.js</tspan>
+<tspan x="10" y="5626">348.  2018-04-12 11:29:22 +0000      562 bytes  lib/utils/perf.js</tspan>
 
-<tspan x="10" y="5642">349.  2018-04-12 09:34:07 +0000      905 bytes  lib/utils/pick-manifest-from-registry-metadata.j\</tspan>
+<tspan x="10" y="5642">349.  2018-04-12 11:29:22 +0000      905 bytes  lib/utils/pick-manifest-from-registry-metadata.j\</tspan>
 <tspan x="10" y="5658">s</tspan>
 
-<tspan x="10" y="5674">350.  2018-04-12 09:34:07 +0000      783 bytes  lib/utils/pulse-till-done.js</tspan>
+<tspan x="10" y="5674">350.  2018-04-12 11:29:22 +0000      783 bytes  lib/utils/pulse-till-done.js</tspan>
 
-<tspan x="10" y="5690">351.  2018-04-12 09:34:07 +0000      329 bytes  lib/utils/read-local-package.js</tspan>
+<tspan x="10" y="5690">351.  2018-04-12 11:29:22 +0000      329 bytes  lib/utils/read-local-package.js</tspan>
 
-<tspan x="10" y="5706">352.  2018-04-12 09:34:07 +0000     1797 bytes  lib/utils/read-user-info.js</tspan>
+<tspan x="10" y="5706">352.  2018-04-12 11:29:22 +0000     1797 bytes  lib/utils/read-user-info.js</tspan>
 
-<tspan x="10" y="5722">353.  2018-04-12 09:34:07 +0000      349 bytes  lib/utils/save-stack.js</tspan>
+<tspan x="10" y="5722">353.  2018-04-12 11:29:22 +0000      349 bytes  lib/utils/save-stack.js</tspan>
 
-<tspan x="10" y="5738">354.  2018-04-12 09:34:07 +0000     1410 bytes  lib/utils/spawn.js</tspan>
+<tspan x="10" y="5738">354.  2018-04-12 11:29:22 +0000     1410 bytes  lib/utils/spawn.js</tspan>
 
-<tspan x="10" y="5754">355.  2018-04-12 09:34:07 +0000      328 bytes  lib/utils/stringify-package.js</tspan>
+<tspan x="10" y="5754">355.  2018-04-12 11:29:22 +0000      328 bytes  lib/utils/stringify-package.js</tspan>
 
-<tspan x="10" y="5770">356.  2018-04-12 09:34:07 +0000      173 bytes  lib/utils/temp-filename.js</tspan>
+<tspan x="10" y="5770">356.  2018-04-12 11:29:22 +0000      173 bytes  lib/utils/temp-filename.js</tspan>
 
-<tspan x="10" y="5786">357.  2018-04-12 09:34:07 +0000      343 bytes  lib/utils/umask.js</tspan>
+<tspan x="10" y="5786">357.  2018-04-12 11:29:22 +0000      343 bytes  lib/utils/umask.js</tspan>
 
-<tspan x="10" y="5802">358.  2018-04-12 09:34:07 +0000       85 bytes  lib/utils/unix-format-path.js</tspan>
+<tspan x="10" y="5802">358.  2018-04-12 11:29:22 +0000       85 bytes  lib/utils/unix-format-path.js</tspan>
 
-<tspan x="10" y="5818">359.  2018-04-12 09:34:07 +0000     2266 bytes  lib/utils/unsupported.js</tspan>
+<tspan x="10" y="5818">359.  2018-04-12 11:29:22 +0000     2266 bytes  lib/utils/unsupported.js</tspan>
 
-<tspan x="10" y="5834">360.  2018-04-12 09:34:07 +0000      576 bytes  lib/utils/usage.js</tspan>
+<tspan x="10" y="5834">360.  2018-04-12 11:29:22 +0000      576 bytes  lib/utils/usage.js</tspan>
 
-<tspan x="10" y="5850">361.  2018-04-12 09:34:07 +0000      556 bytes  lib/utils/warn-deprecated.js</tspan>
+<tspan x="10" y="5850">361.  2018-04-12 11:29:22 +0000      556 bytes  lib/utils/warn-deprecated.js</tspan>
 
-<tspan x="10" y="5866">362.  2018-04-12 09:34:07 +0000     9589 bytes  lib/version.js</tspan>
+<tspan x="10" y="5866">362.  2018-04-12 11:29:22 +0000     9589 bytes  lib/version.js</tspan>
 
-<tspan x="10" y="5882">363.  2018-04-12 09:34:07 +0000     9486 bytes  lib/view.js</tspan>
+<tspan x="10" y="5882">363.  2018-04-12 11:29:22 +0000     9486 bytes  lib/view.js</tspan>
 
-<tspan x="10" y="5898">364.  2018-04-12 09:34:07 +0000     4104 bytes  lib/visnup.js</tspan>
+<tspan x="10" y="5898">364.  2018-04-12 11:29:22 +0000     4104 bytes  lib/visnup.js</tspan>
 
-<tspan x="10" y="5914">365.  2018-04-12 09:34:07 +0000     1455 bytes  lib/whoami.js</tspan>
+<tspan x="10" y="5914">365.  2018-04-12 11:29:22 +0000     1455 bytes  lib/whoami.js</tspan>
 
-<tspan x="10" y="5930">366.  2018-04-12 09:34:07 +0000     1616 bytes  lib/xmas.js</tspan>
+<tspan x="10" y="5930">366.  2018-04-12 11:29:22 +0000     1616 bytes  lib/xmas.js</tspan>
 
-<tspan x="10" y="5946">367.  2018-04-12 09:34:07 +0000      156 bytes  make.bat</tspan>
+<tspan x="10" y="5946">367.  2018-04-12 11:29:22 +0000      156 bytes  make.bat</tspan>
 
-<tspan x="10" y="5962">368.  2018-04-12 09:34:07 +0000     5141 bytes  man/man1/npm-README.1</tspan>
+<tspan x="10" y="5962">368.  2018-04-12 11:29:22 +0000     5141 bytes  man/man1/npm-README.1</tspan>
 
-<tspan x="10" y="5978">369.  2018-04-12 09:34:07 +0000     2755 bytes  man/man1/npm-access.1</tspan>
+<tspan x="10" y="5978">369.  2018-04-12 11:29:22 +0000     2755 bytes  man/man1/npm-access.1</tspan>
 
-<tspan x="10" y="5994">370.  2018-04-12 09:34:07 +0000     3119 bytes  man/man1/npm-adduser.1</tspan>
+<tspan x="10" y="5994">370.  2018-04-12 11:29:22 +0000     3119 bytes  man/man1/npm-adduser.1</tspan>
 
-<tspan x="10" y="6010">371.  2018-04-12 09:34:07 +0000      412 bytes  man/man1/npm-bin.1</tspan>
+<tspan x="10" y="6010">371.  2018-04-12 11:29:22 +0000      412 bytes  man/man1/npm-bin.1</tspan>
 
-<tspan x="10" y="6026">372.  2018-04-12 09:34:07 +0000     1090 bytes  man/man1/npm-bugs.1</tspan>
+<tspan x="10" y="6026">372.  2018-04-12 11:29:22 +0000     1090 bytes  man/man1/npm-bugs.1</tspan>
 
-<tspan x="10" y="6042">373.  2018-04-12 09:34:07 +0000      639 bytes  man/man1/npm-build.1</tspan>
+<tspan x="10" y="6042">373.  2018-04-12 11:29:22 +0000      639 bytes  man/man1/npm-build.1</tspan>
 
-<tspan x="10" y="6058">374.  2018-04-12 09:34:07 +0000      410 bytes  man/man1/npm-bundle.1</tspan>
+<tspan x="10" y="6058">374.  2018-04-12 11:29:22 +0000      410 bytes  man/man1/npm-bundle.1</tspan>
 
-<tspan x="10" y="6074">375.  2018-04-12 09:34:07 +0000     2832 bytes  man/man1/npm-cache.1</tspan>
+<tspan x="10" y="6074">375.  2018-04-12 11:29:22 +0000     2832 bytes  man/man1/npm-cache.1</tspan>
 
-<tspan x="10" y="6090">376.  2018-04-12 09:34:07 +0000     1960 bytes  man/man1/npm-ci.1</tspan>
+<tspan x="10" y="6090">376.  2018-04-12 11:29:22 +0000     1960 bytes  man/man1/npm-ci.1</tspan>
 
-<tspan x="10" y="6106">377.  2018-04-12 09:34:07 +0000      917 bytes  man/man1/npm-completion.1</tspan>
+<tspan x="10" y="6106">377.  2018-04-12 11:29:22 +0000      917 bytes  man/man1/npm-completion.1</tspan>
 
-<tspan x="10" y="6122">378.  2018-04-12 09:34:07 +0000     1678 bytes  man/man1/npm-config.1</tspan>
+<tspan x="10" y="6122">378.  2018-04-12 11:29:22 +0000     1678 bytes  man/man1/npm-config.1</tspan>
 
-<tspan x="10" y="6138">379.  2018-04-12 09:34:07 +0000     1504 bytes  man/man1/npm-dedupe.1</tspan>
+<tspan x="10" y="6138">379.  2018-04-12 11:29:22 +0000     1504 bytes  man/man1/npm-dedupe.1</tspan>
 
-<tspan x="10" y="6154">380.  2018-04-12 09:34:07 +0000      825 bytes  man/man1/npm-deprecate.1</tspan>
+<tspan x="10" y="6154">380.  2018-04-12 11:29:22 +0000      825 bytes  man/man1/npm-deprecate.1</tspan>
 
-<tspan x="10" y="6170">381.  2018-04-12 09:34:07 +0000     3139 bytes  man/man1/npm-dist-tag.1</tspan>
+<tspan x="10" y="6170">381.  2018-04-12 11:29:22 +0000     3139 bytes  man/man1/npm-dist-tag.1</tspan>
 
-<tspan x="10" y="6186">382.  2018-04-12 09:34:07 +0000     1179 bytes  man/man1/npm-docs.1</tspan>
+<tspan x="10" y="6186">382.  2018-04-12 11:29:22 +0000     1179 bytes  man/man1/npm-docs.1</tspan>
 
-<tspan x="10" y="6202">383.  2018-04-12 09:34:07 +0000     4952 bytes  man/man1/npm-doctor.1</tspan>
+<tspan x="10" y="6202">383.  2018-04-12 11:29:22 +0000     4952 bytes  man/man1/npm-doctor.1</tspan>
 
-<tspan x="10" y="6218">384.  2018-04-12 09:34:07 +0000     1054 bytes  man/man1/npm-edit.1</tspan>
+<tspan x="10" y="6218">384.  2018-04-12 11:29:22 +0000     1054 bytes  man/man1/npm-edit.1</tspan>
 
-<tspan x="10" y="6234">385.  2018-04-12 09:34:07 +0000     1039 bytes  man/man1/npm-explore.1</tspan>
+<tspan x="10" y="6234">385.  2018-04-12 11:29:22 +0000     1039 bytes  man/man1/npm-explore.1</tspan>
 
-<tspan x="10" y="6250">386.  2018-04-12 09:34:07 +0000      926 bytes  man/man1/npm-help-search.1</tspan>
+<tspan x="10" y="6250">386.  2018-04-12 11:29:22 +0000      926 bytes  man/man1/npm-help-search.1</tspan>
 
-<tspan x="10" y="6266">387.  2018-04-12 09:34:07 +0000     1046 bytes  man/man1/npm-help.1</tspan>
+<tspan x="10" y="6266">387.  2018-04-12 11:29:22 +0000     1046 bytes  man/man1/npm-help.1</tspan>
 
-<tspan x="10" y="6282">388.  2018-04-12 09:34:07 +0000     1132 bytes  man/man1/npm-init.1</tspan>
+<tspan x="10" y="6282">388.  2018-04-12 11:29:22 +0000     1132 bytes  man/man1/npm-init.1</tspan>
 
-<tspan x="10" y="6298">389.  2018-04-12 09:34:07 +0000      755 bytes  man/man1/npm-install-test.1</tspan>
+<tspan x="10" y="6298">389.  2018-04-12 11:29:22 +0000      755 bytes  man/man1/npm-install-test.1</tspan>
 
-<tspan x="10" y="6314">390.  2018-04-12 09:34:07 +0000    18541 bytes  man/man1/npm-install.1</tspan>
+<tspan x="10" y="6314">390.  2018-04-12 11:29:22 +0000    18541 bytes  man/man1/npm-install.1</tspan>
 
-<tspan x="10" y="6330">391.  2018-04-12 09:34:07 +0000     2748 bytes  man/man1/npm-link.1</tspan>
+<tspan x="10" y="6330">391.  2018-04-12 11:29:22 +0000     2748 bytes  man/man1/npm-link.1</tspan>
 
-<tspan x="10" y="6346">392.  2018-04-12 09:34:07 +0000     1327 bytes  man/man1/npm-logout.1</tspan>
+<tspan x="10" y="6346">392.  2018-04-12 11:29:22 +0000     1327 bytes  man/man1/npm-logout.1</tspan>
 
-<tspan x="10" y="6362">393.  2018-04-12 09:34:07 +0000     2682 bytes  man/man1/npm-ls.1</tspan>
+<tspan x="10" y="6362">393.  2018-04-12 11:29:22 +0000     2682 bytes  man/man1/npm-ls.1</tspan>
 
-<tspan x="10" y="6378">394.  2018-04-12 09:34:07 +0000     3926 bytes  man/man1/npm-outdated.1</tspan>
+<tspan x="10" y="6378">394.  2018-04-12 11:29:22 +0000     3926 bytes  man/man1/npm-outdated.1</tspan>
 
-<tspan x="10" y="6394">395.  2018-04-12 09:34:07 +0000     1244 bytes  man/man1/npm-owner.1</tspan>
+<tspan x="10" y="6394">395.  2018-04-12 11:29:22 +0000     1244 bytes  man/man1/npm-owner.1</tspan>
 
-<tspan x="10" y="6410">396.  2018-04-12 09:34:07 +0000      838 bytes  man/man1/npm-pack.1</tspan>
+<tspan x="10" y="6410">396.  2018-04-12 11:29:22 +0000      838 bytes  man/man1/npm-pack.1</tspan>
 
-<tspan x="10" y="6426">397.  2018-04-12 09:34:07 +0000      540 bytes  man/man1/npm-ping.1</tspan>
+<tspan x="10" y="6426">397.  2018-04-12 11:29:22 +0000      540 bytes  man/man1/npm-ping.1</tspan>
 
-<tspan x="10" y="6442">398.  2018-04-12 09:34:07 +0000      619 bytes  man/man1/npm-prefix.1</tspan>
+<tspan x="10" y="6442">398.  2018-04-12 11:29:22 +0000      619 bytes  man/man1/npm-prefix.1</tspan>
 
-<tspan x="10" y="6458">399.  2018-04-12 09:34:07 +0000     3579 bytes  man/man1/npm-profile.1</tspan>
+<tspan x="10" y="6458">399.  2018-04-12 11:29:22 +0000     3579 bytes  man/man1/npm-profile.1</tspan>
 
-<tspan x="10" y="6474">400.  2018-04-12 09:34:07 +0000     1465 bytes  man/man1/npm-prune.1</tspan>
+<tspan x="10" y="6474">400.  2018-04-12 11:29:22 +0000     1465 bytes  man/man1/npm-prune.1</tspan>
 
-<tspan x="10" y="6490">401.  2018-04-12 09:34:07 +0000     3076 bytes  man/man1/npm-publish.1</tspan>
+<tspan x="10" y="6490">401.  2018-04-12 11:29:22 +0000     3076 bytes  man/man1/npm-publish.1</tspan>
 
-<tspan x="10" y="6506">402.  2018-04-12 09:34:07 +0000      465 bytes  man/man1/npm-rebuild.1</tspan>
+<tspan x="10" y="6506">402.  2018-04-12 11:29:22 +0000      465 bytes  man/man1/npm-rebuild.1</tspan>
 
-<tspan x="10" y="6522">403.  2018-04-12 09:34:07 +0000      773 bytes  man/man1/npm-repo.1</tspan>
+<tspan x="10" y="6522">403.  2018-04-12 11:29:22 +0000      773 bytes  man/man1/npm-repo.1</tspan>
 
-<tspan x="10" y="6538">404.  2018-04-12 09:34:07 +0000      962 bytes  man/man1/npm-restart.1</tspan>
+<tspan x="10" y="6538">404.  2018-04-12 11:29:22 +0000      962 bytes  man/man1/npm-restart.1</tspan>
 
-<tspan x="10" y="6554">405.  2018-04-12 09:34:07 +0000      407 bytes  man/man1/npm-root.1</tspan>
+<tspan x="10" y="6554">405.  2018-04-12 11:29:22 +0000      407 bytes  man/man1/npm-root.1</tspan>
 
-<tspan x="10" y="6570">406.  2018-04-12 09:34:07 +0000     3543 bytes  man/man1/npm-run-script.1</tspan>
+<tspan x="10" y="6570">406.  2018-04-12 11:29:22 +0000     3543 bytes  man/man1/npm-run-script.1</tspan>
 
-<tspan x="10" y="6586">407.  2018-04-12 09:34:07 +0000     3196 bytes  man/man1/npm-search.1</tspan>
+<tspan x="10" y="6586">407.  2018-04-12 11:29:22 +0000     3196 bytes  man/man1/npm-search.1</tspan>
 
-<tspan x="10" y="6602">408.  2018-04-12 09:34:07 +0000      862 bytes  man/man1/npm-shrinkwrap.1</tspan>
+<tspan x="10" y="6602">408.  2018-04-12 11:29:22 +0000      862 bytes  man/man1/npm-shrinkwrap.1</tspan>
 
-<tspan x="10" y="6618">409.  2018-04-12 09:34:07 +0000      544 bytes  man/man1/npm-star.1</tspan>
+<tspan x="10" y="6618">409.  2018-04-12 11:29:22 +0000      544 bytes  man/man1/npm-star.1</tspan>
 
-<tspan x="10" y="6634">410.  2018-04-12 09:34:07 +0000      539 bytes  man/man1/npm-stars.1</tspan>
+<tspan x="10" y="6634">410.  2018-04-12 11:29:22 +0000      539 bytes  man/man1/npm-stars.1</tspan>
 
-<tspan x="10" y="6650">411.  2018-04-12 09:34:07 +0000      727 bytes  man/man1/npm-start.1</tspan>
+<tspan x="10" y="6650">411.  2018-04-12 11:29:22 +0000      727 bytes  man/man1/npm-start.1</tspan>
 
-<tspan x="10" y="6666">412.  2018-04-12 09:34:07 +0000      384 bytes  man/man1/npm-stop.1</tspan>
+<tspan x="10" y="6666">412.  2018-04-12 11:29:22 +0000      384 bytes  man/man1/npm-stop.1</tspan>
 
-<tspan x="10" y="6682">413.  2018-04-12 09:34:07 +0000     1946 bytes  man/man1/npm-team.1</tspan>
+<tspan x="10" y="6682">413.  2018-04-12 11:29:22 +0000     1946 bytes  man/man1/npm-team.1</tspan>
 
-<tspan x="10" y="6698">414.  2018-04-12 09:34:07 +0000      405 bytes  man/man1/npm-test.1</tspan>
+<tspan x="10" y="6698">414.  2018-04-12 11:29:22 +0000      405 bytes  man/man1/npm-test.1</tspan>
 
-<tspan x="10" y="6714">415.  2018-04-12 09:34:07 +0000     3747 bytes  man/man1/npm-token.1</tspan>
+<tspan x="10" y="6714">415.  2018-04-12 11:29:22 +0000     3747 bytes  man/man1/npm-token.1</tspan>
 
-<tspan x="10" y="6730">416.  2018-04-12 09:34:07 +0000     1710 bytes  man/man1/npm-uninstall.1</tspan>
+<tspan x="10" y="6730">416.  2018-04-12 11:29:22 +0000     1710 bytes  man/man1/npm-uninstall.1</tspan>
 
-<tspan x="10" y="6746">417.  2018-04-12 09:34:07 +0000     1369 bytes  man/man1/npm-unpublish.1</tspan>
+<tspan x="10" y="6746">417.  2018-04-12 11:29:22 +0000     1369 bytes  man/man1/npm-unpublish.1</tspan>
 
-<tspan x="10" y="6762">418.  2018-04-12 09:34:07 +0000     3452 bytes  man/man1/npm-update.1</tspan>
+<tspan x="10" y="6762">418.  2018-04-12 11:29:22 +0000     3452 bytes  man/man1/npm-update.1</tspan>
 
-<tspan x="10" y="6778">419.  2018-04-12 09:34:07 +0000     4888 bytes  man/man1/npm-version.1</tspan>
+<tspan x="10" y="6778">419.  2018-04-12 11:29:22 +0000     4888 bytes  man/man1/npm-version.1</tspan>
 
-<tspan x="10" y="6794">420.  2018-04-12 09:34:07 +0000     3374 bytes  man/man1/npm-view.1</tspan>
+<tspan x="10" y="6794">420.  2018-04-12 11:29:22 +0000     3374 bytes  man/man1/npm-view.1</tspan>
 
-<tspan x="10" y="6810">421.  2018-04-12 09:34:07 +0000      373 bytes  man/man1/npm-whoami.1</tspan>
+<tspan x="10" y="6810">421.  2018-04-12 11:29:22 +0000      373 bytes  man/man1/npm-whoami.1</tspan>
 
-<tspan x="10" y="6826">422.  2018-04-12 09:34:07 +0000     5924 bytes  man/man1/npm.1</tspan>
+<tspan x="10" y="6826">422.  2018-04-12 11:29:22 +0000     5924 bytes  man/man1/npm.1</tspan>
 
-<tspan x="10" y="6842">423.  2018-04-12 09:34:07 +0000     6860 bytes  man/man1/npx.1</tspan>
+<tspan x="10" y="6842">423.  2018-04-12 11:29:22 +0000     6860 bytes  man/man1/npx.1</tspan>
 
-<tspan x="10" y="6858">424.  2018-04-12 09:34:07 +0000     8403 bytes  man/man5/npm-folders.5</tspan>
+<tspan x="10" y="6858">424.  2018-04-12 11:29:22 +0000     8403 bytes  man/man5/npm-folders.5</tspan>
 
-<tspan x="10" y="6874">425.  2018-04-12 09:34:07 +0000     8403 bytes  man/man5/npm-global.5</tspan>
+<tspan x="10" y="6874">425.  2018-04-12 11:29:22 +0000     8403 bytes  man/man5/npm-global.5</tspan>
 
-<tspan x="10" y="6890">426.  2018-04-12 09:34:07 +0000    28237 bytes  man/man5/npm-json.5</tspan>
+<tspan x="10" y="6890">426.  2018-04-12 11:29:22 +0000    28237 bytes  man/man5/npm-json.5</tspan>
 
-<tspan x="10" y="6906">427.  2018-04-12 09:34:07 +0000     6858 bytes  man/man5/npm-package-locks.5</tspan>
+<tspan x="10" y="6906">427.  2018-04-12 11:29:22 +0000     6858 bytes  man/man5/npm-package-locks.5</tspan>
 
-<tspan x="10" y="6922">428.  2018-04-12 09:34:07 +0000     1263 bytes  man/man5/npm-shrinkwrap.json.5</tspan>
+<tspan x="10" y="6922">428.  2018-04-12 11:29:22 +0000     1263 bytes  man/man5/npm-shrinkwrap.json.5</tspan>
 
-<tspan x="10" y="6938">429.  2018-04-12 09:34:07 +0000     3080 bytes  man/man5/npmrc.5</tspan>
+<tspan x="10" y="6938">429.  2018-04-12 11:29:22 +0000     3080 bytes  man/man5/npmrc.5</tspan>
 
-<tspan x="10" y="6954">430.  2018-04-12 09:34:07 +0000     6139 bytes  man/man5/package-lock.json.5</tspan>
+<tspan x="10" y="6954">430.  2018-04-12 11:29:22 +0000     6139 bytes  man/man5/package-lock.json.5</tspan>
 
-<tspan x="10" y="6970">431.  2018-04-12 09:34:07 +0000    28237 bytes  man/man5/package.json.5</tspan>
+<tspan x="10" y="6970">431.  2018-04-12 11:29:22 +0000    28237 bytes  man/man5/package.json.5</tspan>
 
-<tspan x="10" y="6986">432.  2018-04-12 09:34:07 +0000     5757 bytes  man/man7/npm-coding-style.7</tspan>
+<tspan x="10" y="6986">432.  2018-04-12 11:29:22 +0000     5757 bytes  man/man7/npm-coding-style.7</tspan>
 
-<tspan x="10" y="7002">433.  2018-04-12 09:34:07 +0000    36561 bytes  man/man7/npm-config.7</tspan>
+<tspan x="10" y="7002">433.  2018-04-12 11:29:22 +0000    36561 bytes  man/man7/npm-config.7</tspan>
 
-<tspan x="10" y="7018">434.  2018-04-12 09:34:07 +0000     8546 bytes  man/man7/npm-developers.7</tspan>
+<tspan x="10" y="7018">434.  2018-04-12 11:29:22 +0000     8546 bytes  man/man7/npm-developers.7</tspan>
 
-<tspan x="10" y="7034">435.  2018-04-12 09:34:07 +0000     6386 bytes  man/man7/npm-disputes.7</tspan>
+<tspan x="10" y="7034">435.  2018-04-12 11:29:22 +0000     6386 bytes  man/man7/npm-disputes.7</tspan>
 
-<tspan x="10" y="7050">436.  2018-04-12 09:34:07 +0000     4022 bytes  man/man7/npm-index.7</tspan>
+<tspan x="10" y="7050">436.  2018-04-12 11:29:22 +0000     4022 bytes  man/man7/npm-index.7</tspan>
 
-<tspan x="10" y="7066">437.  2018-04-12 09:34:07 +0000     2574 bytes  man/man7/npm-orgs.7</tspan>
+<tspan x="10" y="7066">437.  2018-04-12 11:29:22 +0000     2574 bytes  man/man7/npm-orgs.7</tspan>
 
-<tspan x="10" y="7082">438.  2018-04-12 09:34:07 +0000     3851 bytes  man/man7/npm-registry.7</tspan>
+<tspan x="10" y="7082">438.  2018-04-12 11:29:22 +0000     3851 bytes  man/man7/npm-registry.7</tspan>
 
-<tspan x="10" y="7098">439.  2018-04-12 09:34:07 +0000     4610 bytes  man/man7/npm-scope.7</tspan>
+<tspan x="10" y="7098">439.  2018-04-12 11:29:22 +0000     4610 bytes  man/man7/npm-scope.7</tspan>
 
-<tspan x="10" y="7114">440.  2018-04-12 09:34:07 +0000    10594 bytes  man/man7/npm-scripts.7</tspan>
+<tspan x="10" y="7114">440.  2018-04-12 11:29:22 +0000    10594 bytes  man/man7/npm-scripts.7</tspan>
 
-<tspan x="10" y="7130">441.  2018-04-12 09:34:07 +0000     1838 bytes  man/man7/removing-npm.7</tspan>
+<tspan x="10" y="7130">441.  2018-04-12 11:29:22 +0000     1838 bytes  man/man7/removing-npm.7</tspan>
 
-<tspan x="10" y="7146">442.  2018-04-12 09:34:07 +0000    17109 bytes  man/man7/semver.7</tspan>
+<tspan x="10" y="7146">442.  2018-04-12 11:29:22 +0000    17109 bytes  man/man7/semver.7</tspan>
 
-<tspan x="10" y="7162">443.  2018-04-12 09:34:07 +0000    61106 bytes  package.json</tspan>
+<tspan x="10" y="7162">443.  2018-04-12 11:29:22 +0000    61106 bytes  package.json</tspan>
 
-<tspan x="10" y="7178">444.  2018-04-12 09:34:07 +0000     2957 bytes  scripts/changelog.js</tspan>
+<tspan x="10" y="7178">444.  2018-04-12 11:29:22 +0000     2957 bytes  scripts/changelog.js</tspan>
 
-<tspan x="10" y="7194">445.  2018-04-12 09:34:07 +0000     4258 bytes  scripts/clean-old.sh</tspan>
+<tspan x="10" y="7194">445.  2018-04-12 11:29:22 +0000     4258 bytes  scripts/clean-old.sh</tspan>
 
-<tspan x="10" y="7210">446.  2018-04-12 09:34:07 +0000      167 bytes  scripts/dep-update</tspan>
+<tspan x="10" y="7210">446.  2018-04-12 11:29:22 +0000      167 bytes  scripts/dep-update</tspan>
 
-<tspan x="10" y="7226">447.  2018-04-12 09:34:07 +0000      161 bytes  scripts/dev-dep-update</tspan>
+<tspan x="10" y="7226">447.  2018-04-12 11:29:22 +0000      161 bytes  scripts/dev-dep-update</tspan>
 
-<tspan x="10" y="7242">448.  2018-04-12 09:34:07 +0000     2008 bytes  scripts/doc-build.sh</tspan>
+<tspan x="10" y="7242">448.  2018-04-12 11:29:22 +0000     2008 bytes  scripts/doc-build.sh</tspan>
 
-<tspan x="10" y="7258">449.  2018-04-12 09:34:07 +0000      420 bytes  scripts/gen-changelog</tspan>
+<tspan x="10" y="7258">449.  2018-04-12 11:29:22 +0000      420 bytes  scripts/gen-changelog</tspan>
 
-<tspan x="10" y="7274">450.  2018-04-12 09:34:07 +0000     1696 bytes  scripts/index-build.js</tspan>
+<tspan x="10" y="7274">450.  2018-04-12 11:29:22 +0000     1696 bytes  scripts/index-build.js</tspan>
 
-<tspan x="10" y="7290">451.  2018-04-12 09:34:07 +0000     5450 bytes  scripts/install.sh</tspan>
+<tspan x="10" y="7290">451.  2018-04-12 11:29:22 +0000     5450 bytes  scripts/install.sh</tspan>
 
-<tspan x="10" y="7306">452.  2018-04-12 09:34:07 +0000     2089 bytes  scripts/maketest</tspan>
+<tspan x="10" y="7306">452.  2018-04-12 11:29:22 +0000     2089 bytes  scripts/maketest</tspan>
 
-<tspan x="10" y="7322">453.  2018-04-12 09:34:07 +0000      151 bytes  scripts/publish-tag.js</tspan>
+<tspan x="10" y="7322">453.  2018-04-12 11:29:22 +0000      151 bytes  scripts/publish-tag.js</tspan>
 
-<tspan x="10" y="7338">454.  2018-04-12 09:34:07 +0000      681 bytes  scripts/release.sh</tspan>
+<tspan x="10" y="7338">454.  2018-04-12 11:29:22 +0000      681 bytes  scripts/release.sh</tspan>
 
-<tspan x="10" y="7354">455.  2018-04-12 09:34:07 +0000      665 bytes  scripts/relocate.sh</tspan>
+<tspan x="10" y="7354">455.  2018-04-12 11:29:22 +0000      665 bytes  scripts/relocate.sh</tspan>
 
-<tspan x="10" y="7370">456.  2018-04-12 09:34:07 +0000      183 bytes  scripts/update-authors.sh</tspan>
+<tspan x="10" y="7370">456.  2018-04-12 11:29:22 +0000      183 bytes  scripts/update-authors.sh</tspan>
 
-<tspan x="10" y="7386">457.  2018-04-12 09:34:07 +0000     6827 bytes  test/broken-under-nyc-and-travis/lifecycle-path.\</tspan>
+<tspan x="10" y="7386">457.  2018-04-12 11:29:22 +0000     6827 bytes  test/broken-under-nyc-and-travis/lifecycle-path.\</tspan>
 <tspan x="10" y="7402">js</tspan>
 
-<tspan x="10" y="7418">458.  2018-04-12 09:34:07 +0000     2037 bytes  test/broken-under-nyc-and-travis/whoami.js</tspan>
+<tspan x="10" y="7418">458.  2018-04-12 11:29:22 +0000     2037 bytes  test/broken-under-nyc-and-travis/whoami.js</tspan>
 
-<tspan x="10" y="7434">459.  2018-04-12 09:34:07 +0000     5400 bytes  test/common-tap.js</tspan>
+<tspan x="10" y="7434">459.  2018-04-12 11:29:22 +0000     5400 bytes  test/common-tap.js</tspan>
 
-<tspan x="10" y="7450">460.  2018-04-12 09:34:07 +0000       22 bytes  test/fixtures/config/builtin</tspan>
+<tspan x="10" y="7450">460.  2018-04-12 11:29:22 +0000       22 bytes  test/fixtures/config/builtin</tspan>
 
-<tspan x="10" y="7466">461.  2018-04-12 09:34:07 +0000       25 bytes  test/fixtures/config/globalconfig</tspan>
+<tspan x="10" y="7466">461.  2018-04-12 11:29:22 +0000       25 bytes  test/fixtures/config/globalconfig</tspan>
 
-<tspan x="10" y="7482">462.  2018-04-12 09:34:07 +0000       11 bytes  test/fixtures/config/malformed</tspan>
+<tspan x="10" y="7482">462.  2018-04-12 11:29:22 +0000       11 bytes  test/fixtures/config/malformed</tspan>
 
-<tspan x="10" y="7498">463.  2018-04-12 09:34:07 +0000     1888 bytes  test/fixtures/config/multi-ca</tspan>
+<tspan x="10" y="7498">463.  2018-04-12 11:29:22 +0000     1888 bytes  test/fixtures/config/multi-ca</tspan>
 
-<tspan x="10" y="7514">464.  2018-04-12 09:34:07 +0000      526 bytes  test/fixtures/config/userconfig</tspan>
+<tspan x="10" y="7514">464.  2018-04-12 11:29:22 +0000      526 bytes  test/fixtures/config/userconfig</tspan>
 
-<tspan x="10" y="7530">465.  2018-04-12 09:34:07 +0000      583 bytes  test/fixtures/forked-underscore-1.5.1.tgz</tspan>
+<tspan x="10" y="7530">465.  2018-04-12 11:29:22 +0000      583 bytes  test/fixtures/forked-underscore-1.5.1.tgz</tspan>
 
-<tspan x="10" y="7546">466.  2018-04-12 09:34:07 +0000    12585 bytes  test/fixtures/github-com-BryanDonovan-dummy-npm-\</tspan>
+<tspan x="10" y="7546">466.  2018-04-12 11:29:22 +0000    12585 bytes  test/fixtures/github-com-BryanDonovan-dummy-npm-\</tspan>
 <tspan x="10" y="7562">bar.git.tar.gz</tspan>
 
-<tspan x="10" y="7578">467.  2018-04-12 09:34:07 +0000    10860 bytes  test/fixtures/github-com-BryanDonovan-dummy-npm-\</tspan>
+<tspan x="10" y="7578">467.  2018-04-12 11:29:22 +0000    10860 bytes  test/fixtures/github-com-BryanDonovan-dummy-npm-\</tspan>
 <tspan x="10" y="7594">buzz.git.tar.gz</tspan>
 
-<tspan x="10" y="7610">468.  2018-04-12 09:34:07 +0000    12712 bytes  test/fixtures/github-com-BryanDonovan-dummy-npm-\</tspan>
+<tspan x="10" y="7610">468.  2018-04-12 11:29:22 +0000    12712 bytes  test/fixtures/github-com-BryanDonovan-dummy-npm-\</tspan>
 <tspan x="10" y="7626">foo.git.tar.gz</tspan>
 
-<tspan x="10" y="7642">469.  2018-04-12 09:34:07 +0000     9521 bytes  test/fixtures/github-com-BryanDonovan-npm-git-te\</tspan>
+<tspan x="10" y="7642">469.  2018-04-12 11:29:22 +0000     9521 bytes  test/fixtures/github-com-BryanDonovan-npm-git-te\</tspan>
 <tspan x="10" y="7658">st.git.tar.gz</tspan>
 
-<tspan x="10" y="7674">470.  2018-04-12 09:34:07 +0000     4096 bytes  test/fixtures/gitignore-and-npmignore-2.tar</tspan>
+<tspan x="10" y="7674">470.  2018-04-12 11:29:22 +0000     4096 bytes  test/fixtures/gitignore-and-npmignore-2.tar</tspan>
 
-<tspan x="10" y="7690">471.  2018-04-12 09:34:07 +0000    10240 bytes  test/fixtures/gitignore-and-npmignore.tar</tspan>
+<tspan x="10" y="7690">471.  2018-04-12 11:29:22 +0000    10240 bytes  test/fixtures/gitignore-and-npmignore.tar</tspan>
 
-<tspan x="10" y="7706">472.  2018-04-12 09:34:07 +0000      360 bytes  test/fixtures/gitignore-and-npmignore.tgz</tspan>
+<tspan x="10" y="7706">472.  2018-04-12 11:29:22 +0000      360 bytes  test/fixtures/gitignore-and-npmignore.tgz</tspan>
 
-<tspan x="10" y="7722">473.  2018-04-12 09:34:07 +0000      319 bytes  test/fixtures/gitignore.tgz</tspan>
+<tspan x="10" y="7722">473.  2018-04-12 11:29:22 +0000      319 bytes  test/fixtures/gitignore.tgz</tspan>
 
-<tspan x="10" y="7738">474.  2018-04-12 09:34:07 +0000      320 bytes  test/fixtures/npmignore.tgz</tspan>
+<tspan x="10" y="7738">474.  2018-04-12 11:29:22 +0000      320 bytes  test/fixtures/npmignore.tgz</tspan>
 
-<tspan x="10" y="7754">475.  2018-04-12 09:34:07 +0000       31 bytes  test/fixtures/onload.js</tspan>
+<tspan x="10" y="7754">475.  2018-04-12 11:29:22 +0000       31 bytes  test/fixtures/onload.js</tspan>
 
-<tspan x="10" y="7770">476.  2018-04-12 09:34:07 +0000    55415 bytes  test/fixtures/scoped-underscore-1.3.1.tgz</tspan>
+<tspan x="10" y="7770">476.  2018-04-12 11:29:22 +0000    55415 bytes  test/fixtures/scoped-underscore-1.3.1.tgz</tspan>
 
-<tspan x="10" y="7786">477.  2018-04-12 09:34:07 +0000     4182 bytes  test/need-npm5-update/belongs-in-pacote/add-remo\</tspan>
+<tspan x="10" y="7786">477.  2018-04-12 11:29:22 +0000     4182 bytes  test/need-npm5-update/belongs-in-pacote/add-remo\</tspan>
 <tspan x="10" y="7802">te-git-get-resolved.js</tspan>
 
-<tspan x="10" y="7818">478.  2018-04-12 09:34:07 +0000     6260 bytes  test/need-npm5-update/belongs-in-pacote/git-race\</tspan>
+<tspan x="10" y="7818">478.  2018-04-12 11:29:22 +0000     6260 bytes  test/need-npm5-update/belongs-in-pacote/git-race\</tspan>
 <tspan x="10" y="7834">s.js</tspan>
 
-<tspan x="10" y="7850">479.  2018-04-12 09:34:07 +0000     3001 bytes  test/need-npm5-update/ignore-shrinkwrap.js</tspan>
+<tspan x="10" y="7850">479.  2018-04-12 11:29:22 +0000     3001 bytes  test/need-npm5-update/ignore-shrinkwrap.js</tspan>
 
-<tspan x="10" y="7866">480.  2018-04-12 09:34:07 +0000     2303 bytes  test/need-npm5-update/legacy-array-bin.js</tspan>
+<tspan x="10" y="7866">480.  2018-04-12 11:29:22 +0000     2303 bytes  test/need-npm5-update/legacy-array-bin.js</tspan>
 
-<tspan x="10" y="7882">481.  2018-04-12 09:34:07 +0000     2253 bytes  test/need-npm5-update/legacy-dir-bin.js</tspan>
+<tspan x="10" y="7882">481.  2018-04-12 11:29:22 +0000     2253 bytes  test/need-npm5-update/legacy-dir-bin.js</tspan>
 
-<tspan x="10" y="7898">482.  2018-04-12 09:34:07 +0000     3545 bytes  test/need-npm5-update/legacy-npm-self-install.js</tspan>
+<tspan x="10" y="7898">482.  2018-04-12 11:29:22 +0000     3545 bytes  test/need-npm5-update/legacy-npm-self-install.js</tspan>
 
-<tspan x="10" y="7914">483.  2018-04-12 09:34:07 +0000     2112 bytes  test/need-npm5-update/legacy-optional-deps.js</tspan>
+<tspan x="10" y="7914">483.  2018-04-12 11:29:22 +0000     2112 bytes  test/need-npm5-update/legacy-optional-deps.js</tspan>
 
-<tspan x="10" y="7930">484.  2018-04-12 09:34:07 +0000     3618 bytes  test/need-npm5-update/legacy-shrinkwrap.js</tspan>
+<tspan x="10" y="7930">484.  2018-04-12 11:29:22 +0000     3618 bytes  test/need-npm5-update/legacy-shrinkwrap.js</tspan>
 
-<tspan x="10" y="7946">485.  2018-04-12 09:34:07 +0000     3730 bytes  test/need-npm5-update/lifecycle-signal.js</tspan>
+<tspan x="10" y="7946">485.  2018-04-12 11:29:22 +0000     3730 bytes  test/need-npm5-update/lifecycle-signal.js</tspan>
 
-<tspan x="10" y="7962">486.  2018-04-12 09:34:07 +0000     3168 bytes  test/need-npm5-update/move-no-clobber-dest-node-\</tspan>
+<tspan x="10" y="7962">486.  2018-04-12 11:29:22 +0000     3168 bytes  test/need-npm5-update/move-no-clobber-dest-node-\</tspan>
 <tspan x="10" y="7978">modules.js</tspan>
 
-<tspan x="10" y="7994">487.  2018-04-12 09:34:07 +0000     5102 bytes  test/need-npm5-update/need-only-update-save-opti\</tspan>
+<tspan x="10" y="7994">487.  2018-04-12 11:29:22 +0000     5102 bytes  test/need-npm5-update/need-only-update-save-opti\</tspan>
 <tspan x="10" y="8010">onal/update-save.js</tspan>
 
-<tspan x="10" y="8026">488.  2018-04-12 09:34:07 +0000     3702 bytes  test/need-npm5-update/need-outdated/update-symli\</tspan>
+<tspan x="10" y="8026">488.  2018-04-12 11:29:22 +0000     3702 bytes  test/need-npm5-update/need-outdated/update-symli\</tspan>
 <tspan x="10" y="8042">nk.js</tspan>
 
-<tspan x="10" y="8058">489.  2018-04-12 09:34:07 +0000     2338 bytes  test/need-npm5-update/outdated-depth-deep.js</tspan>
+<tspan x="10" y="8058">489.  2018-04-12 11:29:22 +0000     2338 bytes  test/need-npm5-update/outdated-depth-deep.js</tspan>
 
-<tspan x="10" y="8074">490.  2018-04-12 09:34:07 +0000     1735 bytes  test/need-npm5-update/outdated-depth-integer.js</tspan>
+<tspan x="10" y="8074">490.  2018-04-12 11:29:22 +0000     1735 bytes  test/need-npm5-update/outdated-depth-integer.js</tspan>
 
-<tspan x="10" y="8090">491.  2018-04-12 09:34:07 +0000     1275 bytes  test/need-npm5-update/outdated-include-devdepend\</tspan>
+<tspan x="10" y="8090">491.  2018-04-12 11:29:22 +0000     1275 bytes  test/need-npm5-update/outdated-include-devdepend\</tspan>
 <tspan x="10" y="8106">encies.js</tspan>
 
-<tspan x="10" y="8122">492.  2018-04-12 09:34:07 +0000     5393 bytes  test/need-npm5-update/outdated-local.js</tspan>
+<tspan x="10" y="8122">492.  2018-04-12 11:29:22 +0000     5393 bytes  test/need-npm5-update/outdated-local.js</tspan>
 
-<tspan x="10" y="8138">493.  2018-04-12 09:34:07 +0000     1459 bytes  test/need-npm5-update/outdated-new-versions.js</tspan>
+<tspan x="10" y="8138">493.  2018-04-12 11:29:22 +0000     1459 bytes  test/need-npm5-update/outdated-new-versions.js</tspan>
 
-<tspan x="10" y="8154">494.  2018-04-12 09:34:07 +0000     1198 bytes  test/need-npm5-update/outdated-notarget.js</tspan>
+<tspan x="10" y="8154">494.  2018-04-12 11:29:22 +0000     1198 bytes  test/need-npm5-update/outdated-notarget.js</tspan>
 
-<tspan x="10" y="8170">495.  2018-04-12 09:34:07 +0000     2988 bytes  test/need-npm5-update/outdated-private.js</tspan>
+<tspan x="10" y="8170">495.  2018-04-12 11:29:22 +0000     2988 bytes  test/need-npm5-update/outdated-private.js</tspan>
 
-<tspan x="10" y="8186">496.  2018-04-12 09:34:07 +0000     2879 bytes  test/need-npm5-update/outdated-symlink.js</tspan>
+<tspan x="10" y="8186">496.  2018-04-12 11:29:22 +0000     2879 bytes  test/need-npm5-update/outdated-symlink.js</tspan>
 
-<tspan x="10" y="8202">497.  2018-04-12 09:34:07 +0000     2676 bytes  test/need-npm5-update/peer-deps-invalid.js</tspan>
+<tspan x="10" y="8202">497.  2018-04-12 11:29:22 +0000     2676 bytes  test/need-npm5-update/peer-deps-invalid.js</tspan>
 
-<tspan x="10" y="8218">498.  2018-04-12 09:34:07 +0000     3243 bytes  test/need-npm5-update/peer-deps-toplevel.js</tspan>
+<tspan x="10" y="8218">498.  2018-04-12 11:29:22 +0000     3243 bytes  test/need-npm5-update/peer-deps-toplevel.js</tspan>
 
-<tspan x="10" y="8234">499.  2018-04-12 09:34:07 +0000     2127 bytes  test/need-npm5-update/peer-deps-without-package-\</tspan>
+<tspan x="10" y="8234">499.  2018-04-12 11:29:22 +0000     2127 bytes  test/need-npm5-update/peer-deps-without-package-\</tspan>
 <tspan x="10" y="8250">json.js</tspan>
 
-<tspan x="10" y="8266">500.  2018-04-12 09:34:07 +0000     3471 bytes  test/need-npm5-update/rm-linked.js</tspan>
+<tspan x="10" y="8266">500.  2018-04-12 11:29:22 +0000     3471 bytes  test/need-npm5-update/rm-linked.js</tspan>
 
-<tspan x="10" y="8282">501.  2018-04-12 09:34:07 +0000     4029 bytes  test/need-npm5-update/shrinkwrap-complete-except\</tspan>
+<tspan x="10" y="8282">501.  2018-04-12 11:29:22 +0000     4029 bytes  test/need-npm5-update/shrinkwrap-complete-except\</tspan>
 <tspan x="10" y="8298">-dev.js</tspan>
 
-<tspan x="10" y="8314">502.  2018-04-12 09:34:07 +0000     2031 bytes  test/need-npm5-update/shrinkwrap-dev-dep-cycle.j\</tspan>
+<tspan x="10" y="8314">502.  2018-04-12 11:29:22 +0000     2031 bytes  test/need-npm5-update/shrinkwrap-dev-dep-cycle.j\</tspan>
 <tspan x="10" y="8330">s</tspan>
 
-<tspan x="10" y="8346">503.  2018-04-12 09:34:07 +0000     1199 bytes  test/network/git-cache-locking.js</tspan>
+<tspan x="10" y="8346">503.  2018-04-12 11:29:22 +0000     1199 bytes  test/network/git-cache-locking.js</tspan>
 
-<tspan x="10" y="8362">504.  2018-04-12 09:34:07 +0000     1398 bytes  test/network/git-cache-no-hooks.js</tspan>
+<tspan x="10" y="8362">504.  2018-04-12 11:29:22 +0000     1398 bytes  test/network/git-cache-no-hooks.js</tspan>
 
-<tspan x="10" y="8378">505.  2018-04-12 09:34:07 +0000     2416 bytes  test/network/legacy-bundled-git.js</tspan>
+<tspan x="10" y="8378">505.  2018-04-12 11:29:22 +0000     2416 bytes  test/network/legacy-bundled-git.js</tspan>
 
-<tspan x="10" y="8394">506.  2018-04-12 09:34:07 +0000     1348 bytes  test/network/legacy-url-dep.js</tspan>
+<tspan x="10" y="8394">506.  2018-04-12 11:29:22 +0000     1348 bytes  test/network/legacy-url-dep.js</tspan>
 
-<tspan x="10" y="8410">507.  2018-04-12 09:34:07 +0000     1968 bytes  test/network/registry.js</tspan>
+<tspan x="10" y="8410">507.  2018-04-12 11:29:22 +0000     1968 bytes  test/network/registry.js</tspan>
 
-<tspan x="10" y="8426">508.  2018-04-12 09:34:07 +0000      500 bytes  test/tap/00-check-mock-dep.js</tspan>
+<tspan x="10" y="8426">508.  2018-04-12 11:29:22 +0000      500 bytes  test/tap/00-check-mock-dep.js</tspan>
 
-<tspan x="10" y="8442">509.  2018-04-12 09:34:07 +0000     2812 bytes  test/tap/00-config-setup.js</tspan>
+<tspan x="10" y="8442">509.  2018-04-12 11:29:22 +0000     2812 bytes  test/tap/00-config-setup.js</tspan>
 
-<tspan x="10" y="8458">510.  2018-04-12 09:34:07 +0000      377 bytes  test/tap/00-verify-bundle-deps.js</tspan>
+<tspan x="10" y="8458">510.  2018-04-12 11:29:22 +0000      377 bytes  test/tap/00-verify-bundle-deps.js</tspan>
 
-<tspan x="10" y="8474">511.  2018-04-12 09:34:07 +0000      628 bytes  test/tap/00-verify-ls-ok.js</tspan>
+<tspan x="10" y="8474">511.  2018-04-12 11:29:22 +0000      628 bytes  test/tap/00-verify-ls-ok.js</tspan>
 
-<tspan x="10" y="8490">512.  2018-04-12 09:34:07 +0000     1118 bytes  test/tap/00-verify-no-scoped.js</tspan>
+<tspan x="10" y="8490">512.  2018-04-12 11:29:22 +0000     1118 bytes  test/tap/00-verify-no-scoped.js</tspan>
 
-<tspan x="10" y="8506">513.  2018-04-12 09:34:07 +0000     1634 bytes  test/tap/404-parent.js</tspan>
+<tspan x="10" y="8506">513.  2018-04-12 11:29:22 +0000     1634 bytes  test/tap/404-parent.js</tspan>
 
-<tspan x="10" y="8522">514.  2018-04-12 09:34:07 +0000     1315 bytes  test/tap/404-private-registry-scoped.js</tspan>
+<tspan x="10" y="8522">514.  2018-04-12 11:29:22 +0000     1315 bytes  test/tap/404-private-registry-scoped.js</tspan>
 
-<tspan x="10" y="8538">515.  2018-04-12 09:34:07 +0000     1243 bytes  test/tap/404-private-registry.js</tspan>
+<tspan x="10" y="8538">515.  2018-04-12 11:29:22 +0000     1243 bytes  test/tap/404-private-registry.js</tspan>
 
-<tspan x="10" y="8554">516.  2018-04-12 09:34:07 +0000    12209 bytes  test/tap/access.js</tspan>
+<tspan x="10" y="8554">516.  2018-04-12 11:29:22 +0000    12209 bytes  test/tap/access.js</tspan>
 
-<tspan x="10" y="8570">517.  2018-04-12 09:34:07 +0000     2526 bytes  test/tap/add-named-update-protocol-port.js</tspan>
+<tspan x="10" y="8570">517.  2018-04-12 11:29:22 +0000     2526 bytes  test/tap/add-named-update-protocol-port.js</tspan>
 
-<tspan x="10" y="8586">518.  2018-04-12 09:34:07 +0000     2405 bytes  test/tap/add-remote-git-file.js</tspan>
+<tspan x="10" y="8586">518.  2018-04-12 11:29:22 +0000     2405 bytes  test/tap/add-remote-git-file.js</tspan>
 
-<tspan x="10" y="8602">519.  2018-04-12 09:34:07 +0000     3468 bytes  test/tap/add-remote-git-shrinkwrap.js</tspan>
+<tspan x="10" y="8602">519.  2018-04-12 11:29:22 +0000     3468 bytes  test/tap/add-remote-git-shrinkwrap.js</tspan>
 
-<tspan x="10" y="8618">520.  2018-04-12 09:34:07 +0000     3632 bytes  test/tap/add-remote-git-submodule.js</tspan>
+<tspan x="10" y="8618">520.  2018-04-12 11:29:22 +0000     3632 bytes  test/tap/add-remote-git-submodule.js</tspan>
 
-<tspan x="10" y="8634">521.  2018-04-12 09:34:07 +0000     2486 bytes  test/tap/add-remote-git.js</tspan>
+<tspan x="10" y="8634">521.  2018-04-12 11:29:22 +0000     2486 bytes  test/tap/add-remote-git.js</tspan>
 
-<tspan x="10" y="8650">522.  2018-04-12 09:34:07 +0000     7325 bytes  test/tap/adduser-always-auth.js</tspan>
+<tspan x="10" y="8650">522.  2018-04-12 11:29:22 +0000     7325 bytes  test/tap/adduser-always-auth.js</tspan>
 
-<tspan x="10" y="8666">523.  2018-04-12 09:34:07 +0000     2773 bytes  test/tap/adduser-legacy-auth.js</tspan>
+<tspan x="10" y="8666">523.  2018-04-12 11:29:22 +0000     2773 bytes  test/tap/adduser-legacy-auth.js</tspan>
 
-<tspan x="10" y="8682">524.  2018-04-12 09:34:07 +0000     2519 bytes  test/tap/adduser-oauth.js</tspan>
+<tspan x="10" y="8682">524.  2018-04-12 11:29:22 +0000     2519 bytes  test/tap/adduser-oauth.js</tspan>
 
-<tspan x="10" y="8698">525.  2018-04-12 09:34:07 +0000     2514 bytes  test/tap/adduser-saml.js</tspan>
+<tspan x="10" y="8698">525.  2018-04-12 11:29:22 +0000     2514 bytes  test/tap/adduser-saml.js</tspan>
 
-<tspan x="10" y="8714">526.  2018-04-12 09:34:07 +0000     3766 bytes  test/tap/all-package-metadata-cache-stream-unit.\</tspan>
+<tspan x="10" y="8714">526.  2018-04-12 11:29:22 +0000     3766 bytes  test/tap/all-package-metadata-cache-stream-unit.\</tspan>
 <tspan x="10" y="8730">js</tspan>
 
-<tspan x="10" y="8746">527.  2018-04-12 09:34:07 +0000     5588 bytes  test/tap/all-package-metadata-entry-stream-unit.\</tspan>
+<tspan x="10" y="8746">527.  2018-04-12 11:29:22 +0000     5588 bytes  test/tap/all-package-metadata-entry-stream-unit.\</tspan>
 <tspan x="10" y="8762">js</tspan>
 
-<tspan x="10" y="8778">528.  2018-04-12 09:34:07 +0000     4725 bytes  test/tap/all-package-metadata-update-stream-unit\</tspan>
+<tspan x="10" y="8778">528.  2018-04-12 11:29:22 +0000     4725 bytes  test/tap/all-package-metadata-update-stream-unit\</tspan>
 <tspan x="10" y="8794">.js</tspan>
 
-<tspan x="10" y="8810">529.  2018-04-12 09:34:07 +0000     3614 bytes  test/tap/all-package-metadata-write-stream-unit.\</tspan>
+<tspan x="10" y="8810">529.  2018-04-12 11:29:22 +0000     3614 bytes  test/tap/all-package-metadata-write-stream-unit.\</tspan>
 <tspan x="10" y="8826">js</tspan>
 
-<tspan x="10" y="8842">530.  2018-04-12 09:34:07 +0000     5742 bytes  test/tap/all-package-metadata.js</tspan>
+<tspan x="10" y="8842">530.  2018-04-12 11:29:22 +0000     5742 bytes  test/tap/all-package-metadata.js</tspan>
 
-<tspan x="10" y="8858">531.  2018-04-12 09:34:07 +0000     4079 bytes  test/tap/anon-cli-metrics.js</tspan>
+<tspan x="10" y="8858">531.  2018-04-12 11:29:22 +0000     4079 bytes  test/tap/anon-cli-metrics.js</tspan>
 
-<tspan x="10" y="8874">532.  2018-04-12 09:34:07 +0000     4124 bytes  test/tap/auto-prune.js</tspan>
+<tspan x="10" y="8874">532.  2018-04-12 11:29:22 +0000     4124 bytes  test/tap/auto-prune.js</tspan>
 
-<tspan x="10" y="8890">533.  2018-04-12 09:34:07 +0000     3133 bytes  test/tap/bearer-token-check.js</tspan>
+<tspan x="10" y="8890">533.  2018-04-12 11:29:22 +0000     3133 bytes  test/tap/bearer-token-check.js</tspan>
 
-<tspan x="10" y="8906">534.  2018-04-12 09:34:07 +0000      648 bytes  test/tap/bin.js</tspan>
+<tspan x="10" y="8906">534.  2018-04-12 11:29:22 +0000      648 bytes  test/tap/bin.js</tspan>
 
-<tspan x="10" y="8922">535.  2018-04-12 09:34:07 +0000     1944 bytes  test/tap/bitbucket-https-url-with-creds-package.\</tspan>
+<tspan x="10" y="8922">535.  2018-04-12 11:29:22 +0000     1944 bytes  test/tap/bitbucket-https-url-with-creds-package.\</tspan>
 <tspan x="10" y="8938">js</tspan>
 
-<tspan x="10" y="8954">536.  2018-04-12 09:34:07 +0000     1873 bytes  test/tap/bitbucket-https-url-with-creds.js</tspan>
+<tspan x="10" y="8954">536.  2018-04-12 11:29:22 +0000     1873 bytes  test/tap/bitbucket-https-url-with-creds.js</tspan>
 
-<tspan x="10" y="8970">537.  2018-04-12 09:34:07 +0000     1938 bytes  test/tap/bitbucket-shortcut-package.js</tspan>
+<tspan x="10" y="8970">537.  2018-04-12 11:29:22 +0000     1938 bytes  test/tap/bitbucket-shortcut-package.js</tspan>
 
-<tspan x="10" y="8986">538.  2018-04-12 09:34:07 +0000     1888 bytes  test/tap/bitbucket-shortcut.js</tspan>
+<tspan x="10" y="8986">538.  2018-04-12 11:29:22 +0000     1888 bytes  test/tap/bitbucket-shortcut.js</tspan>
 
-<tspan x="10" y="9002">539.  2018-04-12 09:34:07 +0000     5011 bytes  test/tap/bugs.js</tspan>
+<tspan x="10" y="9002">539.  2018-04-12 11:29:22 +0000     5011 bytes  test/tap/bugs.js</tspan>
 
-<tspan x="10" y="9018">540.  2018-04-12 09:34:07 +0000     2055 bytes  test/tap/build-already-built.js</tspan>
+<tspan x="10" y="9018">540.  2018-04-12 11:29:22 +0000     2055 bytes  test/tap/build-already-built.js</tspan>
 
-<tspan x="10" y="9034">541.  2018-04-12 09:34:07 +0000     4029 bytes  test/tap/builtin-config.js</tspan>
+<tspan x="10" y="9034">541.  2018-04-12 11:29:22 +0000     4029 bytes  test/tap/builtin-config.js</tspan>
 
-<tspan x="10" y="9050">542.  2018-04-12 09:34:07 +0000     1752 bytes  test/tap/bundled-dependencies-nonarray.js</tspan>
+<tspan x="10" y="9050">542.  2018-04-12 11:29:22 +0000     1752 bytes  test/tap/bundled-dependencies-nonarray.js</tspan>
 
-<tspan x="10" y="9066">543.  2018-04-12 09:34:07 +0000     2678 bytes  test/tap/bundled-dependencies.js</tspan>
+<tspan x="10" y="9066">543.  2018-04-12 11:29:22 +0000     2678 bytes  test/tap/bundled-dependencies.js</tspan>
 
-<tspan x="10" y="9082">544.  2018-04-12 09:34:07 +0000     1384 bytes  test/tap/bundled-no-add-to-move.js</tspan>
+<tspan x="10" y="9082">544.  2018-04-12 11:29:22 +0000     1384 bytes  test/tap/bundled-no-add-to-move.js</tspan>
 
-<tspan x="10" y="9098">545.  2018-04-12 09:34:07 +0000     2343 bytes  test/tap/bundled-transitive-deps.js</tspan>
+<tspan x="10" y="9098">545.  2018-04-12 11:29:22 +0000     2343 bytes  test/tap/bundled-transitive-deps.js</tspan>
 
-<tspan x="10" y="9114">546.  2018-04-12 09:34:07 +0000      798 bytes  test/tap/cache-add-unpublished.js</tspan>
+<tspan x="10" y="9114">546.  2018-04-12 11:29:22 +0000      798 bytes  test/tap/cache-add-unpublished.js</tspan>
 
-<tspan x="10" y="9130">547.  2018-04-12 09:34:07 +0000     2771 bytes  test/tap/cache-shasum-fork.js</tspan>
+<tspan x="10" y="9130">547.  2018-04-12 11:29:22 +0000     2771 bytes  test/tap/cache-shasum-fork.js</tspan>
 
-<tspan x="10" y="9146">548.  2018-04-12 09:34:07 +0000     1584 bytes  test/tap/check-cpu-reqs.js</tspan>
+<tspan x="10" y="9146">548.  2018-04-12 11:29:22 +0000     1584 bytes  test/tap/check-cpu-reqs.js</tspan>
 
-<tspan x="10" y="9162">549.  2018-04-12 09:34:07 +0000     1665 bytes  test/tap/check-engine-reqs.js</tspan>
+<tspan x="10" y="9162">549.  2018-04-12 11:29:22 +0000     1665 bytes  test/tap/check-engine-reqs.js</tspan>
 
-<tspan x="10" y="9178">550.  2018-04-12 09:34:07 +0000     1682 bytes  test/tap/check-install-self.js</tspan>
+<tspan x="10" y="9178">550.  2018-04-12 11:29:22 +0000     1682 bytes  test/tap/check-install-self.js</tspan>
 
-<tspan x="10" y="9194">551.  2018-04-12 09:34:07 +0000     1579 bytes  test/tap/check-os-reqs.js</tspan>
+<tspan x="10" y="9194">551.  2018-04-12 11:29:22 +0000     1579 bytes  test/tap/check-os-reqs.js</tspan>
 
-<tspan x="10" y="9210">552.  2018-04-12 09:34:07 +0000     2445 bytes  test/tap/check-permissions.js</tspan>
+<tspan x="10" y="9210">552.  2018-04-12 11:29:22 +0000     2445 bytes  test/tap/check-permissions.js</tspan>
 
-<tspan x="10" y="9226">553.  2018-04-12 09:34:07 +0000     3241 bytes  test/tap/ci-header.js</tspan>
+<tspan x="10" y="9226">553.  2018-04-12 11:29:22 +0000     3241 bytes  test/tap/ci-header.js</tspan>
 
-<tspan x="10" y="9242">554.  2018-04-12 09:34:07 +0000     8477 bytes  test/tap/ci.js</tspan>
+<tspan x="10" y="9242">554.  2018-04-12 11:29:22 +0000     8477 bytes  test/tap/ci.js</tspan>
 
-<tspan x="10" y="9258">555.  2018-04-12 09:34:07 +0000     2360 bytes  test/tap/circular-dep.js</tspan>
+<tspan x="10" y="9258">555.  2018-04-12 11:29:22 +0000     2360 bytes  test/tap/circular-dep.js</tspan>
 
-<tspan x="10" y="9274">556.  2018-04-12 09:34:07 +0000     2181 bytes  test/tap/config-basic.js</tspan>
+<tspan x="10" y="9274">556.  2018-04-12 11:29:22 +0000     2181 bytes  test/tap/config-basic.js</tspan>
 
-<tspan x="10" y="9290">557.  2018-04-12 09:34:07 +0000     1398 bytes  test/tap/config-builtin.js</tspan>
+<tspan x="10" y="9290">557.  2018-04-12 11:29:22 +0000     1398 bytes  test/tap/config-builtin.js</tspan>
 
-<tspan x="10" y="9306">558.  2018-04-12 09:34:07 +0000      541 bytes  test/tap/config-certfile.js</tspan>
+<tspan x="10" y="9306">558.  2018-04-12 11:29:22 +0000      541 bytes  test/tap/config-certfile.js</tspan>
 
-<tspan x="10" y="9322">559.  2018-04-12 09:34:07 +0000     8520 bytes  test/tap/config-credentials.js</tspan>
+<tspan x="10" y="9322">559.  2018-04-12 11:29:22 +0000     8520 bytes  test/tap/config-credentials.js</tspan>
 
-<tspan x="10" y="9338">560.  2018-04-12 09:34:07 +0000     1666 bytes  test/tap/config-edit.js</tspan>
+<tspan x="10" y="9338">560.  2018-04-12 11:29:22 +0000     1666 bytes  test/tap/config-edit.js</tspan>
 
-<tspan x="10" y="9354">561.  2018-04-12 09:34:07 +0000     1611 bytes  test/tap/config-envReplace.js</tspan>
+<tspan x="10" y="9354">561.  2018-04-12 11:29:22 +0000     1611 bytes  test/tap/config-envReplace.js</tspan>
 
-<tspan x="10" y="9370">562.  2018-04-12 09:34:07 +0000     1868 bytes  test/tap/config-list.js</tspan>
+<tspan x="10" y="9370">562.  2018-04-12 11:29:22 +0000     1868 bytes  test/tap/config-list.js</tspan>
 
-<tspan x="10" y="9386">563.  2018-04-12 09:34:07 +0000      379 bytes  test/tap/config-malformed.js</tspan>
+<tspan x="10" y="9386">563.  2018-04-12 11:29:22 +0000      379 bytes  test/tap/config-malformed.js</tspan>
 
-<tspan x="10" y="9402">564.  2018-04-12 09:34:07 +0000     4076 bytes  test/tap/config-meta.js</tspan>
+<tspan x="10" y="9402">564.  2018-04-12 11:29:22 +0000     4076 bytes  test/tap/config-meta.js</tspan>
 
-<tspan x="10" y="9418">565.  2018-04-12 09:34:07 +0000     1224 bytes  test/tap/config-new-cafile.js</tspan>
+<tspan x="10" y="9418">565.  2018-04-12 11:29:22 +0000     1224 bytes  test/tap/config-new-cafile.js</tspan>
 
-<tspan x="10" y="9434">566.  2018-04-12 09:34:07 +0000     1855 bytes  test/tap/config-private.js</tspan>
+<tspan x="10" y="9434">566.  2018-04-12 11:29:22 +0000     1855 bytes  test/tap/config-private.js</tspan>
 
-<tspan x="10" y="9450">567.  2018-04-12 09:34:07 +0000     1416 bytes  test/tap/config-project.js</tspan>
+<tspan x="10" y="9450">567.  2018-04-12 11:29:22 +0000     1416 bytes  test/tap/config-project.js</tspan>
 
-<tspan x="10" y="9466">568.  2018-04-12 09:34:07 +0000     2181 bytes  test/tap/config-save.js</tspan>
+<tspan x="10" y="9466">568.  2018-04-12 11:29:22 +0000     2181 bytes  test/tap/config-save.js</tspan>
 
-<tspan x="10" y="9482">569.  2018-04-12 09:34:07 +0000     4543 bytes  test/tap/correct-mkdir.js</tspan>
+<tspan x="10" y="9482">569.  2018-04-12 11:29:22 +0000     4543 bytes  test/tap/correct-mkdir.js</tspan>
 
-<tspan x="10" y="9498">570.  2018-04-12 09:34:07 +0000      942 bytes  test/tap/cruft-test.js</tspan>
+<tspan x="10" y="9498">570.  2018-04-12 11:29:22 +0000      942 bytes  test/tap/cruft-test.js</tspan>
 
-<tspan x="10" y="9514">571.  2018-04-12 09:34:07 +0000     2977 bytes  test/tap/debug-logs.js</tspan>
+<tspan x="10" y="9514">571.  2018-04-12 11:29:22 +0000     2977 bytes  test/tap/debug-logs.js</tspan>
 
-<tspan x="10" y="9530">572.  2018-04-12 09:34:07 +0000     3685 bytes  test/tap/dedupe-scoped.js</tspan>
+<tspan x="10" y="9530">572.  2018-04-12 11:29:22 +0000     3685 bytes  test/tap/dedupe-scoped.js</tspan>
 
-<tspan x="10" y="9546">573.  2018-04-12 09:34:07 +0000     2581 bytes  test/tap/dedupe.js</tspan>
+<tspan x="10" y="9546">573.  2018-04-12 11:29:22 +0000     2581 bytes  test/tap/dedupe.js</tspan>
 
-<tspan x="10" y="9562">574.  2018-04-12 09:34:07 +0000     4039 bytes  test/tap/deprecate.js</tspan>
+<tspan x="10" y="9562">574.  2018-04-12 11:29:22 +0000     4039 bytes  test/tap/deprecate.js</tspan>
 
-<tspan x="10" y="9578">575.  2018-04-12 09:34:07 +0000     4754 bytes  test/tap/dist-tag.js</tspan>
+<tspan x="10" y="9578">575.  2018-04-12 11:29:22 +0000     4754 bytes  test/tap/dist-tag.js</tspan>
 
-<tspan x="10" y="9594">576.  2018-04-12 09:34:07 +0000     3031 bytes  test/tap/do-not-remove-other-bins.js</tspan>
+<tspan x="10" y="9594">576.  2018-04-12 11:29:22 +0000     3031 bytes  test/tap/do-not-remove-other-bins.js</tspan>
 
-<tspan x="10" y="9610">577.  2018-04-12 09:34:07 +0000     2984 bytes  test/tap/doctor.js</tspan>
+<tspan x="10" y="9610">577.  2018-04-12 11:29:22 +0000     2984 bytes  test/tap/doctor.js</tspan>
 
-<tspan x="10" y="9626">578.  2018-04-12 09:34:07 +0000     1514 bytes  test/tap/extraneous-dep-cycle-ls-ok.js</tspan>
+<tspan x="10" y="9626">578.  2018-04-12 11:29:22 +0000     1514 bytes  test/tap/extraneous-dep-cycle-ls-ok.js</tspan>
 
-<tspan x="10" y="9642">579.  2018-04-12 09:34:07 +0000     2044 bytes  test/tap/false-name.js</tspan>
+<tspan x="10" y="9642">579.  2018-04-12 11:29:22 +0000     2044 bytes  test/tap/false-name.js</tspan>
 
-<tspan x="10" y="9658">580.  2018-04-12 09:34:07 +0000     1581 bytes  test/tap/fetch-package-metadata.js</tspan>
+<tspan x="10" y="9658">580.  2018-04-12 11:29:22 +0000     1581 bytes  test/tap/fetch-package-metadata.js</tspan>
 
-<tspan x="10" y="9674">581.  2018-04-12 09:34:07 +0000    20041 bytes  test/tap/files-and-ignores.js</tspan>
+<tspan x="10" y="9674">581.  2018-04-12 11:29:22 +0000    20041 bytes  test/tap/files-and-ignores.js</tspan>
 
-<tspan x="10" y="9690">582.  2018-04-12 09:34:07 +0000     2847 bytes  test/tap/full-warning-messages.js</tspan>
+<tspan x="10" y="9690">582.  2018-04-12 11:29:22 +0000     2847 bytes  test/tap/full-warning-messages.js</tspan>
 
-<tspan x="10" y="9706">583.  2018-04-12 09:34:07 +0000     5175 bytes  test/tap/gently-rm-cmdshims.js</tspan>
+<tspan x="10" y="9706">583.  2018-04-12 11:29:22 +0000     5175 bytes  test/tap/gently-rm-cmdshims.js</tspan>
 
-<tspan x="10" y="9722">584.  2018-04-12 09:34:07 +0000     3171 bytes  test/tap/gently-rm-linked-module.js</tspan>
+<tspan x="10" y="9722">584.  2018-04-12 11:29:22 +0000     3171 bytes  test/tap/gently-rm-linked-module.js</tspan>
 
-<tspan x="10" y="9738">585.  2018-04-12 09:34:07 +0000     1464 bytes  test/tap/gently-rm-overeager.js</tspan>
+<tspan x="10" y="9738">585.  2018-04-12 11:29:22 +0000     1464 bytes  test/tap/gently-rm-overeager.js</tspan>
 
-<tspan x="10" y="9754">586.  2018-04-12 09:34:07 +0000     2989 bytes  test/tap/gently-rm-symlinked-global-dir.js</tspan>
+<tspan x="10" y="9754">586.  2018-04-12 11:29:22 +0000     2989 bytes  test/tap/gently-rm-symlinked-global-dir.js</tspan>
 
-<tspan x="10" y="9770">587.  2018-04-12 09:34:07 +0000     2323 bytes  test/tap/get.js</tspan>
+<tspan x="10" y="9770">587.  2018-04-12 11:29:22 +0000     2323 bytes  test/tap/get.js</tspan>
 
-<tspan x="10" y="9786">588.  2018-04-12 09:34:07 +0000     2042 bytes  test/tap/gist-short-shortcut-package.js</tspan>
+<tspan x="10" y="9786">588.  2018-04-12 11:29:22 +0000     2042 bytes  test/tap/gist-short-shortcut-package.js</tspan>
 
-<tspan x="10" y="9802">589.  2018-04-12 09:34:07 +0000     2000 bytes  test/tap/gist-short-shortcut.js</tspan>
+<tspan x="10" y="9802">589.  2018-04-12 11:29:22 +0000     2000 bytes  test/tap/gist-short-shortcut.js</tspan>
 
-<tspan x="10" y="9818">590.  2018-04-12 09:34:07 +0000     2028 bytes  test/tap/gist-shortcut-package.js</tspan>
+<tspan x="10" y="9818">590.  2018-04-12 11:29:22 +0000     2028 bytes  test/tap/gist-shortcut-package.js</tspan>
 
-<tspan x="10" y="9834">591.  2018-04-12 09:34:07 +0000     1960 bytes  test/tap/gist-shortcut.js</tspan>
+<tspan x="10" y="9834">591.  2018-04-12 11:29:22 +0000     1960 bytes  test/tap/gist-shortcut.js</tspan>
 
-<tspan x="10" y="9850">592.  2018-04-12 09:34:07 +0000     4239 bytes  test/tap/git-dependency-install-link.js</tspan>
+<tspan x="10" y="9850">592.  2018-04-12 11:29:22 +0000     4239 bytes  test/tap/git-dependency-install-link.js</tspan>
 
-<tspan x="10" y="9866">593.  2018-04-12 09:34:07 +0000     4886 bytes  test/tap/git-npmignore.js</tspan>
+<tspan x="10" y="9866">593.  2018-04-12 11:29:22 +0000     4886 bytes  test/tap/git-npmignore.js</tspan>
 
-<tspan x="10" y="9882">594.  2018-04-12 09:34:07 +0000     4003 bytes  test/tap/git-prepare.js</tspan>
+<tspan x="10" y="9882">594.  2018-04-12 11:29:22 +0000     4003 bytes  test/tap/git-prepare.js</tspan>
 
-<tspan x="10" y="9898">595.  2018-04-12 09:34:07 +0000     2002 bytes  test/tap/github-shortcut-package.js</tspan>
+<tspan x="10" y="9898">595.  2018-04-12 11:29:22 +0000     2002 bytes  test/tap/github-shortcut-package.js</tspan>
 
-<tspan x="10" y="9914">596.  2018-04-12 09:34:07 +0000     2006 bytes  test/tap/github-shortcut.js</tspan>
+<tspan x="10" y="9914">596.  2018-04-12 11:29:22 +0000     2006 bytes  test/tap/github-shortcut.js</tspan>
 
-<tspan x="10" y="9930">597.  2018-04-12 09:34:07 +0000     1928 bytes  test/tap/gitlab-shortcut-package.js</tspan>
+<tspan x="10" y="9930">597.  2018-04-12 11:29:22 +0000     1928 bytes  test/tap/gitlab-shortcut-package.js</tspan>
 
-<tspan x="10" y="9946">598.  2018-04-12 09:34:07 +0000     1897 bytes  test/tap/gitlab-shortcut.js</tspan>
+<tspan x="10" y="9946">598.  2018-04-12 11:29:22 +0000     1897 bytes  test/tap/gitlab-shortcut.js</tspan>
 
-<tspan x="10" y="9962">599.  2018-04-12 09:34:07 +0000      843 bytes  test/tap/global-prefix-set-in-userconfig.js</tspan>
+<tspan x="10" y="9962">599.  2018-04-12 11:29:22 +0000      843 bytes  test/tap/global-prefix-set-in-userconfig.js</tspan>
 
-<tspan x="10" y="9978">600.  2018-04-12 09:34:07 +0000     2663 bytes  test/tap/graceful-restart.js</tspan>
+<tspan x="10" y="9978">600.  2018-04-12 11:29:22 +0000     2663 bytes  test/tap/graceful-restart.js</tspan>
 
-<tspan x="10" y="9994">601.  2018-04-12 09:34:07 +0000      625 bytes  test/tap/help.js</tspan>
+<tspan x="10" y="9994">601.  2018-04-12 11:29:22 +0000      625 bytes  test/tap/help.js</tspan>
 
-<tspan x="10" y="10010">602.  2018-04-12 09:34:07 +0000     1959 bytes  test/tap/ignore-install-link.js</tspan>
+<tspan x="10" y="10010">602.  2018-04-12 11:29:22 +0000     1959 bytes  test/tap/ignore-install-link.js</tspan>
 
-<tspan x="10" y="10026">603.  2018-04-12 09:34:07 +0000     3354 bytes  test/tap/ignore-scripts.js</tspan>
+<tspan x="10" y="10026">603.  2018-04-12 11:29:22 +0000     3354 bytes  test/tap/ignore-scripts.js</tspan>
 
-<tspan x="10" y="10042">604.  2018-04-12 09:34:07 +0000     1382 bytes  test/tap/init-interrupt.js</tspan>
+<tspan x="10" y="10042">604.  2018-04-12 11:29:22 +0000     1382 bytes  test/tap/init-interrupt.js</tspan>
 
-<tspan x="10" y="10058">605.  2018-04-12 09:34:07 +0000     2498 bytes  test/tap/install-actions.js</tspan>
+<tspan x="10" y="10058">605.  2018-04-12 11:29:22 +0000     2498 bytes  test/tap/install-actions.js</tspan>
 
-<tspan x="10" y="10074">606.  2018-04-12 09:34:07 +0000     1760 bytes  test/tap/install-at-locally.js</tspan>
+<tspan x="10" y="10074">606.  2018-04-12 11:29:22 +0000     1760 bytes  test/tap/install-at-locally.js</tspan>
 
-<tspan x="10" y="10090">607.  2018-04-12 09:34:07 +0000     1269 bytes  test/tap/install-bad-dep-format.js</tspan>
+<tspan x="10" y="10090">607.  2018-04-12 11:29:22 +0000     1269 bytes  test/tap/install-bad-dep-format.js</tspan>
 
-<tspan x="10" y="10106">608.  2018-04-12 09:34:07 +0000     1738 bytes  test/tap/install-bad-man.js</tspan>
+<tspan x="10" y="10106">608.  2018-04-12 11:29:22 +0000     1738 bytes  test/tap/install-bad-man.js</tspan>
 
-<tspan x="10" y="10122">609.  2018-04-12 09:34:07 +0000     1834 bytes  test/tap/install-bin-null.js</tspan>
+<tspan x="10" y="10122">609.  2018-04-12 11:29:22 +0000     1834 bytes  test/tap/install-bin-null.js</tspan>
 
-<tspan x="10" y="10138">610.  2018-04-12 09:34:07 +0000     2839 bytes  test/tap/install-cli-only-development.js</tspan>
+<tspan x="10" y="10138">610.  2018-04-12 11:29:22 +0000     2839 bytes  test/tap/install-cli-only-development.js</tspan>
 
-<tspan x="10" y="10154">611.  2018-04-12 09:34:07 +0000     2068 bytes  test/tap/install-cli-only-production.js</tspan>
+<tspan x="10" y="10154">611.  2018-04-12 11:29:22 +0000     2068 bytes  test/tap/install-cli-only-production.js</tspan>
 
-<tspan x="10" y="10170">612.  2018-04-12 09:34:07 +0000     3239 bytes  test/tap/install-cli-only-shrinkwrap.js</tspan>
+<tspan x="10" y="10170">612.  2018-04-12 11:29:22 +0000     3239 bytes  test/tap/install-cli-only-shrinkwrap.js</tspan>
 
-<tspan x="10" y="10186">613.  2018-04-12 09:34:07 +0000     1396 bytes  test/tap/install-cli-production-nosave.js</tspan>
+<tspan x="10" y="10186">613.  2018-04-12 11:29:22 +0000     1396 bytes  test/tap/install-cli-production-nosave.js</tspan>
 
-<tspan x="10" y="10202">614.  2018-04-12 09:34:07 +0000     2050 bytes  test/tap/install-cli-production.js</tspan>
+<tspan x="10" y="10202">614.  2018-04-12 11:29:22 +0000     2050 bytes  test/tap/install-cli-production.js</tspan>
 
-<tspan x="10" y="10218">615.  2018-04-12 09:34:07 +0000     1484 bytes  test/tap/install-cli-unicode.js</tspan>
+<tspan x="10" y="10218">615.  2018-04-12 11:29:22 +0000     1484 bytes  test/tap/install-cli-unicode.js</tspan>
 
-<tspan x="10" y="10234">616.  2018-04-12 09:34:07 +0000     1452 bytes  test/tap/install-contributors-count.js</tspan>
+<tspan x="10" y="10234">616.  2018-04-12 11:29:22 +0000     1452 bytes  test/tap/install-contributors-count.js</tspan>
 
-<tspan x="10" y="10250">617.  2018-04-12 09:34:07 +0000     1563 bytes  test/tap/install-duplicate-deps-warning.js</tspan>
+<tspan x="10" y="10250">617.  2018-04-12 11:29:22 +0000     1563 bytes  test/tap/install-duplicate-deps-warning.js</tspan>
 
-<tspan x="10" y="10266">618.  2018-04-12 09:34:07 +0000     2414 bytes  test/tap/install-from-local.js</tspan>
+<tspan x="10" y="10266">618.  2018-04-12 11:29:22 +0000     2414 bytes  test/tap/install-from-local.js</tspan>
 
-<tspan x="10" y="10282">619.  2018-04-12 09:34:07 +0000      998 bytes  test/tap/install-into-likenamed-folder.js</tspan>
+<tspan x="10" y="10282">619.  2018-04-12 11:29:22 +0000      998 bytes  test/tap/install-into-likenamed-folder.js</tspan>
 
-<tspan x="10" y="10298">620.  2018-04-12 09:34:07 +0000     2742 bytes  test/tap/install-link-scripts.js</tspan>
+<tspan x="10" y="10298">620.  2018-04-12 11:29:22 +0000     2742 bytes  test/tap/install-link-scripts.js</tspan>
 
-<tspan x="10" y="10314">621.  2018-04-12 09:34:07 +0000     1448 bytes  test/tap/install-local-dep-cycle.js</tspan>
+<tspan x="10" y="10314">621.  2018-04-12 11:29:22 +0000     1448 bytes  test/tap/install-local-dep-cycle.js</tspan>
 
-<tspan x="10" y="10330">622.  2018-04-12 09:34:07 +0000     1593 bytes  test/tap/install-man.js</tspan>
+<tspan x="10" y="10330">622.  2018-04-12 11:29:22 +0000     1593 bytes  test/tap/install-man.js</tspan>
 
-<tspan x="10" y="10346">623.  2018-04-12 09:34:07 +0000     2312 bytes  test/tap/install-noargs-dev.js</tspan>
+<tspan x="10" y="10346">623.  2018-04-12 11:29:22 +0000     2312 bytes  test/tap/install-noargs-dev.js</tspan>
 
-<tspan x="10" y="10362">624.  2018-04-12 09:34:07 +0000     1130 bytes  test/tap/install-order.js</tspan>
+<tspan x="10" y="10362">624.  2018-04-12 11:29:22 +0000     1130 bytes  test/tap/install-order.js</tspan>
 
-<tspan x="10" y="10378">625.  2018-04-12 09:34:07 +0000     1751 bytes  test/tap/install-package-json-order.js</tspan>
+<tspan x="10" y="10378">625.  2018-04-12 11:29:22 +0000     1751 bytes  test/tap/install-package-json-order.js</tspan>
 
-<tspan x="10" y="10394">626.  2018-04-12 09:34:07 +0000     2197 bytes  test/tap/install-package-lock-only.js</tspan>
+<tspan x="10" y="10394">626.  2018-04-12 11:29:22 +0000     2197 bytes  test/tap/install-package-lock-only.js</tspan>
 
-<tspan x="10" y="10410">627.  2018-04-12 09:34:07 +0000      959 bytes  test/tap/install-parse-error.js</tspan>
+<tspan x="10" y="10410">627.  2018-04-12 11:29:22 +0000      959 bytes  test/tap/install-parse-error.js</tspan>
 
-<tspan x="10" y="10426">628.  2018-04-12 09:34:07 +0000     1546 bytes  test/tap/install-property-conflicts.js</tspan>
+<tspan x="10" y="10426">628.  2018-04-12 11:29:22 +0000     1546 bytes  test/tap/install-property-conflicts.js</tspan>
 
-<tspan x="10" y="10442">629.  2018-04-12 09:34:07 +0000     1572 bytes  test/tap/install-report-just-installed.js</tspan>
+<tspan x="10" y="10442">629.  2018-04-12 11:29:22 +0000     1572 bytes  test/tap/install-report-just-installed.js</tspan>
 
-<tspan x="10" y="10458">630.  2018-04-12 09:34:07 +0000     2746 bytes  test/tap/install-save-consistent-newlines.js</tspan>
+<tspan x="10" y="10458">630.  2018-04-12 11:29:22 +0000     2746 bytes  test/tap/install-save-consistent-newlines.js</tspan>
 
-<tspan x="10" y="10474">631.  2018-04-12 09:34:07 +0000     2561 bytes  test/tap/install-save-exact.js</tspan>
+<tspan x="10" y="10474">631.  2018-04-12 11:29:22 +0000     2561 bytes  test/tap/install-save-exact.js</tspan>
 
-<tspan x="10" y="10490">632.  2018-04-12 09:34:07 +0000     5428 bytes  test/tap/install-save-local.js</tspan>
+<tspan x="10" y="10490">632.  2018-04-12 11:29:22 +0000     5428 bytes  test/tap/install-save-local.js</tspan>
 
-<tspan x="10" y="10506">633.  2018-04-12 09:34:07 +0000     4275 bytes  test/tap/install-save-prefix.js</tspan>
+<tspan x="10" y="10506">633.  2018-04-12 11:29:22 +0000     4275 bytes  test/tap/install-save-prefix.js</tspan>
 
-<tspan x="10" y="10522">634.  2018-04-12 09:34:07 +0000     3710 bytes  test/tap/install-scoped-already-installed.js</tspan>
+<tspan x="10" y="10522">634.  2018-04-12 11:29:22 +0000     3710 bytes  test/tap/install-scoped-already-installed.js</tspan>
 
-<tspan x="10" y="10538">635.  2018-04-12 09:34:07 +0000     2040 bytes  test/tap/install-scoped-link.js</tspan>
+<tspan x="10" y="10538">635.  2018-04-12 11:29:22 +0000     2040 bytes  test/tap/install-scoped-link.js</tspan>
 
-<tspan x="10" y="10554">636.  2018-04-12 09:34:07 +0000     1798 bytes  test/tap/install-scoped-with-bundled-dependency.\</tspan>
+<tspan x="10" y="10554">636.  2018-04-12 11:29:22 +0000     1798 bytes  test/tap/install-scoped-with-bundled-dependency.\</tspan>
 <tspan x="10" y="10570">js</tspan>
 
-<tspan x="10" y="10586">637.  2018-04-12 09:34:07 +0000     1419 bytes  test/tap/install-scoped-with-peer-dependency.js</tspan>
+<tspan x="10" y="10586">637.  2018-04-12 11:29:22 +0000     1419 bytes  test/tap/install-scoped-with-peer-dependency.js</tspan>
 
-<tspan x="10" y="10602">638.  2018-04-12 09:34:07 +0000     4407 bytes  test/tap/install-shrinkwrapped-git.js</tspan>
+<tspan x="10" y="10602">638.  2018-04-12 11:29:22 +0000     4407 bytes  test/tap/install-shrinkwrapped-git.js</tspan>
 
-<tspan x="10" y="10618">639.  2018-04-12 09:34:07 +0000     2185 bytes  test/tap/install-windows-newlines.js</tspan>
+<tspan x="10" y="10618">639.  2018-04-12 11:29:22 +0000     2185 bytes  test/tap/install-windows-newlines.js</tspan>
 
-<tspan x="10" y="10634">640.  2018-04-12 09:34:07 +0000     1894 bytes  test/tap/install-with-dev-dep-duplicate.js</tspan>
+<tspan x="10" y="10634">640.  2018-04-12 11:29:22 +0000     1894 bytes  test/tap/install-with-dev-dep-duplicate.js</tspan>
 
-<tspan x="10" y="10650">641.  2018-04-12 09:34:07 +0000     1057 bytes  test/tap/invalid-cmd-exit-code.js</tspan>
+<tspan x="10" y="10650">641.  2018-04-12 11:29:22 +0000     1057 bytes  test/tap/invalid-cmd-exit-code.js</tspan>
 
-<tspan x="10" y="10666">642.  2018-04-12 09:34:07 +0000     3341 bytes  test/tap/invalid-dep-version-filtering.js</tspan>
+<tspan x="10" y="10666">642.  2018-04-12 11:29:22 +0000     3341 bytes  test/tap/invalid-dep-version-filtering.js</tspan>
 
-<tspan x="10" y="10682">643.  2018-04-12 09:34:07 +0000     1926 bytes  test/tap/is-fs-access-available.js</tspan>
+<tspan x="10" y="10682">643.  2018-04-12 11:29:22 +0000     1926 bytes  test/tap/is-fs-access-available.js</tspan>
 
-<tspan x="10" y="10698">644.  2018-04-12 09:34:07 +0000     1220 bytes  test/tap/is-registry.js</tspan>
+<tspan x="10" y="10698">644.  2018-04-12 11:29:22 +0000     1220 bytes  test/tap/is-registry.js</tspan>
 
-<tspan x="10" y="10714">645.  2018-04-12 09:34:07 +0000     2065 bytes  test/tap/it.js</tspan>
+<tspan x="10" y="10714">645.  2018-04-12 11:29:22 +0000     2065 bytes  test/tap/it.js</tspan>
 
-<tspan x="10" y="10730">646.  2018-04-12 09:34:07 +0000     1764 bytes  test/tap/legacy-ignore-nested-nm.js</tspan>
+<tspan x="10" y="10730">646.  2018-04-12 11:29:22 +0000     1764 bytes  test/tap/legacy-ignore-nested-nm.js</tspan>
 
-<tspan x="10" y="10746">647.  2018-04-12 09:34:07 +0000     1814 bytes  test/tap/legacy-missing-bindir.js</tspan>
+<tspan x="10" y="10746">647.  2018-04-12 11:29:22 +0000     1814 bytes  test/tap/legacy-missing-bindir.js</tspan>
 
-<tspan x="10" y="10762">648.  2018-04-12 09:34:07 +0000     1962 bytes  test/tap/legacy-no-auth-leak.js</tspan>
+<tspan x="10" y="10762">648.  2018-04-12 11:29:22 +0000     1962 bytes  test/tap/legacy-no-auth-leak.js</tspan>
 
-<tspan x="10" y="10778">649.  2018-04-12 09:34:07 +0000     1529 bytes  test/tap/legacy-platform-all.js</tspan>
+<tspan x="10" y="10778">649.  2018-04-12 11:29:22 +0000     1529 bytes  test/tap/legacy-platform-all.js</tspan>
 
-<tspan x="10" y="10794">650.  2018-04-12 09:34:07 +0000     1409 bytes  test/tap/legacy-platform.js</tspan>
+<tspan x="10" y="10794">650.  2018-04-12 11:29:22 +0000     1409 bytes  test/tap/legacy-platform.js</tspan>
 
-<tspan x="10" y="10810">651.  2018-04-12 09:34:07 +0000     1286 bytes  test/tap/legacy-private.js</tspan>
+<tspan x="10" y="10810">651.  2018-04-12 11:29:22 +0000     1286 bytes  test/tap/legacy-private.js</tspan>
 
-<tspan x="10" y="10826">652.  2018-04-12 09:34:07 +0000     1772 bytes  test/tap/legacy-test-package.js</tspan>
+<tspan x="10" y="10826">652.  2018-04-12 11:29:22 +0000     1772 bytes  test/tap/legacy-test-package.js</tspan>
 
-<tspan x="10" y="10842">653.  2018-04-12 09:34:07 +0000     1118 bytes  test/tap/lifecycle-INIT_CWD.js</tspan>
+<tspan x="10" y="10842">653.  2018-04-12 11:29:22 +0000     1118 bytes  test/tap/lifecycle-INIT_CWD.js</tspan>
 
-<tspan x="10" y="10858">654.  2018-04-12 09:34:07 +0000     1694 bytes  test/tap/lifecycle-order.js</tspan>
+<tspan x="10" y="10858">654.  2018-04-12 11:29:22 +0000     1694 bytes  test/tap/lifecycle-order.js</tspan>
 
-<tspan x="10" y="10874">655.  2018-04-12 09:34:07 +0000     5925 bytes  test/tap/link.js</tspan>
+<tspan x="10" y="10874">655.  2018-04-12 11:29:22 +0000     5925 bytes  test/tap/link.js</tspan>
 
-<tspan x="10" y="10890">656.  2018-04-12 09:34:07 +0000     1282 bytes  test/tap/local-args-relative-to-cwd.js</tspan>
+<tspan x="10" y="10890">656.  2018-04-12 11:29:22 +0000     1282 bytes  test/tap/local-args-relative-to-cwd.js</tspan>
 
-<tspan x="10" y="10906">657.  2018-04-12 09:34:07 +0000     2273 bytes  test/tap/locker.js</tspan>
+<tspan x="10" y="10906">657.  2018-04-12 11:29:22 +0000     2273 bytes  test/tap/locker.js</tspan>
 
-<tspan x="10" y="10922">658.  2018-04-12 09:34:07 +0000     2197 bytes  test/tap/lockfile-http-deps.js</tspan>
+<tspan x="10" y="10922">658.  2018-04-12 11:29:22 +0000     2197 bytes  test/tap/lockfile-http-deps.js</tspan>
 
-<tspan x="10" y="10938">659.  2018-04-12 09:34:07 +0000     1418 bytes  test/tap/logout-scoped.js</tspan>
+<tspan x="10" y="10938">659.  2018-04-12 11:29:22 +0000     1418 bytes  test/tap/logout-scoped.js</tspan>
 
-<tspan x="10" y="10954">660.  2018-04-12 09:34:07 +0000     1353 bytes  test/tap/logout.js</tspan>
+<tspan x="10" y="10954">660.  2018-04-12 11:29:22 +0000     1353 bytes  test/tap/logout.js</tspan>
 
-<tspan x="10" y="10970">661.  2018-04-12 09:34:07 +0000     5338 bytes  test/tap/ls-depth-cli.js</tspan>
+<tspan x="10" y="10970">661.  2018-04-12 11:29:22 +0000     5338 bytes  test/tap/ls-depth-cli.js</tspan>
 
-<tspan x="10" y="10986">662.  2018-04-12 09:34:07 +0000     4259 bytes  test/tap/ls-depth-unmet.js</tspan>
+<tspan x="10" y="10986">662.  2018-04-12 11:29:22 +0000     4259 bytes  test/tap/ls-depth-unmet.js</tspan>
 
-<tspan x="10" y="11002">663.  2018-04-12 09:34:07 +0000     3302 bytes  test/tap/ls-env.js</tspan>
+<tspan x="10" y="11002">663.  2018-04-12 11:29:22 +0000     3302 bytes  test/tap/ls-env.js</tspan>
 
-<tspan x="10" y="11018">664.  2018-04-12 09:34:07 +0000     2695 bytes  test/tap/ls-l-depth-0.js</tspan>
+<tspan x="10" y="11018">664.  2018-04-12 11:29:22 +0000     2695 bytes  test/tap/ls-l-depth-0.js</tspan>
 
-<tspan x="10" y="11034">665.  2018-04-12 09:34:07 +0000      368 bytes  test/tap/ls-no-results.js</tspan>
+<tspan x="10" y="11034">665.  2018-04-12 11:29:22 +0000      368 bytes  test/tap/ls-no-results.js</tspan>
 
-<tspan x="10" y="11050">666.  2018-04-12 09:34:07 +0000     4125 bytes  test/tap/ls-production-and-dev.js</tspan>
+<tspan x="10" y="11050">666.  2018-04-12 11:29:22 +0000     4125 bytes  test/tap/ls-production-and-dev.js</tspan>
 
-<tspan x="10" y="11066">667.  2018-04-12 09:34:07 +0000     1400 bytes  test/tap/ls-top-errors.js</tspan>
+<tspan x="10" y="11066">667.  2018-04-12 11:29:22 +0000     1400 bytes  test/tap/ls-top-errors.js</tspan>
 
-<tspan x="10" y="11082">668.  2018-04-12 09:34:07 +0000     4369 bytes  test/tap/ls.js</tspan>
+<tspan x="10" y="11082">668.  2018-04-12 11:29:22 +0000     4369 bytes  test/tap/ls.js</tspan>
 
-<tspan x="10" y="11098">669.  2018-04-12 09:34:07 +0000     5024 bytes  test/tap/map-to-registry.js</tspan>
+<tspan x="10" y="11098">669.  2018-04-12 11:29:22 +0000     5024 bytes  test/tap/map-to-registry.js</tspan>
 
-<tspan x="10" y="11114">670.  2018-04-12 09:34:07 +0000     1220 bytes  test/tap/nerf-dart.js</tspan>
+<tspan x="10" y="11114">670.  2018-04-12 11:29:22 +0000     1220 bytes  test/tap/nerf-dart.js</tspan>
 
-<tspan x="10" y="11130">671.  2018-04-12 09:34:07 +0000     1213 bytes  test/tap/nested-extraneous.js</tspan>
+<tspan x="10" y="11130">671.  2018-04-12 11:29:22 +0000     1213 bytes  test/tap/nested-extraneous.js</tspan>
 
-<tspan x="10" y="11146">672.  2018-04-12 09:34:07 +0000     1889 bytes  test/tap/no-global-warns.js</tspan>
+<tspan x="10" y="11146">672.  2018-04-12 11:29:22 +0000     1889 bytes  test/tap/no-global-warns.js</tspan>
 
-<tspan x="10" y="11162">673.  2018-04-12 09:34:07 +0000     3008 bytes  test/tap/no-scan-full-global-dir.js</tspan>
+<tspan x="10" y="11162">673.  2018-04-12 11:29:22 +0000     3008 bytes  test/tap/no-scan-full-global-dir.js</tspan>
 
-<tspan x="10" y="11178">674.  2018-04-12 09:34:07 +0000     2011 bytes  test/tap/noargs-install-config-save.js</tspan>
+<tspan x="10" y="11178">674.  2018-04-12 11:29:22 +0000     2011 bytes  test/tap/noargs-install-config-save.js</tspan>
 
-<tspan x="10" y="11194">675.  2018-04-12 09:34:07 +0000      986 bytes  test/tap/node-modules-path-munge.js</tspan>
+<tspan x="10" y="11194">675.  2018-04-12 11:29:22 +0000      986 bytes  test/tap/node-modules-path-munge.js</tspan>
 
-<tspan x="10" y="11210">676.  2018-04-12 09:34:07 +0000      523 bytes  test/tap/normalize-package-explode.js</tspan>
+<tspan x="10" y="11210">676.  2018-04-12 11:29:22 +0000      523 bytes  test/tap/normalize-package-explode.js</tspan>
 
-<tspan x="10" y="11226">677.  2018-04-12 09:34:07 +0000     1028 bytes  test/tap/npm-api-not-loaded-error.js</tspan>
+<tspan x="10" y="11226">677.  2018-04-12 11:29:22 +0000     1028 bytes  test/tap/npm-api-not-loaded-error.js</tspan>
 
-<tspan x="10" y="11242">678.  2018-04-12 09:34:07 +0000     1297 bytes  test/tap/onload.js</tspan>
+<tspan x="10" y="11242">678.  2018-04-12 11:29:22 +0000     1297 bytes  test/tap/onload.js</tspan>
 
-<tspan x="10" y="11258">679.  2018-04-12 09:34:07 +0000     4497 bytes  test/tap/optional-metadep-rollback-collision.js</tspan>
+<tspan x="10" y="11258">679.  2018-04-12 11:29:22 +0000     4497 bytes  test/tap/optional-metadep-rollback-collision.js</tspan>
 
-<tspan x="10" y="11274">680.  2018-04-12 09:34:07 +0000      489 bytes  test/tap/outdated-bad-read-tree.js</tspan>
+<tspan x="10" y="11274">680.  2018-04-12 11:29:22 +0000      489 bytes  test/tap/outdated-bad-read-tree.js</tspan>
 
-<tspan x="10" y="11290">681.  2018-04-12 09:34:07 +0000     1600 bytes  test/tap/outdated-color.js</tspan>
+<tspan x="10" y="11290">681.  2018-04-12 11:29:22 +0000     1600 bytes  test/tap/outdated-color.js</tspan>
 
-<tspan x="10" y="11306">682.  2018-04-12 09:34:07 +0000     1526 bytes  test/tap/outdated-depth.js</tspan>
+<tspan x="10" y="11306">682.  2018-04-12 11:29:22 +0000     1526 bytes  test/tap/outdated-depth.js</tspan>
 
-<tspan x="10" y="11322">683.  2018-04-12 09:34:07 +0000     1623 bytes  test/tap/outdated-git.js</tspan>
+<tspan x="10" y="11322">683.  2018-04-12 11:29:22 +0000     1623 bytes  test/tap/outdated-git.js</tspan>
 
-<tspan x="10" y="11338">684.  2018-04-12 09:34:07 +0000     2140 bytes  test/tap/outdated-json.js</tspan>
+<tspan x="10" y="11338">684.  2018-04-12 11:29:22 +0000     2140 bytes  test/tap/outdated-json.js</tspan>
 
-<tspan x="10" y="11354">685.  2018-04-12 09:34:07 +0000     2069 bytes  test/tap/outdated-long.js</tspan>
+<tspan x="10" y="11354">685.  2018-04-12 11:29:22 +0000     2069 bytes  test/tap/outdated-long.js</tspan>
 
-<tspan x="10" y="11370">686.  2018-04-12 09:34:07 +0000     2641 bytes  test/tap/outdated.js</tspan>
+<tspan x="10" y="11370">686.  2018-04-12 11:29:22 +0000     2641 bytes  test/tap/outdated.js</tspan>
 
-<tspan x="10" y="11386">687.  2018-04-12 09:34:07 +0000     6728 bytes  test/tap/override-bundled.js</tspan>
+<tspan x="10" y="11386">687.  2018-04-12 11:29:22 +0000     6728 bytes  test/tap/override-bundled.js</tspan>
 
-<tspan x="10" y="11402">688.  2018-04-12 09:34:07 +0000     4219 bytes  test/tap/owner.js</tspan>
+<tspan x="10" y="11402">688.  2018-04-12 11:29:22 +0000     4219 bytes  test/tap/owner.js</tspan>
 
-<tspan x="10" y="11418">689.  2018-04-12 09:34:07 +0000     1707 bytes  test/tap/pack-scoped.js</tspan>
+<tspan x="10" y="11418">689.  2018-04-12 11:29:22 +0000     1707 bytes  test/tap/pack-scoped.js</tspan>
 
-<tspan x="10" y="11434">690.  2018-04-12 09:34:07 +0000     1482 bytes  test/tap/peer-deps.js</tspan>
+<tspan x="10" y="11434">690.  2018-04-12 11:29:22 +0000     1482 bytes  test/tap/peer-deps.js</tspan>
 
-<tspan x="10" y="11450">691.  2018-04-12 09:34:07 +0000     4792 bytes  test/tap/pick-manifest-from-registry-metadata.js</tspan>
+<tspan x="10" y="11450">691.  2018-04-12 11:29:22 +0000     4792 bytes  test/tap/pick-manifest-from-registry-metadata.js</tspan>
 
-<tspan x="10" y="11466">692.  2018-04-12 09:34:07 +0000     1355 bytes  test/tap/ping.js</tspan>
+<tspan x="10" y="11466">692.  2018-04-12 11:29:22 +0000     1355 bytes  test/tap/ping.js</tspan>
 
-<tspan x="10" y="11482">693.  2018-04-12 09:34:07 +0000     1834 bytes  test/tap/prepare.js</tspan>
+<tspan x="10" y="11482">693.  2018-04-12 11:29:22 +0000     1834 bytes  test/tap/prepare.js</tspan>
 
-<tspan x="10" y="11498">694.  2018-04-12 09:34:07 +0000     3091 bytes  test/tap/prepublish-only.js</tspan>
+<tspan x="10" y="11498">694.  2018-04-12 11:29:22 +0000     3091 bytes  test/tap/prepublish-only.js</tspan>
 
-<tspan x="10" y="11514">695.  2018-04-12 09:34:07 +0000     2734 bytes  test/tap/prepublish.js</tspan>
+<tspan x="10" y="11514">695.  2018-04-12 11:29:22 +0000     2734 bytes  test/tap/prepublish.js</tspan>
 
-<tspan x="10" y="11530">696.  2018-04-12 09:34:07 +0000      543 bytes  test/tap/process-logger.js</tspan>
+<tspan x="10" y="11530">696.  2018-04-12 11:29:22 +0000      543 bytes  test/tap/process-logger.js</tspan>
 
-<tspan x="10" y="11546">697.  2018-04-12 09:34:07 +0000     2413 bytes  test/tap/progress-config.js</tspan>
+<tspan x="10" y="11546">697.  2018-04-12 11:29:22 +0000     2413 bytes  test/tap/progress-config.js</tspan>
 
-<tspan x="10" y="11562">698.  2018-04-12 09:34:07 +0000     1803 bytes  test/tap/prune-dev-dep-cycle.js</tspan>
+<tspan x="10" y="11562">698.  2018-04-12 11:29:22 +0000     1803 bytes  test/tap/prune-dev-dep-cycle.js</tspan>
 
-<tspan x="10" y="11578">699.  2018-04-12 09:34:07 +0000     2664 bytes  test/tap/prune-dev-dep-with-bins.js</tspan>
+<tspan x="10" y="11578">699.  2018-04-12 11:29:22 +0000     2664 bytes  test/tap/prune-dev-dep-with-bins.js</tspan>
 
-<tspan x="10" y="11594">700.  2018-04-12 09:34:07 +0000     2464 bytes  test/tap/prune-with-dev-dep-duplicate.js</tspan>
+<tspan x="10" y="11594">700.  2018-04-12 11:29:22 +0000     2464 bytes  test/tap/prune-with-dev-dep-duplicate.js</tspan>
 
-<tspan x="10" y="11610">701.  2018-04-12 09:34:07 +0000     2751 bytes  test/tap/prune-with-only-dev-deps.js</tspan>
+<tspan x="10" y="11610">701.  2018-04-12 11:29:22 +0000     2751 bytes  test/tap/prune-with-only-dev-deps.js</tspan>
 
-<tspan x="10" y="11626">702.  2018-04-12 09:34:07 +0000     2963 bytes  test/tap/prune.js</tspan>
+<tspan x="10" y="11626">702.  2018-04-12 11:29:22 +0000     2963 bytes  test/tap/prune.js</tspan>
 
-<tspan x="10" y="11642">703.  2018-04-12 09:34:07 +0000     1760 bytes  test/tap/publish-access-scoped.js</tspan>
+<tspan x="10" y="11642">703.  2018-04-12 11:29:22 +0000     1760 bytes  test/tap/publish-access-scoped.js</tspan>
 
-<tspan x="10" y="11658">704.  2018-04-12 09:34:07 +0000      975 bytes  test/tap/publish-access-unscoped-restricted-fail\</tspan>
+<tspan x="10" y="11658">704.  2018-04-12 11:29:22 +0000      975 bytes  test/tap/publish-access-unscoped-restricted-fail\</tspan>
 <tspan x="10" y="11674">s.js</tspan>
 
-<tspan x="10" y="11690">705.  2018-04-12 09:34:07 +0000     1761 bytes  test/tap/publish-access-unscoped.js</tspan>
+<tspan x="10" y="11690">705.  2018-04-12 11:29:22 +0000     1761 bytes  test/tap/publish-access-unscoped.js</tspan>
 
-<tspan x="10" y="11706">706.  2018-04-12 09:34:07 +0000     2009 bytes  test/tap/publish-config.js</tspan>
+<tspan x="10" y="11706">706.  2018-04-12 11:29:22 +0000     2009 bytes  test/tap/publish-config.js</tspan>
 
-<tspan x="10" y="11722">707.  2018-04-12 09:34:07 +0000     1729 bytes  test/tap/publish-invalid-semver-tag.js</tspan>
+<tspan x="10" y="11722">707.  2018-04-12 11:29:22 +0000     1729 bytes  test/tap/publish-invalid-semver-tag.js</tspan>
 
-<tspan x="10" y="11738">708.  2018-04-12 09:34:07 +0000     2177 bytes  test/tap/publish-scoped.js</tspan>
+<tspan x="10" y="11738">708.  2018-04-12 11:29:22 +0000     2177 bytes  test/tap/publish-scoped.js</tspan>
 
-<tspan x="10" y="11754">709.  2018-04-12 09:34:07 +0000      985 bytes  test/tap/pwd-prefix.js</tspan>
+<tspan x="10" y="11754">709.  2018-04-12 11:29:22 +0000      985 bytes  test/tap/pwd-prefix.js</tspan>
 
-<tspan x="10" y="11770">710.  2018-04-12 09:34:07 +0000      668 bytes  test/tap/referer.js</tspan>
+<tspan x="10" y="11770">710.  2018-04-12 11:29:22 +0000      668 bytes  test/tap/referer.js</tspan>
 
-<tspan x="10" y="11786">711.  2018-04-12 09:34:07 +0000     4172 bytes  test/tap/repo.js</tspan>
+<tspan x="10" y="11786">711.  2018-04-12 11:29:22 +0000     4172 bytes  test/tap/repo.js</tspan>
 
-<tspan x="10" y="11802">712.  2018-04-12 09:34:07 +0000     5728 bytes  test/tap/retry-on-stale-cache.js</tspan>
+<tspan x="10" y="11802">712.  2018-04-12 11:29:22 +0000     5728 bytes  test/tap/retry-on-stale-cache.js</tspan>
 
-<tspan x="10" y="11818">713.  2018-04-12 09:34:07 +0000     1130 bytes  test/tap/run-script-filter-private.js</tspan>
+<tspan x="10" y="11818">713.  2018-04-12 11:29:22 +0000     1130 bytes  test/tap/run-script-filter-private.js</tspan>
 
-<tspan x="10" y="11834">714.  2018-04-12 09:34:07 +0000    10891 bytes  test/tap/run-script.js</tspan>
+<tspan x="10" y="11834">714.  2018-04-12 11:29:22 +0000    10891 bytes  test/tap/run-script.js</tspan>
 
-<tspan x="10" y="11850">715.  2018-04-12 09:34:07 +0000     3975 bytes  test/tap/scope-header.js</tspan>
+<tspan x="10" y="11850">715.  2018-04-12 11:29:22 +0000     3975 bytes  test/tap/scope-header.js</tspan>
 
-<tspan x="10" y="11866">716.  2018-04-12 09:34:07 +0000     2454 bytes  test/tap/scripts-whitespace-windows.js</tspan>
+<tspan x="10" y="11866">716.  2018-04-12 11:29:22 +0000     2454 bytes  test/tap/scripts-whitespace-windows.js</tspan>
 
-<tspan x="10" y="11882">717.  2018-04-12 09:34:07 +0000     4675 bytes  test/tap/search.all-package-search.js</tspan>
+<tspan x="10" y="11882">717.  2018-04-12 11:29:22 +0000     4675 bytes  test/tap/search.all-package-search.js</tspan>
 
-<tspan x="10" y="11898">718.  2018-04-12 09:34:07 +0000     4483 bytes  test/tap/search.esearch.js</tspan>
+<tspan x="10" y="11898">718.  2018-04-12 11:29:22 +0000     4483 bytes  test/tap/search.esearch.js</tspan>
 
-<tspan x="10" y="11914">719.  2018-04-12 09:34:07 +0000     5394 bytes  test/tap/search.js</tspan>
+<tspan x="10" y="11914">719.  2018-04-12 11:29:22 +0000     5394 bytes  test/tap/search.js</tspan>
 
-<tspan x="10" y="11930">720.  2018-04-12 09:34:07 +0000      426 bytes  test/tap/semver-doc.js</tspan>
+<tspan x="10" y="11930">720.  2018-04-12 11:29:22 +0000      426 bytes  test/tap/semver-doc.js</tspan>
 
-<tspan x="10" y="11946">721.  2018-04-12 09:34:07 +0000     3638 bytes  test/tap/shared-linked.js</tspan>
+<tspan x="10" y="11946">721.  2018-04-12 11:29:22 +0000     3638 bytes  test/tap/shared-linked.js</tspan>
 
-<tspan x="10" y="11962">722.  2018-04-12 09:34:07 +0000     3177 bytes  test/tap/shrinkwrap-_auth.js</tspan>
+<tspan x="10" y="11962">722.  2018-04-12 11:29:22 +0000     3177 bytes  test/tap/shrinkwrap-_auth.js</tspan>
 
-<tspan x="10" y="11978">723.  2018-04-12 09:34:07 +0000     2126 bytes  test/tap/shrinkwrap-default-dev.js</tspan>
+<tspan x="10" y="11978">723.  2018-04-12 11:29:22 +0000     2126 bytes  test/tap/shrinkwrap-default-dev.js</tspan>
 
-<tspan x="10" y="11994">724.  2018-04-12 09:34:07 +0000     2155 bytes  test/tap/shrinkwrap-dev-dependency.js</tspan>
+<tspan x="10" y="11994">724.  2018-04-12 11:29:22 +0000     2155 bytes  test/tap/shrinkwrap-dev-dependency.js</tspan>
 
-<tspan x="10" y="12010">725.  2018-04-12 09:34:07 +0000     1631 bytes  test/tap/shrinkwrap-empty-deps.js</tspan>
+<tspan x="10" y="12010">725.  2018-04-12 11:29:22 +0000     1631 bytes  test/tap/shrinkwrap-empty-deps.js</tspan>
 
-<tspan x="10" y="12026">726.  2018-04-12 09:34:07 +0000     1845 bytes  test/tap/shrinkwrap-extra-metadata.js</tspan>
+<tspan x="10" y="12026">726.  2018-04-12 11:29:22 +0000     1845 bytes  test/tap/shrinkwrap-extra-metadata.js</tspan>
 
-<tspan x="10" y="12042">727.  2018-04-12 09:34:07 +0000     2895 bytes  test/tap/shrinkwrap-global-auth.js</tspan>
+<tspan x="10" y="12042">727.  2018-04-12 11:29:22 +0000     2895 bytes  test/tap/shrinkwrap-global-auth.js</tspan>
 
-<tspan x="10" y="12058">728.  2018-04-12 09:34:07 +0000     2231 bytes  test/tap/shrinkwrap-lifecycle-cwd.js</tspan>
+<tspan x="10" y="12058">728.  2018-04-12 11:29:22 +0000     2231 bytes  test/tap/shrinkwrap-lifecycle-cwd.js</tspan>
 
-<tspan x="10" y="12074">729.  2018-04-12 09:34:07 +0000     1445 bytes  test/tap/shrinkwrap-lifecycle.js</tspan>
+<tspan x="10" y="12074">729.  2018-04-12 11:29:22 +0000     1445 bytes  test/tap/shrinkwrap-lifecycle.js</tspan>
 
-<tspan x="10" y="12090">730.  2018-04-12 09:34:07 +0000     3103 bytes  test/tap/shrinkwrap-local-dependency.js</tspan>
+<tspan x="10" y="12090">730.  2018-04-12 11:29:22 +0000     3103 bytes  test/tap/shrinkwrap-local-dependency.js</tspan>
 
-<tspan x="10" y="12106">731.  2018-04-12 09:34:07 +0000     3941 bytes  test/tap/shrinkwrap-nested.js</tspan>
+<tspan x="10" y="12106">731.  2018-04-12 11:29:22 +0000     3941 bytes  test/tap/shrinkwrap-nested.js</tspan>
 
-<tspan x="10" y="12122">732.  2018-04-12 09:34:07 +0000     2222 bytes  test/tap/shrinkwrap-optional-dependency.js</tspan>
+<tspan x="10" y="12122">732.  2018-04-12 11:29:22 +0000     2222 bytes  test/tap/shrinkwrap-optional-dependency.js</tspan>
 
-<tspan x="10" y="12138">733.  2018-04-12 09:34:07 +0000     2366 bytes  test/tap/shrinkwrap-optional-platform.js</tspan>
+<tspan x="10" y="12138">733.  2018-04-12 11:29:22 +0000     2366 bytes  test/tap/shrinkwrap-optional-platform.js</tspan>
 
-<tspan x="10" y="12154">734.  2018-04-12 09:34:07 +0000     2223 bytes  test/tap/shrinkwrap-optional-property.js</tspan>
+<tspan x="10" y="12154">734.  2018-04-12 11:29:22 +0000     2223 bytes  test/tap/shrinkwrap-optional-property.js</tspan>
 
-<tspan x="10" y="12170">735.  2018-04-12 09:34:07 +0000     2698 bytes  test/tap/shrinkwrap-prod-dependency-also.js</tspan>
+<tspan x="10" y="12170">735.  2018-04-12 11:29:22 +0000     2698 bytes  test/tap/shrinkwrap-prod-dependency-also.js</tspan>
 
-<tspan x="10" y="12186">736.  2018-04-12 09:34:07 +0000     2056 bytes  test/tap/shrinkwrap-prod-dependency.js</tspan>
+<tspan x="10" y="12186">736.  2018-04-12 11:29:22 +0000     2056 bytes  test/tap/shrinkwrap-prod-dependency.js</tspan>
 
-<tspan x="10" y="12202">737.  2018-04-12 09:34:07 +0000     2829 bytes  test/tap/shrinkwrap-resolve-conflict.js</tspan>
+<tspan x="10" y="12202">737.  2018-04-12 11:29:22 +0000     2829 bytes  test/tap/shrinkwrap-resolve-conflict.js</tspan>
 
-<tspan x="10" y="12218">738.  2018-04-12 09:34:07 +0000     2929 bytes  test/tap/shrinkwrap-save-dev-with-existing-deps.\</tspan>
+<tspan x="10" y="12218">738.  2018-04-12 11:29:22 +0000     2929 bytes  test/tap/shrinkwrap-save-dev-with-existing-deps.\</tspan>
 <tspan x="10" y="12234">js</tspan>
 
-<tspan x="10" y="12250">739.  2018-04-12 09:34:07 +0000     2260 bytes  test/tap/shrinkwrap-save-with-existing-dev-deps.\</tspan>
+<tspan x="10" y="12250">739.  2018-04-12 11:29:22 +0000     2260 bytes  test/tap/shrinkwrap-save-with-existing-dev-deps.\</tspan>
 <tspan x="10" y="12266">js</tspan>
 
-<tspan x="10" y="12282">740.  2018-04-12 09:34:07 +0000     2949 bytes  test/tap/shrinkwrap-scoped-auth.js</tspan>
+<tspan x="10" y="12282">740.  2018-04-12 11:29:22 +0000     2949 bytes  test/tap/shrinkwrap-scoped-auth.js</tspan>
 
-<tspan x="10" y="12298">741.  2018-04-12 09:34:07 +0000     2056 bytes  test/tap/shrinkwrap-shared-dev-dependency.js</tspan>
+<tspan x="10" y="12298">741.  2018-04-12 11:29:22 +0000     2056 bytes  test/tap/shrinkwrap-shared-dev-dependency.js</tspan>
 
-<tspan x="10" y="12314">742.  2018-04-12 09:34:07 +0000     2899 bytes  test/tap/shrinkwrap-version-match.js</tspan>
+<tspan x="10" y="12314">742.  2018-04-12 11:29:22 +0000     2899 bytes  test/tap/shrinkwrap-version-match.js</tspan>
 
-<tspan x="10" y="12330">743.  2018-04-12 09:34:07 +0000     2222 bytes  test/tap/sorted-package-json.js</tspan>
+<tspan x="10" y="12330">743.  2018-04-12 11:29:22 +0000     2222 bytes  test/tap/sorted-package-json.js</tspan>
 
-<tspan x="10" y="12346">744.  2018-04-12 09:34:07 +0000      822 bytes  test/tap/spawn-enoent-help.js</tspan>
+<tspan x="10" y="12346">744.  2018-04-12 11:29:22 +0000      822 bytes  test/tap/spawn-enoent-help.js</tspan>
 
-<tspan x="10" y="12362">745.  2018-04-12 09:34:07 +0000      869 bytes  test/tap/spawn-enoent.js</tspan>
+<tspan x="10" y="12362">745.  2018-04-12 11:29:22 +0000      869 bytes  test/tap/spawn-enoent.js</tspan>
 
-<tspan x="10" y="12378">746.  2018-04-12 09:34:07 +0000    23353 bytes  test/tap/spec-local-specifiers.js</tspan>
+<tspan x="10" y="12378">746.  2018-04-12 11:29:22 +0000    23353 bytes  test/tap/spec-local-specifiers.js</tspan>
 
-<tspan x="10" y="12394">747.  2018-04-12 09:34:07 +0000     2804 bytes  test/tap/splat-with-only-prerelease-to-latest.js</tspan>
+<tspan x="10" y="12394">747.  2018-04-12 11:29:22 +0000     2804 bytes  test/tap/splat-with-only-prerelease-to-latest.js</tspan>
 
-<tspan x="10" y="12410">748.  2018-04-12 09:34:07 +0000     1591 bytes  test/tap/startstop.js</tspan>
+<tspan x="10" y="12410">748.  2018-04-12 11:29:22 +0000     1591 bytes  test/tap/startstop.js</tspan>
 
-<tspan x="10" y="12426">749.  2018-04-12 09:34:07 +0000     1297 bytes  test/tap/symlink-cycle.js</tspan>
+<tspan x="10" y="12426">749.  2018-04-12 11:29:22 +0000     1297 bytes  test/tap/symlink-cycle.js</tspan>
 
-<tspan x="10" y="12442">750.  2018-04-12 09:34:07 +0000     2458 bytes  test/tap/tag-version-prefix.js</tspan>
+<tspan x="10" y="12442">750.  2018-04-12 11:29:22 +0000     2458 bytes  test/tap/tag-version-prefix.js</tspan>
 
-<tspan x="10" y="12458">751.  2018-04-12 09:34:07 +0000     3796 bytes  test/tap/tagged-version-matching.js</tspan>
+<tspan x="10" y="12458">751.  2018-04-12 11:29:22 +0000     3796 bytes  test/tap/tagged-version-matching.js</tspan>
 
-<tspan x="10" y="12474">752.  2018-04-12 09:34:07 +0000     3497 bytes  test/tap/team.js</tspan>
+<tspan x="10" y="12474">752.  2018-04-12 11:29:22 +0000     3497 bytes  test/tap/team.js</tspan>
 
-<tspan x="10" y="12490">753.  2018-04-12 09:34:07 +0000      918 bytes  test/tap/test-run-ls.js</tspan>
+<tspan x="10" y="12490">753.  2018-04-12 11:29:22 +0000      918 bytes  test/tap/test-run-ls.js</tspan>
 
-<tspan x="10" y="12506">754.  2018-04-12 09:34:07 +0000     3569 bytes  test/tap/tree-style.js</tspan>
+<tspan x="10" y="12506">754.  2018-04-12 11:29:22 +0000     3569 bytes  test/tap/tree-style.js</tspan>
 
-<tspan x="10" y="12522">755.  2018-04-12 09:34:07 +0000     1497 bytes  test/tap/umask-lifecycle.js</tspan>
+<tspan x="10" y="12522">755.  2018-04-12 11:29:22 +0000     1497 bytes  test/tap/umask-lifecycle.js</tspan>
 
-<tspan x="10" y="12538">756.  2018-04-12 09:34:07 +0000      949 bytes  test/tap/uninstall-in-reverse.js</tspan>
+<tspan x="10" y="12538">756.  2018-04-12 11:29:22 +0000      949 bytes  test/tap/uninstall-in-reverse.js</tspan>
 
-<tspan x="10" y="12554">757.  2018-04-12 09:34:07 +0000     2561 bytes  test/tap/uninstall-link-clean.js</tspan>
+<tspan x="10" y="12554">757.  2018-04-12 11:29:22 +0000     2561 bytes  test/tap/uninstall-link-clean.js</tspan>
 
-<tspan x="10" y="12570">758.  2018-04-12 09:34:07 +0000     1837 bytes  test/tap/uninstall-package.js</tspan>
+<tspan x="10" y="12570">758.  2018-04-12 11:29:22 +0000     1837 bytes  test/tap/uninstall-package.js</tspan>
 
-<tspan x="10" y="12586">759.  2018-04-12 09:34:07 +0000     2080 bytes  test/tap/uninstall-save.js</tspan>
+<tspan x="10" y="12586">759.  2018-04-12 11:29:22 +0000     2080 bytes  test/tap/uninstall-save.js</tspan>
 
-<tspan x="10" y="12602">760.  2018-04-12 09:34:07 +0000      453 bytes  test/tap/unit-child-path.js</tspan>
+<tspan x="10" y="12602">760.  2018-04-12 11:29:22 +0000      453 bytes  test/tap/unit-child-path.js</tspan>
 
-<tspan x="10" y="12618">761.  2018-04-12 09:34:07 +0000     2513 bytes  test/tap/unit-deps-earliestInstallable.js</tspan>
+<tspan x="10" y="12618">761.  2018-04-12 11:29:22 +0000     2513 bytes  test/tap/unit-deps-earliestInstallable.js</tspan>
 
-<tspan x="10" y="12634">762.  2018-04-12 09:34:07 +0000     1074 bytes  test/tap/unit-deps-removeObsoleteDep.js</tspan>
+<tspan x="10" y="12634">762.  2018-04-12 11:29:22 +0000     1074 bytes  test/tap/unit-deps-removeObsoleteDep.js</tspan>
 
-<tspan x="10" y="12650">763.  2018-04-12 09:34:07 +0000     2658 bytes  test/tap/unit-deps-replaceModule.js</tspan>
+<tspan x="10" y="12650">763.  2018-04-12 11:29:22 +0000     2658 bytes  test/tap/unit-deps-replaceModule.js</tspan>
 
-<tspan x="10" y="12666">764.  2018-04-12 09:34:07 +0000     1721 bytes  test/tap/unit-module-name.js</tspan>
+<tspan x="10" y="12666">764.  2018-04-12 11:29:22 +0000     1721 bytes  test/tap/unit-module-name.js</tspan>
 
-<tspan x="10" y="12682">765.  2018-04-12 09:34:07 +0000      960 bytes  test/tap/unit-package-id.js</tspan>
+<tspan x="10" y="12682">765.  2018-04-12 11:29:22 +0000      960 bytes  test/tap/unit-package-id.js</tspan>
 
-<tspan x="10" y="12698">766.  2018-04-12 09:34:07 +0000      931 bytes  test/tap/unit-token-validate-cidr.js</tspan>
+<tspan x="10" y="12698">766.  2018-04-12 11:29:22 +0000      931 bytes  test/tap/unit-token-validate-cidr.js</tspan>
 
-<tspan x="10" y="12714">767.  2018-04-12 09:34:07 +0000     2217 bytes  test/tap/unpack-foreign-tarball.js</tspan>
+<tspan x="10" y="12714">767.  2018-04-12 11:29:22 +0000     2217 bytes  test/tap/unpack-foreign-tarball.js</tspan>
 
-<tspan x="10" y="12730">768.  2018-04-12 09:34:07 +0000     1930 bytes  test/tap/unpublish-config.js</tspan>
+<tspan x="10" y="12730">768.  2018-04-12 11:29:22 +0000     1930 bytes  test/tap/unpublish-config.js</tspan>
 
-<tspan x="10" y="12746">769.  2018-04-12 09:34:07 +0000     1215 bytes  test/tap/unsupported.js</tspan>
+<tspan x="10" y="12746">769.  2018-04-12 11:29:22 +0000     1215 bytes  test/tap/unsupported.js</tspan>
 
-<tspan x="10" y="12762">770.  2018-04-12 09:34:07 +0000     5204 bytes  test/tap/update-examples.js</tspan>
+<tspan x="10" y="12762">770.  2018-04-12 11:29:22 +0000     5204 bytes  test/tap/update-examples.js</tspan>
 
-<tspan x="10" y="12778">771.  2018-04-12 09:34:07 +0000      881 bytes  test/tap/update-path.js</tspan>
+<tspan x="10" y="12778">771.  2018-04-12 11:29:22 +0000      881 bytes  test/tap/update-path.js</tspan>
 
-<tspan x="10" y="12794">772.  2018-04-12 09:34:07 +0000     1883 bytes  test/tap/upgrade-lifecycles.js</tspan>
+<tspan x="10" y="12794">772.  2018-04-12 11:29:22 +0000     1883 bytes  test/tap/upgrade-lifecycles.js</tspan>
 
-<tspan x="10" y="12810">773.  2018-04-12 09:34:07 +0000     2364 bytes  test/tap/url-dependencies.js</tspan>
+<tspan x="10" y="12810">773.  2018-04-12 11:29:22 +0000     2364 bytes  test/tap/url-dependencies.js</tspan>
 
-<tspan x="10" y="12826">774.  2018-04-12 09:34:07 +0000     1588 bytes  test/tap/verify-no-lifecycle-on-repo.js</tspan>
+<tspan x="10" y="12826">774.  2018-04-12 11:29:22 +0000     1588 bytes  test/tap/verify-no-lifecycle-on-repo.js</tspan>
 
-<tspan x="10" y="12842">775.  2018-04-12 09:34:07 +0000     1999 bytes  test/tap/version-allow-same-version.js</tspan>
+<tspan x="10" y="12842">775.  2018-04-12 11:29:22 +0000     1999 bytes  test/tap/version-allow-same-version.js</tspan>
 
-<tspan x="10" y="12858">776.  2018-04-12 09:34:07 +0000      454 bytes  test/tap/version-commit-hooks-default.js</tspan>
+<tspan x="10" y="12858">776.  2018-04-12 11:29:22 +0000      454 bytes  test/tap/version-commit-hooks-default.js</tspan>
 
-<tspan x="10" y="12874">777.  2018-04-12 09:34:07 +0000     1888 bytes  test/tap/version-commit-hooks.js</tspan>
+<tspan x="10" y="12874">777.  2018-04-12 11:29:22 +0000     1888 bytes  test/tap/version-commit-hooks.js</tspan>
 
-<tspan x="10" y="12890">778.  2018-04-12 09:34:07 +0000     2267 bytes  test/tap/version-consistent-newlines.js</tspan>
+<tspan x="10" y="12890">778.  2018-04-12 11:29:22 +0000     2267 bytes  test/tap/version-consistent-newlines.js</tspan>
 
-<tspan x="10" y="12906">779.  2018-04-12 09:34:07 +0000     5988 bytes  test/tap/version-from-git.js</tspan>
+<tspan x="10" y="12906">779.  2018-04-12 11:29:22 +0000     5988 bytes  test/tap/version-from-git.js</tspan>
 
-<tspan x="10" y="12922">780.  2018-04-12 09:34:07 +0000     2831 bytes  test/tap/version-git-not-clean.js</tspan>
+<tspan x="10" y="12922">780.  2018-04-12 11:29:22 +0000     2831 bytes  test/tap/version-git-not-clean.js</tspan>
 
-<tspan x="10" y="12938">781.  2018-04-12 09:34:07 +0000     5800 bytes  test/tap/version-lifecycle.js</tspan>
+<tspan x="10" y="12938">781.  2018-04-12 11:29:22 +0000     5800 bytes  test/tap/version-lifecycle.js</tspan>
 
-<tspan x="10" y="12954">782.  2018-04-12 09:34:07 +0000     1942 bytes  test/tap/version-message-config.js</tspan>
+<tspan x="10" y="12954">782.  2018-04-12 11:29:22 +0000     1942 bytes  test/tap/version-message-config.js</tspan>
 
-<tspan x="10" y="12970">783.  2018-04-12 09:34:07 +0000     1474 bytes  test/tap/version-no-git.js</tspan>
+<tspan x="10" y="12970">783.  2018-04-12 11:29:22 +0000     1474 bytes  test/tap/version-no-git.js</tspan>
 
-<tspan x="10" y="12986">784.  2018-04-12 09:34:07 +0000     1112 bytes  test/tap/version-no-package.js</tspan>
+<tspan x="10" y="12986">784.  2018-04-12 11:29:22 +0000     1112 bytes  test/tap/version-no-package.js</tspan>
 
-<tspan x="10" y="13002">785.  2018-04-12 09:34:07 +0000     2151 bytes  test/tap/version-no-tags.js</tspan>
+<tspan x="10" y="13002">785.  2018-04-12 11:29:22 +0000     2151 bytes  test/tap/version-no-tags.js</tspan>
 
-<tspan x="10" y="13018">786.  2018-04-12 09:34:07 +0000     2219 bytes  test/tap/version-sub-directory-shrinkwrap.js</tspan>
+<tspan x="10" y="13018">786.  2018-04-12 11:29:22 +0000     2219 bytes  test/tap/version-sub-directory-shrinkwrap.js</tspan>
 
-<tspan x="10" y="13034">787.  2018-04-12 09:34:07 +0000     1794 bytes  test/tap/version-sub-directory.js</tspan>
+<tspan x="10" y="13034">787.  2018-04-12 11:29:22 +0000     1794 bytes  test/tap/version-sub-directory.js</tspan>
 
-<tspan x="10" y="13050">788.  2018-04-12 09:34:07 +0000     3908 bytes  test/tap/version-update-shrinkwrap.js</tspan>
+<tspan x="10" y="13050">788.  2018-04-12 11:29:22 +0000     3908 bytes  test/tap/version-update-shrinkwrap.js</tspan>
 
-<tspan x="10" y="13066">789.  2018-04-12 09:34:07 +0000    10410 bytes  test/tap/view.js</tspan>
+<tspan x="10" y="13066">789.  2018-04-12 11:29:22 +0000    10410 bytes  test/tap/view.js</tspan>
 
-<tspan x="10" y="13082">790.  2018-04-12 09:34:07 +0000      184 bytes  test/tap/zz-cleanup.js</tspan>
+<tspan x="10" y="13082">790.  2018-04-12 11:29:22 +0000      184 bytes  test/tap/zz-cleanup.js</tspan>
 
 </text>
 </svg>
