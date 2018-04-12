@@ -1,0 +1,302 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://docs.npmjs.com/">npm (v4.4.4)</a>
+</h1>
+<h4>a package manager for JavaScript</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm">module npm</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.deref">
+            function <span class="apidocSignatureSpan">npm.</span>deref
+            <span class="apidocSignatureSpan">(c)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.load">
+            function <span class="apidocSignatureSpan">npm.</span>load
+            <span class="apidocSignatureSpan">(cli, cb_)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">npm.</span>_eventsCount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>_events</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>commands</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>config</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>domain</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>fullList</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>limit</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>rollbacks</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.config">module npm.config</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">npm.config.</span>loaded</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.config.get">
+            function <span class="apidocSignatureSpan">npm.config.</span>get
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.config.set">
+            function <span class="apidocSignatureSpan">npm.config.</span>set
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm" id="apidoc.module.npm">module npm</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.deref" id="apidoc.element.npm.deref">
+        function <span class="apidocSignatureSpan">npm.</span>deref
+        <span class="apidocSignatureSpan">(c)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">deref = function (c) {
+  if (!c) return ''
+  if (c.match(/[A-Z]/)) {
+    c = c.replace(/([A-Z])/g, function (m) {
+      return '-' + m.toLowerCase()
+    })
+  }
+  if (plumbing.indexOf(c) !== -1) return c
+  var a = abbrevs[c]
+  if (aliases[a]) a = aliases[a]
+  return a
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.load" id="apidoc.element.npm.load">
+        function <span class="apidocSignatureSpan">npm.</span>load
+        <span class="apidocSignatureSpan">(cli, cb_)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">load = function (cli, cb_) {
+  if (!cb_ &amp;&amp; typeof cli === 'function') {
+    cb_ = cli
+    cli = {}
+  }
+  if (!cb_) cb_ = function () {}
+  if (!cli) cli = {}
+  loadListeners.push(cb_)
+  if (loaded || loadErr) return cb(loadErr)
+  if (loading) return
+  loading = true
+  var onload = true
+
+  function cb (er) {
+    if (loadErr) return
+    loadErr = er
+    if (er) return cb_(er)
+    if (npm.config.get('force')) {
+      log.warn('using --force', 'I sure hope you know what you are doing.')
+    }
+    npm.config.loaded = true
+    loaded = true
+    loadCb(loadErr = er)
+    onload = onload &amp;&amp; npm.config.get('onload-script')
+    if (onload) {
+      try {
+        require(onload)
+      } catch (err) {
+        log.warn('onload-script', 'failed to require onload script', onload)
+        log.warn('onload-script', err)
+      }
+      onload = false
+    }
+  }
+
+  log.pause()
+
+  load(npm, cli, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.config" id="apidoc.module.npm.config">module npm.config</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.config.get" id="apidoc.element.npm.config.get">
+        function <span class="apidocSignatureSpan">npm.config.</span>get
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function () {
+  throw new Error('npm.load() required')
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.config.set" id="apidoc.element.npm.config.set">
+        function <span class="apidocSignatureSpan">npm.config.</span>set
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">set = function () {
+  throw new Error('npm.load() required')
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
