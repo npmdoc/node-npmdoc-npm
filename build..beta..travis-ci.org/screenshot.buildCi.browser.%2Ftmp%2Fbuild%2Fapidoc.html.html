@@ -1,4 +1,12 @@
-<div class="apidocDiv">
+<html data-scrape="{
+    &quot;hrefDict&quot;: {
+        &quot;https://docs.npmjs.com/&quot;: &quot;npm (v5.8.0)&quot;,
+        &quot;https://github.com/kaizhu256/node-utility2&quot;: &quot;utility2&quot;
+    },
+    &quot;href&quot;: &quot;file:///home/travis/build/npmdoc/node-npmdoc-npm/tmp/build/apidoc.html&quot;,
+    &quot;url&quot;: &quot;file:///home/travis/build/npmdoc/node-npmdoc-npm/tmp/build/apidoc.html&quot;,
+    &quot;bodyTextContent&quot;: &quot;description and source-codederef = function (c) {\n  if (!c) return ''\n  if (c.match(/[A-Z]/)) {\n    c = c.replace(/([A-Z])/g, function (m) {\n      return '-' + m.toLowerCase()\n    })\n  }\n  if (plumbing.indexOf(c) !== -1) return c\n  var a = abbrevs[c]\n  if (aliases[a]) a = aliases[a]\n  return a\n}\n    example usage...\n  process.argv.splice(1, 1, 'npm', '-g')\n}\n\n            description and source-codeload = function (cli, cb_) {\n  if (!cb_ &amp;&amp; typeof cli === 'function') {\n    cb_ = cli\n    cli = {}\n  }\n  if (!cb_) cb_ = function () {}\n  if (!cli) cli = {}\n  loadListeners.push(cb_)\n  if (loaded || loadErr) return cb(loadErr)\n  if (loading) return\n  loading = true\n  var onload = true\n\n  function cb (er) {\n    if (loadErr) return\n    loadErr = er\n    if (er) return cb_(er)\n    if (npm.config.get('force')) {\n      log.warn('using --force', 'I sure hope you know what you are doing.')\n    }\n    npm.config.loaded = true\n    loaded = true\n    loadCb(loadErr = er)\n    onload = onload &amp;&amp; npm.config.get('onload-script')\n    if (onload) {\n      try {\n        require(onload)\n      } catch (err) {\n        log.warn('onload-script', 'failed to require onload script', onload)\n        log.warn('onload-script', err)\n      }\n      onload = false\n    }\n  }\n\n    // now actually fire up npm and run the command.\n// this is how to use npm programmatically:\nconf._exit = true\nnpm.load(conf, function (er) {\n  if (er) return errorHandler(er)\n  npm.commands[npm.command](npm.argv, function (err) {\n    // https://www.youtube.com/watch?v=7nfPu8qTiQU\n    if (!err &amp;&amp; npm.config.get('ham-it-up') &amp;&amp; !npm.config.get('json') &amp;&amp; !npm.config\n.get('parseable') &amp;&amp; npm.command !== 'completion') {\n      output('\\n 🎵 I Have the Honour to Be Your Obedient Servant,🎵 ~ npm 📜🖋\\n')\n    }\n    errorHandler.apply(this, arguments)\n...&quot;
+}"><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -48,17 +56,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://docs.npmjs.com/"
-
-    >npm (v5.8.0)</a>
+    <a href="https://docs.npmjs.com/">npm (v5.8.0)</a>
 </h1>
 <h4>a package manager for JavaScript</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.npm">module npm</a><ol>
 
@@ -100,6 +101,12 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>argv</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">npm.</span>commands</span>
 
         </li>
@@ -136,6 +143,12 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.</span>command</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.</span>name</span>
 
         </li>
@@ -162,10 +175,10 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">deref = function (c) {
-  if (!c) return &apos;&apos;
+  if (!c) return ''
   if (c.match(/[A-Z]/)) {
     c = c.replace(/([A-Z])/g, function (m) {
-      return &apos;-&apos; + m.toLowerCase()
+      return '-' + m.toLowerCase()
     })
   }
   if (plumbing.indexOf(c) !== -1) return c
@@ -174,10 +187,10 @@
   return a
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  process.argv.splice(1, 1, &apos;npm&apos;, &apos;-g&apos;)
+  process.argv.splice(1, 1, 'npm', '-g')
 }
 
-log.verbose(&apos;cli&apos;, process.argv)
+log.verbose('cli', process.argv)
 
 var conf = nopt(types, shorthands)
 npm.argv = conf.argv.remain
@@ -201,7 +214,7 @@ if (conf.version) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">load = function (cli, cb_) {
-  if (!cb_ &amp;&amp; typeof cli === &apos;function&apos;) {
+  if (!cb_ &amp;&amp; typeof cli === 'function') {
     cb_ = cli
     cli = {}
   }
@@ -217,19 +230,19 @@ if (conf.version) {
     if (loadErr) return
     loadErr = er
     if (er) return cb_(er)
-    if (npm.config.get(&apos;force&apos;)) {
-      log.warn(&apos;using --force&apos;, &apos;I sure hope you know what you are doing.&apos;)
+    if (npm.config.get('force')) {
+      log.warn('using --force', 'I sure hope you know what you are doing.')
     }
     npm.config.loaded = true
     loaded = true
     loadCb(loadErr = er)
-    onload = onload &amp;&amp; npm.config.get(&apos;onload-script&apos;)
+    onload = onload &amp;&amp; npm.config.get('onload-script')
     if (onload) {
       try {
         require(onload)
       } catch (err) {
-        log.warn(&apos;onload-script&apos;, &apos;failed to require onload script&apos;, onload)
-        log.warn(&apos;onload-script&apos;, err)
+        log.warn('onload-script', 'failed to require onload script', onload)
+        log.warn('onload-script', err)
       }
       onload = false
     }
@@ -241,7 +254,7 @@ if (conf.version) {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
   npm.argv.unshift(npm.command)
-  npm.command = &apos;help&apos;
+  npm.command = 'help'
 }
 
 // now actually fire up npm and run the command.
@@ -251,13 +264,17 @@ npm.<span class="apidocCodeKeywordSpan">load</span>(conf, function (er) {
   if (er) return errorHandler(er)
   npm.commands[npm.command](npm.argv, function (err) {
     // https://www.youtube.com/watch?v=7nfPu8qTiQU
-    if (!err &amp;&amp; npm.config.get(&apos;ham-it-up&apos;) &amp;&amp; !npm.config.get(&apos;json&apos;) &amp;&amp; !npm.config
-.get(&apos;parseable&apos;) &amp;&amp; npm.command !== &apos;completion&apos;) {
-      output(&apos;\n 🎵 I Have the Honour to Be Your Obedient Servant,🎵 ~ npm 📜🖋\n&apos;)
+    if (!err &amp;&amp; npm.config.get('ham-it-up') &amp;&amp; !npm.config.get('json') &amp;&amp; !npm.config
+.get('parseable') &amp;&amp; npm.command !== 'completion') {
+      output('\n 🎵 I Have the Honour to Be Your Obedient Servant,🎵 ~ npm 📜🖋\n')
     }
     errorHandler.apply(this, arguments)
 ...</pre></li>
     </ul>
+
+
+
+
 
 
 
@@ -290,3 +307,4 @@ npm.<span class="apidocCodeKeywordSpan">load</span>(conf, function (er) {
     ]
 </div>
 </div>
+</body></html>
