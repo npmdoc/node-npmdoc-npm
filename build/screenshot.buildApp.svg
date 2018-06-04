@@ -1,9 +1,9 @@
-<svg height="22446" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="22446" fill="#555" width="720"></rect>
+<svg height="22510" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="22510" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2018-06-04T08:18:22.793Z - npm-testing /home/travis/build/npmdoc/node-np\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2018-06-04T08:21:26.425Z - npm-testing /home/travis/build/npmdoc/node-np\</tspan>
 <tspan x="10" y="58">mdoc-npm</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApp - merged test-report from file /home/travis/build/npmdoc/node-npmdoc-npm/tmp/build/test\</tspan>
 <tspan x="10" y="122">-report.json</tspan>
 
-<tspan x="10" y="138">&gt; server listening on http-port 51830</tspan>
+<tspan x="10" y="138">&gt; server listening on http-port 41923</tspan>
 
 <tspan x="10" y="154">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-npm/node_modules/npm/package.js\</tspan>
 <tspan x="10" y="170">on</tspan>
@@ -2271,7 +2271,7 @@
 
 <tspan x="10" y="22026"></tspan>
 
-<tspan x="10" y="22042">&gt; server listening on http-port 63053</tspan>
+<tspan x="10" y="22042">&gt; server listening on http-port 59327</tspan>
 
 <tspan x="10" y="22058">[node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
 
@@ -2286,7 +2286,7 @@
 
 <tspan x="10" y="22154">| test-report - buildApidoc - node - linux v6.14.2 - 2018-06-04T08:17:43.870Z</tspan>
 
-<tspan x="10" y="22170">|   52606 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="22170">|  236207 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="22186">-------------------------------------------------------</tspan>
 
@@ -2303,21 +2303,28 @@
 
 <tspan x="10" y="22298">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="22314"></tspan>
+<tspan x="10" y="22314">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="22330">L, like Gecko) Chrome/58.0.3029.110 Electron/1.7.15 Safari/537.36 - 2018-06-04T08:20:30.562Z</tspan>
 
-<tspan x="10" y="22330">created test-report file /home/travis/build/npmdoc/node-npmdoc-npm/tmp/build/test-report.html</tspan>
+<tspan x="10" y="22346">|      46 ms            0 failed        8 passed      |</tspan>
 
-<tspan x="10" y="22346"></tspan>
+<tspan x="10" y="22362">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="22362"></tspan>
+<tspan x="10" y="22378"></tspan>
 
-<tspan x="10" y="22378">buildApp - 0 failed tests</tspan>
-
-<tspan x="10" y="22394"></tspan>
+<tspan x="10" y="22394">created test-report file /home/travis/build/npmdoc/node-npmdoc-npm/tmp/build/test-report.html</tspan>
 
 <tspan x="10" y="22410"></tspan>
 
-<tspan x="10" y="22426">[MODE_BUILD=buildApp] - 2018-06-04T08:18:38.006Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="22426"></tspan>
+
+<tspan x="10" y="22442">buildApp - 0 failed tests</tspan>
+
+<tspan x="10" y="22458"></tspan>
+
+<tspan x="10" y="22474"></tspan>
+
+<tspan x="10" y="22490">[MODE_BUILD=buildApp] - 2018-06-04T08:21:41.612Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
