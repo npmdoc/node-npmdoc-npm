@@ -52,7 +52,7 @@
 
         href="https://docs.npmjs.com/"
 
-    >npm (v5.8.0)</a>
+    >npm (6.1.0)</a>
 </h1>
 <h4>a package manager for JavaScript</h4>
 <div class="apidocSectionDiv"><a
@@ -85,6 +85,15 @@
             <a class="apidocElementLiA" href="#apidoc.element.npm.and_finish_tracker">
             function <span class="apidocSignatureSpan">npm.</span>and_finish_tracker
             <span class="apidocSignatureSpan">(tracker, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.audit">
+            function <span class="apidocSignatureSpan">npm.</span>audit
+            <span class="apidocSignatureSpan">(args, cb)</span>
             </a>
 
         </li>
@@ -843,6 +852,34 @@
             function <span class="apidocSignatureSpan">npm.and_finish_tracker.</span>now
             <span class="apidocSignatureSpan">(tracker, cb)</span>
             </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.npm.audit">module npm.audit</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.audit.audit">
+            function <span class="apidocSignatureSpan">npm.</span>audit
+            <span class="apidocSignatureSpan">(args, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.audit.completion">
+            function <span class="apidocSignatureSpan">npm.audit.</span>completion
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">npm.audit.</span>usage</span>
 
         </li>
 
@@ -1888,9 +1925,27 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.npm.pack.getContents">
+            function <span class="apidocSignatureSpan">npm.pack.</span>getContents
+            <span class="apidocSignatureSpan">(pkg, target, filename, silent)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.pack.logContents">
+            function <span class="apidocSignatureSpan">npm.pack.</span>logContents
+            <span class="apidocSignatureSpan">(tarball)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.npm.pack.packDirectory">
             function <span class="apidocSignatureSpan">npm.pack.</span>packDirectory
-            <span class="apidocSignatureSpan">(mani, dir, target)</span>
+            <span class="apidocSignatureSpan">(mani, dir, target, filename, logIt)</span>
             </a>
 
         </li>
@@ -2379,6 +2434,15 @@
             <a class="apidocElementLiA" href="#apidoc.element.npm.shrinkwrap.createShrinkwrap">
             function <span class="apidocSignatureSpan">npm.shrinkwrap.</span>createShrinkwrap
             <span class="apidocSignatureSpan">(tree, opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.npm.shrinkwrap.treeToShrinkwrap">
+            function <span class="apidocSignatureSpan">npm.shrinkwrap.</span>treeToShrinkwrap
+            <span class="apidocSignatureSpan">(tree)</span>
             </a>
 
         </li>
@@ -2918,6 +2982,111 @@ function invokeCmd (err, uri, auth, base) {
 
 
     <h2>
+        <a href="#apidoc.element.npm.audit" id="apidoc.element.npm.audit">
+        function <span class="apidocSignatureSpan">npm.</span>audit
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function auditCmd(args, cb) {
+  if (npm.config.get(&apos;global&apos;)) {
+    const err = new Error(&apos;`npm audit` does not support testing globals&apos;)
+    err.code = &apos;EAUDITGLOBAL&apos;
+    throw err
+  }
+  if (args.length &amp;&amp; args[0] !== &apos;fix&apos;) {
+    return cb(new Error(&apos;Invalid audit subcommand: `&apos; + args[0] + &apos;`\n\nUsage:\n&apos; + auditCmd.usage))
+  }
+  return Bluebird.all([
+    maybeReadFile(&apos;npm-shrinkwrap.json&apos;),
+    maybeReadFile(&apos;package-lock.json&apos;),
+    maybeReadFile(&apos;package.json&apos;)
+  ]).spread((shrinkwrap, lockfile, pkgJson) =&gt; {
+    const sw = shrinkwrap || lockfile
+    if (!pkgJson) {
+      const err = new Error(&apos;No package.json found: Cannot audit a project without a package.json&apos;)
+      err.code = &apos;EAUDITNOPJSON&apos;
+      throw err
+    }
+    if (!sw) {
+      const err = new Error(&apos;Neither npm-shrinkwrap.json nor package-lock.json found: Cannot audit a project without a lockfile&apos;)
+      err.code = &apos;EAUDITNOLOCK&apos;
+      throw err
+    } else if (shrinkwrap &amp;&amp; lockfile) {
+      log.warn(&apos;audit&apos;, &apos;Both npm-shrinkwrap.json and package-lock.json exist, using npm-shrinkwrap.json.&apos;)
+    }
+    const requires = Object.assign(
+      {},
+      (pkgJson &amp;&amp; pkgJson.dependencies) || {},
+      (pkgJson &amp;&amp; pkgJson.devDependencies) || {}
+    )
+    return lockVerify(npm.prefix).then(result =&gt; {
+      if (result.status) return audit.generate(sw, requires)
+
+      const lockFile = shrinkwrap ? &apos;npm-shrinkwrap.json&apos; : &apos;package-lock.json&apos;
+      const err = new Error(`Errors were found in your ${lockFile}, run  npm install  to fix them.\n    ` +
+        result.errors.join(&apos;\n    &apos;))
+      err.code = &apos;ELOCKVERIFY&apos;
+      throw err
+    })
+  }).then((auditReport) =&gt; {
+    return audit.submitForFullReport(auditReport)
+  }).catch(err =&gt; {
+    if (err.statusCode === 404 || err.statusCode &gt;= 500) {
+      const ne = new Error(`Your configured registry (${npm.config.get(&apos;registry&apos;)}) does not support audit requests.`)
+      ne.code = &apos;ENOAUDIT&apos;
+      ne.wrapped = err
+      throw ne
+    }
+    throw err
+  }).then((auditResult) =&gt; {
+    if (args[0] === &apos;fix&apos;) {
+      const actions = (auditResult.actions || []).reduce((acc, action) =&gt; {
+        action = filterEnv(action)
+        if (!action) { return acc }
+        if (action.isMajor) {
+          acc.major.add(`${action.module}@${action.target}`)
+          action.resolves.forEach(({id, path}) =&gt; acc.majorFixes.add(`${id}::${path}`))
+        } else if (action.action === &apos;install&apos;) {
+          acc.install.add(`${action.module}@${action.target}`)
+          action.resolves.forEach(({id, path}) =&gt; acc.installFixes.add(`${id}::${path}`))
+        } else if (action.action === &apos;update&apos;) {
+          const name = action.module
+          const version = action.target
+          action.resolves.forEach(vuln =&gt; {
+            acc.updateFixes.add(`${vuln.id}::${vuln.path}`)
+            const modPath = vuln.path.split(&apos;&gt;&apos;)
+            const newPath = modPath.slice(
+              0, modPath.indexOf(name)
+            ).concat(`${name}@${version}`)
+            if (newPath.length === 1) {
+              acc.install.add(newPath[0])
+            } else {
+              acc.update.add(newPath.join(&apos;&gt;&apos;))
+            }
+          })
+        } else if (action.action === &apos;review&apos;) {
+          action.resolves.forEach(({id, path}) =&gt; acc.review.add(`${id}::${path}`))
+        }
+        return acc
+      }, {
+        install: new Set(),
+        installFixes: new Set(),
+        update: new Set(),
+        updateFixes: new Set(),
+        major: new Set(),
+        majorFixes: new Set(),
+        review: new Set()
+      })
+      return Bluebird.try(() =&gt; {
+        const installMajor = npm.config.get(&apos;force&apos;)
+        const installCount = actions.install.size + (installMajor ? actions.major.size : 0) + actions.update.si...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.npm.bugs" id="apidoc.element.npm.bugs">
         function <span class="apidocSignatureSpan">npm.</span>bugs
         <span class="apidocSignatureSpan">(args, cb)</span>
@@ -2934,7 +3103,7 @@ function invokeCmd (err, uri, auth, base) {
       url = &apos;https://www.npmjs.org/package/&apos; + d.name
     }
     log.silly(&apos;bugs&apos;, &apos;url&apos;, url)
-    opener(url, { command: npm.config.get(&apos;browser&apos;) }, cb)
+    openUrl(url, &apos;bug list available at the following URL&apos;, cb)
   })
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -2954,13 +3123,16 @@ function invokeCmd (err, uri, auth, base) {
     config: npm.config,
     log: npmlog
   })
-  .run()
-  .then(
-    (details) =&gt; console.error(`added ${details.pkgCount} packages in ${
-      details.runTime / 1000
-    }s`)
-  )
-  .then(() =&gt; cb(), cb)
+    .run()
+    .then(
+      (details) =&gt; {
+        npmlog.disableProgress()
+        console.error(`added ${details.pkgCount} packages in ${
+          details.runTime / 1000
+        }s`)
+      }
+    )
+    .then(() =&gt; cb(), cb)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -2978,7 +3150,7 @@ function invokeCmd (err, uri, auth, base) {
   if (isWindowsShell) {
     var e = new Error(&apos;npm completion supported only in MINGW / Git bash on Windows&apos;)
     e.code = &apos;ENOTSUP&apos;
-    e.errno = require(&apos;constants&apos;).ENOTSUP
+    e.errno = require(&apos;constants&apos;).ENOTSUP // eslint-disable-line node/no-deprecated-api
     return cb(e)
   }
 
@@ -3173,7 +3345,9 @@ var fs = require(&apos;graceful-fs&apos;)
   }
   if (plumbing.indexOf(c) !== -1) return c
   var a = abbrevs[c]
-  if (aliases[a]) a = aliases[a]
+  while (aliases[a]) {
+    a = aliases[a]
+  }
   return a
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -3231,8 +3405,8 @@ if (conf.version) {
     ))
   }
   p = p.split(&apos;/&apos;)
-       .join(&apos;/node_modules/&apos;)
-       .replace(/(\/node_modules)+/, &apos;/node_modules&apos;)
+    .join(&apos;/node_modules/&apos;)
+    .replace(/(\/node_modules)+/, &apos;/node_modules&apos;)
   var f = path.resolve(npm.dir, p)
   fs.lstat(f, function (er) {
     if (er) return cb(er)
@@ -3734,8 +3908,8 @@ if (results.length === 0) {
   var globalTop = path.resolve(npm.globalDir, &apos;..&apos;)
   if (!where) {
     where = npm.config.get(&apos;global&apos;)
-          ? globalTop
-          : npm.prefix
+      ? globalTop
+      : npm.prefix
   }
   validate(&apos;SAF&apos;, [where, args, cb])
   // the /path/to/node_modules/..
@@ -3788,7 +3962,7 @@ if (pkg[0] !== &apos;@&apos; &amp;&amp; (pkg.indexOf(&apos;/&apos;) !== -1 || pk
       var msg = &apos;npm link not supported on windows prior to node 0.7.9&apos;
       var e = new Error(msg)
       e.code = &apos;ENOTSUP&apos;
-      e.errno = require(&apos;constants&apos;).ENOTSUP
+      e.errno = require(&apos;constants&apos;).ENOTSUP // eslint-disable-line node/no-deprecated-api
       return cb(e)
     }
   }
@@ -3865,13 +4039,12 @@ if (pkg[0] !== &apos;@&apos; &amp;&amp; (pkg.indexOf(&apos;/&apos;) !== -1 || pk
 conf._exit = true
 npm.<span class="apidocCodeKeywordSpan">load</span>(conf, function (er) {
   if (er) return errorHandler(er)
-  npm.commands[npm.command](npm.argv, function (err) {
-    // https://www.youtube.com/watch?v=7nfPu8qTiQU
-    if (!err &amp;&amp; npm.config.get(&apos;ham-it-up&apos;) &amp;&amp; !npm.config.get(&apos;json&apos;) &amp;&amp; !npm.config
-.get(&apos;parseable&apos;) &amp;&amp; npm.command !== &apos;completion&apos;) {
-      output(&apos;\n 🎵 I Have the Honour to Be Your Obedient Servant,🎵 ~ npm 📜🖋\n&apos;)
-    }
-    errorHandler.apply(this, arguments)
+  if (!unsupported.checkVersion(process.version).unsupported) {
+    const pkg = require(&apos;../package.json&apos;)
+    let notifier = require(&apos;update-notifier&apos;)({pkg})
+    if (
+      notifier.update &amp;&amp;
+      notifier.update.latest !== pkg.version
 ...</pre></li>
     </ul>
 
@@ -3898,7 +4071,23 @@ npm.<span class="apidocCodeKeywordSpan">load</span>(conf, function (er) {
     })
   })
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        npm.config.get(&apos;unicode&apos;) ? &apos; ➜ &apos; : &apos; -&gt; &apos;
+      } ${hook.endpoint}`)
+    }
+  })
+}
+
+function ls (pkg) {
+return hookApi.<span class="apidocCodeKeywordSpan">ls</span>(pkg, config())
+  .then((hooks) =&gt; {
+    if (npm.config.get(&apos;json&apos;)) {
+      output(JSON.stringify(hooks, null, 2))
+    } else if (!hooks.length) {
+      output(&quot;You don&apos;t have any hooks configured yet.&quot;)
+    } else {
+      if (hooks.length === 1) {
+...</pre></li>
     </ul>
 
 
@@ -3990,12 +4179,15 @@ npm.<span class="apidocCodeKeywordSpan">load</span>(conf, function (er) {
 
   BB.all(
     args.map((arg) =&gt; pack_(arg, cwd))
-  ).then((files) =&gt; {
-    if (!silent) {
-      output(files.map((f) =&gt; path.relative(cwd, f)).join(&apos;\n&apos;))
+  ).then((tarballs) =&gt; {
+    if (!silent &amp;&amp; npm.config.get(&apos;json&apos;)) {
+      output(JSON.stringify(tarballs, null, 2))
+    } else if (!silent) {
+      tarballs.forEach(logContents)
+      output(tarballs.map((f) =&gt; path.relative(cwd, f.filename)).join(&apos;\n&apos;))
     }
-    cb(null, files)
-  }, cb)
+    return tarballs
+  }).nodeify(cb)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4093,15 +4285,21 @@ npm.<span class="apidocCodeKeywordSpan">load</span>(conf, function (er) {
     return cb(new Error(&apos;Tag name must not be a valid SemVer range: &apos; + t))
   }
 
-  publish_(args[0]).then((pkg) =&gt; {
-    output(`+ ${pkg._id}`)
-    cb()
-  }, cb)
+  return publish_(args[0])
+    .then((tarball) =&gt; {
+      const silent = log.level === &apos;silent&apos;
+      if (!silent &amp;&amp; npm.config.get(&apos;json&apos;)) {
+        output(JSON.stringify(tarball, null, 2))
+      } else if (!silent) {
+        output(`+ ${tarball.id}`)
+      }
+    })
+    .nodeify(cb)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  }
-
-  params.access = config.get(&apos;access&apos;)
+if (npm.config.get(&apos;dry-run&apos;)) {
+  log.verbose(&apos;publish&apos;, &apos;--dry-run mode enabled. Skipping upload.&apos;)
+  return BB.resolve()
 }
 
 log.showProgress(&apos;publish:&apos; + pkg._id)
@@ -4196,8 +4394,8 @@ generated for lockfileVersion@${parsed.lockfileVersion || 0}. I&apos;ll try to d
   })
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-       .join(&apos;/node_modules/&apos;)
-       .replace(/(\/node_modules)+/, &apos;/node_modules&apos;)
+    .join(&apos;/node_modules/&apos;)
+    .replace(/(\/node_modules)+/, &apos;/node_modules&apos;)
   var f = path.resolve(npm.dir, p)
   fs.lstat(f, function (er) {
     if (er) return cb(er)
@@ -4510,7 +4708,7 @@ mapToRegistry(pkg, npm.config, function (er, uri, auth) {
     try {
       return npm.registry.team(cmd, uri, {
         auth: auth,
-        scope: entity[0],
+        scope: entity[0].replace(/^@/, &apos;&apos;), // &apos;@&apos; prefix on scope is optional.
         team: entity[1],
         user: args.shift()
       }, function (err, data) {
@@ -4532,7 +4730,7 @@ return mapToRegistry(&apos;/&apos;, npm.config, function (err, uri, auth) {
   try {
     return npm.registry.<span class="apidocCodeKeywordSpan">team</span>(cmd, uri, {
       auth: auth,
-      scope: entity[0],
+      scope: entity[0].replace(/^@/, &apos;&apos;), // &apos;@&apos; prefix on scope is optional.
       team: entity[1],
       user: args.shift()
     }, function (err, data) {
@@ -4610,8 +4808,8 @@ return mapToRegistry(&apos;/&apos;, npm.config, function (err, uri, auth) {
   if (args.length === 1 &amp;&amp; args[0] === &apos;.&apos;) args = []
 
   const where = npm.config.get(&apos;global&apos;) || !args.length
-            ? path.resolve(npm.globalDir, &apos;..&apos;)
-            : npm.prefix
+    ? path.resolve(npm.globalDir, &apos;..&apos;)
+    : npm.prefix
 
   args = args.filter(function (a) {
     return path.resolve(a) !== where
@@ -5309,13 +5507,13 @@ var fs = require(&apos;graceful-fs&apos;)
   cb.apply(null, Array.prototype.slice.call(arguments, 2))
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-
 this.packageLockOnly = opts.packageLockOnly != null
   ? opts.packageLockOnly : npm.config.get(&apos;package-lock-only&apos;)
 this.rollback = opts.rollback != null ? opts.rollback : npm.config.get(&apos;rollback&apos;)
 this.link = opts.link != null ? opts.link : npm.config.get(&apos;link&apos;)
 this.saveOnlyLock = opts.saveOnlyLock
 this.global = opts.global != null ? opts.global : this.where === path.resolve(npm.globalDir, &apos;..&apos;)
+this.audit = npm.config.get(&apos;audit&apos;) &amp;&amp; !this.global
 this.started = Date.<span class="apidocCodeKeywordSpan">now</span>()
 }
 Installer.prototype = {}
@@ -5326,6 +5524,156 @@ validate(&apos;F|&apos;, arguments)
 var result
 ...</pre></li>
     </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.npm.audit" id="apidoc.module.npm.audit">module npm.audit</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.npm.audit.audit" id="apidoc.element.npm.audit.audit">
+        function <span class="apidocSignatureSpan">npm.</span>audit
+        <span class="apidocSignatureSpan">(args, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function auditCmd(args, cb) {
+  if (npm.config.get(&apos;global&apos;)) {
+    const err = new Error(&apos;`npm audit` does not support testing globals&apos;)
+    err.code = &apos;EAUDITGLOBAL&apos;
+    throw err
+  }
+  if (args.length &amp;&amp; args[0] !== &apos;fix&apos;) {
+    return cb(new Error(&apos;Invalid audit subcommand: `&apos; + args[0] + &apos;`\n\nUsage:\n&apos; + auditCmd.usage))
+  }
+  return Bluebird.all([
+    maybeReadFile(&apos;npm-shrinkwrap.json&apos;),
+    maybeReadFile(&apos;package-lock.json&apos;),
+    maybeReadFile(&apos;package.json&apos;)
+  ]).spread((shrinkwrap, lockfile, pkgJson) =&gt; {
+    const sw = shrinkwrap || lockfile
+    if (!pkgJson) {
+      const err = new Error(&apos;No package.json found: Cannot audit a project without a package.json&apos;)
+      err.code = &apos;EAUDITNOPJSON&apos;
+      throw err
+    }
+    if (!sw) {
+      const err = new Error(&apos;Neither npm-shrinkwrap.json nor package-lock.json found: Cannot audit a project without a lockfile&apos;)
+      err.code = &apos;EAUDITNOLOCK&apos;
+      throw err
+    } else if (shrinkwrap &amp;&amp; lockfile) {
+      log.warn(&apos;audit&apos;, &apos;Both npm-shrinkwrap.json and package-lock.json exist, using npm-shrinkwrap.json.&apos;)
+    }
+    const requires = Object.assign(
+      {},
+      (pkgJson &amp;&amp; pkgJson.dependencies) || {},
+      (pkgJson &amp;&amp; pkgJson.devDependencies) || {}
+    )
+    return lockVerify(npm.prefix).then(result =&gt; {
+      if (result.status) return audit.generate(sw, requires)
+
+      const lockFile = shrinkwrap ? &apos;npm-shrinkwrap.json&apos; : &apos;package-lock.json&apos;
+      const err = new Error(`Errors were found in your ${lockFile}, run  npm install  to fix them.\n    ` +
+        result.errors.join(&apos;\n    &apos;))
+      err.code = &apos;ELOCKVERIFY&apos;
+      throw err
+    })
+  }).then((auditReport) =&gt; {
+    return audit.submitForFullReport(auditReport)
+  }).catch(err =&gt; {
+    if (err.statusCode === 404 || err.statusCode &gt;= 500) {
+      const ne = new Error(`Your configured registry (${npm.config.get(&apos;registry&apos;)}) does not support audit requests.`)
+      ne.code = &apos;ENOAUDIT&apos;
+      ne.wrapped = err
+      throw ne
+    }
+    throw err
+  }).then((auditResult) =&gt; {
+    if (args[0] === &apos;fix&apos;) {
+      const actions = (auditResult.actions || []).reduce((acc, action) =&gt; {
+        action = filterEnv(action)
+        if (!action) { return acc }
+        if (action.isMajor) {
+          acc.major.add(`${action.module}@${action.target}`)
+          action.resolves.forEach(({id, path}) =&gt; acc.majorFixes.add(`${id}::${path}`))
+        } else if (action.action === &apos;install&apos;) {
+          acc.install.add(`${action.module}@${action.target}`)
+          action.resolves.forEach(({id, path}) =&gt; acc.installFixes.add(`${id}::${path}`))
+        } else if (action.action === &apos;update&apos;) {
+          const name = action.module
+          const version = action.target
+          action.resolves.forEach(vuln =&gt; {
+            acc.updateFixes.add(`${vuln.id}::${vuln.path}`)
+            const modPath = vuln.path.split(&apos;&gt;&apos;)
+            const newPath = modPath.slice(
+              0, modPath.indexOf(name)
+            ).concat(`${name}@${version}`)
+            if (newPath.length === 1) {
+              acc.install.add(newPath[0])
+            } else {
+              acc.update.add(newPath.join(&apos;&gt;&apos;))
+            }
+          })
+        } else if (action.action === &apos;review&apos;) {
+          action.resolves.forEach(({id, path}) =&gt; acc.review.add(`${id}::${path}`))
+        }
+        return acc
+      }, {
+        install: new Set(),
+        installFixes: new Set(),
+        update: new Set(),
+        updateFixes: new Set(),
+        major: new Set(),
+        majorFixes: new Set(),
+        review: new Set()
+      })
+      return Bluebird.try(() =&gt; {
+        const installMajor = npm.config.get(&apos;force&apos;)
+        const installCount = actions.install.size + (installMajor ? actions.major.size : 0) + actions.update.si...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.audit.completion" id="apidoc.element.npm.audit.completion">
+        function <span class="apidocSignatureSpan">npm.audit.</span>completion
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">completion = function (opts, cb) {
+  const argv = opts.conf.argv.remain
+
+  switch (argv[2]) {
+    case &apos;audit&apos;:
+      return cb(null, [])
+    default:
+      return cb(new Error(argv[2] + &apos; not recognized&apos;))
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  npm.config.set(k, parsed[k])
+})
+
+// at this point, if words[1] is some kind of npm command,
+// then complete on it.
+// otherwise, do nothing
+cmd = npm.commands[cmd]
+if (cmd &amp;&amp; cmd.completion) return cmd.<span class="apidocCodeKeywordSpan">completion</span>(opts, cb)
+
+// nothing to do.
+cb()
+}
+
+function dumpScript (cb) {
+var fs = require(&apos;graceful-fs&apos;)
+...</pre></li>
+    </ul>
+
+
 
 
 </div>
@@ -5351,7 +5699,7 @@ var result
       url = &apos;https://www.npmjs.org/package/&apos; + d.name
     }
     log.silly(&apos;bugs&apos;, &apos;url&apos;, url)
-    opener(url, { command: npm.config.get(&apos;browser&apos;) }, cb)
+    openUrl(url, &apos;bug list available at the following URL&apos;, cb)
   })
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -5411,13 +5759,16 @@ var fs = require(&apos;graceful-fs&apos;)
     config: npm.config,
     log: npmlog
   })
-  .run()
-  .then(
-    (details) =&gt; console.error(`added ${details.pkgCount} packages in ${
-      details.runTime / 1000
-    }s`)
-  )
-  .then(() =&gt; cb(), cb)
+    .run()
+    .then(
+      (details) =&gt; {
+        npmlog.disableProgress()
+        console.error(`added ${details.pkgCount} packages in ${
+          details.runTime / 1000
+        }s`)
+      }
+    )
+    .then(() =&gt; cb(), cb)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -5540,21 +5891,21 @@ var fs = require(&apos;graceful-fs&apos;)
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  // now actually fire up npm and run the command.
-  // this is how to use npm programmatically:
-  conf._exit = true
-  npm.load(conf, function (er) {
-    if (er) return errorHandler(er)
-    npm.commands[npm.command](npm.argv, function (err) {
-      // https://www.youtube.com/watch?v=7nfPu8qTiQU
-      if (!err &amp;&amp; npm.config.<span class="apidocCodeKeywordSpan">get</span>(&apos;ham-it-up&apos;) &amp;&amp; !npm.config
-.get(&apos;json&apos;) &amp;&amp; !npm.config.get(&apos;parseable&apos;) &amp;&amp; npm.command !== &apos;completion&apos;) {
-        output(&apos;\n 🎵 I Have the Honour to Be Your Obedient Servant,🎵 ~ npm 📜🖋\n&apos;)
-      }
-      errorHandler.apply(this, arguments)
-    })
-  })
-})()
+const pkg = require(&apos;../package.json&apos;)
+let notifier = require(&apos;update-notifier&apos;)({pkg})
+if (
+  notifier.update &amp;&amp;
+  notifier.update.latest !== pkg.version
+) {
+  const color = require(&apos;ansicolors&apos;)
+  const useColor = npm.config.<span class="apidocCodeKeywordSpan">get</span>(&apos;color&apos;)
+  const useUnicode = npm.config.get(&apos;unicode&apos;)
+  const old = notifier.update.current
+  const latest = notifier.update.latest
+  let type = notifier.update.type
+  if (useColor) {
+    switch (type) {
+      case &apos;major&apos;:
 ...</pre></li>
     </ul>
 
@@ -5745,13 +6096,12 @@ var fs = require(&apos;graceful-fs&apos;)
 conf._exit = true
 npm.<span class="apidocCodeKeywordSpan">load</span>(conf, function (er) {
   if (er) return errorHandler(er)
-  npm.commands[npm.command](npm.argv, function (err) {
-    // https://www.youtube.com/watch?v=7nfPu8qTiQU
-    if (!err &amp;&amp; npm.config.get(&apos;ham-it-up&apos;) &amp;&amp; !npm.config.get(&apos;json&apos;) &amp;&amp; !npm.config
-.get(&apos;parseable&apos;) &amp;&amp; npm.command !== &apos;completion&apos;) {
-      output(&apos;\n 🎵 I Have the Honour to Be Your Obedient Servant,🎵 ~ npm 📜🖋\n&apos;)
-    }
-    errorHandler.apply(this, arguments)
+  if (!unsupported.checkVersion(process.version).unsupported) {
+    const pkg = require(&apos;../package.json&apos;)
+    let notifier = require(&apos;update-notifier&apos;)({pkg})
+    if (
+      notifier.update &amp;&amp;
+      notifier.update.latest !== pkg.version
 ...</pre></li>
     </ul>
 
@@ -6041,7 +6391,6 @@ var fs = require(&apos;graceful-fs&apos;)
       resolveWithExistingModule(child, tree)
       return true
     }
-    return
   }
 
   const deps = tree.package.dependencies || {}
@@ -6079,10 +6428,12 @@ var fs = require(&apos;graceful-fs&apos;)
   validate(&apos;OO&apos;, arguments)
   var requested
   var childReq = child.package._requested
-  if (childReq &amp;&amp; (isNotEmpty(childReq.saveSpec) || (isNotEmpty(childReq.rawSpec) &amp;&amp; isNotEmpty(childReq.fetchSpec)))) {
+  if (child.isLink) {
+    requested = npa.resolve(child.package.name, &apos;file:&apos; + child.realpath, getTop(tree).path)
+  } else if (childReq &amp;&amp; (isNotEmpty(childReq.saveSpec) || (isNotEmpty(childReq.rawSpec) &amp;&amp; isNotEmpty(childReq.fetchSpec)))) {
     requested = child.package._requested
   } else if (child.package._from) {
-    requested = npa(child.package._from)
+    requested = npa(child.package._from, tree.path)
   } else {
     requested = npa.resolve(child.package.name, child.package.version)
   }
@@ -6096,7 +6447,7 @@ var fs = require(&apos;graceful-fs&apos;)
     }
     return rangeDescriptor + version
   } else if (requested.type === &apos;directory&apos; || requested.type === &apos;file&apos;) {
-    return &apos;file:&apos; + unixFormatPath(path.relative(tree.path, requested.fetchSpec))
+    return &apos;file:&apos; + unixFormatPath(path.relative(getTop(tree).path, requested.fetchSpec))
   } else {
     return requested.saveSpec || requested.rawSpec
   }
@@ -6312,12 +6663,6 @@ var fs = require(&apos;graceful-fs&apos;)
   if (!tree.package.dependencies) tree.package.dependencies = {}
   asyncMap(Object.keys(tree.package.dependencies), function (dep, done) {
     var version = tree.package.dependencies[dep]
-    if (tree.package.optionalDependencies &amp;&amp;
-        tree.package.optionalDependencies[dep] &amp;&amp;
-        !npm.config.get(&apos;optional&apos;)) {
-      return done()
-    }
-
     addDependency(dep, version, tree, log.newGroup(&apos;loadDep:&apos; + dep), andHandleOptionalErrors(log, tree, dep, done))
   }, andForEachChild(loadDeps, andFinishTracker(log, next)))
 }</pre></li>
@@ -6342,7 +6687,7 @@ var fs = require(&apos;graceful-fs&apos;)
     if (tree.package.dependencies[dep]) return done()
 
     var logGroup = log.newGroup(&apos;loadDevDep:&apos; + dep)
-    addDependency(dep, tree.package.devDependencies[dep], tree, logGroup, done)
+    addDependency(dep, tree.package.devDependencies[dep], tree, logGroup, andHandleOptionalErrors(log, tree, dep, done))
   }, andForEachChild(loadDeps, andFinishTracker(log, next)))
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -6413,6 +6758,7 @@ var fs = require(&apos;graceful-fs&apos;)
             delete tree.package[saveType][childName]
           }
         }
+        if (child.save === &apos;optionalDependencies&apos;) tree.package.dependencies[childName] = child.saveSpec
       }
 
       // For things the user asked to install, that aren&apos;t a dependency (or
@@ -6699,9 +7045,8 @@ var fs = require(&apos;graceful-fs&apos;)
         pkg.fromPath = toMv.pkg.path
         setAction(differences, &apos;move&apos;, pkg)
         delete toRemove[toMv.flatname]
-      // we don&apos;t generate add actions for things found in links (which already exist on disk) or
-      // for bundled modules (which will be installed when we install their parent)
-      } else if (!(pkg.isInLink &amp;&amp; pkg.fromBundle)) {
+      // we don&apos;t generate add actions for things found in links (which already exist on disk)
+      } else if (!pkg.isInLink || !(pkg.fromBundle &amp;&amp; pkg.fromBundle.isLink)) {
         setAction(differences, &apos;add&apos;, pkg)
       }
     }
@@ -6713,20 +7058,7 @@ var fs = require(&apos;graceful-fs&apos;)
     .map((flatname) =&gt; toRemove[flatname])
     .forEach((pkg) =&gt; setAction(differences, &apos;remove&apos;, pkg))
 
-  const includeDev = npm.config.get(&apos;dev&apos;) ||
-    (!/^prod(uction)?$/.test(npm.config.get(&apos;only&apos;)) &amp;&amp; !npm.config.get(&apos;production&apos;)) ||
-    /^dev(elopment)?$/.test(npm.config.get(&apos;only&apos;)) ||
-    /^dev(elopment)?$/.test(npm.config.get(&apos;also&apos;))
-  const includeProd = !/^dev(elopment)?$/.test(npm.config.get(&apos;only&apos;))
-  if (!includeProd || !includeDev) {
-    log.silly(&apos;diff-trees&apos;, &apos;filtering actions:&apos;, &apos;includeDev&apos;, includeDev, &apos;includeProd&apos;, includeProd)
-    differences = differences.filter((diff) =&gt; {
-      const pkg = diff[1]
-      const pkgIsOnlyDev = isOnlyDev(pkg)
-      return (!includeProd &amp;&amp; pkgIsOnlyDev) || (includeDev &amp;&amp; pkgIsOnlyDev) || (includeProd &amp;&amp; !pkgIsOnlyDev)
-    })
-  }
-  return differences
+  return filterActions(differences)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -6787,6 +7119,11 @@ var fs = require(&apos;graceful-fs&apos;)
     sorted.unshift(action)
   }
 
+  // safety net, anything excluded above gets tacked on the end
+  differences.forEach((_) =&gt; {
+    if (sorted.indexOf(_) === -1) sorted.push(_)
+  })
+
   return sorted
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -6816,8 +7153,8 @@ var fs = require(&apos;graceful-fs&apos;)
     ))
   }
   p = p.split(&apos;/&apos;)
-       .join(&apos;/node_modules/&apos;)
-       .replace(/(\/node_modules)+/, &apos;/node_modules&apos;)
+    .join(&apos;/node_modules/&apos;)
+    .replace(/(\/node_modules)+/, &apos;/node_modules&apos;)
   var f = path.resolve(npm.dir, p)
   fs.lstat(f, function (er) {
     if (er) return cb(er)
@@ -7433,7 +7770,7 @@ login(conf).then((newCreds) =&gt; cb(null, newCreds)).catch(cb)
 
 function login (conf) {
 return profile.login(openerPromise, loginPrompter, conf)
-.catch((err) =&gt; {
+  .catch((err) =&gt; {
 ...</pre></li>
     </ul>
 
@@ -7867,8 +8204,8 @@ var fs = require(&apos;graceful-fs&apos;)
   var globalTop = path.resolve(npm.globalDir, &apos;..&apos;)
   if (!where) {
     where = npm.config.get(&apos;global&apos;)
-          ? globalTop
-          : npm.prefix
+      ? globalTop
+      : npm.prefix
   }
   validate(&apos;SAF&apos;, [where, args, cb])
   // the /path/to/node_modules/..
@@ -7948,6 +8285,7 @@ if (pkg[0] !== &apos;@&apos; &amp;&amp; (pkg.indexOf(&apos;/&apos;) !== -1 || pk
   this.link = opts.link != null ? opts.link : npm.config.get(&apos;link&apos;)
   this.saveOnlyLock = opts.saveOnlyLock
   this.global = opts.global != null ? opts.global : this.where === path.resolve(npm.globalDir, &apos;..&apos;)
+  this.audit = npm.config.get(&apos;audit&apos;) &amp;&amp; !this.global
   this.started = Date.now()
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -8108,7 +8446,7 @@ auth.<span class="apidocCodeKeywordSpan">login</span>(creds, registry, scope, fu
       var msg = &apos;npm link not supported on windows prior to node 0.7.9&apos;
       var e = new Error(msg)
       e.code = &apos;ENOTSUP&apos;
-      e.errno = require(&apos;constants&apos;).ENOTSUP
+      e.errno = require(&apos;constants&apos;).ENOTSUP // eslint-disable-line node/no-deprecated-api
       return cb(e)
     }
   }
@@ -8140,7 +8478,7 @@ auth.<span class="apidocCodeKeywordSpan">login</span>(creds, registry, scope, fu
   var dir = npm.globalDir
   fs.readdir(dir, function (er, files) {
     cb(er, files.filter(function (f) {
-      return !f.match(/^[\._-]/)
+      return !f.match(/^[._-]/)
     }))
   })
 }</pre></li>
@@ -8269,7 +8607,23 @@ var fs = require(&apos;graceful-fs&apos;)
     })
   })
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        npm.config.get(&apos;unicode&apos;) ? &apos; ➜ &apos; : &apos; -&gt; &apos;
+      } ${hook.endpoint}`)
+    }
+  })
+}
+
+function ls (pkg) {
+return hookApi.<span class="apidocCodeKeywordSpan">ls</span>(pkg, config())
+  .then((hooks) =&gt; {
+    if (npm.config.get(&apos;json&apos;)) {
+      output(JSON.stringify(hooks, null, 2))
+    } else if (!hooks.length) {
+      output(&quot;You don&apos;t have any hooks configured yet.&quot;)
+    } else {
+      if (hooks.length === 1) {
+...</pre></li>
     </ul>
 
 
@@ -8871,7 +9225,7 @@ auth.<span class="apidocCodeKeywordSpan">login</span>(creds, registry, scope, fu
           })
         }
         // else fallthrough
-<span class="apidocCodeCommentSpan">        /*eslint no-fallthrough:0*/
+<span class="apidocCodeCommentSpan">        /* eslint no-fallthrough:0 */
 </span>      case &apos;add&apos;:
         if (argv.length &gt; 3) {
           theUser = encodeURIComponent(argv[3])
@@ -8955,12 +9309,15 @@ var fs = require(&apos;graceful-fs&apos;)
 
   BB.all(
     args.map((arg) =&gt; pack_(arg, cwd))
-  ).then((files) =&gt; {
-    if (!silent) {
-      output(files.map((f) =&gt; path.relative(cwd, f)).join(&apos;\n&apos;))
+  ).then((tarballs) =&gt; {
+    if (!silent &amp;&amp; npm.config.get(&apos;json&apos;)) {
+      output(JSON.stringify(tarballs, null, 2))
+    } else if (!silent) {
+      tarballs.forEach(logContents)
+      output(tarballs.map((f) =&gt; path.relative(cwd, f.filename)).join(&apos;\n&apos;))
     }
-    cb(null, files)
-  }, cb)
+    return tarballs
+  }).nodeify(cb)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -9054,13 +9411,163 @@ var fs = require(&apos;graceful-fs&apos;)
 
 
     <h2>
-        <a href="#apidoc.element.npm.pack.packDirectory" id="apidoc.element.npm.pack.packDirectory">
-        function <span class="apidocSignatureSpan">npm.pack.</span>packDirectory
-        <span class="apidocSignatureSpan">(mani, dir, target)</span>
+        <a href="#apidoc.element.npm.pack.getContents" id="apidoc.element.npm.pack.getContents">
+        function <span class="apidocSignatureSpan">npm.pack.</span>getContents
+        <span class="apidocSignatureSpan">(pkg, target, filename, silent)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function packDirectory(mani, dir, target) {
+    <li>description and source-code<pre class="apidocCodePre">function getContents(pkg, target, filename, silent) {
+  const bundledWanted = new Set(
+    pkg.bundleDependencies ||
+    pkg.bundledDependencies ||
+    []
+  )
+  const files = []
+  const bundled = new Set()
+  let totalEntries = 0
+  let totalEntrySize = 0
+  return tar.t({
+    file: target,
+    onentry (entry) {
+      totalEntries++
+      totalEntrySize += entry.size
+      const p = entry.path
+      if (p.startsWith(&apos;package/node_modules/&apos;)) {
+        const name = p.match(/^package\/node_modules\/((?:@[^/]+\/)?[^/]+)/)[1]
+        if (bundledWanted.has(name)) {
+          bundled.add(name)
+        }
+      } else {
+        files.push({
+          path: entry.path.replace(/^package\//, &apos;&apos;),
+          size: entry.size,
+          mode: entry.mode
+        })
+      }
+    },
+    strip: 1
+  })
+    .then(() =&gt; BB.all([
+      BB.fromNode((cb) =&gt; fs.stat(target, cb)),
+      ssri.fromStream(fs.createReadStream(target), {
+        algorithms: [&apos;sha1&apos;, &apos;sha512&apos;]
+      })
+    ]))
+    .then(([stat, integrity]) =&gt; {
+      const shasum = integrity[&apos;sha1&apos;][0].hexDigest()
+      return {
+        id: pkg._id,
+        name: pkg.name,
+        version: pkg.version,
+        from: pkg._from,
+        size: stat.size,
+        unpackedSize: totalEntrySize,
+        shasum,
+        integrity: ssri.parse(integrity[&apos;sha512&apos;][0]),
+        filename,
+        files,
+        entryCount: totalEntries,
+        bundled: Array.from(bundled)
+      }
+    })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    const extracted = path.join(tmp, &apos;package&apos;)
+    const target = path.join(tmp, &apos;package.json&apos;)
+    const opts = pacoteOpts()
+    return pacote.tarball.toFile(arg, target, opts)
+      .then(() =&gt; pacote.extract(arg, extracted, opts))
+      .then(() =&gt; readJson(path.join(extracted, &apos;package.json&apos;)))
+      .then((pkg) =&gt; {
+        return BB.resolve(pack.<span class="apidocCodeKeywordSpan">getContents</span>(pkg, target))
+          .tap((c) =&gt; !npm.config.get(&apos;json&apos;) &amp;&amp; pack.logContents(c))
+          .tap(() =&gt; upload(arg, pkg, false, target))
+      })
+  })
+}
+
+function upload (arg, pkg, isRetry, cached) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.pack.logContents" id="apidoc.element.npm.pack.logContents">
+        function <span class="apidocSignatureSpan">npm.pack.</span>logContents
+        <span class="apidocSignatureSpan">(tarball)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function logContents(tarball) {
+  log.notice(&apos;&apos;)
+  log.notice(&apos;&apos;, `${npm.config.get(&apos;unicode&apos;) ? &apos;📦 &apos; : &apos;package:&apos;} ${tarball.name}@${tarball.version}`)
+  log.notice(&apos;=== Tarball Contents ===&apos;)
+  if (tarball.files.length) {
+    log.notice(&apos;&apos;, columnify(tarball.files.map((f) =&gt; {
+      const bytes = byteSize(f.size)
+      return {path: f.path, size: `${bytes.value}${bytes.unit}`}
+    }), {
+      include: [&apos;size&apos;, &apos;path&apos;],
+      showHeaders: false
+    }))
+  }
+  if (tarball.bundled.length) {
+    log.notice(&apos;=== Bundled Dependencies ===&apos;)
+    tarball.bundled.forEach((name) =&gt; log.notice(&apos;&apos;, name))
+  }
+  log.notice(&apos;=== Tarball Details ===&apos;)
+  log.notice(&apos;&apos;, columnify([
+    {name: &apos;name:&apos;, value: tarball.name},
+    {name: &apos;version:&apos;, value: tarball.version},
+    tarball.filename &amp;&amp; {name: &apos;filename:&apos;, value: tarball.filename},
+    {name: &apos;package size:&apos;, value: byteSize(tarball.size)},
+    {name: &apos;unpacked size:&apos;, value: byteSize(tarball.unpackedSize)},
+    {name: &apos;shasum:&apos;, value: tarball.shasum},
+    {
+      name: &apos;integrity:&apos;,
+      value: tarball.integrity.toString().substr(0, 20) + &apos;[...]&apos; + tarball.integrity.toString().substr(80)},
+    tarball.bundled.length &amp;&amp; {name: &apos;bundled deps:&apos;, value: tarball.bundled.length},
+    tarball.bundled.length &amp;&amp; {name: &apos;bundled files:&apos;, value: tarball.entryCount - tarball.files.length},
+    tarball.bundled.length &amp;&amp; {name: &apos;own files:&apos;, value: tarball.files.length},
+    {name: &apos;total files:&apos;, value: tarball.entryCount}
+  ].filter((x) =&gt; x), {
+    include: [&apos;name&apos;, &apos;value&apos;],
+    showHeaders: false
+  }))
+  log.notice(&apos;&apos;, &apos;&apos;)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}).then(() =&gt; {
+  return readJson(path.join(arg, &apos;package.json&apos;))
+}).then((pkg) =&gt; {
+  return cacache.tmp.withTmp(npm.tmp, {tmpPrefix: &apos;fromDir&apos;}, (tmpDir) =&gt; {
+    const target = path.join(tmpDir, &apos;package.tgz&apos;)
+    return pack.packDirectory(pkg, arg, target, null, true)
+      .tap((c) =&gt; { contents = c })
+      .then((c) =&gt; !npm.config.get(&apos;json&apos;) &amp;&amp; pack.<span class="apidocCodeKeywordSpan">logContents</span>(c
+))
+      .then(() =&gt; upload(arg, pkg, false, target))
+  })
+}).then(() =&gt; {
+  return readJson(path.join(arg, &apos;package.json&apos;))
+}).tap((pkg) =&gt; {
+  return lifecycle(pkg, &apos;publish&apos;, arg)
+}).tap((pkg) =&gt; {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.pack.packDirectory" id="apidoc.element.npm.pack.packDirectory">
+        function <span class="apidocSignatureSpan">npm.pack.</span>packDirectory
+        <span class="apidocSignatureSpan">(mani, dir, target, filename, logIt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function packDirectory(mani, dir, target, filename, logIt) {
   deprCheck(mani)
   return readJson(path.join(dir, &apos;package.json&apos;)).then((pkg) =&gt; {
     return lifecycle(pkg, &apos;prepack&apos;, dir)
@@ -9081,14 +9588,15 @@ var fs = require(&apos;graceful-fs&apos;)
         gzip: true
       }
 
-      return packlist({ path: dir })
+      return BB.resolve(packlist({ path: dir }))
       // NOTE: node-tar does some Magic Stuff depending on prefixes for files
       //       specifically with @ signs, so we just neutralize that one
       //       and any such future &quot;features&quot; by prepending `./`
         .then((files) =&gt; tar.create(tarOpt, files.map((f) =&gt; `./${f}`)))
-        .then(() =&gt; move(tmpTarget, target, {Promise: BB, fs}))
-        .then(() =&gt; lifecycle(pkg, &apos;postpack&apos;, dir))
-        .then(() =&gt; target)
+        .then(() =&gt; getContents(pkg, tmpTarget, filename, logIt))
+        // thread the content info through
+        .tap(() =&gt; move(tmpTarget, target, {Promise: BB, fs}))
+        .tap(() =&gt; lifecycle(pkg, &apos;postpack&apos;, dir))
     })
   })
 }</pre></li>
@@ -9100,14 +9608,14 @@ var fs = require(&apos;graceful-fs&apos;)
 }).then((pkg) =&gt; {
   return cacache.tmp.withTmp(npm.tmp, {tmpPrefix: &apos;fromDir&apos;}, (tmpDir) =&gt; {
     const target = path.join(tmpDir, &apos;package.tgz&apos;)
-    return pack.<span class="apidocCodeKeywordSpan">packDirectory</span>(pkg, arg, target).then(() =&gt; {
-      return upload(arg, pkg, false, target)
-    })
+    return pack.<span class="apidocCodeKeywordSpan">packDirectory</span>(pkg, arg, target, null, true)
+      .tap((c) =&gt; { contents = c })
+      .then((c) =&gt; !npm.config.get(&apos;json&apos;) &amp;&amp; pack.logContents(c))
+      .then(() =&gt; upload(arg, pkg, false, target))
   })
 }).then(() =&gt; {
   return readJson(path.join(arg, &apos;package.json&apos;))
 }).tap((pkg) =&gt; {
-  return lifecycle(pkg, &apos;publish&apos;, arg)
 ...</pre></li>
     </ul>
 
@@ -9233,13 +9741,13 @@ var fs = require(&apos;graceful-fs&apos;)
   })
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  }
 })
 }
 
 function publishFromDirectory (arg) {
 // All this readJson is because any of the given scripts might modify the
 // package.json in question, so we need to refresh after every step.
+let contents
 return pack.<span class="apidocCodeKeywordSpan">prepareDirectory</span>(arg).then(() =&gt; {
   return readJson(path.join(arg, &apos;package.json&apos;))
 }).then((pkg) =&gt; {
@@ -9286,7 +9794,7 @@ return pack.<span class="apidocCodeKeywordSpan">prepareDirectory</span>(arg).the
   try {
     return parseJSON(content)
   } catch (ex) {
-    return
+
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -9545,15 +10053,21 @@ var fs = require(&apos;graceful-fs&apos;)
     return cb(new Error(&apos;Tag name must not be a valid SemVer range: &apos; + t))
   }
 
-  publish_(args[0]).then((pkg) =&gt; {
-    output(`+ ${pkg._id}`)
-    cb()
-  }, cb)
+  return publish_(args[0])
+    .then((tarball) =&gt; {
+      const silent = log.level === &apos;silent&apos;
+      if (!silent &amp;&amp; npm.config.get(&apos;json&apos;)) {
+        output(JSON.stringify(tarball, null, 2))
+      } else if (!silent) {
+        output(`+ ${tarball.id}`)
+      }
+    })
+    .nodeify(cb)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  }
-
-  params.access = config.get(&apos;access&apos;)
+if (npm.config.get(&apos;dry-run&apos;)) {
+  log.verbose(&apos;publish&apos;, &apos;--dry-run mode enabled. Skipping upload.&apos;)
+  return BB.resolve()
 }
 
 log.showProgress(&apos;publish:&apos; + pkg._id)
@@ -9737,6 +10251,8 @@ generated for lockfileVersion@${parsed.lockfileVersion || 0}. I&apos;ll try to d
   } catch (e) {
     if (isDiff(str)) {
       log.warn(&apos;conflict&apos;, `A git conflict was detected in ${filename}. Attempting to auto-resolve.`)
+      log.warn(&apos;conflict&apos;, &apos;To make this happen automatically on git rebase/merge, consider using the npm-merge-driver:&apos;)
+      log.warn(&apos;conflict&apos;, &apos;$ npx npm-merge-driver install -g&apos;)
       const pieces = str.split(/[\n\r]+/g).reduce((acc, line) =&gt; {
         if (line.match(PARENT_RE)) acc.state = &apos;parent&apos;
         else if (line.match(OURS_RE)) acc.state = &apos;ours&apos;
@@ -9866,7 +10382,15 @@ module.exports.login = (creds, registry, scope, cb) =&gt; {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function readOTP(msg, otp, isRetry) {
-  if (!msg) msg = &apos;Enter OTP: &apos;
+  if (!msg) {
+    msg = [
+      &apos;There was an error while trying authentication due to OTP (One-Time-Password).&apos;,
+      &apos;The One-Time-Password is generated via applications like Authy or&apos;,
+      &apos;Google Authenticator, for more information see:&apos;,
+      &apos;https://docs.npmjs.com/getting-started/using-two-factor-authentication&apos;,
+      &apos;Enter OTP: &apos;
+    ].join(&apos;\n&apos;)
+  }
   if (isRetry &amp;&amp; otp &amp;&amp; /^[\d ]+$|^[A-Fa-f0-9]{64,64}$/.test(otp)) return otp.replace(/\s+/g, &apos;&apos;)
 
   return read({prompt: msg, default: otp || &apos;&apos;})
@@ -9953,7 +10477,7 @@ return Bluebird.try(() =&gt; {
     <li>example usage<pre class="apidocCodePre">...
 
 const openerPromise = (url) =&gt; new Promise((resolve, reject) =&gt; {
-opener(url, { command: npm.config.get(&apos;browser&apos;) }, (er) =&gt; er ? reject(er) : resolve())
+openUrl(url, &apos;to complete your login please visit&apos;, (er) =&gt; er ? reject(er) : resolve())
 })
 
 const loginPrompter = (creds) =&gt; {
@@ -9998,8 +10522,8 @@ return read.<span class="apidocCodeKeywordSpan">username</span>(&apos;Username:&
   })
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-       .join(&apos;/node_modules/&apos;)
-       .replace(/(\/node_modules)+/, &apos;/node_modules&apos;)
+    .join(&apos;/node_modules/&apos;)
+    .replace(/(\/node_modules)+/, &apos;/node_modules&apos;)
   var f = path.resolve(npm.dir, p)
   fs.lstat(f, function (er) {
     if (er) return cb(er)
@@ -10258,7 +10782,7 @@ var fs = require(&apos;graceful-fs&apos;)
       if (scripts.indexOf(argv[2]) !== -1) return cb()
       // ok, try to find out which package it was, then
       var pref = npm.config.get(&apos;global&apos;) ? npm.config.get(&apos;prefix&apos;)
-               : npm.localPrefix
+        : npm.localPrefix
       var pkgDir = path.resolve(pref, &apos;node_modules&apos;, argv[2], &apos;package.json&apos;)
       readJson(pkgDir, function (er, d) {
         if (er &amp;&amp; er.code !== &apos;ENOENT&apos; &amp;&amp; er.code !== &apos;ENOTDIR&apos;) return cb(er)
@@ -10405,9 +10929,9 @@ auth.<span class="apidocCodeKeywordSpan">login</span>(creds, registry, scope, fu
     <li>description and source-code<pre class="apidocCodePre">function saveShrinkwrap(tree, next) {
   validate(&apos;OF&apos;, arguments)
   if (!npm.config.get(&apos;shrinkwrap&apos;) || !npm.config.get(&apos;package-lock&apos;)) {
-    next()
+    return next()
   }
-  createShrinkwrap(tree, {silent: false}, next)
+  require(&apos;../shrinkwrap.js&apos;).createShrinkwrap(tree, {silent: false}, next)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -10660,6 +11184,45 @@ var fs = require(&apos;graceful-fs&apos;)
     }))
   })
 }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+exports.saveShrinkwrap = saveShrinkwrap
+
+function saveShrinkwrap (tree, next) {
+validate(&apos;OF&apos;, arguments)
+if (!npm.config.get(&apos;shrinkwrap&apos;) || !npm.config.get(&apos;package-lock&apos;)) {
+  return next()
+}
+require(&apos;../shrinkwrap.js&apos;).<span class="apidocCodeKeywordSpan">createShrinkwrap</span>(tree, {silent: false}, next)
+}
+
+function savePackageJson (tree, next) {
+validate(&apos;OF&apos;, arguments)
+var saveBundle = npm.config.get(&apos;save-bundle&apos;)
+
+// each item in the tree is a top-level thing that should be saved
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.npm.shrinkwrap.treeToShrinkwrap" id="apidoc.element.npm.shrinkwrap.treeToShrinkwrap">
+        function <span class="apidocSignatureSpan">npm.shrinkwrap.</span>treeToShrinkwrap
+        <span class="apidocSignatureSpan">(tree)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function treeToShrinkwrap(tree) {
+  validate(&apos;O&apos;, arguments)
+  var pkginfo = {}
+  if (tree.package.name) pkginfo.name = tree.package.name
+  if (tree.package.version) pkginfo.version = tree.package.version
+  if (tree.children.length) {
+    pkginfo.requires = true
+    shrinkwrapDeps(pkginfo.dependencies = {}, tree, tree)
+  }
+  return pkginfo
+}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -10698,10 +11261,7 @@ var fs = require(&apos;graceful-fs&apos;)
     if (!doc || !doc.token) return cb(new Error(&apos;no SSO token returned&apos;))
     if (!doc.sso) return cb(new Error(&apos;no SSO URL returned by services&apos;))
 
-    output(&apos;If your browser doesn\&apos;t open, visit &apos; +
-           doc.sso +
-           &apos; to complete authentication&apos;)
-    opener(doc.sso, { command: npm.config.get(&apos;browser&apos;) }, function () {
+    openUrl(doc.sso, &apos;to complete your login please visit&apos;, function () {
       pollForSession(registry, doc.token, function (err, username) {
         if (err) return cb(err)
 
@@ -10958,7 +11518,7 @@ var fs = require(&apos;graceful-fs&apos;)
     try {
       return npm.registry.team(cmd, uri, {
         auth: auth,
-        scope: entity[0],
+        scope: entity[0].replace(/^@/, &apos;&apos;), // &apos;@&apos; prefix on scope is optional.
         team: entity[1],
         user: args.shift()
       }, function (err, data) {
@@ -10980,7 +11540,7 @@ return mapToRegistry(&apos;/&apos;, npm.config, function (err, uri, auth) {
   try {
     return npm.registry.<span class="apidocCodeKeywordSpan">team</span>(cmd, uri, {
       auth: auth,
-      scope: entity[0],
+      scope: entity[0].replace(/^@/, &apos;&apos;), // &apos;@&apos; prefix on scope is optional.
       team: entity[1],
       user: args.shift()
     }, function (err, data) {
@@ -11336,8 +11896,8 @@ function validateSemver (data, k, val) {
   if (args.length === 1 &amp;&amp; args[0] === &apos;.&apos;) args = []
 
   const where = npm.config.get(&apos;global&apos;) || !args.length
-            ? path.resolve(npm.globalDir, &apos;..&apos;)
-            : npm.prefix
+    ? path.resolve(npm.globalDir, &apos;..&apos;)
+    : npm.prefix
 
   args = args.filter(function (a) {
     return path.resolve(a) !== where
@@ -11674,11 +12234,12 @@ log.info(&apos;it worked if it ends with&apos;, &apos;ok&apos;)
 
 unsupported.<span class="apidocCodeKeywordSpan">checkForUnsupportedNode</span>()
 
-if (!unsupported.checkVersion(process.version).unsupported) {
-  var updater = require(&apos;update-notifier&apos;)
-  var pkg = require(&apos;../package.json&apos;)
-  updater({pkg: pkg}).notify({defer: true})
-}
+var path = require(&apos;path&apos;)
+var npm = require(&apos;../lib/npm.js&apos;)
+var npmconf = require(&apos;../lib/config/core.js&apos;)
+var errorHandler = require(&apos;../lib/utils/error-handler.js&apos;)
+
+var configDefs = npmconf.defs
 ...</pre></li>
     </ul>
 
@@ -11700,21 +12261,21 @@ if (!unsupported.checkVersion(process.version).unsupported) {
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-
-var log = require(&apos;npmlog&apos;)
-log.pause() // will be unpaused when config is loaded.
-log.info(&apos;it worked if it ends with&apos;, &apos;ok&apos;)
-
-unsupported.checkForUnsupportedNode()
-
-if (!unsupported.<span class="apidocCodeKeywordSpan">checkVersion</span>(process.version).unsupported) {
-  var updater = require(&apos;update-notifier&apos;)
-  var pkg = require(&apos;../package.json&apos;)
-  updater({pkg: pkg}).notify({defer: true})
 }
 
-var path = require(&apos;path&apos;)
-var npm = require(&apos;../lib/npm.js&apos;)
+// now actually fire up npm and run the command.
+// this is how to use npm programmatically:
+conf._exit = true
+npm.load(conf, function (er) {
+  if (er) return errorHandler(er)
+  if (!unsupported.<span class="apidocCodeKeywordSpan">checkVersion</span>(process.version).unsupported) {
+    const pkg = require(&apos;../package.json&apos;)
+    let notifier = require(&apos;update-notifier&apos;)({pkg})
+    if (
+      notifier.update &amp;&amp;
+      notifier.update.latest !== pkg.version
+    ) {
+      const color = require(&apos;ansicolors&apos;)
 ...</pre></li>
     </ul>
 
